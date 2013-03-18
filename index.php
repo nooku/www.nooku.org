@@ -35,38 +35,76 @@
       </div>
     </div>
     
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <h1>A platform for creating web applications with less code.</h1>
-                <p class="lead">By drastically reducing the amount of code you need to write, Nooku helps you to create powerful web applications easily. Using the web technologies you know and love: <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong></p>
-                <p class="lead">The intuitive API, design pattern based architecture, and out-of-the-box security, leave you more time to focus on features.</p>
+    <div class="wrap wrap-header">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h1>A platform for creating web applications, with less code.</h1>
+                    <p class="lead">By drastically reducing the amount of code you need to write, Nooku helps you to create powerful web applications easily. Using the web technologies you know and love: <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="wrap">
+        <div class="container">
+            <h2>How is the Nooku different?</h2>
+            <div class="row">
+                <div class="span4">
+                    <h3>Object Oriented design</h3>
+                    <p>The solid architecture makes use of the latest Object Oriented features in PHP, such as class autoloading, interfaces and visibility.</p>
+                </div>
+                <div class="span4">
+                    <h3>Dedicated team</h3>
+                    <p>Driven by a professional team of developers, lead by Johan Janssens. Co-founder of Joomla and the Lead Architect of the Joomla 1.5 Framework.</p>
+                </div>
+                <div class="span4">
+                    <h3>Design pattern based</h3>
+                    <p>Nooku Framework features a near zero-code MVC, an ORM with table behaviors, a powerful Chain of Command, an Object Factory with dependency injection, Lazy Loading, Mixins, Decorators, and more.</p>
+                </div>
+                <div class="span4">
+                    <h3>Unparalleled extensibility</h3>
+                    <p>Every part of Nooku Framework, and of extensions powered by the framework, can be extended, re-used, and replaced.</p>
+                </div>
+                <div class="span4">
+                    <h3>Intuitive API</h3>
+                    <p>Learn once, apply everywhere: the consistent API is easy to learn, and a joy to work with.</p>
+                </div>
+                <div class="span4">
+                    <h3>Extremely lightweight</h3>
+                    <p>Nooku Framework has no dependencies on PECL extensions or PEAR libraries or any other libraries. Large, monolithic libraries are avoided in favor of optimized solutions.</p>
+                </div>
+            </div>
+            
+            <h2>Getting started with Nooku is easy.</h2>
+            <div class="row">
+                <div class="span6">
+                    <p>Nooku Server is built on top of Vagrant which uses Oracle’s VirtualBox to build configurable, lightweight, and portable virtual machines dynamically.</p>
+                </div>
+                <div class="span6">
+                    <ol>
+                        <li>Download and install VirtualBox. Nothing else needs to be done, you even don't need to open it after install, Nooku Server uses the command line interface of VirtualBox.</li>
+                        <li>Download and install Vagrant. Nooku Server  Vagrant box uses a YAML configuration file to create hosts</li>
+                    </ol>
+                    <pre># vagrant up</pre>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="container">
-        <div class="row">
-            <div class="span4">
-                <h3>Read our Blog</h3>        
-                <ul>
-                    <li><a href="http://feedproxy.google.com/~r/nooku/blog/~3/WiTUWLjtM7k/">Announcing Nooku Jam 12.3 Leuven!</a></li>
-                    <li><a href="http://feedproxy.google.com/~r/nooku/blog/~3/WN8tfEU_q6g/">Looking back at Nooku Jam 12.2</a></li>
-                    <li><a href="http://feedproxy.google.com/~r/nooku/blog/~3/x1BGF_R4WWI/">Activity Streams with com_activities</a></li>
-                    <li><a href="http://feedproxy.google.com/~r/nooku/blog/~3/jzjeAa2WyPk/">Sunsetting Nooku Content</a></li>
-                    <li><a href="http://feedproxy.google.com/~r/nooku/blog/~3/IXmTmi0lSmA/">Nooku is 4!</a></li>
-                </ul>
-            </div>
-            <div class="span4">
-                <h3>Follow Us on Twitter</h3>
-                <p>
-                    <a href="http://search.twitter.com/search?q=%23Anahita" title="#Anahita">#Anahita</a> accepted into @<a href="https://twitter.com/MozWebFWD">MozWebFWD</a> <a href="http://t.co/betmN6dKfX">http://t.co/betmN6dKfX</a> Congrats @<a href="https://twitter.com/rastin">rastin</a> @<a href="https://twitter.com/peerglobe">peerglobe</a>
-                </p>
-            </div>
-            <div class="span4">
-                <h3>Join Us on Facebook</h3>
-                <p class="center" style="margin-top:10px;"><a href="http://www.facebook.com/nooku.org" target="_blank"><img border="0" src="http://www.nooku.org/images/stories/icons/facebook-like.png" alt="Like us on Facebook"></a><br> <a href="http://www.facebook.com/nooku.org" target="_blank">facebook.com/nooku.org</a></p>
-                <p class="center">Feel free to swing by and say hi!</p>
+    <div class="wrap wrap-footer">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <ul class="nav nav-pills">
+                        <li><a href="#"><i class="icon-facebook-sign"></i> Facebook</a></li>
+                        <li><a href="#"><i class="icon-twitter-sign"></i> Twitter</a></li>
+                        <li><a href="#"><i class="icon-github-sign"></i> Github</a></li>
+                    </ul>
+                </div>
+                <div class="span6">
+                    Copyright 2012 Nooku
+                </div>
             </div>
         </div>
     </div>

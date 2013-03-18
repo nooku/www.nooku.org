@@ -1,5 +1,25 @@
 @import "bootstrap";
 
+@import "../components/font-awesome/less/font-awesome.less";
+
+@FontAwesomePath:   "../components/font-awesome/font";
+
+@blue: #44BCF1;
+@linkColor: #085DAD;
+
 body {
-    padding-top: 60px;   
+    padding-top: @navbarHeight;   
+}
+
+.navbar-fixed-top {
+    margin-bottom: 0 !important;    
+}
+
+.wrap-header {
+    #gradient .radial(lighten(@blue, 15%), @blue);   
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    @import "responsive-480.less";
 }
