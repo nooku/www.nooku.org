@@ -1,0 +1,33 @@
+h1,
+h2,
+h3 { line-height: @baseLineHeight * 1.5; }
+
+h1 { font-size: @baseFontSize * 2; }
+h2 { font-size: @baseFontSize * 1.5; }
+h3 { font-size: @baseFontSize * 1; }
+
+h3 { margin: 0; }
+
+.container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.wrap {
+    padding: 20px 0;
+}
+
+.wrap-header {
+    text-align: center;
+}
+
+.wrap-footer {
+    text-align: center; 
+    
+    /* Align the items equally in the available space */
+    ul li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+    }
+}
