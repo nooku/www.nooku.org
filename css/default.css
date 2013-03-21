@@ -6539,6 +6539,12 @@ ul.icons li [class*=" icon-"] {
 .icon-folder-open-alt:before {
   content: "\f115";
 }
+.wrap-menu {
+  background-color: #44bcf1;
+}
+.wrap-menu .navbar {
+  margin-bottom: 0;
+}
 .wrap-header {
   padding-top: 20px;
   background-color: #44bcf1;
