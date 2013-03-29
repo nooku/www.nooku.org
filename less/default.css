@@ -6402,12 +6402,12 @@ h3 {
     float: none;
     text-align: center;
   }
-  .section.main .thumbnails li {
+  .section.about .thumbnails li {
     float: left;
     width: 48%;
     margin-left: 4%;
   }
-  .section.main .thumbnails li:nth-of-type(odd) {
+  .section.about .thumbnails li:nth-of-type(odd) {
     margin-left: 0;
   }
   .section.footer {
