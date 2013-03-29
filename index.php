@@ -64,6 +64,7 @@
                         <li><a href="#"><i class="icon-facebook-sign"></i> Facebook</a></li>
                         <li><a href="#"><i class="icon-twitter-sign"></i> Twitter</a></li>
                         <li><a href="#"><i class="icon-github-sign"></i> Github</a></li>
+                        <li><a href="http://feeds.nooku.org/blog"><i class="icon-rss"></i> RSS</a></li>
                     </ul>
                 </div>
                 <div class="copyright span6">
