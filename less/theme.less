@@ -1,29 +1,61 @@
 @linkColor: #085DAD;
 @navy: darken(@linkColor, 10%);
 
-@gridColumnWidth:         40px;
-@gridGutterWidth:         40px;
+@gridColumnWidth:         33px;
+@gridGutterWidth:         30px;
 
-@baseFontSize:  15px;
+@baseFontSize:  14px;
 @smallFontSize: 13px;
 @sansFontFamily: "proxima-nova","proxima-nova-alt",sans-serif;
 
+@navbarHeight:                    34px;
+@navbarBackgroundHighlight:       @navy;
+@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBorder:                    darken(@navbarBackground, 12%);
+
+@navbarText:                      #FFF;
+@navbarLinkColor:                 #FFF;
+@navbarLinkColorHover:            #FFF;
+@navbarLinkColorActive:           #FFF;
+@navbarLinkBackgroundHover:       lighten(@navy, 10%);
+@navbarLinkBackgroundActive:      lighten(@navy, 10%);
+
 body {
-    border-top: 4px solid @linkColor;
+    border: 6px solid @grayLighter;
+    position: relative;
+}
+
+body:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid darken(@grayLighter, 15%);
 }
 
 h1, h2, h3, h4, h5, h6 { color:#333333; font-weight: normal; }
 
-h3 {
-    font-size: 20px;    
+h3 { font-size: 20px; margin: 0; }
+
+.alignright {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.text-small {
+    font-size: 85%;
 }
 
 .section.header {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-    .nav {
-        margin-top: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .navbar {
+        margin-top: 18px;
         margin-bottom: 0px;
     }
 }
@@ -31,55 +63,141 @@ h3 {
 .section.teaser {
     margin-bottom: 30px;
     padding: 20px 0 30px 0;
-    
+
     #gradient .radial(lighten(@linkColor, 5%), @linkColor);
-    
+
     border: 1px solid @navy;
 	.box-shadow(inset rgba(0, 0, 0, .6) 0px 0px 10px);
-    
+
     color: white;
-    
+
     h1 {
         color: @white;
-        font-size: 38px;
     }
-    
+
     .lead {
-        margin: 0 110px;
-        
+        max-width: 600px;
+        margin: 0 auto;
+
         font-size: 18px;
     }
 }
 
-.section.main {
+.section.about {
     h2 {
         text-align: center;
     }
-    
+
     h2 + p {
         .muted();
         .text-center();
-        
+
         max-width: 600px;
         margin: 0 auto;
-        
+
         margin-bottom: 20px;
         margin-top: -8px;
     }
-    
+
     .container > .row {
         margin-bottom: 40px;
+    }
+
+    .thumbnails {
+        margin-bottom: 0;
+
+        .thumbnail {
+            line-height:100px;
+            height: 100px;
+            text-align:center;
+
+            #gradient .radial(@white, #F8F8F8);
+
+            img {
+                display: inline;
+                max-height: 80%;
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+.section.blog {
+    h2 { font-size: @baseFontSize * 1.6; }
+    h3 { font-size: @baseFontSize * 1.2; }
+
+    .page-header {
+        margin-bottom: 10px;
+
+        h1 { font-size: @baseFontSize * 1.8; line-height: @baseLineHeight * 1.8; margin: 0; }
+    }
+
+    .posts .post {
+        margin-bottom: 80px;
+
+        a.more-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px dotted #F6F6F6;
+            border-bottom: 1px dotted #F6F6F6;
+        }
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+
+
+
+    .sidebar {
+        margin-top: 30px;
     }
 }
 
 .section.footer {
     .container {
-        border-top: 4px solid @grayLighter;    
-    
+        font-size: 80%;
+        border-top: 4px solid @grayLighter;
         margin-top: 30px;
-        
-        p {
-            line-height: 30px;    
+
+        .nav {
+            margin-bottom: 0;
         }
-    }    
+
+        .copyright {
+            line-height: 30px;
+            text-align: right;
+        }
+    }
+}
+
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner {
+    padding: 0;
+}
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,.75);
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
 }

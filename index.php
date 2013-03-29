@@ -10,7 +10,7 @@
 	<meta name="author" content="">
 	
 	<!-- Le styles -->
-	<link href="css/default.css?v=3" rel="stylesheet">
+	<link href="less/default.css?v=3" rel="stylesheet">
     
     <script type="text/javascript" src="components/google-code-prettify/src/prettify.js"></script>
     
@@ -21,25 +21,38 @@
 <body>        
     <div class="section header">
         <div class="container">
-            <img src="images/logo.png" />
-            <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="#">About</a></li>
-                <li><a href="#">Community</a></li>
-    		    <li><a href="#">Blog</a></li>
-            </ul>
+            <div class="row">
+                <div class="brand span8">
+                    <img src="images/logo.png" height="60px" width="123px" />
+                </div>
+                <div class="span4">
+                    <div class="navbar pull-right">
+                        <div class="navbar-inner">
+                            <ul class="nav">
+                                <li class="active"><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <div class="section teaser text-center">
         <div class="container">
             <h1>Create web applications with less code</h1>
-            <p class="lead">By drastically reducing the amount of code you need to write, Nooku helps you to create powerful web applications easily. Using the web technologies you know and love: <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong></p>
+            <p class="lead">By drastically reducing the amount of code you need to write,
+                Nooku helps you to create powerful web applications easily.
+                Using the web technologies you know and love: <strong>PHP</strong>, <strong>HTML</strong>,
+                <strong>CSS</strong>, and <strong>JavaScript</strong></p>
         </div>
     </div>
     
-    <div class="section main">
+    <div class="section about">
         <div class="container">
-            <!-- @import 'pages/about.html' -->            
+            <!-- @import 'pages/about.html' -->
+            <?php echo file_get_contents('pages/about.html') ?>
         </div>
     </div>
     
@@ -53,8 +66,8 @@
                         <li><a href="#"><i class="icon-github-sign"></i> Github</a></li>
                     </ul>
                 </div>
-                <div class="span6">
-                    <p>Copyright 2013 Nooku</p>
+                <div class="copyright span6">
+                    <p>Copyright 2013 <a href="http://www.timble.net">Timble</a></p>
                 </div>
             </div>
         </div>

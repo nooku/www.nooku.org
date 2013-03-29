@@ -1,33 +1,61 @@
-h1,
 h2,
 h3 { line-height: @baseLineHeight * 1.5; }
 
-h1 { font-size: @baseFontSize * 2; }
-h2 { font-size: @baseFontSize * 1.5; }
-h3 { font-size: @baseFontSize * 1; }
+h1 { font-size: @baseFontSize * 1.9; }
+h2 { font-size: @baseFontSize * 1.6; }
+h3 { font-size: @baseFontSize * 1.2; }
 
-h3 { margin: 0; }
+body {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .container {
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
 
-.wrap {
-    padding: 20px 0;
+.section.header {
+    .brand {
+        text-align: center;
+    }
+
+    .nav {
+    /* Align the items equally in the available space */
+        li {
+            display: table-cell;
+            width: 1%;
+            float: none;
+            text-align: center;
+        }
+    }
 }
 
-.wrap-header {
-    text-align: center;
+.section.main {
+    .thumbnails li {
+        float: left;
+        width: 48%;
+        margin-left: 4%;
+    }
+
+    .thumbnails li:nth-of-type(odd) {
+        margin-left: 0;
+    }
 }
 
-.wrap-footer {
-    text-align: center; 
-    
+.section.footer {
+    padding-left: 20px;
+    padding-right: 20px;
+
     /* Align the items equally in the available space */
     ul li {
         display: table-cell;
         width: 1%;
         float: none;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center !important;
     }
 }
