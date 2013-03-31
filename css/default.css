@@ -5877,13 +5877,13 @@ h3 {
 .section.teaser {
   margin-bottom: 30px;
   padding: 20px 0 30px 0;
+  border: 1px solid #06437c;
   background-color: #085dad;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#096ac5), to(#085dad));
   background-image: -webkit-radial-gradient(circle, #096ac5, #085dad);
   background-image: -moz-radial-gradient(circle, #096ac5, #085dad);
   background-image: -o-radial-gradient(circle, #096ac5, #085dad);
   background-repeat: no-repeat;
-  border: 1px solid #06437c;
   -webkit-box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 10px;
   -moz-box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 10px;
   box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 10px;
@@ -5968,10 +5968,24 @@ h3 {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.section.footer {
+  background-color: #085dad;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#096ac5), to(#085dad));
+  background-image: -webkit-radial-gradient(circle, #096ac5, #085dad);
+  background-image: -moz-radial-gradient(circle, #096ac5, #085dad);
+  background-image: -o-radial-gradient(circle, #096ac5, #085dad);
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.3) 0px 3px 3px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.3) 0px 3px 3px;
+  box-shadow: inset rgba(0, 0, 0, 0.3) 0px 3px 3px;
+}
 .section.footer .container {
   font-size: 80%;
-  border-top: 4px solid #eeeeee;
   margin-top: 30px;
+  color: #ffffff;
+}
+.section.footer .container a {
+  color: #ffffff;
 }
 .section.footer .container .nav {
   margin-bottom: 0;

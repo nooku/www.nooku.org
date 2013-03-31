@@ -23,14 +23,14 @@
         <div class="container">
             <div class="row">
                 <div class="brand span8">
-                    <img src="images/logo.png" height="60px" width="123px" />
+                    <a href="http://www.nooku.org"><img src="images/logo.png" height="60px" width="123px" /></a>
                 </div>
                 <div class="span4">
                     <div class="navbar pull-right">
                         <div class="navbar-inner">
                             <ul class="nav">
-                                <li class="active"><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li class="active"><a href="http://www.nooku.org">About</a></li>
+                                <li><a href="http://blog.nooku.org">Blog</a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,12 +60,12 @@
         <div class="container">
             <div class="row">
                 <div class="span6">
-                    <ul class="nav nav-pills">
-                        <li><a href="#"><i class="icon-facebook-sign"></i> Facebook</a></li>
-                        <li><a href="#"><i class="icon-twitter-sign"></i> Twitter</a></li>
-                        <li><a href="#"><i class="icon-github-sign"></i> Github</a></li>
-                        <li><a href="http://feeds.nooku.org/blog"><i class="icon-rss"></i> RSS</a></li>
-                    </ul>
+                    <p>
+                    <a href="#"><i class="icon-facebook-sign"></i> Facebook</a> |
+                    <a href="#"><i class="icon-twitter-sign"></i> Twitter</a> |
+                    <a href="#"><i class="icon-github-sign"></i> Github</a> |
+                    <a href="http://feeds.nooku.org/blog"><i class="icon-rss"></i> RSS</a>
+                    </p>
                 </div>
                 <div class="copyright span6">
                     <p>Copyright 2013 <a href="http://www.timble.net">Timble</a></p>

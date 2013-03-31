@@ -5863,6 +5863,9 @@ h3 {
   font-size: 20px;
   margin: 0;
 }
+blockquote p {
+  font-size: 14px;
+}
 .text-small {
   font-size: 85%;
 }
@@ -5877,13 +5880,13 @@ h3 {
 .section.teaser {
   margin-bottom: 30px;
   padding: 20px 0 30px 0;
+  border: 1px solid #06437c;
   background-color: #085dad;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#096ac5), to(#085dad));
   background-image: -webkit-radial-gradient(circle, #096ac5, #085dad);
   background-image: -moz-radial-gradient(circle, #096ac5, #085dad);
   background-image: -o-radial-gradient(circle, #096ac5, #085dad);
   background-repeat: no-repeat;
-  border: 1px solid #06437c;
   -webkit-box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 10px;
   -moz-box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 10px;
   box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 10px;
@@ -5936,6 +5939,11 @@ h3 {
 .section.blog h3 {
   font-size: 16.8px;
 }
+.section.blog img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .section.blog .page-header {
   margin-bottom: 10px;
 }
@@ -5955,6 +5963,9 @@ h3 {
   border-top: 1px dotted #F6F6F6;
   border-bottom: 1px dotted #F6F6F6;
 }
+.section.blog .pagination {
+  padding-bottom: 30px;
+}
 .section.blog .sidebar {
   margin-top: 30px;
 }
@@ -5968,16 +5979,27 @@ h3 {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.section.footer {
+  background-color: #085dad;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#096ac5), to(#085dad));
+  background-image: -webkit-radial-gradient(circle, #096ac5, #085dad);
+  background-image: -moz-radial-gradient(circle, #096ac5, #085dad);
+  background-image: -o-radial-gradient(circle, #096ac5, #085dad);
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.3) 0px 3px 3px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.3) 0px 3px 3px;
+  box-shadow: inset rgba(0, 0, 0, 0.3) 0px 3px 3px;
+  border: 1px solid #06437c;
+}
 .section.footer .container {
   font-size: 80%;
-  border-top: 4px solid #eeeeee;
-  margin-top: 30px;
+  color: #ffffff;
+  padding-top: 12px;
 }
-.section.footer .container .nav {
-  margin-bottom: 0;
+.section.footer .container a {
+  color: #ffffff;
 }
 .section.footer .container .copyright {
-  line-height: 30px;
   text-align: right;
 }
 /* Customize the navbar links to be fill the entire space of the .navbar */
@@ -6473,6 +6495,7 @@ ol.linenums li {
     padding-right: 20px;
     /* Align the items equally in the available space */
   
+    text-align: center !important;
   }
   .section.footer ul li {
     display: table-cell;
