@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <title>{% block title %}Empty{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <!-- Styles -->
+        {{ "default.css" | asset_url | stylesheet_tag }}
+
+        <script type="text/javascript" src="//use.typekit.net/eow5fmw.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Include -->
+            {% include "header" %}
+            <!-- Content block, child page inject content -->
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
