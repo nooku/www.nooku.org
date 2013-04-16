@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="brand span8">
-                    <a href="http://www.nooku.org"><img src="images/logo.png" height="60px" width="123px" /></a>
+                    <a href="http://www.nooku.org"><img src="images/logo.jpg" height="60px" width="123px" /></a>
                 </div>
                 <div class="span4">
                     <div class="navbar pull-right">
