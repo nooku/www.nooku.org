@@ -5837,18 +5837,8 @@ ul.icons li [class*=" icon-"] {
   content: "\f115";
 }
 body {
-  border: 6px solid #eeeeee;
-  position: relative;
-}
-body:before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  border: 1px solid #c8c8c8;
+  padding: 6px;
+  background-color: #eeeeee;
 }
 h1,
 h2,
@@ -5877,6 +5867,13 @@ blockquote p {
 .text-small {
   font-size: 85%;
 }
+#wrapper {
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+}
+.section {
+  background-color: #ffffff;
+}
 .section.header {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -5886,8 +5883,8 @@ blockquote p {
   margin-bottom: 0px;
 }
 .section.teaser {
-  margin-bottom: 30px;
   padding: 20px 0 30px 0;
+  margin-bottom: 20px;
   border: 1px solid #06437c;
   background-color: #085dad;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#096ac5), to(#085dad));

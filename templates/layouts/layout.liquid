@@ -12,10 +12,12 @@
     </head>
     <body>
         <div id="wrapper">
-            <!-- Include -->
-            {% include "header" %}
-            <!-- Content block, child page inject content -->
-            {% block content %}{% endblock %}
+        <!-- Include header -->
+        {% include "header" %}
+        <!-- Content block, child page inject content -->
+        {% block content %}{% endblock %}
+        <!-- Include footer -->
+        {% include "footer" %}
         </div>
     </body>
 </html>

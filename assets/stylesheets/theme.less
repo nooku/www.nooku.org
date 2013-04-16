@@ -22,19 +22,8 @@
 @navbarLinkBackgroundActive:      lighten(@navy, 10%);
 
 body {
-    border: 6px solid @grayLighter;
-    position: relative;
-}
-
-body:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    border: 1px solid darken(@grayLighter, 15%);
+    padding: 6px;
+    background-color: @grayLighter;
 }
 
 h1, h2, h3, h4, h5, h6 { color:#333333; font-weight: normal; }
@@ -58,6 +47,15 @@ blockquote p {
     font-size: 85%;
 }
 
+#wrapper {
+    border: 1px solid darken(@grayLighter, 15%);
+    background-color: @white;
+}
+
+.section {
+    background-color: @white;
+}
+
 .section.header {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -69,9 +67,8 @@ blockquote p {
 }
 
 .section.teaser {
-    margin-bottom: 30px;
     padding: 20px 0 30px 0;
-
+    margin-bottom: 20px;
     border: 1px solid @navy;
 
     #gradient .radial(lighten(@linkColor, 5%), @linkColor);
@@ -92,6 +89,7 @@ blockquote p {
 }
 
 .section.about {
+
     h2 {
         text-align: center;
     }

@@ -1,4 +1,50 @@
-{% block content %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <title>Empty</title>
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+        <!-- Styles -->
+        <link href="assets/stylesheets/default.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <script type="text/javascript" src="//use.typekit.net/eow5fmw.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
+        <div id="wrapper">
+        <!-- Include header -->
+         <div class="section header">
+    <div class="container">
+        <div class="row">
+            <div class="brand span8">
+                <a href="http://www.nooku.org"><img src="assets/img/logo.jpg" height="60px" width="123px" /></a>
+            </div>
+            <div class="span4">
+                <div class="navbar pull-right">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li><a href="/">About</a></li>
+                            <li class="active"><a href="manifesto.html">Manifesto</a></li>
+                            <li><a href="http://blog.nooku.org">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section teaser text-center">
+    <div class="container">
+        <h1>Create web applications with less code</h1>
+        <p class="lead">By drastically reducing the amount of code you need to write,
+            Nooku helps you to create powerful web applications easily.
+            Using the web technologies you know and love: <strong>PHP</strong>, <strong>HTML</strong>,
+            <strong>CSS</strong>, and <strong>JavaScript</strong></p>
+    </div>
+</div>
+        <!-- Content block, child page inject content -->
+        
 <div class="section about">
     <div class="container">
         <h2>The Nooku Manifesto</h2>
@@ -23,4 +69,25 @@
         <p>We are all on the same side, we just sometimes draw the lines differently. We understand these differences but choose to move together as a community, united by the core goal of freedom, openness and <a href="http://openrespect.org/">respect</a>.</p>
     </div>
 </div>
-{% endblock %}
+
+        <!-- Include footer -->
+        <div class="section footer">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <p>
+                    <a href="#"><i class="icon-facebook-sign"></i> Facebook</a> |
+                    <a href="#"><i class="icon-twitter-sign"></i> Twitter</a> |
+                    <a href="#"><i class="icon-github-sign"></i> Github</a> |
+                    <a href="http://feeds.nooku.org/blog"><i class="icon-rss"></i> RSS</a>
+                </p>
+            </div>
+            <div class="copyright span6">
+                <p>Copyright 2013 <a href="http://www.timble.net">Timble</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </body>
+</html>
