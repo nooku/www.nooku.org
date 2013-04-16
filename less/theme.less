@@ -4,7 +4,8 @@
 @gridColumnWidth:         33px;
 @gridGutterWidth:         30px;
 
-@baseFontSize:  14px;
+@baseFontSize:  15px;
+@baseLineHeight:  21px;
 @smallFontSize: 13px;
 @sansFontFamily: "proxima-nova","proxima-nova-alt",sans-serif;
 
@@ -39,6 +40,15 @@ body:before {
 h1, h2, h3, h4, h5, h6 { color:#333333; font-weight: normal; }
 
 h3 { font-size: 20px; margin: 0; }
+
+hr {
+    border:none;
+    color:white;
+    height:1px;
+    background:@grayLighter;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(@grayLighter), to(#fff));
+    margin: 50px 0 40px;
+}
 
 blockquote p {
     font-size: @baseFontSize;
@@ -97,10 +107,6 @@ blockquote p {
         margin-top: -8px;
     }
 
-    .container > .row {
-        margin-bottom: 40px;
-    }
-
     .thumbnails {
         margin-bottom: 0;
 
@@ -147,10 +153,6 @@ blockquote p {
         }
     }
 
-    .pagination {
-        padding-bottom: 30px;
-    }
-
     .sidebar {
         margin-top: 30px;
     }
@@ -172,6 +174,8 @@ blockquote p {
     #gradient .radial(lighten(@linkColor, 5%), @linkColor);
     .box-shadow(inset rgba(0, 0, 0, .3) 0px 3px 3px);
     border: 1px solid @navy;
+
+    margin-top: 40px;
 
     .container {
         font-size: 80%;
