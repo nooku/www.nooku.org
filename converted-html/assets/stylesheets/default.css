@@ -5916,6 +5916,9 @@ blockquote p {
   margin-bottom: 20px;
   margin-top: -8px;
 }
+.section.about p > .btn {
+  margin-top: 14px;
+}
 .section.about .thumbnails {
   margin-bottom: 0;
 }

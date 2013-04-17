@@ -3,6 +3,7 @@
     <head>
         <!-- Title block allowing child pages to override -->
         <title>{% block title %}Empty{% endblock %}</title>
+        <meta name="description" content="{% block description %}Empty{% endblock %}" />
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
         <!-- Styles -->
         {{ "default.css" | asset_url | stylesheet_tag }}
