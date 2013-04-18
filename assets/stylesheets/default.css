@@ -5847,7 +5847,7 @@ h4,
 h5,
 h6 {
   color: #333333;
-  font-weight: normal;
+  font-weight: 300;
 }
 h3 {
   font-size: 20px;
@@ -5911,6 +5911,7 @@ blockquote p {
 .section.about h2 + p {
   color: #999999;
   text-align: center;
+  font-weight: 300;
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -5939,7 +5940,7 @@ blockquote p {
   max-width: 80%;
 }
 .section.blog h2 {
-  font-size: 24px;
+  margin-top: 20px;
 }
 .section.blog h3 {
   font-size: 18px;
@@ -5951,22 +5952,19 @@ blockquote p {
 }
 .section.blog .page-header {
   margin-bottom: 10px;
+  border-bottom: 0 none;
+  text-align: center;
 }
 .section.blog .page-header h1 {
   font-size: 27px;
   line-height: 37.800000000000004px;
   margin: 0;
 }
-.section.blog .posts .post {
-  margin-bottom: 80px;
-}
 .section.blog .posts .post a.more-link {
   display: block;
   margin-top: 30px;
   text-align: center;
   padding: 10px 0;
-  border-top: 1px dotted #F6F6F6;
-  border-bottom: 1px dotted #F6F6F6;
 }
 .section.blog .sidebar {
   margin-top: 30px;
@@ -6294,19 +6292,6 @@ ol.linenums li {
 }
 /* Landscape phones and down */
 @media (max-width: 767px) {
-  h2,
-  h3 {
-    line-height: 31.5px;
-  }
-  h1 {
-    font-size: 28.5px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  h3 {
-    font-size: 18px;
-  }
   hr {
     margin: 30px 0;
   }
