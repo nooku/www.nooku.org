@@ -5907,7 +5907,6 @@ blockquote p {
 }
 .section.about h2 {
   text-align: center;
-  color: #06437c;
 }
 .section.about h2 + p {
   color: #999999;
@@ -5941,7 +5940,6 @@ blockquote p {
   max-width: 80%;
 }
 .section.blog h2 {
-  font-size: 24px;
   margin-top: 20px;
 }
 .section.blog h3 {
