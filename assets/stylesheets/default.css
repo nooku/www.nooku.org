@@ -5883,7 +5883,7 @@ blockquote p {
   margin-bottom: 0px;
 }
 .section.teaser {
-  padding: 20px 0 30px 0;
+  padding: 20px 0 0px 0;
   margin-bottom: 20px;
   border: 1px solid #06437c;
   background-color: #085dad;
@@ -5897,6 +5897,9 @@ blockquote p {
   box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 10px;
   color: white;
 }
+.section.teaser a {
+  color: #ffffff;
+}
 .section.teaser h1 {
   color: #ffffff;
 }
@@ -5904,6 +5907,11 @@ blockquote p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 18px;
+}
+.section.teaser .brought-by {
+  text-align: right;
+  margin-top: 25px;
+  font-weight: 200;
 }
 .section.about h2 {
   text-align: center;
