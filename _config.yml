@@ -1,0 +1,11 @@
+name: Your New Jekyll Site
+pygments: true
+navigation:
+- text: About
+  url: /
+  active: /index.html
+- text: Manifesto
+  url: /manifesto
+  active: /manifesto/index.html
+- text: Blog
+  url: http://blog.nooku.org
