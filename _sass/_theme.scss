@@ -1,0 +1,233 @@
+body {
+    padding: 6px;
+    background-color: $gray-lighter;
+}
+
+h1, h2, h3, h4, h5, h6 { color:#333333; font-weight: 300; }
+
+h3 { font-size: 20px; margin: 0; line-height: 42px;}
+
+hr {
+    border:none;
+    color:white;
+    height:1px;
+    background:$gray-lighter;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from($gray-lighter), to(#fff));
+    margin: 50px 0 40px;
+}
+
+blockquote p {
+    font-size: $font-size-base;
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+#wrapper {
+    border: 1px solid darken($gray-lighter, 15%);
+    background-color: $white;
+}
+
+.section {
+    background-color: $white;
+}
+
+.section.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .navbar {
+        margin-top: 24px;
+        margin-bottom: 0px;
+    }
+}
+
+.section.teaser {
+    padding: 20px 0 0px 0;
+    margin-bottom: 20px;
+    border: 1px solid $navy;
+    border-left:0;
+    border-right:0;
+    background: lighten($brand-primary, 5%);
+    @include background-image(radial-gradient(lighten($brand-primary, 5%), $brand-primary));
+    @include box-shadow(inset rgba(0, 0, 0, .6) 0px 0px 10px);
+    color: white;
+
+    a {
+        color: $white;
+    }
+
+    h1 {
+        color: $white;
+    }
+
+    .lead {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .brought-by {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-weight: 200;
+    }
+}
+
+.section.about {
+
+    h2 {
+        text-align: center;
+    }
+
+    h2 + p {
+        text-align: center;
+        font-weight: 300;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: -8px;
+    }
+
+    p > .btn {
+        margin-top: 14px;
+    }
+
+    .thumbnails {
+        margin-bottom: 0;
+        list-style-image: none;
+        list-style-type: none;
+        margin-left: 0px; 
+        padding:0;
+
+        .thumbnail {
+            line-height:100px;
+            height: 112px;
+            text-align:center;
+            @include background-image(radial-gradient($white, #F8F8F8));
+
+            img {
+                display: inline;
+                max-height: 80%;
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+.section.blog {
+    h2 { font-size: $font-size-base * 1.8; margin-top: 20px; }
+    h3 { font-size: $font-size-base * 1.4; }
+
+    img {
+        @inluce border-radius(5px);
+    }
+
+    .page-header {
+        margin-bottom: 10px;
+        border-bottom: 0 none;
+        text-align: center;
+        h1 { font-size: $font-size-base * 1.8; line-height: $line-height-base * 1.8; margin: 0; }
+    }
+
+    .posts .post {
+        a.more-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+
+    .sidebar {
+        margin-top: 30px;
+    }
+
+    .alignright {
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .alignleft {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.section.footer {
+    @include background-image(radial-gradient(lighten($brand-primary, 5%), $brand-primary));
+    @include box-shadow(inset rgba(0, 0, 0, .3) 0px 3px 3px);
+    border: 1px solid $navy;
+    margin-top: 40px;
+
+    .container {
+        font-size: 80%;
+        color: $white;
+        padding-top: 12px;
+
+        a {
+            color: $white;
+        }
+
+        .copyright {
+            text-align: right;
+        }
+    }
+}
+
+/* Customize the navbar links to be fill the entire space of the .navbar */
+
+.navbar .container-fluid {
+    padding: 0;
+}
+
+
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    padding:0;
+}
+
+.navbar-nav {
+    border: 1px solid darken($navbar-default-bg, 12%);
+    border-radius: 4px;
+    overflow:hidden;
+}
+
+
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    border-left: 1px solid rgba(255,255,255,.75);
+    border-right: 1px solid rgba(0,0,0,.1);
+    background-color: darken($navy, 5%);
+    padding:0;
+    line-height: 30px;
+}
+.navbar .nav li:first-child a {
+    border-left: 0;
+    
+}
+.navbar .nav li:last-child a {
+    border-right: 0;
+    
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a, .nav > li > a:focus {
+text-decoration: none;
+background-color: lighten($navy, 10%);
+}
+
+.container {
+    max-width: 750px;
+}
+
+
+
+

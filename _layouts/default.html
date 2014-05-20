@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="/assets/css/default.css"> 
     <script type="text/javascript" src="//use.typekit.net/eow5fmw.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
 </head>
 <body>
 
 <div id="wrapper">
     <div class="section header">
-        <div class="container">
+        <div class="container container-centered">
             <div class="row">
-                <div class="brand span6">
+                <div class="brand col-sm-6">
                     <a href="http://www.nooku.org"><img src="/assets/img/logo.jpg" height="60px" width="123px" /></a>
                 </div>
-                <div class="span6">
-                    <div class="navbar">
-                        <div class="navbar-inner">
-                            <ul class="nav">
+                <div class="col-sm-6">
+                    <div class="navbar" role="navigation">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
                                 {% for link in site.navigation %}
                                 <li {% if link.active == page.url %}class="active"{% endif %}>
                                     <a href="{{ link.url }}">{{ link.text }}</a>
@@ -39,7 +40,7 @@
     </div>
 
     <div class="section teaser text-center">
-        <div class="container">
+        <div class="container container-centered">
             <h1>Create web applications with less code</h1>
             <p class="lead">By drastically reducing the amount of code you need to write,
                 Nooku helps you to create powerful web applications easily.
@@ -54,7 +55,7 @@
     <div class="section footer">
         <div class="container">
             <div class="row">
-                <div class="span6">
+                <div class="col-sm-6">
                     <p>
                         <a href="http://www.facebook.com/nooku.org">Facebook</a> |
                         <a href="http://www.twitter.com/nooku">Twitter</a> |
@@ -62,7 +63,7 @@
                         <a href="http://feeds.nooku.org/blog">RSS</a>
                     </p>
                 </div>
-                <div class="copyright span6">
+                <div class="copyright col-sm-6">
                     <p>Copyright {{ 'now' | date: "%Y" }} <a href="http://www.timble.net">Timble</a></p>
                 </div>
             </div>

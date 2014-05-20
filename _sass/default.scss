@@ -1,3 +1,9 @@
-body {
-  background-color: red;
+@import "variables";
+@import "bootstrap";
+@import "compass";
+@import "theme";
+
+/* Landscape phones and down */
+@media (max-width: 767px) {
+@import "responsive-small";
 }
