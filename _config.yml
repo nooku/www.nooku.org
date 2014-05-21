@@ -10,3 +10,4 @@ navigation:
 - text: Blog
   url: /blog
   active: /blog/index.html
+  active: /2013/
