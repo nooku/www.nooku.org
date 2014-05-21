@@ -1,0 +1,69 @@
+<p><a href="http://www.flickr.com/photos/nooku/5277164965/" title="MySQL Logo by Nooku, on Flickr"><img class="alignright" src="http://farm6.static.flickr.com/5288/5277164965_e437f0f216_m.jpg" alt="MySQL Logo" width="192" height="107" /></a> As some would be aware we have been working on a multi-site installation of Joomla! that is running in excess of 130 sites for the Belgium Police. Needless to say performance is paramount hence we have spent a considerable amount of time researching and deploying the right server technologies. This has included the use of <a href="http://nginx.org/">Nginx</a> rather than <a href="http://httpd.apache.org/">Apache</a>, <a href="http://pecl.php.net/package/APC">APC</a> for opcode caching and a little gem in <a href="http://www.mysql.com/">MySQL</a> called query_cache.</p>
+
+<p>Query cache is something that to my knowledge only existed in MySQL until Oracle released 11g. It’s not the same as the caching historically found in Oracle and Microsoft SQL, both of which would cache the method/procedure but not the result set.</p>
+
+<p>MySQL’s query cache is a must have configuration which is as simple to configure as to allocate it with some memory. To see if you’re already running it try this in command line…</p>
+
+<!--more-->
+
+<p><code>mysql&gt; show variables like 'query_cache_size';&lt;br /&gt;
++------------------------+---------------+&lt;br /&gt;
+| Variable_name          | Value         |&lt;br /&gt;
++------------------------+---------------+&lt;br /&gt;
+| query_cache_size       | 0             |&lt;br /&gt;
++------------------------+---------------+&lt;br /&gt;
+1 row in set (0.00 sec)</code></p>
+
+<p>As the value is 0 we are not running query cache. To get it running we need to change the size (allocating it an amount of memory. For example to set the cache size to 250M we would could do it via the command line with…</p>
+
+<p><code>mysql&gt; set global query_cache_size=250000000;</code></p>
+
+<p>Now we check again and find…</p>
+
+<p><code>mysql&gt; show variables like 'query_cache_size';</code></p>
+
+<p><code> </code></p>
+
+<p><code>+------------------------+--------------------+&lt;br /&gt;
+| Variable_name          | Value              |&lt;br /&gt;
++------------------------+--------------------+&lt;br /&gt;
+| query_cache_size       | 249999360          |&lt;br /&gt;
++------------------------+--------------------+&lt;br /&gt;
+1 row in set (0.00 sec)</code></p>
+
+<p>Once that has been set we can immediately see some results like so…</p>
+
+<p><code>mysql&gt; show status like 'qc%';&lt;br /&gt;
++------------------------------------+------------------+&lt;br /&gt;
+| Variable_name                      | Value            |&lt;br /&gt;
++------------------------------------+------------------+&lt;br /&gt;
+| Qcache_free_blocks                 | 8                |&lt;br /&gt;
+| Qcache_free_memory                 | 245510216        |&lt;br /&gt;
+| Qcache_hits                        | 2428147          |&lt;br /&gt;
+| Qcache_inserts                     | 1313269          |&lt;br /&gt;
+| Qcache_lowmem_prunes               | 273914           |&lt;br /&gt;
+| Qcache_not_cached                  | 247762           |&lt;br /&gt;
+| Qcache_queries_in_cache            | 602              |&lt;br /&gt;
+| Qcache_total_blocks                | 1519             |&lt;br /&gt;
++------------------------------------+------------------+&lt;br /&gt;
+8 rows in set (0.00 sec)</code></p>
+
+<p>The important bits…</p>
+
+<ul>
+  <li><strong>Qcache_hits</strong>: number of times queries have been served from the cache.</li>
+  <li><strong>Qcache_inserts</strong>: number of queries that have been inserted into the cache.</li>
+  <li><strong>Qcache_lowmem_prunes</strong>: queries that have been removed from cache to provide space for new cached queries. If this is high it is an indication that you should increase your memory allocation.</li>
+  <li><strong>Qcache_not_cached</strong>: number of queries that were not cacheable.</li>
+</ul>
+
+<p>In this example query_cache was originally running with a mere 20M of memory allocated hence the high number of prunes. More recently memory was increased to 250M with the result that prunes have pretty much stopped.</p>
+
+<p>Also interesting is the number of queries unable to be cached. Whilst only SELECT queries are cached they can be made non-cacheable through the use of certain functions such as CURRENT_DATE. Additionally only 100% identical queries are served from the cache, this includes things such as case and use of spaces.</p>
+
+<p>For bigger projects performance is key. With <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">Nooku Server</a> we are working on optimizing the Joomla 1.5 core queries to improve the query cache hit rate. If you are a Joomla!’s extension developer who want’s to play in the big league make sure to read up on how query cache works and test your queries to make sure they are cacheable. It really can make a huge difference in the performance of your extension.</p>
+
+<p>Happy coding !</p>
+
+<p>Update 20/12/2010 : The peeps at <a href="http://twitter.com/#!/joomlaworks">@joomlaworks</a> twitted about their optimized configuration file for MySQL. You can find it here : <a href="http://snipt.net/fevangelou/optimised-mycnf-configuration/">http://snipt.net/fevangelou/optimised-mycnf-configuration/</a> Thanks !</p>
+

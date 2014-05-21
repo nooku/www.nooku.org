@@ -8039,52 +8039,59 @@ blockquote p {
 .section.blog h2 {
   font-size: 27px;
   margin-top: 20px;
+  text-align: left;
 }
 /* line 122, ../../_sass/_theme.scss */
 .section.blog h3 {
-  font-size: 21px;
+  font-size: 15px;
+  line-height: 10px;
+  margin-bottom: 28px;
 }
 /* line 124, ../../_sass/_theme.scss */
 .section.blog img {
   @inluce border-radius(5px);
 }
 /* line 128, ../../_sass/_theme.scss */
+.section.blog .btn {
+  margin-top: 10px;
+}
+/* line 132, ../../_sass/_theme.scss */
 .section.blog .page-header {
   margin-bottom: 10px;
   border-bottom: 0 none;
   text-align: center;
 }
-/* line 132, ../../_sass/_theme.scss */
+/* line 136, ../../_sass/_theme.scss */
 .section.blog .page-header h1 {
   font-size: 27px;
   line-height: 2.5714285722;
   margin: 0;
 }
-/* line 136, ../../_sass/_theme.scss */
+/* line 140, ../../_sass/_theme.scss */
 .section.blog .posts .post a.more-link {
   display: block;
   margin-top: 30px;
   text-align: center;
   padding: 10px 0;
 }
-/* line 144, ../../_sass/_theme.scss */
+/* line 148, ../../_sass/_theme.scss */
 .section.blog .sidebar {
   margin-top: 30px;
 }
-/* line 148, ../../_sass/_theme.scss */
+/* line 152, ../../_sass/_theme.scss */
 .section.blog .alignright {
   float: right;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-/* line 154, ../../_sass/_theme.scss */
+/* line 158, ../../_sass/_theme.scss */
 .section.blog .alignleft {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-/* line 161, ../../_sass/_theme.scss */
+/* line 165, ../../_sass/_theme.scss */
 .section.footer {
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #096ac5), color-stop(100%, #085dad));
   background-image: -webkit-radial-gradient(#096ac5, #085dad);
@@ -8097,28 +8104,28 @@ blockquote p {
   border: 1px solid #06437c;
   margin-top: 40px;
 }
-/* line 167, ../../_sass/_theme.scss */
+/* line 171, ../../_sass/_theme.scss */
 .section.footer .container {
   font-size: 80%;
   color: white;
   padding-top: 12px;
 }
-/* line 172, ../../_sass/_theme.scss */
+/* line 176, ../../_sass/_theme.scss */
 .section.footer .container a {
   color: white;
 }
-/* line 176, ../../_sass/_theme.scss */
+/* line 180, ../../_sass/_theme.scss */
 .section.footer .container .copyright {
   text-align: right;
 }
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
-/* line 184, ../../_sass/_theme.scss */
+/* line 188, ../../_sass/_theme.scss */
 .navbar .container-fluid {
   padding: 0;
 }
 
-/* line 189, ../../_sass/_theme.scss */
+/* line 193, ../../_sass/_theme.scss */
 .navbar .nav li {
   display: table-cell;
   width: 1%;
@@ -8126,14 +8133,14 @@ blockquote p {
   padding: 0;
 }
 
-/* line 196, ../../_sass/_theme.scss */
+/* line 200, ../../_sass/_theme.scss */
 .navbar-nav {
   border: 1px solid #021629;
   border-radius: 4px;
   overflow: hidden;
 }
 
-/* line 203, ../../_sass/_theme.scss */
+/* line 207, ../../_sass/_theme.scss */
 .navbar .nav li a {
   font-weight: bold;
   text-align: center;
@@ -8145,23 +8152,23 @@ blockquote p {
   line-height: 30px;
 }
 
-/* line 213, ../../_sass/_theme.scss */
+/* line 217, ../../_sass/_theme.scss */
 .navbar .nav li:first-child a {
   border-left: 0;
 }
 
-/* line 217, ../../_sass/_theme.scss */
+/* line 221, ../../_sass/_theme.scss */
 .navbar .nav li:last-child a {
   border-right: 0;
 }
 
-/* line 222, ../../_sass/_theme.scss */
+/* line 226, ../../_sass/_theme.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a, .nav > li > a:focus {
   text-decoration: none;
   background-color: #085dad;
 }
 
-/* line 227, ../../_sass/_theme.scss */
+/* line 231, ../../_sass/_theme.scss */
 .container {
   max-width: 750px;
 }

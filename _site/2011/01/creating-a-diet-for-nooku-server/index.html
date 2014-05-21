@@ -1,0 +1,80 @@
+<p><a href="http://www.flickr.com/photos/nooku/5342270399/" title="Nooku Server Diet by Nooku, on Flickr"><img class="alignright" style="margin-left: 10px; margin-right: 10px;" src="http://farm6.static.flickr.com/5247/5342270399_f6c6f84d3e_m.jpg" alt="Nooku Server Diet" width="160" height="240" /></a></p>
+
+<p>A little over a month ago we <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">announced our plans for Nooku Server</a>, a multi-site Joomla 1.5 distribution. Before starting to integrate new features in Nooku Server we are giving the Joomla core a thorough code, features and performance review.</p>
+
+<p><strong>Joomla 1.5 core feature survey</strong>. To get a better idea of the features used, or more importantly not used in Joomla 1.5, we did a <a href="http://blog.nooku.org/2010/12/putting-nooku-server-on-a-diet/">little survey</a> with very interesting results. Almost 250 people filled it out, big thanks to all of you who did!</p>
+
+<h3 id="results">Results</h3>
+
+<h4 id="which-joomla-core-features-do-you-use-">1. Which Joomla core features do you use ?</h4>
+
+<p>You can find the result <a href="https://joomlatools.wufoo.com/reports/nooku-server-features-to-remove/">here</a>. If we would apply the <a href="http://en.wikipedia.org/wiki/Pareto_principle">80/20 rule </a> the only feature that you really need and use is ‘<strong>Content</strong>’. All the rest of the core features is used less then 80%. If we turn the 80/20 rule around and we check which features are used at least by 20% of you, we get the following list:</p>
+
+<ol>
+  <li>82% – Content</li>
+  <li>68% – Search</li>
+  <li>46% – Contacts</li>
+  <li>34% – TinyMCE</li>
+  <li>32% – PDF rendering</li>
+  <li>29% – XML-RPC support</li>
+  <li>28% – Newsfeeds</li>
+  <li>22% – Banners</li>
+</ol>
+
+<p>Still an interesting list. You are not using LDAP, Gmail or the XStandard editor at all. You also don’t use any of the core site templates, nor do you require build in help.</p>
+
+<h4 id="what-is-the-number-one-feature-you-are-missing-in-the-joomla-core-">2. What is the number one feature you are missing in the Joomla core ?</h4>
+
+<p>You can find the result <a href="https://joomlatools.wufoo.com/reports/nooku-server-features-to-add/">here</a>. If we look at the features you are missing most we get the following top 3:</p>
+
+<ol>
+  <li>20% – Multi-site</li>
+  <li>18% – Improved permissions</li>
+  <li>13% – Multi-lingual support</li>
+</ol>
+
+<p>The most interesting is that improved permissions, which is the major new feature for Joomla 1.6, is not the most needed feature. Instead most of you are looking for multi-site support.</p>
+
+<p>Based on the results of both questions we can conclude that what you really need is not a CMS but instead you are looking for a <strong>flexible, customisable, multi-site and multi-lingual web application platform</strong>. And that’s exactly what we are going to build!</p>
+
+<!--more-->
+
+<h3 id="nooku-servers-diet">Nooku Server’s diet</h3>
+
+<p>Based on the survey results we have defined a nice diet for Nooku Server which has the following key ingredients:</p>
+
+<ol>
+  <li>
+    <p><strong>Core extensions</strong>: All the components, plugins and templates that didn’t made it into our list will be removed. The only one we are rescuing, for now, is weblinks. In Joomla 1.5 we used weblinks as an example component and for Nooku Server it will serve the same roll. It will be the first core component that gets refactored to use <a href="http://www.nooku.org/framework.html">Nooku Framework</a> instead of Joomla Framework.</p>
+  </li>
+  <li>
+    <p><strong>Uninstall any component</strong>: We are going to make it easy to un-install any component, even the Content component. So if you don’t need it, you can just remove it.</p>
+  </li>
+  <li>
+    <p><strong>REST over XML-RPC</strong>: PDF rendering and XML-RPC support did made it into our list, both have been removed in Joomla 1.6 already and we are going to do the same. Nooku Framework is using a RESTful architecture. REST will be the RPC of choice over XML-RPC.</p>
+  </li>
+  <li>
+    <p><strong>Legacy and system requirements</strong>: Legacy support for Joomla 1.0 and PHP4 will be removed, in favor of native support for Joomla 1.5 and PHP5.2+.</p>
+  </li>
+  <li>
+    <p><strong>Mootools 1.2</strong>: Mootools will be upgrade to 1.2 and we are also including the compatibility layer to maintain compatibility with Joomla 1.5.</p>
+  </li>
+  <li>
+    <p><strong>Security</strong>: All assets (css,js,images) will be moved to the media folder. This will allow us to run Nooku Server below http root which is a big security benefit and a best practice.</p>
+  </li>
+  <li>
+    <p><strong>Libraries</strong>: Legacy libraries (patTemplate, DOMit, phpinputfilter, geshi, feedcreator, … ) will be removed.</p>
+  </li>
+  <li>
+    <p><strong>Performance</strong>: We are going to make some smaller performance improvements. For example, hit support in Content and Weblinks will be removed to allow for <a href="http://blog.nooku.org/2010/12/mysql-query-cache/">MySQL cache</a> to be used on those database tables.</p>
+  </li>
+  <li>
+    <p><strong>Caching</strong>: Caching was never really implemented properly in Joomla 1.5, in Nooku Server we are going to port improvements done in Joomla 1.6 to improve caching support and overall performance.</p>
+  </li>
+  <li>
+    <p><strong>Administrator template</strong>: We are going to give the administrator template some love to improve usability and workflow.</p>
+  </li>
+</ol>
+
+<p>That’s it, time to get coding! Interested in helping out? Don’t hesitate to <a href="http://www.nooku.org/about/contact.html">send us a mail</a> or post on the Nooku Framework <a href="http://groups.google.com/group/nooku-framework">mailing list</a>.</p>
+

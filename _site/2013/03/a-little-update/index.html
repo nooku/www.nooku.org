@@ -1,0 +1,74 @@
+<p>It has been a little bit quiet in the past months on the blog. Some rumoured that Nooku is death, others claimed we moved to Mars, … in good Nooku tradition no news is good news! Stick to the code, right?!</p>
+
+<p>Those of you who followed us closely have noticed the <a href="https://www.ohloh.net/p/nooku">constant stream of progress at lightning speed</a>. Anything slower, is simply not fast enough.</p>
+
+<p>Here is a little big update right from the coding frontline. Make yourself a coffee, get a beer, sit back relax. Here we go!</p>
+
+<h2 id="git8217-ting-it">‘Git’-ting it</h2>
+
+<p>The Nooku code base has been moved to <a href="http://git-scm.com/">Git</a> at the beginning of the year. The SVN repositories are abandoned. They are probably invested with vermin, bugs, and other little unwanted creatures. Lights have been turned off, go there on your own accord. You have been warned!</p>
+
+<p>The Nooku codebase has been brought back to onto 2 spaces on Assembla: <a href="http://nooku.assembla.com/spaces/nooku-framework">Nooku Framework</a> &amp; <a href="http://nooku.assembla.com/spaces/nooku-server">Nooku Server</a>.<br />
+<!--more--></p>
+
+<h3 id="nooku-framework">Nooku Framework</h3>
+
+<p>The Nooku Framework space now combines the Nooku Framework, Nooku Components &amp; Nooku Server codebases.</p>
+
+<p>The <a href="https://www.assembla.com/spaces/nooku-components">Nooku Components</a> repository is closed down and will be removed later this year.</p>
+
+<p>All development is now being done in the Nooku Framework space and its <a href="https://nooku.assembla.com/code/nooku-framework/git/nodes">Git repository</a>. If you want to keep up, this is the place to be. Development is happening in the <a href="https://nooku.assembla.com/code/nooku-framework/git/nodes/develop">develop branch</a>. This will become the 13.1 release later this year.</p>
+
+<p>Manual installation instructions for Nooku Framework can be found in the <a href="https://nooku.assembla.com/code/nooku-framework/git/nodes/develop/README.md">README</a>. Not for the faint of hearted.</p>
+
+<p><a href="http://nooku.assembla.com/spaces/nooku-framework">http://nooku.assembla.com/spaces/nooku-framework</a></p>
+
+<h3 id="nooku-server">Nooku Server</h3>
+
+<p>The Nooku Server space now hosts a little-big-side-project we have been working on for quite some time. Drumroll! A LNMP (Linux, Nginx, Mysql and PHP) <a href="http://www.vagrantup.com/">Vagrant</a> box. Nooku Server is a now a lightweight, reproducible, and portable development environment for Nooku Framework projects. Hurray!</p>
+
+<p>Setup is <a href="https://nooku.assembla.com/code/nooku-server/git/nodes/master/README.md">death easy</a>! What you get is a fully working multi-PHP (5.3 and 5.4) server for all your local Nooku development. Fully provisioned using <a href="https://puppetlabs.com/">Puppet</a>, with lot’s of other goodies : <a href="http://www.phpunit.de/">PHPUnit</a>, <a href="http://getcomposer.org/">Composer</a>, <a href="http://xdebug.org/">XDebug</a>, <a href="http://lesscss.org/">LESS</a>, <a href="https://scrutinizer-ci.com/docs/tools/php/php-analyzer/">PHPAnalyser</a>, <a href="http://www.percona.com/">Percona</a>, …</p>
+
+<p>Advantage of using Nooku Server is that everyone is running the exact same setup. In a next step we will make the Puppet provisioning scripts available so you can easily boot up your own servers on <a href="http://aws.amazon.com/">AWS</a>, <a href="http://rackspace.com/">Rackspace</a> etc.</p>
+
+<p>The Nooku Server repository is not related to Nooku Framework. The Nooku Server master branch is currently configured to work with the Nooku Framework develop branch.</p>
+
+<p><a href="http://nooku.assembla.com/spaces/nooku-server">http://nooku.assembla.com/spaces/nooku-server</a></p>
+
+<h2 id="release-pivot">Release pivot</h2>
+
+<p>In 2012 we <a href="http://blog.nooku.org/2012/01/onward-to-2012/#more-2136">set out with the idea to release 3 versions</a> 12.1, 12.2 and 12.3. And so, we did. Well kinda. We learned that doing 3 releases a year is possible but hard with all the changes going on. Change of plans for 2013, or in startup terms, let’s pivot (just a tiny bit).</p>
+
+<ul>
+  <li>We are not tagging the 12.2 and 12.3 releases. The 12.2 release can be found in the Git master branch and is ready but not properly tested, probably will have smaller bugs. Use at your own risk.</li>
+  <li>We are jumping straight to the 13.1 release. This will be the only major release for 2013, targeting April for a merge to the master branch to stabilise and bug fix. We might (probably will) have a 13.2 release but this will be a bug fix release only.</li>
+</ul>
+
+<h2 id="sparking-joomla">Sparking Joomla</h2>
+
+<p>Our 12.1 release was the last release that is compatible with Joomla. Time has come to stand on our own two feet. With the 13.1 release our refactoring effort will be completed. Three packages are left to be sparked: JCache, JParameter and JLanguage. Forward we go!</p>
+
+<h2 id="everything-is-a-component">Everything is a Component</h2>
+
+<p>After “Stick to the Code”, a new rule is born with 13.1: “Everything is a Component”! No more plugins, modules, … or any other lower order extension types, everything is now refactored to be or be part of a component!</p>
+
+<p>Components will contain re-usable code, either base functionality which can be extended upon, or as part of an application package.</p>
+
+<p>However, component refactoring is not completed yet. Re-usable component code still needs to be moved and namespaces need to be added. As of writing of this post we are 90% done with this.</p>
+
+<p>As you can already guess having all the component code inside one folder opens up a lot of exciting possibilities: will make installing components using Composor easy, allows for using git submodules, and allow for distributing components as PHAR packages. Oh yes that too!</p>
+
+<h2 id="enough-talk">Enough talk</h2>
+
+<p>I hear y’all thinking, all fine and dandy but just show me the goods already. We got that covered! Our demo site has been updated to run from the develop branch. Refreshed hourly and updated daily with new and fresh code.</p>
+
+<p>Go to: <a href="http://demo.nooku.org">http://demo.nooku.org</a> (frontend login is not yet working), you can login to <a href="http://demo.nooku.org/administrator">http://demo.nooku.org/administrator</a> (admin@localhost.home::admin). Enjoy!</p>
+
+<p>Warning, Nooku is about cutting edge technologies. Our administrator interface is built on top of the webkit rendering engine. Non-webkit browsers are not supported, <a href="www.google.com/chrome">Chrome</a> is advised.</p>
+
+<h2 id="pirates-code">Pirates code</h2>
+
+<p>“The code is more what you’d call “guidelines” than actual rules”. So to help sail you pirates along Captain Oli has started “Nooku Guides” and is writing some code guides for Nooku developers. We are hosting this on our Github account, fork away!</p>
+
+<p><a href="https://github.com/nooku/nooku-guides">http://github.com/nooku/nooku-guides</a></p>
+

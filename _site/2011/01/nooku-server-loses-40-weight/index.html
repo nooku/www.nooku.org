@@ -1,0 +1,63 @@
+<p><a href="http://www.flickr.com/photos/nooku/5401534476/" title="40% code reduction for Nooku Server by Nooku, on Flickr"><img class="alignright" src="http://farm6.static.flickr.com/5017/5401534476_9bfe4c4906_m.jpg" alt="40% code reduction for Nooku Server" width="240" height="180" /></a> Last December we <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">announced our plans for Nooku Server</a>, a multi-site and multi-lingual distribution of Joomla 1.5. With the <a href="http://blog.nooku.org/2010/12/putting-nooku-server-on-a-diet/">help of our community</a> we created a <a href="http://blog.nooku.org/2011/01/creating-a-diet-for-nooku-server/">diet for Nooku Server</a> and <a href="http://blog.nooku.org/2011/01/a-roadmap-for-nooku-server/">defined a roadmap</a>.</p>
+
+<p>For the first alpha we are focusing on implementing the key ingredients of our diet. Most of the work involves removing legacy code, legacy libraries and doing clean-up. In the past weeks we have been making steady progress.</p>
+
+<ul>
+  <li><strong>Core extensions</strong>: All the components, plugins and templates that didn’t made it into our list have been removed</li>
+  <li><strong>XML-RPC</strong>: XML-RPC support has been removed</li>
+  <li><strong>PDF</strong>: PDF support has been removed</li>
+  <li><strong>Legacy:</strong> Legacy support for Joomla 1.0 and PHP4 has been removed</li>
+  <li><strong>Security</strong>: All assets (css,js,images) have been moved to the media folder</li>
+  <li><strong>Libraries</strong>: Legacy libraries have been removed</li>
+  <li><strong>Performance</strong>: Hit support in Content and Weblinks has been removed</li>
+  <li><strong>Mootools</strong>: Mootools has been upgraded to 1.2  including the compatibility layer</li>
+  <li><strong>Framework</strong>: Nooku Framework has been added</li>
+</ul>
+
+<p>With most of the refactoring completed it’s time to weigh the result. I have done a code count today to compare the code bases of Joomla 1.0, 1.5, 1.6 and Nooku Server. I used <a href="http://www.ohloh.net/p/ohcount">Ohcount</a>, a little command line tool that is also used by <a href="http://www.ohloh.net/">Ohloh</a> to do code counting.</p>
+
+<p>We have made Nooku Server a whooping <strong>40% lighter</strong> in code size. Yes, you read that right, we removed 40% code and we added a whole new framework at the same time.</p>
+
+<p>Here are the detailed results:</p>
+
+<!--more-->
+
+<h3 id="total-code-count">1. Total code count</h3>
+
+<p><a href="http://www.flickr.com/photos/nooku/5401437534/" title="Total code count by Nooku, on Flickr"><img src="http://farm6.static.flickr.com/5059/5401437534_6f4d68c469.jpg" alt="Total code count" width="500" height="304" /></a></p>
+
+<p>Comparing the overall code count (php, javascript, html, css, xml) of Nooku Server with Joomla 1.5 or 1.6 we are getting a whooping <strong>+/- 45% code loss</strong>. Or almost ½ of the total code has been removed to make Nooku Server leaner and meaner.</p>
+
+<h3 id="total-code-count-8211-php">2. Total code count – PHP</h3>
+
+<p>The total code comparison isn’t 100% fair as we also removed most of the frontend templates, only milkyway is still left, in Nooku Server. To be fair, let’s also compare only the PHP code. This is giving the following graph :</p>
+
+<p><a href="http://www.flickr.com/photos/nooku/5401437582/" title="Total code count - PHP by Nooku, on Flickr"><img src="http://farm6.static.flickr.com/5094/5401437582_588bf5f00e.jpg" alt="Total code count - PHP" width="500" height="296" /></a></p>
+
+<p>Compared with 1.5: <strong>45% less code</strong><br />
+Compared with 1.6: <strong>40% less code</strong></p>
+
+<p>We need to add here that Nooku Server includes Nooku Framework which has approx 10.000 lines of PHP code, if we would remove Nooku Framework  the difference would even be bigger and go <strong>over 50%</strong>.</p>
+
+<h3 id="comments-percentage">3. Comments percentage</h3>
+
+<p>Another useful comparison to make is the amount of code comments. Code comments give an idea about how well the code is documented which is a measure of code quality. Again we only compare comment percentages in the PHP code.</p>
+
+<p><a href="http://www.flickr.com/photos/nooku/5400837217/" title="Code comments percentage - PHP by Nooku, on Flickr"><img src="http://farm6.static.flickr.com/5134/5400837217_ecc4c82c8b.jpg" alt="Code comments percentage - PHP" width="500" height="298" /></a></p>
+
+<p>Looking at this graph we see an slight decrease in code comments from 1.0 to 1.5, for 1.6 the amount of comments have been increased, Nooku Server is definitly in the lead.</p>
+
+<p>We take alot of care in adding code comments to Nooku Framework and are constanly improving our code comments and in code documentation.</p>
+
+<h3 id="total-code-count-by-type">4. Total code count by type</h3>
+
+<p><a href="http://www.flickr.com/photos/nooku/5400837045/" title="Total code count by type by Nooku, on Flickr"><img src="http://farm6.static.flickr.com/5291/5400837045_47707cde89.jpg" alt="Total code count by type" width="500" height="277" /></a></p>
+
+<p>A more detailed overview of the code count per type for each of the packages. You noticed that Joomla 1.6 is roughly the same size as 1.5 even a little bigger with the added templates.</p>
+
+<p>Nooku Server on the other hand is a lot leaner and meaner and is moving in the direction of the size of Joomla 1.0, while adding alot more power through the inclusion of the Nooku Framework.</p>
+
+<p>So far our little diet is coming along pretty well. We will see a slight code increase again when we start adding the multi-site and multi-lingual features but we will also start refactoring components to Nooku Framework which in turn should also reduce the overall size. I will update the graphs after each alpha so you get an idea how to code size evolves over time.</p>
+
+<p>Note: An interactive spreadsheet with the actual data and graphs can also be <a href="https://spreadsheets.google.com/a/timble.net/pub?key=0AgIxulljZEpYdEROV01sNEVqXzRiLXQ1QU9ZQmZzdGc&amp;hl=en&amp;single=true&amp;gid=5&amp;output=html">found here</a>.</p>
+

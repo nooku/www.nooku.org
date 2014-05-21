@@ -1,0 +1,51 @@
+<p>It’s has been a bit quiet on our Nooku blog in the past weeks. We have been working very hard to get Nooku 0.7 Alpha 3 ready for release. Today I’m both proud and excited to let you know that <strong>Alpha 3</strong> has been officially tagged in all our repositories on the <a href="http://code.nooku.org">Nooku Developer Portal</a>.</p>
+
+<h3 id="celebrating-2000-commits">Celebrating 2000 commits</h3>
+
+<p>This third alpha is our biggest release so far. In only <strong>12 weeks</strong> <strong>2000 commits</strong> where made by not less then <strong>13 developers</strong> from all over the world.</p>
+
+<p>For Nooku Server specifically we made more then 1200 commits, surpassing the 2000 commit mark. That’s <strong>3x more</strong> then the previous two alpha’s who had a total of 400 commits each. Divided by 12 weeks that’s an average of <strong>100 commits/week, or 15 commits a day</strong>! Simply amazing!<br />
+<!--more--></p>
+
+<h3 id="overview-of-the-changes">Overview of the changes</h3>
+
+<p>The progress made in this release is mind blowing. We closed more then <strong>40 tickets</strong> spread over the different spaces. It’s impossible to fit all the changes in one blog post. I’ll give you some of my personal highlights:</p>
+
+<h4 id="code-refactoring">1. Code refactoring</h4>
+
+<p>We added a <strong>new ajax driven file manager</strong>, called com_files. Build from the ground-up and fully re-usable. Use it to add file management to your own Nooku powered extensions with just a few lines of code! On top of that the file manager exposes a REST API. Need to build your own Amazon S3, Rackspace Files, Dropbox? No problem we got it covered.</p>
+
+<h4 id="user-interface">2. User interface</h4>
+
+<p>We gave the administrator template a complete overhaul. Implemented <a href="http://www.html5rocks.com/en/tutorials/flexbox/quick/">CSS3 Flexbox</a>, added smart toolbars, client side form validation, improved pagination and inline table scrolling. And that’s not all. Most components now have a sidebar to easily select categories, groups, … and a filter bar to easily filter the items in the table. You don’t have to believe my words, <a href="http://www.flickr.com/photos/nooku/sets/72157627021171180/">check it yourself</a>.</p>
+
+<h4 id="rest">3. REST</h4>
+
+<p>Nooku Framework now implements a <a href="http://martinfowler.com/articles/richardsonMaturityModel.html#level2">ROA (Resource Oriented Architecture) of level 2</a>. Every component build on Nooku Framework is auto-magically ROA level 2. Extra lines of code needed : zero, zip, none! It just works. We improved the authentication and implemented proper 401 status code handling. You want to build a web service? Check!</p>
+
+<h4 id="performance">4. Performance</h4>
+
+<p>We added language, template and database schema caching and worked on an intelligent (still experimental) component output cache behavior. Initial tests show a 300% performance increase if we turn it on.</p>
+
+<h4 id="compatibility">5. Compatibility</h4>
+
+<p>We made compatibility improvements for Mootools 1.3 and for Joomla 1.6 and 1.7. Components build on Nooku Framework Alpha 3 will work with Joomla versions 1.5 – 1.7. Neat huh!</p>
+
+<p>Full list of changes can be found here:</p>
+
+<ul>
+  <li><a href="https://nooku.assembla.com/spaces/nooku-server/milestones/331383-0-7-alpha-3"> Nooku Server Alpha 3 milestone</a></li>
+  <li><a href="https://nooku.assembla.com/spaces/nooku-framework/milestones/377677-0-7-alpha-3">Nooku Framework Alpha 3 milestone</a></li>
+  <li><a href="https://nooku.assembla.com/spaces/nooku-components/milestones/377685-0-7-alpha-3">Nooku Components Alpha 3 milestone</a></li>
+</ul>
+
+<h3 id="what8217s-happening-next">What’s happening next?</h3>
+
+<p>We need at least one more alpha to completely refactor all the components in Nooku Server to Nooku Framework. There are also a number of outstanding issues (query handling, factory performance, …) that need to be dealt within Nooku Framework.</p>
+
+<p>Our contributors did an amazing job for alpha 3 and we want to keep this up for alpha 4. I have already <a rel="nofollow" href="http://www.google.com/url?sa=D&amp;q=https://nooku.assembla.com/spaces/nooku-server/tickets">created a list of tickets</a> for alpha 4 that we definitely want to tackle.</p>
+
+<p>If you want to contribute you can take one of the tickets that is still open or you can collaborate on one of the tickets that is in progress. If you have an idea on something not in the list get in touch! We love crazy ideas!</p>
+
+<p>Happy coding!</p>
+

@@ -118,11 +118,15 @@ blockquote p {
 }
 
 .section.blog {
-    h2 { font-size: $font-size-base * 1.8; margin-top: 20px; }
-    h3 { font-size: $font-size-base * 1.4; }
+    h2 { font-size: $font-size-base * 1.8; margin-top: 20px; text-align: left;}
+    h3 { font-size: $font-size-base * 1; line-height:10px; margin-bottom: 28px; }
 
     img {
         @inluce border-radius(5px);
+    }
+
+    .btn {
+        margin-top:10px;
     }
 
     .page-header {

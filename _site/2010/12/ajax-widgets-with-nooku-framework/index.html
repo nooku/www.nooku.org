@@ -1,0 +1,49 @@
+<p>We have been claiming for quite a while now that Nooku Framework helps you to write less code. A lot less! So time to put our money where our mouth is and show you a little example.</p>
+
+<p><a href="http://www.flickr.com/photos/nooku/5221979616/" title="Part of the Harbour Dashboard by Nooku, on Flickr"><img src="http://farm6.static.flickr.com/5010/5221979616_c96473e5fa.jpg" alt="Part of the Harbour Dashboard" width="500" height="286" /></a></p>
+
+<p>Today’s topic: Building an AJAX widget with just a few lines of code, actually just one line. We will be using a new simple technique called overlays. You don’t believe me? Watch and learn!<br />
+<!--more--></p>
+
+<h3 id="what-are-overlays">What are Overlays?</h3>
+
+<p>Before we dive into the one line of code, let me explain a little bit about overlays. The term “Overlay” comes from the <a href="https://developer.mozilla.org/en/xul_overlays">Mozilla XUL</a>. In Nooku Framework we have implemented our own inspired version that allows you to turn any view into a widget. Yes, you are reading that right: ANY view, not such your own, any view of any component can be ‘widgetised’.</p>
+
+<p>To create an overlay in Nooku Framework you only need two things:</p>
+
+<ul>
+  <li>the URL of the view your are ‘widgetising’;</li>
+  <li>the ID of the HTML element to overlay.</li>
+</ul>
+
+<p>It’s really simple, let’s look at a little example using our beloved <a href="http://www.assembla.com/wiki/show/nooku-examples/com_harbour">Harbour</a> component.</p>
+
+<h3 id="overlays-in-the-harbour-dashboard">Overlays in the Harbour dashboard</h3>
+
+<p>Harbour’s dashboard has two tabs in the right sidebar to show boats and ports that are in draft (not all information has been added yet). Currently both are loaded using a PHP call. We’re going to ‘widgetise’ this by using an overlay.</p>
+
+<p>Here’s the PHP code rendering the unfinished boats tab contents:</p>
+
+<pre name="code" class="php:nocontrols">&lt;?= KFactory::get('admin::com.harbour.controller.boats')
+     -&gt;sort('modified_on')
+     -&gt;draft(1)
+     -&gt;limit(50)
+     -&gt;layout('widget')
+     -&gt;browse() ?&gt;</pre>
+
+<p>And here’s what it looks like as an overlay:</p>
+
+<pre name="code" class="php:nocontrols">&lt;?= @overlay(array('uri' =&gt; @route('option=com_harbour&amp;view=ports&amp;layout=widget&amp;draft=1&amp;limit=5#draft-ports'))) ?&gt;</pre>
+
+<p>That’s it! How does work?</p>
+
+<ul>
+  <li>The o<em>ption=com_harbour&amp;view=ports&amp;layout=widget</em> defines the component and view we are rendering, in this case we are rendering a list of ports.</li>
+  <li>The <em>draft=1&amp;limit=5</em> defines the state of the view. In this case we are getting all the port drafts and we only retrieve the first 5</li>
+  <li>The <em>#draft-ports</em> fragment defines the ID of the HTML element that we’re fetching from the ajax request. Nooku Framework does this behind the scenes for you. This allows you to ‘widgetise’ only a part of the page your are fetching.</li>
+</ul>
+
+<p>Now you have learned how “Port drafts” is transformed into an ajax widget, the code is so tiny you already know how to do the same thing to “Boat drafts”.</p>
+
+<p>That’s it, simple right? You see, we are serious when we say Nooku Framework really makes you write less code. Why are you still reading? Go play with it already!</p>
+

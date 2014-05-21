@@ -8,4 +8,5 @@ navigation:
   url: /manifesto
   active: /manifesto/index.html
 - text: Blog
-  url: http://blog.nooku.org
+  url: /blog
+  active: /blog/index.html
