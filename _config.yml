@@ -1,5 +1,8 @@
 name: Your New Jekyll Site
-pygments: true
+
+# Code highlighting
+highlighter: pygments
+
 navigation:
 - text: About
   url: /
@@ -9,3 +12,6 @@ navigation:
   active: /manifesto/index.html
 - text: Blog
   url: http://blog.nooku.org
+
+# We don't want to publish some files
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
