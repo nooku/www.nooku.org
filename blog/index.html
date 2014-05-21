@@ -17,7 +17,7 @@ description: Nooku is a project for developers, integrators and hackers alike. T
               {{ post.date | date: "%d %B %Y"}}
               </h3>
             <p>
-              {{ post.excerpt }}
+              {{ post.content | truncatewords:60 }}
             </p>
             <a class="btn btn-default btn-sm text-center" href="https://www.assembla.com/code/nooku-framework/git/nodes/v0.9.0?type=tag">Continue reading</a>
             <hr>
