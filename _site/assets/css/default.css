@@ -8093,8 +8093,17 @@ blockquote p {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+/* line 167, ../../_sass/_theme.scss */
+.section.blog .pagination {
+  text-align: center;
+  width: 100%;
+}
+/* line 171, ../../_sass/_theme.scss */
+.section.blog .pagination .next, .section.blog .pagination .previous {
+  vertical-align: baseline;
+}
 
-/* line 168, ../../_sass/_theme.scss */
+/* line 176, ../../_sass/_theme.scss */
 .section.footer {
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #096ac5), color-stop(100%, #085dad));
   background-image: -webkit-radial-gradient(#096ac5, #085dad);
@@ -8107,28 +8116,28 @@ blockquote p {
   border: 1px solid #06437c;
   margin-top: 40px;
 }
-/* line 174, ../../_sass/_theme.scss */
+/* line 182, ../../_sass/_theme.scss */
 .section.footer .container {
   font-size: 80%;
   color: white;
   padding-top: 12px;
 }
-/* line 179, ../../_sass/_theme.scss */
+/* line 187, ../../_sass/_theme.scss */
 .section.footer .container a {
   color: white;
 }
-/* line 183, ../../_sass/_theme.scss */
+/* line 191, ../../_sass/_theme.scss */
 .section.footer .container .copyright {
   text-align: right;
 }
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
-/* line 191, ../../_sass/_theme.scss */
+/* line 199, ../../_sass/_theme.scss */
 .navbar .container-fluid {
   padding: 0;
 }
 
-/* line 196, ../../_sass/_theme.scss */
+/* line 204, ../../_sass/_theme.scss */
 .navbar .nav li {
   display: table-cell;
   width: 1%;
@@ -8136,14 +8145,14 @@ blockquote p {
   padding: 0;
 }
 
-/* line 203, ../../_sass/_theme.scss */
+/* line 211, ../../_sass/_theme.scss */
 .navbar-nav {
   border: 1px solid #021629;
   border-radius: 4px;
   overflow: hidden;
 }
 
-/* line 210, ../../_sass/_theme.scss */
+/* line 218, ../../_sass/_theme.scss */
 .navbar .nav li a {
   font-weight: bold;
   text-align: center;
@@ -8155,23 +8164,23 @@ blockquote p {
   line-height: 30px;
 }
 
-/* line 220, ../../_sass/_theme.scss */
+/* line 228, ../../_sass/_theme.scss */
 .navbar .nav li:first-child a {
   border-left: 0;
 }
 
-/* line 224, ../../_sass/_theme.scss */
+/* line 232, ../../_sass/_theme.scss */
 .navbar .nav li:last-child a {
   border-right: 0;
 }
 
-/* line 229, ../../_sass/_theme.scss */
+/* line 237, ../../_sass/_theme.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a, .nav > li > a:focus {
   text-decoration: none;
   background-color: #085dad;
 }
 
-/* line 234, ../../_sass/_theme.scss */
+/* line 242, ../../_sass/_theme.scss */
 .container {
   max-width: 750px;
 }
