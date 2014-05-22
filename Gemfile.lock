@@ -80,7 +80,6 @@ DEPENDENCIES
   bootstrap-sass
   jekyll
   jekyll-assets
-  jekyll-sass-converter
   jekyll-sitemap
   rake
   sass
