@@ -24,13 +24,13 @@ description: Nooku is a project for developers, integrators and hackers alike. T
         {% endfor %}
           <ul class="pager">
           {% if paginator.previous_page == 1 %}
-            <li class="previous"><a href="/blog">&larr; Older</a></li>
+            <li class="previous"><a href="/blog">&larr; Newer</a></li>
           {% endif %}
           {% if paginator.previous_page > 1 %}
-            <li class="previous"><a href="/blog/page{{ paginator.previous_page }}">&larr; Older</a></li>
+            <li class="previous"><a href="/blog/page{{ paginator.previous_page }}">&larr; Newer</a></li>
           {% endif %}
           {% if paginator.next_page %}
-              <li class="next"><a href="/blog/page{{ paginator.next_page }}">Newer &rarr;</a></li>
+              <li class="next"><a href="/blog/page{{ paginator.next_page }}">Older &rarr;</a></li>
             {% else %}
             <!--<span class="next ">Next</span>-->
           {% endif %}
