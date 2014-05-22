@@ -12,3 +12,27 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/default.css">
 </head>
 <body>
+
+<div id="wrapper">
+    <div class="section header">
+        <div class="container container-centered">
+            <div class="row">
+                <div class="brand col-sm-6">
+                    <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logo.jpg" height="60px" width="123px" /></a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="navbar" role="navigation">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
+                                {% for link in site.navigation %}
+                                <li {% if link.layout == "blog" %}class="active"{% endif %}>
+                                <a href="{{ link.url }}">{{ link.text }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

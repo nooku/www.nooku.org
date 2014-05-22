@@ -1,31 +1,5 @@
 {% include header.html %}
 
-<div id="wrapper">
-    <div class="section header">
-        <div class="container container-centered">
-            <div class="row">
-                <div class="brand col-sm-6">
-                    <a href="http://www.nooku.org"><img src="/assets/img/logo.jpg" height="60px" width="123px" /></a>
-                </div>
-                <div class="col-sm-6">
-                    <div class="navbar" role="navigation">
-                        <div class="container-fluid">
-                            <ul class="nav navbar-nav">
-                                {% for link in site.navigation %}
-                                <li {% if link.layout == "blog" %}class="active"{% endif %}>
-                                    <a href="{{ link.url }}">{{ link.text }}</a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    
     <div class="section blog">
         <div class="container">
             <div class="row">
@@ -51,24 +25,4 @@
         </div>
     </div>
 
-    <div class="section footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p>
-                        <a href="http://www.facebook.com/nooku.org">Facebook</a> |
-                        <a href="http://www.twitter.com/nooku">Twitter</a> |
-                        <a href="http://www.github.com/nooku">Github</a> |
-                        <a href="http://feeds.nooku.org/blog">RSS</a>
-                    </p>
-                </div>
-                <div class="copyright col-sm-6">
-                    <p>Copyright {{ 'now' | date: "%Y" }} <a href="http://www.timble.net">Timble</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-</body>
-</html>
+{% include footer.html %}
