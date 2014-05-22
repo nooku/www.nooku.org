@@ -9,21 +9,6 @@ description: Nooku is a project for developers, integrators and hackers alike. T
   <div class="container">
     <div class="row">
       <div class="col-sm-9">
-        <!--
-        {% for post in site.posts limit:4 %}
-          <h2>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h2>
-          <h3 class="text-muted">
-            {{ post.date | date: "%d %B %Y"}} by {{ post.author }}
-          </h3>
-          <p>
-            {{ post.content | truncatewords:65 }}
-          </p>
-          <a class="btn btn-default btn-sm text-center" href="https://www.assembla.com/code/nooku-framework/git/nodes/v0.9.0?type=tag">Continue reading</a>
-          <hr>
-        {% endfor %}
-        -->
         {% for post in paginator.posts %}
           <h2>
             <a href="{{ post.url }}">{{ post.title }}</a>
@@ -34,7 +19,7 @@ description: Nooku is a project for developers, integrators and hackers alike. T
           <p>
             {{ post.content | truncatewords:65 }}
           </p>
-          <a class="btn btn-default btn-sm text-center" href="https://www.assembla.com/code/nooku-framework/git/nodes/v0.9.0?type=tag">Continue reading</a>
+          <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
           <hr>
         {% endfor %}
         <div class="pagination">
