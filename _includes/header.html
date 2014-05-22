@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width" />
     <title>{{ page.title }}</title>
     <meta name="description" content="{ page.description }}" />
-    <link rel="shortcut icon" type="image/ico" href="{{ site.url }}/assets/img/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/default.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
         <div class="container container-centered">
             <div class="row">
                 <div class="brand col-sm-6">
-                    <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/logo.jpg" height="60px" width="123px" /></a>
+                    <a href="/"><img src="/assets/img/logo.jpg" height="60px" width="123px" /></a>
                 </div>
                 <div class="col-sm-6">
                     <div class="navbar" role="navigation">
@@ -28,7 +28,7 @@
                                 {% assign current = nil %}
                                 {% if link.url == page.rooturl %}{% assign current = 'active' %}{% endif %}
                                 <li class="{{ current }}" role="menuitem">
-                                    <a href="{{ site.url }}/{{ link.url }}">{{ link.text }}</a>
+                                    <a href="/{{ link.url }}">{{ link.text }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
