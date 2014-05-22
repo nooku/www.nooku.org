@@ -24,5 +24,10 @@ paginate_path: "blog/page:num"
 gems:
   - jekyll-sitemap
 
+# SASS compilation
+sass:
+    sass_dir: _sass
+    style: :compressed
+
 # We don't want to publish some files
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'scripts']
