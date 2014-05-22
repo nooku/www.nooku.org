@@ -51,7 +51,7 @@ blockquote p {
     border-left:0;
     border-right:0;
     background: lighten($brand-primary, 5%);
-    @include background-image(radial-gradient(lighten($brand-primary, 5%), $brand-primary));
+    @include gradient-radial(lighten($brand-primary, 5%), $brand-primary);
     @include box-shadow(inset rgba(0, 0, 0, .6) 0px 0px 10px);
     color: white;
 
@@ -107,7 +107,7 @@ blockquote p {
             line-height:100px;
             height: 112px;
             text-align:center;
-            @include background-image(radial-gradient($white, #F8F8F8));
+            @include gradient-radial($white, #F8F8F8);
 
             img {
                 display: inline;
@@ -174,7 +174,7 @@ blockquote p {
 }
 
 .section.footer {
-    @include background-image(radial-gradient(lighten($brand-primary, 5%), $brand-primary));
+    @include gradient-radial(lighten($brand-primary, 5%), $brand-primary);
     @include box-shadow(inset rgba(0, 0, 0, .3) 0px 3px 3px);
     border: 1px solid $navy;
     margin-top: 40px;
