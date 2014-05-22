@@ -1,7 +1,10 @@
 name: Nooku
+
 description: Nooku is a project for developers integrators and hackers alike. Through collaboration we innovate and grow Nooku
-url: http://nooku.org
-pygments: true
+# url: http://localhost:4000
+
+highlighter: pygments
+
 navigation:
 - text: About
 - text: Manifesto
@@ -13,5 +16,6 @@ navigation:
 monthly_archive:
   layout: archive
   path: blog
+
 paginate: 5
 paginate_path: "blog/page:num"
