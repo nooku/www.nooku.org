@@ -8,10 +8,8 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="{ page.description }}" />
     <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico" />
-    <link rel="stylesheet" href="/assets/css/default.css"> 
-    <script type="text/javascript" src="//use.typekit.net/eow5fmw.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/default.css">  
 </head>
 <body>
 
@@ -42,35 +40,29 @@
 
     
     <div class="section blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9">
-         <h2>
-              {{ page.title }}
-            </h2>
-          {{ content }}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>
+                        {{ page.title }}
+                    </h2>
+                    {{ content }}
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        {% for post in site.posts %}
+                            {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
+                            {% capture currentyearshort %}{{post.date | date: "%Y/%m"}}{% endcapture %}
+                            {% if currentyear != year %}
+                                <li><a href="/blog/{{ currentyearshort }}">{{ currentyear }}</a></li>
+                                {% capture year %}{{currentyear}}{% endcapture %} 
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-3">
-           <h3>Archives</h3>
-          <ul>
-
-{% for post in site.posts %}
-  {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
-   {% capture currentyearshort %}{{post.date | date: "%Y/%m"}}{% endcapture %}
-  {% if currentyear != year %}
-    <li><a href="/{{ currentyearshort }}">{{ currentyear }}</a></li>
-    {% capture year %}{{currentyear}}{% endcapture %} 
-  {% endif %}
-{% endfor %}
-</ul>
-        </div>
-      </div>
-
-
-  
-
     </div>
-</div>
 
     <div class="section footer">
         <div class="container">
@@ -89,6 +81,7 @@
             </div>
         </div>
     </div>
+
 </div>
 </body>
 </html>
