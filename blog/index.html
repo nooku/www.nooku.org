@@ -31,7 +31,7 @@ description: Nooku is a project for developers, integrators and hackers alike. T
   {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
    {% capture currentyearshort %}{{post.date | date: "%Y/%m"}}{% endcapture %}
   {% if currentyear != year %}
-    <li><a href="/{{ currentyearshort }}">{{ currentyear }}</a></li>
+    <li><a href="/blog/{{ currentyearshort }}">{{ currentyear }}</a></li>
     {% capture year %}{{currentyear}}{% endcapture %} 
   {% endif %}
 {% endfor %}

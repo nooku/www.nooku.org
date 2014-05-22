@@ -2,7 +2,7 @@
 title: Nooku is going GPLv3
 author: Johan
 layout: post
-permalink: /2010/10/nooku-is-going-gplv3/
+permalink: /blog/2010/10/nooku-is-going-gplv3/
 dsq_thread_id:
   - 163355933
 categories:

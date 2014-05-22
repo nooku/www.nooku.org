@@ -2,7 +2,7 @@
 title: BEDRE reklame becomes Nooku partner
 author: Johan
 layout: post
-permalink: /2010/03/bedre-reklame-becomes-nooku-partner/
+permalink: /blog/2010/03/bedre-reklame-becomes-nooku-partner/
 dsq_thread_id:
   - 85737006
 categories:

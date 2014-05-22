@@ -2,7 +2,7 @@
 title: Nooku Content 0.6.0 released
 author: Johan
 layout: post
-permalink: /2008/11/nooku-content-060-released/
+permalink: /blog/2008/11/nooku-content-060-released/
 dsq_thread_id:
   - 85783547
 categories:

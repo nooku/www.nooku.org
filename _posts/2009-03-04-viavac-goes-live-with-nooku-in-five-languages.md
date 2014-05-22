@@ -2,7 +2,7 @@
 title: Viavac Goes Live With Nooku in Five Languages
 author: Johan
 layout: post
-permalink: /2009/03/viavac-goes-live-with-nooku-in-five-languages/
+permalink: /blog/2009/03/viavac-goes-live-with-nooku-in-five-languages/
 dsq_thread_id:
   - 85783531
 categories:

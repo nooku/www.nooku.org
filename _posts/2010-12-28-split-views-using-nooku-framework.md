@@ -2,7 +2,7 @@
 title: Split Views using Nooku Framework
 author: Stian
 layout: post
-permalink: /2010/12/split-views-using-nooku-framework/
+permalink: /blog/2010/12/split-views-using-nooku-framework/
 dsq_thread_id:
   - 198831172
 categories:

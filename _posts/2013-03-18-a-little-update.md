@@ -2,7 +2,7 @@
 title: A little update
 author: Johan
 layout: post
-permalink: /2013/03/a-little-update/
+permalink: /blog/2013/03/a-little-update/
 dsq_thread_id:
   - 1147270800
 categories:

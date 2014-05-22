@@ -2,7 +2,7 @@
 title: Nooku 12.1 Released
 author: Johan
 layout: post
-permalink: /2012/03/nooku-121-released/
+permalink: /blog/2012/03/nooku-121-released/
 dsq_thread_id:
   - 625740020
 categories:

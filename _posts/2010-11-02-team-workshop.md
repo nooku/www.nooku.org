@@ -2,7 +2,7 @@
 title: Team workshop at the Nooku HQ
 author: David
 layout: post
-permalink: /2010/11/team-workshop/
+permalink: /blog/2010/11/team-workshop/
 dsq_thread_id:
   - 165977184
 categories:
@@ -35,7 +35,7 @@ It is also why pair programming is such a successful strategy &#8211; you make a
 Nooku Workshops and team gatherings are famous for their ice-cream fests. This one was no different. I brought a good amount of homemade ice cream over and we spent two evenings feasting on it. Belgians do love their ice-cream and their appetite for chocolate appears to be near insatiable &#8211; to my surprise, they quickly decided to add chocolate sauce to an ice cream that already was made pretty much, if not entirely, out of chocolate.
 
 The week flew by quickly. I arrived home deeply satisfied not just with the work we had accomplished, but also with the friendship we had nurtured. I&#8217;m already looking forward to the next workshop.  
-<div id="gallery-bf93ac7f" class="flickr-gallery photoset">
+<div id="gallery-a4ab92aa" class="flickr-gallery photoset">
   <div class="flickr-thumb">
     <a href="http://flickr.com/photo.gne?id=5122626943"><img class="photo" title="Team Workshop Diest BE - October 2010" src="http://farm5.static.flickr.com/4011/5122626943_d3ec1aec99_s.jpg" alt="Team Workshop Diest BE - October 2010" /></a>
   </div>
@@ -60,12 +60,12 @@ The week flew by quickly. I arrived home deeply satisfied not just with the work
   </div>
 </div>
 
-<div class="fg-clear" id="fg-bf93ac7f-nav">
-  <div id="fg-bf93ac7f-next" class="flickr-gallery-next" style="float: right">
+<div class="fg-clear" id="fg-a4ab92aa-nav">
+  <div id="fg-a4ab92aa-next" class="flickr-gallery-next" style="float: right">
     <a href="#">Next Page &rsaquo;</a>
   </div>
   
-  <div id="fg-bf93ac7f-prev" class="flickr-gallery-prev" style="display: none; float: left">
+  <div id="fg-a4ab92aa-prev" class="flickr-gallery-prev" style="display: none; float: left">
     <a href="#">&lsaquo; Previous Page</a>
   </div>
 </div>

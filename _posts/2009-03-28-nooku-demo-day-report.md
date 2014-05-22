@@ -2,7 +2,7 @@
 title: Nooku Demo Day Report
 author: Johan
 layout: post
-permalink: /2009/03/nooku-demo-day-report/
+permalink: /blog/2009/03/nooku-demo-day-report/
 dsq_thread_id:
   - 85784104
 categories:

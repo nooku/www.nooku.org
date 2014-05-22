@@ -2,7 +2,7 @@
 title: The Nooku Team grows
 author: Johan
 layout: post
-permalink: /2010/06/the-nooku-team-grows/
+permalink: /blog/2010/06/the-nooku-team-grows/
 dsq_thread_id:
   - 106038410
 categories:

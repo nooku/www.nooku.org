@@ -2,7 +2,7 @@
 title: Play the MVC Roulette!
 author: Johan
 layout: post
-permalink: /2010/05/play-the-mvc-roulette/
+permalink: /blog/2010/05/play-the-mvc-roulette/
 dsq_thread_id:
   - 101954924
 categories:

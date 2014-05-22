@@ -2,7 +2,7 @@
 title: Rebuilding a demo site automatically
 author: Shayne
 layout: post
-permalink: /2011/02/rebuilding-demo-site-automatically/
+permalink: /blog/2011/02/rebuilding-demo-site-automatically/
 dsq_thread_id:
   - 225055952
 categories:

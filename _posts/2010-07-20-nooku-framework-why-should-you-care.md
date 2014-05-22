@@ -2,7 +2,7 @@
 title: Nooku Framework, why should you care ?
 author: Johan
 layout: post
-permalink: /2010/07/nooku-framework-why-should-you-care/
+permalink: /blog/2010/07/nooku-framework-why-should-you-care/
 dsq_thread_id:
   - 119998592
 categories:

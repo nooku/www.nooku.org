@@ -2,7 +2,7 @@
 title: Nooku Server loses 40% weight
 author: Johan
 layout: post
-permalink: /2011/01/nooku-server-loses-40-weight/
+permalink: /blog/2011/01/nooku-server-loses-40-weight/
 dsq_thread_id:
   - 219636963
 categories:

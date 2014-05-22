@@ -2,7 +2,7 @@
 title: Say hello to the “dynamic module injector”
 author: Guest
 layout: post
-permalink: /2011/08/say-hello-to-the-dynamic-module-injector/
+permalink: /blog/2011/08/say-hello-to-the-dynamic-module-injector/
 dsq_thread_id:
   - 381099212
 categories:

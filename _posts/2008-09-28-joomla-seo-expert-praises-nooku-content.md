@@ -2,7 +2,7 @@
 title: Joomla SEO expert praises Nooku Content
 author: Johan
 layout: post
-permalink: /2008/09/joomla-seo-expert-praises-nooku-content/
+permalink: /blog/2008/09/joomla-seo-expert-praises-nooku-content/
 dsq_thread_id:
   - 85775536
 categories:

@@ -2,7 +2,7 @@
 title: Meet com_files, Joomla file management 2.0
 author: ercan
 layout: post
-permalink: /2011/08/meet-com_files-joomla-file-management-2-0/
+permalink: /blog/2011/08/meet-com_files-joomla-file-management-2-0/
 dsq_thread_id:
   - 383902704
 categories:

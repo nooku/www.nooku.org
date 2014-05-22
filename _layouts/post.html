@@ -27,7 +27,7 @@
                         <div class="container-fluid">
                             <ul class="nav navbar-nav">
                                 {% for link in site.navigation %}
-                                <li {% if link.active == page.url %}class="active"{% endif %}>
+                                <li {% if link.layout == "blog" %}class="active"{% endif %}>
                                     <a href="{{ link.url }}">{{ link.text }}</a>
                                 </li>
                                 {% endfor %}
@@ -78,7 +78,7 @@
   {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
    {% capture currentyearshort %}{{post.date | date: "%Y/%m"}}{% endcapture %}
   {% if currentyear != year %}
-    <li><a href="/{{ currentyearshort }}">{{ currentyear }}</a></li>
+    <li><a href="/blog/{{ currentyearshort }}">{{ currentyear }}</a></li>
     {% capture year %}{{currentyear}}{% endcapture %} 
   {% endif %}
 {% endfor %}

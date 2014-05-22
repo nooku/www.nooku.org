@@ -3,7 +3,7 @@ title: The State of Nooku
 author: Johan
 excerpt: Last week, the Nooku team was at the Dutch Joomladays, as both sponsors and speakers. There was a great turnout, the mood was great, and everybody was genuinely excited about the amazing innovations the Joomlasphere has come up with in the past year.
 layout: post
-permalink: /2010/04/the-state-of-nooku/
+permalink: /blog/2010/04/the-state-of-nooku/
 dsq_thread_id:
   - 89788295
 categories:

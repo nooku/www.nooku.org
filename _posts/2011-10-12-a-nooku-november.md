@@ -2,7 +2,7 @@
 title: A Nooku November
 author: Myra
 layout: post
-permalink: /2011/10/a-nooku-november/
+permalink: /blog/2011/10/a-nooku-november/
 dsq_thread_id:
   - 441540210
 categories:

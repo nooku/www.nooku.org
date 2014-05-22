@@ -2,7 +2,7 @@
 title: Nooku goes North
 author: Johan
 layout: post
-permalink: /2009/09/nooku-goes-north/
+permalink: /blog/2009/09/nooku-goes-north/
 dsq_thread_id:
   - 85738211
 categories:

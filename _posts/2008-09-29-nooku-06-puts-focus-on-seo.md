@@ -2,7 +2,7 @@
 title: Nooku Content 0.6 puts focus on SEO
 author: Johan
 layout: post
-permalink: /2008/09/nooku-06-puts-focus-on-seo/
+permalink: /blog/2008/09/nooku-06-puts-focus-on-seo/
 dsq_thread_id:
   - 85783602
 categories:

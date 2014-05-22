@@ -2,7 +2,7 @@
 title: Nooku Jam Stockholm
 author: Johan
 layout: post
-permalink: /2010/12/nooku-jam-stockholm/
+permalink: /blog/2010/12/nooku-jam-stockholm/
 dsq_thread_id:
   - 190230950
 categories:
@@ -13,7 +13,7 @@ tags:
 ---
 Nooku joined forces with the [The Swedish Joomla! User Association][1] to bring the first Nooku Jam to Stockholm on the **5th of February 2011**. The [ ][2][Swedish Media Association][2] has kindly offered their venue to host the jam. With two main rooms and multiple smaller break out rooms the venue really breaths creativity and can easily host **50 participants**. Ideal for a Nooku Jam!
 
-<div id="gallery-76b55f20" class="flickr-gallery photoset">
+<div id="gallery-3c55c432" class="flickr-gallery photoset">
   <div class="flickr-thumb">
     <a href="http://flickr.com/photo.gne?id=5239285040"><img class="photo" title="Main Room (2)" src="http://farm6.static.flickr.com/5005/5239285040_7f88e291d0_s.jpg" alt="Main Room (2)" /></a>
   </div>
@@ -38,12 +38,12 @@ Nooku joined forces with the [The Swedish Joomla! User Association][1] to bring 
   </div>
 </div>
 
-<div class="fg-clear" id="fg-76b55f20-nav">
-  <div id="fg-76b55f20-next" class="flickr-gallery-next" style="float: right">
+<div class="fg-clear" id="fg-3c55c432-nav">
+  <div id="fg-3c55c432-next" class="flickr-gallery-next" style="float: right">
     <a href="#">Next Page &rsaquo;</a>
   </div>
   
-  <div id="fg-76b55f20-prev" class="flickr-gallery-prev" style="display: none; float: left">
+  <div id="fg-3c55c432-prev" class="flickr-gallery-prev" style="display: none; float: left">
     <a href="#">&lsaquo; Previous Page</a>
   </div>
 </div>

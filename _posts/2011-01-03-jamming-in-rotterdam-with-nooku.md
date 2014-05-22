@@ -2,7 +2,7 @@
 title: Jamming in Rotterdam with Nooku
 author: Tom
 layout: post
-permalink: /2011/01/jamming-in-rotterdam-with-nooku/
+permalink: /blog/2011/01/jamming-in-rotterdam-with-nooku/
 dsq_thread_id:
   - 201941573
 categories:

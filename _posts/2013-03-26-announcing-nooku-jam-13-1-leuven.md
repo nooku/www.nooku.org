@@ -2,7 +2,7 @@
 title: Announcing Nooku Jam 13.1 Leuven
 author: Tom
 layout: post
-permalink: /2013/03/announcing-nooku-jam-13-1-leuven/
+permalink: /blog/2013/03/announcing-nooku-jam-13-1-leuven/
 dsq_thread_id:
   - 1166715634
 categories:

@@ -2,7 +2,7 @@
 title: The Dark Side of Nooku Framework
 author: Guest
 layout: post
-permalink: /2011/02/the-dark-side-of-nooku-framework/
+permalink: /blog/2011/02/the-dark-side-of-nooku-framework/
 dsq_thread_id:
   - 233516469
 categories:

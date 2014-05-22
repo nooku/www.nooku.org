@@ -2,7 +2,7 @@
 title: One Weekend, Two Nooku Jams
 author: Myra
 layout: post
-permalink: /2011/08/one-weekend-two-nooku-jams/
+permalink: /blog/2011/08/one-weekend-two-nooku-jams/
 dsq_thread_id:
   - 394707135
 categories:

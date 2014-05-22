@@ -2,7 +2,7 @@
 title: Partner Spotlight
 author: Johan
 layout: post
-permalink: /2008/09/partner-spotlight/
+permalink: /blog/2008/09/partner-spotlight/
 dsq_thread_id:
   - 85778432
 categories:

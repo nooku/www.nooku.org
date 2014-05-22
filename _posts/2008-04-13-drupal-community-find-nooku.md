@@ -2,7 +2,7 @@
 title: Drupal Community Find Nooku Content
 author: Johan
 layout: post
-permalink: /2008/04/drupal-community-find-nooku/
+permalink: /blog/2008/04/drupal-community-find-nooku/
 dsq_thread_id:
   - 85777886
 categories:

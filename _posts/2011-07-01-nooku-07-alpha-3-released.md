@@ -2,7 +2,7 @@
 title: Nooku 0.7 Alpha 3 released
 author: Johan
 layout: post
-permalink: /2011/07/nooku-07-alpha-3-released/
+permalink: /blog/2011/07/nooku-07-alpha-3-released/
 dsq_thread_id:
   - 347053309
 categories:

@@ -2,7 +2,7 @@
 title: Nooku Framework a CCK for developers
 author: Johan
 layout: post
-permalink: /2010/09/nooku-framework-cck-for-developers/
+permalink: /blog/2010/09/nooku-framework-cck-for-developers/
 dsq_thread_id:
   - 136003346
 categories:

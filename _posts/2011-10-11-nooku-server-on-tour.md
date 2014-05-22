@@ -2,7 +2,7 @@
 title: Nooku Server on Tour
 author: Myra
 layout: post
-permalink: /2011/10/nooku-server-on-tour/
+permalink: /blog/2011/10/nooku-server-on-tour/
 dsq_thread_id:
   - 440180306
 categories:

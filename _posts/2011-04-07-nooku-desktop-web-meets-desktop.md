@@ -2,7 +2,7 @@
 title: Nooku Desktop, web meets desktop
 author: Stian
 layout: post
-permalink: /2011/04/nooku-desktop-web-meets-desktop/
+permalink: /blog/2011/04/nooku-desktop-web-meets-desktop/
 dsq_thread_id:
   - 273644793
 categories:

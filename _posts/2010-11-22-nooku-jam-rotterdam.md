@@ -2,7 +2,7 @@
 title: Nooku Jam Rotterdam
 author: Johan
 layout: post
-permalink: /2010/11/nooku-jam-rotterdam/
+permalink: /blog/2010/11/nooku-jam-rotterdam/
 dsq_thread_id:
   - 177033608
 categories:

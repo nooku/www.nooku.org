@@ -2,7 +2,7 @@
 title: 'Nooku TV &#8211; Let the Joomla Celebrations Continue'
 author: Johan
 layout: post
-permalink: /2009/05/nooku-tv-let-the-joomla-celebrations-continue/
+permalink: /blog/2009/05/nooku-tv-let-the-joomla-celebrations-continue/
 dsq_thread_id:
   - 85784045
 categories:

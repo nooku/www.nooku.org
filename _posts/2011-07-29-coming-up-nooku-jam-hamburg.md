@@ -2,7 +2,7 @@
 title: 'Coming up: Nooku Jam Hamburg'
 author: Tom
 layout: post
-permalink: /2011/07/coming-up-nooku-jam-hamburg/
+permalink: /blog/2011/07/coming-up-nooku-jam-hamburg/
 dsq_thread_id:
   - 371869941
 categories:

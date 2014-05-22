@@ -2,7 +2,7 @@
 title: Nooku Demo Day on 26th of March in the Netherlands
 author: Johan
 layout: post
-permalink: /2009/03/nooku-demo-day-on-26th-of-march-in-the-netherlands/
+permalink: /blog/2009/03/nooku-demo-day-on-26th-of-march-in-the-netherlands/
 dsq_thread_id:
   - 85784159
 categories:

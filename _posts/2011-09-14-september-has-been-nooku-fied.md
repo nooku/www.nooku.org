@@ -2,7 +2,7 @@
 title: September has been Nooku-fied
 author: Myra
 layout: post
-permalink: /2011/09/september-has-been-nooku-fied/
+permalink: /blog/2011/09/september-has-been-nooku-fied/
 dsq_thread_id:
   - 414529881
 categories:

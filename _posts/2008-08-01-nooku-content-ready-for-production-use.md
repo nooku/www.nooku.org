@@ -2,7 +2,7 @@
 title: Nooku Content ready for production use
 author: Johan
 layout: post
-permalink: /2008/08/nooku-content-ready-for-production-use/
+permalink: /blog/2008/08/nooku-content-ready-for-production-use/
 dsq_thread_id:
   - 85778461
 categories:

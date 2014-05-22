@@ -2,7 +2,7 @@
 title: Mijnjoomlasite Review
 author: Johan
 layout: post
-permalink: /2008/04/mijnjoomlasite-review/
+permalink: /blog/2008/04/mijnjoomlasite-review/
 dsq_thread_id:
   - 85777852
 categories:

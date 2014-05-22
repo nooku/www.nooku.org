@@ -2,7 +2,7 @@
 title: Sunsetting Nooku Content
 author: Johan
 layout: post
-permalink: /2012/04/sunsetting-nooku-content/
+permalink: /blog/2012/04/sunsetting-nooku-content/
 dsq_thread_id:
   - 662360574
 categories:

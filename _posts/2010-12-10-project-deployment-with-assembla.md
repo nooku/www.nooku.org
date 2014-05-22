@@ -2,7 +2,7 @@
 title: Project Deployment with Assembla
 author: Shayne
 layout: post
-permalink: /2010/12/project-deployment-with-assembla/
+permalink: /blog/2010/12/project-deployment-with-assembla/
 dsq_thread_id:
   - 188264632
 categories:

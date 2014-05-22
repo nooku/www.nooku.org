@@ -2,7 +2,7 @@
 title: Nooku Community rocking on
 author: Johan
 layout: post
-permalink: /2010/09/nooku-community-rocking-on/
+permalink: /blog/2010/09/nooku-community-rocking-on/
 dsq_thread_id:
   - 141924616
 categories:

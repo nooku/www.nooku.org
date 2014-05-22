@@ -2,7 +2,7 @@
 title: Blogger reviews Nooku Content 0.5
 author: Johan
 layout: post
-permalink: /2008/08/blogger-reviews-nooku-content-05/
+permalink: /blog/2008/08/blogger-reviews-nooku-content-05/
 dsq_thread_id:
   - 85778447
 categories:

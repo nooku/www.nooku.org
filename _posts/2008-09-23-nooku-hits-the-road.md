@@ -2,7 +2,7 @@
 title: Nooku hits the road
 author: Johan
 layout: post
-permalink: /2008/09/nooku-hits-the-road/
+permalink: /blog/2008/09/nooku-hits-the-road/
 dsq_thread_id:
   - 85783635
 categories:

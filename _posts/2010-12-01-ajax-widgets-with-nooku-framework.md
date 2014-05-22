@@ -2,7 +2,7 @@
 title: AJAX Widgets with Nooku Framework
 author: Stian
 layout: post
-permalink: /2010/12/ajax-widgets-with-nooku-framework/
+permalink: /blog/2010/12/ajax-widgets-with-nooku-framework/
 dsq_thread_id:
   - 182430666
 categories:

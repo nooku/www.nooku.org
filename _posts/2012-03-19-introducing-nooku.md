@@ -2,7 +2,7 @@
 title: 'Introducing #Nooku'
 author: krisstoffer
 layout: post
-permalink: /2012/03/introducing-nooku/
+permalink: /blog/2012/03/introducing-nooku/
 dsq_thread_id:
   - 616633071
 categories:

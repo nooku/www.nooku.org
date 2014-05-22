@@ -2,7 +2,7 @@
 title: Conquering Europe with multi-lingual Joomla
 author: Johan
 layout: post
-permalink: /2008/11/conquering-europe-with-multi-lingual-joomla/
+permalink: /blog/2008/11/conquering-europe-with-multi-lingual-joomla/
 dsq_thread_id:
   - 85774088
 categories:

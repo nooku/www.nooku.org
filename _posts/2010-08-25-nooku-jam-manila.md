@@ -2,7 +2,7 @@
 title: Announcing Nooku Jam Manila
 author: Johan
 layout: post
-permalink: /2010/08/nooku-jam-manila/
+permalink: /blog/2010/08/nooku-jam-manila/
 dsq_thread_id:
   - 133569482
 categories:

@@ -9,5 +9,7 @@ navigation:
   active: /manifesto/index.html
 - text: Blog
   url: /blog
-  active: /blog/index.html
-  active: /2013/
+  active: /blog/
+  layout: blog
+monthly_archive:
+  path: blog

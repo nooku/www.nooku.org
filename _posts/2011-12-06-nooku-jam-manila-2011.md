@@ -2,7 +2,7 @@
 title: Nooku Jam Manila 2011
 author: Rey
 layout: post
-permalink: /2011/12/nooku-jam-manila-2011/
+permalink: /blog/2011/12/nooku-jam-manila-2011/
 dsq_thread_id:
   - 495163970
 categories:

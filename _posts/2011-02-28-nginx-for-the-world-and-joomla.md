@@ -2,7 +2,7 @@
 title: 'Nginx for the world&#8230; and Joomla'
 author: Shayne
 layout: post
-permalink: /2011/02/nginx-for-the-world-and-joomla/
+permalink: /blog/2011/02/nginx-for-the-world-and-joomla/
 dsq_thread_id:
   - 241999766
 categories:

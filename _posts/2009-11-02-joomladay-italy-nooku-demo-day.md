@@ -2,7 +2,7 @@
 title: 'Joomladay Italy &#038; Nooku Demo Day'
 author: Johan
 layout: post
-permalink: /2009/11/joomladay-italy-nooku-demo-day/
+permalink: /blog/2009/11/joomladay-italy-nooku-demo-day/
 dsq_thread_id:
   - 85737510
 categories:

@@ -2,7 +2,7 @@
 title: Nooku Jam Lugano
 author: Johan
 layout: post
-permalink: /2011/01/nooku-jam-lugano/
+permalink: /blog/2011/01/nooku-jam-lugano/
 dsq_thread_id:
   - 205491435
 categories:

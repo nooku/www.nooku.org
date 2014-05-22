@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" />
+    <title>Split Views using Nooku Framework</title>
+    <meta name="description" content="{ page.description }}" />
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/default.css"> 
+    <script type="text/javascript" src="//use.typekit.net/eow5fmw.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="section header">
+        <div class="container container-centered">
+            <div class="row">
+                <div class="brand col-sm-6">
+                    <a href="http://www.nooku.org"><img src="/assets/img/logo.jpg" height="60px" width="123px" /></a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="navbar" role="navigation">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
+                                
+                                <li >
+                                    <a href="/">About</a>
+                                </li>
+                                
+                                <li >
+                                    <a href="/manifesto">Manifesto</a>
+                                </li>
+                                
+                                <li class="active">
+                                    <a href="/blog">Blog</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="section blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+         <h2>
+              Split Views using Nooku Framework
+            </h2>
+            <h3 class="text-muted">
+              28 December 2010 by Stian
+              </h3>
+          <div class="wp-caption alignnone" style="width: 490px">
+  <a title="Harbour with SplitView by Nooku, on Flickr" href="http://www.flickr.com/photos/nooku/5285180568/"><img src="http://farm6.static.flickr.com/5124/5285180568_5c74163287.jpg" alt="Harbour with SplitView" width="480" /></a><p class="wp-caption-text">
+    Split View showing the boats list in Harbour, our example component
+  </p>
+</div>
+
+<p>A month ago Martin asked a very interesting <a href="http://twitter.com/#!/mblodau/status/6990026000826368">question on Twitter</a>.</p>
+
+<blockquote>
+  <p>Possible to load a detail view &amp; it’s related list view besides each other in the tab of a third view with the “H” of HMVC?</p>
+</blockquote>
+
+<p>Short answer, <a href="http://twitter.com/#!/nooku/status/7011271765397504">yes offcourse !</a> Luckily our blog doesn’t have a 140 char limit so I can also show you how. In this tutorial I will explain:</p>
+
+<ol>
+  <li>How to create a Ajaxed Split View.</li>
+  <li>How to render that Split View from a module.</li>
+</ol>
+
+<p>We will use the overlays <a href="http://blog.nooku.org/2010/12/ajax-widgets-with-nooku-framework/">we learned about in my previous blog post</a>, and apply this to create the Split View.<br />
+<!--more--></p>
+
+<h3 id="whats-a-split-view">What’s a Split View?</h3>
+
+<p>Split Views are a common <a href="http://developer.apple.com/library/safari/documentation/UserExperience/Conceptual/MobileHIG/UIElementGuidelines/UIElementGuidelines.html#//apple_ref/doc/uid/TP40006556-CH13-SW51">UI pattern</a> that involves subviews that relate to one another. Usually that means a list to the left that loads data into the right hand view when you select an item.</p>
+
+<p>The code used in this tutorial is from the Split View implementation in <a href="http://www.assembla.com/wiki/show/nooku-examples/com_harbour">Harbour</a>, describing how I did it and how you can accomplish it in your own extension.</p>
+
+<h3 id="step-1-8211-html-and-css">Step 1 – HTML and CSS</h3>
+
+<p>There are many different Split View layouts, the kind we’ll be making is usually called “split” as it’s a 25/75 layout with a list to the left and details to the right.</p>
+
+<h4 id="boats-view">Boats view</h4>
+
+<p>So we’ll create a new layout in our plural view here:<br />
+<a href="https://nooku.assembla.com/code/nooku-examples/subversion/nodes/trunk/harbour/code/site/components/com_harbour/views/boats/tmpl/split.php">/com_harbour/views/boats/tmpl/split.php</a></p>
+
+<p>In this layout we essentially need to load our assets, create an unordered list of links and have a <code>&lt;div&gt;</code> container as a placeholder for the details view.</p>
+
+<pre name="code" class="php:nocontrols">&lt;ul class="mod-harbour-boats"&gt;
+	&lt;? foreach ($boats as $boat) : ?&gt;
+	&lt;li&gt;
+		&lt;a title="&lt;?= @escape($boat-&gt;title) ?&gt;" href="&lt;?= @route('view=boat&amp;layout=split&amp;slug='.@escape($boat-&gt;slug)); ?&gt;#boat-overlay"&gt;
+			&lt;img alt="" src="media://com_harbour/images/flags/&lt;?= @escape($boat-&gt;flag);?&gt;" /&gt;
+			&lt;?= @escape($boat-&gt;title) ?&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;? endforeach; ?&gt;
+&lt;/ul&gt;
+&lt;div id="boat-overlay"&gt;
+	&lt;?= KFactory::tmp('site::com.harbour.controller.boat')-&gt;read() ?&gt;
+&lt;/div&gt;</pre>
+
+<h4 id="boat-view-details-of-a-boat">Boat view, details of a boat</h4>
+
+<p>Next we need the boat view, which will contain the details of a boat and will be loaded when you click on a link in the unordered list of links we just created. <a href="https://nooku.assembla.com/code/nooku-examples/subversion/nodes/trunk/harbour/code/site/components/com_harbour/views/boat/tmpl/split.php">/com_harbour/views/boat/tmpl/split.php</a></p>
+
+<pre name="code" class="php:nocontrols">&lt;div id="boat-overlay"&gt;
+	&lt;?= @template('simple') ?&gt;
+&lt;/div&gt;</pre>
+
+<p>As you can see it’s just a div wrap around the <strong>“simple”</strong> layout, with the id <strong>“boat-overlay”</strong>.</p>
+
+<p>It’s important to note that each link got a <strong>#boat-overlay</strong> hash. KOverlay use that to know what part of the html in the Ajax response that you want in your details view. For more details on how this works see <a href="http://blog.nooku.org/2010/12/ajax-widgets-with-nooku-framework/">my previous post</a>. </p>
+
+<p>That’s why our second layout got a div wrapper with a matching id.</p>
+
+<h4 id="let8217s-make-it-look-good">Let’s make it look good</h4>
+
+<p>To make it look more like a real Split View, create a CSS file here:<br />
+<a href="https://nooku.assembla.com/code/nooku-examples/subversion/nodes/trunk/harbour/code/media/com_harbour/css/split.css">/media/com_harbour/css/split.css</a></p>
+
+<pre name="code" class="css:nocontrols">.mod-harbour-boats, #boat-overlay {
+	float: left;
+	height: 400px;
+	margin: 0;
+}
+.mod-harbour-boats {
+	width: 25%;
+}
+#boat-overlay {
+	width: 75%;
+	overflow: hidden;
+}
+#boat-overlay #boat {
+	float: none;
+}
+.mod-harbour-boats {
+	padding: 0;
+	overflow-x: hidden;
+}
+.mod-harbour-boats li {
+	background: none;
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.mod-harbour-boats li a {
+	display: block;
+	height: 32px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 32px;
+	text-indent: 15px;
+}
+</pre>
+
+<h3 id="step-2-8211-koverlay-and-a-little-bit-of-mootools">Step 2 – KOverlay and a little bit of MooTools</h3>
+
+<p>Start off by creating the following js file:<br />
+<a href="https://nooku.assembla.com/code/nooku-examples/subversion/nodes/trunk/harbour/code/media/com_harbour/js/split.js"> /media/com_harbour/js/split.js</a></p>
+
+<pre name="code" class="js:nocontrols">$$('.mod-harbour-boats').each(function(list){
+	list.getElements('a').addEvent('click', function(event){
+		new Event(event).stop();
+
+		list.getElements('li.active').removeClass('active');
+		this.getParent().addClass('active');
+
+		var overlay = $('boat-overlay');
+		//KOverlay reads the href value when making the request
+		overlay.setProperty('href', this.getProperty('href'));
+		//Instantiate KOverlay with evalScripts false to prevent duplicated events
+		new KOverlay(overlay, "{evalScripts: false}");
+	});
+});</pre>
+
+<p>The javascript is super simple. We get the <code>&lt;div id=”boat-overlay”&gt;</code> from our first layout, since this is were we want the ajax to be outputted. Then we give the overlay the same href value as the link we just clicked.</p>
+
+<div id="”boat-overlay”">
+  <p>
+    And finally we initialize KOverlay, passing it our overlay div and letting KOverlay do all the work. That’s a wrap! At this point we got a fully working Split View powered by ajax.
+  </p>
+  
+  <h3>
+    Step 3 &#8211; Reusing the Split View elsewhere
+  </h3>
+  
+  <p>
+    How do I render this from another view or from a module? Thanks to Nooku strict naming conventions and out of the box HMVC, we can guess our way to it easily.
+  </p>
+  
+  <p>
+    We know that the view is <strong>“boats”</strong> and the layout is <strong>“split”</strong>. The controller action that’s called when you go to <strong>&amp;view=boats</strong> is called “<strong>browse”</strong> since you’re browsing a list of items.
+  </p>
+  
+  <p>
+    So by that we can assume that we only have to use the factory to get the <strong>“boat”</strong> controller, override its default layout to <strong>“split”</strong> and execute <strong>“browse”</strong>.
+  </p>
+  
+  <p>
+    All that is done with just a few words:
+  </p>
+  
+  <pre name="code" class="php:nocontrols">echo KFactory::tmp('site::com.harbour.controller.boat')
+-&gt;layout('split')
+-&gt;browse();</pre>
+  
+  <p>
+    You can see it in use in the current mod_harbour module in the Harbour trunk:<br /> <a href="http://www.assembla.com/code/nooku-examples/subversion/nodes/trunk/harbour/code/site/modules/mod_harbour">/trunk/harbour/code/site/modules/mod_harbour</a>
+  </p>
+  
+  <p>
+    If you’ve heard about HMVC before but still not quite sure what it is, then I can tell you that what you’re looking at is one practical example of how HMVC works.<br /> Not only does it help reduce the amount of code, but more importantly it makes all your code predictable for yourself as much as others.
+  </p>
+  
+  <h3>
+    Conclusion
+  </h3>
+  
+  <p>
+    Split Views is just one example on how strict conventions and design patterns really helps you focus on what matters the most when creating great software that people enjoy using.
+  </p>
+  
+  <p>
+    Now, go have fun coding in the Disneyland of code already!
+  </p>
+</div>
+
+
+          <hr>
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nooku'; // required: replace example with your forum shortname
+        var disqus_identifier = '198831172';
+        var disqus_url = 'http://blog.nooku.org/blog/2010/12/split-views-using-nooku-framework/';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        <div class="col-sm-3">
+           <h3>Archives</h3>
+          <ul>
+
+
+  
+   
+  
+    <li><a href="/blog/2013/03">March 2013</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2012/09">September 2012</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2012/06">June 2012</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2012/05">May 2012</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2012/04">April 2012</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2012/03">March 2012</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2012/01">January 2012</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/12">December 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/11">November 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/10">October 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/09">September 2011</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/08">August 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/07">July 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/05">May 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/04">April 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/03">March 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/02">February 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2011/01">January 2011</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/12">December 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/11">November 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/10">October 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/09">September 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/08">August 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/07">July 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/06">June 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/05">May 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/04">April 2010</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2010/03">March 2010</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/11">November 2009</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/09">September 2009</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/08">August 2009</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/07">July 2009</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/06">June 2009</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/05">May 2009</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/04">April 2009</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2009/03">March 2009</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2008/11">November 2008</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2008/09">September 2008</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2008/08">August 2008</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2008/06">June 2008</a></li>
+     
+  
+
+  
+   
+  
+    <li><a href="/blog/2008/05">May 2008</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+    <li><a href="/blog/2008/04">April 2008</a></li>
+     
+  
+
+  
+   
+  
+
+  
+   
+  
+
+  
+   
+  
+
+</ul>
+        </div>
+      </div>
+
+
+  
+
+    </div>
+</div>
+
+    <div class="section footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                        <a href="http://www.facebook.com/nooku.org">Facebook</a> |
+                        <a href="http://www.twitter.com/nooku">Twitter</a> |
+                        <a href="http://www.github.com/nooku">Github</a> |
+                        <a href="http://feeds.nooku.org/blog">RSS</a>
+                    </p>
+                </div>
+                <div class="copyright col-sm-6">
+                    <p>Copyright now <a href="http://www.timble.net">Timble</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

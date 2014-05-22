@@ -2,7 +2,7 @@
 title: How Nooku helps the United Nations
 author: Johan
 layout: post
-permalink: /2008/09/how-nooku-helps-the-united-nations/
+permalink: /blog/2008/09/how-nooku-helps-the-united-nations/
 dsq_thread_id:
   - 85775592
 categories:

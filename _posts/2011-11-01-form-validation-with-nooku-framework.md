@@ -2,7 +2,7 @@
 title: Form validation with Nooku Framework
 author: Stian
 layout: post
-permalink: /2011/11/form-validation-with-nooku-framework/
+permalink: /blog/2011/11/form-validation-with-nooku-framework/
 dsq_thread_id:
   - 458539503
 categories:

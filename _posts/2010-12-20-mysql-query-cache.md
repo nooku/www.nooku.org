@@ -2,7 +2,7 @@
 title: MySQL Query Cache
 author: Shayne
 layout: post
-permalink: /2010/12/mysql-query-cache/
+permalink: /blog/2010/12/mysql-query-cache/
 dsq_thread_id:
   - 194535248
 categories:

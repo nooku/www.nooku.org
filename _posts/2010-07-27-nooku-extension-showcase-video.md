@@ -2,7 +2,7 @@
 title: Nooku Extension Showcase Video
 author: Johan
 layout: post
-permalink: /2010/07/nooku-extension-showcase-video/
+permalink: /blog/2010/07/nooku-extension-showcase-video/
 dsq_thread_id:
   - 122832156
 categories:

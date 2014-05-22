@@ -2,7 +2,7 @@
 title: Party Time — Website Launch
 author: Johan
 layout: post
-permalink: /2008/04/party-time-%e2%80%94-website-launch/
+permalink: /blog/2008/04/party-time-%e2%80%94-website-launch/
 dsq_thread_id:
   - 86325342
 categories:

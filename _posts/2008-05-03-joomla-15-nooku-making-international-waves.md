@@ -2,7 +2,7 @@
 title: 'Joomla! 1.5 &#038; Nooku Making International Waves'
 author: Johan
 layout: post
-permalink: /2008/05/joomla-15-nooku-making-international-waves/
+permalink: /blog/2008/05/joomla-15-nooku-making-international-waves/
 dsq_thread_id:
   - 85777620
 categories:

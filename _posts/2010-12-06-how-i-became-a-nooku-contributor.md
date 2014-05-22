@@ -2,7 +2,7 @@
 title: How I became a Nooku contributor
 author: Christian
 layout: post
-permalink: /2010/12/how-i-became-a-nooku-contributor/
+permalink: /blog/2010/12/how-i-became-a-nooku-contributor/
 dsq_thread_id:
   - 185839236
 categories:

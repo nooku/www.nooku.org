@@ -2,7 +2,7 @@
 title: The magic of primary and unique keys
 author: Gergo
 layout: post
-permalink: /2011/11/the-magic-of-primary-and-unique-keys/
+permalink: /blog/2011/11/the-magic-of-primary-and-unique-keys/
 dsq_thread_id:
   - 467311219
 categories:

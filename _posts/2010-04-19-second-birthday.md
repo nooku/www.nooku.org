@@ -3,7 +3,7 @@ title: 'Nooku&#8217;s Second Birthday'
 author: Johan
 excerpt: "Today, April 17, 2010, it's exactly two years since we launched the Nooku.org website. We have been working behind the scenes for a long time, so it feels great to finally be able to show the world what we were doing. So it is with great pride that on Nooku's second birthday, we're announcing our brand new site."
 layout: post
-permalink: /2010/04/second-birthday/
+permalink: /blog/2010/04/second-birthday/
 dsq_thread_id:
   - 87707002
 categories:

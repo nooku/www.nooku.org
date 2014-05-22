@@ -2,7 +2,7 @@
 title: Announcing Nooku Code Jam in Hamburg
 author: Johan
 layout: post
-permalink: /2009/06/join-us-for-the-second-nooku-code-jam-in-hamburg/
+permalink: /blog/2009/06/join-us-for-the-second-nooku-code-jam-in-hamburg/
 dsq_thread_id:
   - 85784023
 categories:

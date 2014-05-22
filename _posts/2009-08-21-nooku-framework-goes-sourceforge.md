@@ -2,7 +2,7 @@
 title: Nooku Framework goes Sourceforge
 author: Johan
 layout: post
-permalink: /2009/08/nooku-framework-goes-sourceforge/
+permalink: /blog/2009/08/nooku-framework-goes-sourceforge/
 dsq_thread_id:
   - 85785159
 categories:

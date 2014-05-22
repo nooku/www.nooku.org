@@ -2,7 +2,7 @@
 title: The magic of file uploads with com_files
 author: ercan
 layout: post
-permalink: /2011/10/the-magic-of-file-uploads-with-com_files/
+permalink: /blog/2011/10/the-magic-of-file-uploads-with-com_files/
 dsq_thread_id:
   - 452293371
 categories:

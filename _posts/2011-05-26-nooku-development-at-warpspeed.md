@@ -2,7 +2,7 @@
 title: Nooku Development at Warpspeed
 author: Johan
 layout: post
-permalink: /2011/05/nooku-development-at-warpspeed/
+permalink: /blog/2011/05/nooku-development-at-warpspeed/
 dsq_thread_id:
   - 314549288
 categories:

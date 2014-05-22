@@ -2,7 +2,7 @@
 title: Why build a Multilanguage Website?
 author: Johan
 layout: post
-permalink: /2008/06/why-build-a-multilanguage-website/
+permalink: /blog/2008/06/why-build-a-multilanguage-website/
 dsq_thread_id:
   - 85778480
 categories:

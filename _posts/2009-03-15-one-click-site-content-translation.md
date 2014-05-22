@@ -2,7 +2,7 @@
 title: One Click Site Content Translation
 author: Johan
 layout: post
-permalink: /2009/03/one-click-site-content-translation/
+permalink: /blog/2009/03/one-click-site-content-translation/
 dsq_thread_id:
   - 85771246
 categories:

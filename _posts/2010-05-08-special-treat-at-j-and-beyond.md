@@ -2,7 +2,7 @@
 title: Special Treat at J! And Beyond
 author: Johan
 layout: post
-permalink: /2010/05/special-treat-at-j-and-beyond/
+permalink: /blog/2010/05/special-treat-at-j-and-beyond/
 dsq_thread_id:
   - 93601132
 categories:

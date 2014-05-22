@@ -2,7 +2,7 @@
 title: The Final Countdown to JAB11
 author: Tom
 layout: post
-permalink: /2011/05/the-final-countdown-to-jab11/
+permalink: /blog/2011/05/the-final-countdown-to-jab11/
 dsq_thread_id:
   - 294983648
 categories:

@@ -2,7 +2,7 @@
 title: Nooku Content 0.5.7 and 0.6.1 released
 author: Johan
 layout: post
-permalink: /2009/03/nooku-057-and-061-released/
+permalink: /blog/2009/03/nooku-057-and-061-released/
 dsq_thread_id:
   - 85783539
 categories:

@@ -2,7 +2,7 @@
 title: Nooku Community wins 4 J!OSCARS
 author: Tom
 layout: post
-permalink: /2011/05/nooku-community-wins-4-joscars/
+permalink: /blog/2011/05/nooku-community-wins-4-joscars/
 dsq_thread_id:
   - 302755444
 categories:

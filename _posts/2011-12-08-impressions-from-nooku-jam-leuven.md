@@ -2,7 +2,7 @@
 title: Impressions from Nooku Jam Leuven
 author: Myra
 layout: post
-permalink: /2011/12/impressions-from-nooku-jam-leuven/
+permalink: /blog/2011/12/impressions-from-nooku-jam-leuven/
 dsq_thread_id:
   - 497647466
 categories:

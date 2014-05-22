@@ -2,7 +2,7 @@
 title: Looking back at Nooku Jam 12.2
 author: Myra
 layout: post
-permalink: /2012/06/looking-back-at-nooku-jam-12-2/
+permalink: /blog/2012/06/looking-back-at-nooku-jam-12-2/
 dsq_thread_id:
   - 717015216
 categories:

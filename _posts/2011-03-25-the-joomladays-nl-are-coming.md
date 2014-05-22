@@ -2,7 +2,7 @@
 title: The Joomladays NL are coming!
 author: Tom
 layout: post
-permalink: /2011/03/the-joomladays-nl-are-coming/
+permalink: /blog/2011/03/the-joomladays-nl-are-coming/
 dsq_thread_id:
   - 263033825
 categories:

@@ -2,7 +2,7 @@
 title: 'Nooku Framework&#8217;s 3rd Birthday!'
 author: Tom
 layout: post
-permalink: /2011/02/nooku-framework-3rd-birthday/
+permalink: /blog/2011/02/nooku-framework-3rd-birthday/
 dsq_thread_id:
   - 230020213
 categories:

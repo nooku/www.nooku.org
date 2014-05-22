@@ -2,7 +2,7 @@
 title: Nooku Content 0.5.5 released
 author: Johan
 layout: post
-permalink: /2008/11/nooku-055-released/
+permalink: /blog/2008/11/nooku-055-released/
 dsq_thread_id:
   - 85783575
 categories:

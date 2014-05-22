@@ -27,7 +27,7 @@
                         <div class="container-fluid">
                             <ul class="nav navbar-nav">
                                 {% for link in site.navigation %}
-                                <li {% if link.active == page.url %}class="active"{% endif %}>
+                                <li {% if page.layout == link.layout %}class="active"{% endif %}>
                                     <a href="{{ link.url }}">{{ link.text }}</a>
                                 </li>
                                 {% endfor %}

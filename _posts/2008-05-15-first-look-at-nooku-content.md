@@ -2,7 +2,7 @@
 title: First Look at Nooku Content
 author: Johan
 layout: post
-permalink: /2008/05/first-look-at-nooku-content/
+permalink: /blog/2008/05/first-look-at-nooku-content/
 enclosure:
   - |
     |

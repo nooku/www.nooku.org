@@ -2,7 +2,7 @@
 title: Happy Nooku Year !
 author: Johan
 layout: post
-permalink: /2011/01/happy-nooku-year/
+permalink: /blog/2011/01/happy-nooku-year/
 dsq_thread_id:
   - 203661631
 categories:

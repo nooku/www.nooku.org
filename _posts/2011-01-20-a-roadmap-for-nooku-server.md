@@ -2,7 +2,7 @@
 title: A roadmap for Nooku Server
 author: Johan
 layout: post
-permalink: /2011/01/a-roadmap-for-nooku-server/
+permalink: /blog/2011/01/a-roadmap-for-nooku-server/
 dsq_thread_id:
   - 212815080
 categories:

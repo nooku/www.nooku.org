@@ -2,7 +2,7 @@
 title: Announcing the first Nooku Party
 author: Johan
 layout: post
-permalink: /2011/04/announcing-first-nooku-party/
+permalink: /blog/2011/04/announcing-first-nooku-party/
 dsq_thread_id:
   - 271681304
 categories:

@@ -2,7 +2,7 @@
 title: Happy 4th Birthday Joomla!
 author: Johan
 layout: post
-permalink: /2009/09/happy-4th-birthday-joomla/
+permalink: /blog/2009/09/happy-4th-birthday-joomla/
 dsq_thread_id:
   - 85785027
 categories:

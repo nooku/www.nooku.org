@@ -2,7 +2,7 @@
 title: Nooku Contributor Agreement
 author: Johan
 layout: post
-permalink: /2010/11/nooku-contributor-agreement/
+permalink: /blog/2010/11/nooku-contributor-agreement/
 dsq_thread_id:
   - 171565210
 categories:

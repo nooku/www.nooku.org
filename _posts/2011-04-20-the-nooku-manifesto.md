@@ -2,7 +2,7 @@
 title: The Nooku Manifesto
 author: Johan
 layout: post
-permalink: /2011/04/the-nooku-manifesto/
+permalink: /blog/2011/04/the-nooku-manifesto/
 dsq_thread_id:
   - 284204485
 categories:

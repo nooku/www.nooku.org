@@ -2,7 +2,7 @@
 title: Survey Results
 author: Johan
 layout: post
-permalink: /2008/09/survey-results/
+permalink: /blog/2008/09/survey-results/
 dsq_thread_id:
   - 85778439
 categories:

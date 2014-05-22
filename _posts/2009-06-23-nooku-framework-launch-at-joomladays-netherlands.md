@@ -2,7 +2,7 @@
 title: Nooku Framework launch at Joomladays Netherlands
 author: Johan
 layout: post
-permalink: /2009/06/nooku-framework-launch-at-joomladays-netherlands/
+permalink: /blog/2009/06/nooku-framework-launch-at-joomladays-netherlands/
 dsq_thread_id:
   - 85785191
 categories:

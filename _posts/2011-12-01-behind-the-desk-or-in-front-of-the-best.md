@@ -2,7 +2,7 @@
 title: Behind the desk or in front of the best
 author: Guest
 layout: post
-permalink: /2011/12/behind-the-desk-or-in-front-of-the-best/
+permalink: /blog/2011/12/behind-the-desk-or-in-front-of-the-best/
 dsq_thread_id:
   - 489666690
 categories:

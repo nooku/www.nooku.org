@@ -2,7 +2,7 @@
 title: Creating a diet for Nooku Server
 author: Johan
 layout: post
-permalink: /2011/01/creating-a-diet-for-nooku-server/
+permalink: /blog/2011/01/creating-a-diet-for-nooku-server/
 dsq_thread_id:
   - 206261720
 categories:

@@ -2,7 +2,7 @@
 title: Joomla vs Nooku Programming Economics
 author: Johan
 layout: post
-permalink: /2009/08/joomla-vs-nooku-programming-economics/
+permalink: /blog/2009/08/joomla-vs-nooku-programming-economics/
 dsq_thread_id:
   - 85785039
 categories:

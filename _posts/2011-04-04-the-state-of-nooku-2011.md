@@ -2,7 +2,7 @@
 title: The State of Nooku 2011
 author: Johan
 layout: post
-permalink: /2011/04/the-state-of-nooku-2011/
+permalink: /blog/2011/04/the-state-of-nooku-2011/
 dsq_thread_id:
   - 270774942
 categories:

@@ -2,7 +2,7 @@
 title: Classicalmasterclasses Goes Live in Five Languages
 author: Johan
 layout: post
-permalink: /2009/06/classicalmasterclasses-goes-live-in-five-languages/
+permalink: /blog/2009/06/classicalmasterclasses-goes-live-in-five-languages/
 dsq_thread_id:
   - 85739336
 categories:

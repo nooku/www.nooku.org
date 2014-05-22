@@ -2,7 +2,7 @@
 title: Putting Nooku Server on a diet
 author: Johan
 layout: post
-permalink: /2010/12/putting-nooku-server-on-a-diet/
+permalink: /blog/2010/12/putting-nooku-server-on-a-diet/
 dsq_thread_id:
   - 186721388
 categories:

@@ -2,7 +2,7 @@
 title: 'Nooku Framework &#8211; The API that speaks for itself'
 author: Johan
 layout: post
-permalink: /2009/05/nooku-framework-the-api-that-speaks-for-itself/
+permalink: /blog/2009/05/nooku-framework-the-api-that-speaks-for-itself/
 dsq_thread_id:
   - 85784053
 categories:

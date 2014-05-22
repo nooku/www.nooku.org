@@ -2,7 +2,7 @@
 title: Happy First Birthday, Nooku!
 author: Johan
 layout: post
-permalink: /2009/04/happy-first-birthday-nooku/
+permalink: /blog/2009/04/happy-first-birthday-nooku/
 dsq_thread_id:
   - 85784091
 categories:

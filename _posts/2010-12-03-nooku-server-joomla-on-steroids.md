@@ -2,7 +2,7 @@
 title: Nooku Server, Joomla on steroids
 author: Johan
 layout: post
-permalink: /2010/12/nooku-server-joomla-on-steroids/
+permalink: /blog/2010/12/nooku-server-joomla-on-steroids/
 dsq_thread_id:
   - 184077795
 categories:

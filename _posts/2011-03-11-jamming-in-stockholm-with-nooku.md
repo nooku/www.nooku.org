@@ -2,7 +2,7 @@
 title: Jamming in Stockholm with Nooku
 author: Guest
 layout: post
-permalink: /2011/03/jamming-in-stockholm-with-nooku/
+permalink: /blog/2011/03/jamming-in-stockholm-with-nooku/
 dsq_thread_id:
   - 251424375
 categories:

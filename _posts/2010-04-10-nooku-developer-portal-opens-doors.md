@@ -2,7 +2,7 @@
 title: Nooku Developer Portal opens doors
 author: Johan
 layout: post
-permalink: /2010/04/nooku-developer-portal-opens-doors/
+permalink: /blog/2010/04/nooku-developer-portal-opens-doors/
 dsq_thread_id:
   - 85736074
 categories:

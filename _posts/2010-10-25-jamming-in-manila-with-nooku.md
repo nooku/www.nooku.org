@@ -2,7 +2,7 @@
 title: Jamming in Manila with Nooku
 author: Rey
 layout: post
-permalink: /2010/10/jamming-in-manila-with-nooku/
+permalink: /blog/2010/10/jamming-in-manila-with-nooku/
 dsq_thread_id:
   - 161678308
 categories:

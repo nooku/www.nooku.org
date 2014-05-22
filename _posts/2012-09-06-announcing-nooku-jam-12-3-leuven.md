@@ -2,7 +2,7 @@
 title: Announcing Nooku Jam 12.3 Leuven!
 author: Tom
 layout: post
-permalink: /2012/09/announcing-nooku-jam-12-3-leuven/
+permalink: /blog/2012/09/announcing-nooku-jam-12-3-leuven/
 dsq_thread_id:
   - 833678846
 categories:

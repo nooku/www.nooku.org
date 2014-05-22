@@ -2,7 +2,7 @@
 title: 'Nooku TV &#8211; Anahita Social Engine for Joomla!'
 author: Johan
 layout: post
-permalink: /2009/06/nooku-tv-anahita-social-engine-for-joomla/
+permalink: /blog/2009/06/nooku-tv-anahita-social-engine-for-joomla/
 dsq_thread_id:
   - 85784008
 categories:

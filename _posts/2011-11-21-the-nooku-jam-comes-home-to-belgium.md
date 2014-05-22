@@ -2,7 +2,7 @@
 title: The Nooku Jam comes home to Belgium!
 author: Myra
 layout: post
-permalink: /2011/11/the-nooku-jam-comes-home-to-belgium/
+permalink: /blog/2011/11/the-nooku-jam-comes-home-to-belgium/
 dsq_thread_id:
   - 479363476
 categories:

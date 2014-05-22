@@ -2,7 +2,7 @@
 title: Jamming in Lugano with Nooku
 author: Johan
 layout: post
-permalink: /2011/02/jamming-in-lugano-with-nooku/
+permalink: /blog/2011/02/jamming-in-lugano-with-nooku/
 dsq_thread_id:
   - 227110591
 categories:

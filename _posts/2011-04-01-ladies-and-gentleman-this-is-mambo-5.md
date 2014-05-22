@@ -2,7 +2,7 @@
 title: Ladies and gentleman, this is Mambo 5
 author: Johan
 layout: post
-permalink: /2011/04/ladies-and-gentleman-this-is-mambo-5/
+permalink: /blog/2011/04/ladies-and-gentleman-this-is-mambo-5/
 dsq_thread_id:
   - 268291454
 categories:

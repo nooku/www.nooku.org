@@ -2,7 +2,7 @@
 title: Countdown to Nooku Jam 12.2 Leuven
 author: Myra
 layout: post
-permalink: /2012/04/countdown-to-nooku-jam-12-2-leuven/
+permalink: /blog/2012/04/countdown-to-nooku-jam-12-2-leuven/
 dsq_thread_id:
   - 642127236
 categories:

@@ -2,7 +2,7 @@
 title: 'Nooku Framework extension wins Joomla Developers&#8217; Showdown'
 author: Johan
 layout: post
-permalink: /2009/07/nooku-framework-extension-wins-joomla-developers-showdown/
+permalink: /blog/2009/07/nooku-framework-extension-wins-joomla-developers-showdown/
 dsq_thread_id:
   - 85785166
 categories:

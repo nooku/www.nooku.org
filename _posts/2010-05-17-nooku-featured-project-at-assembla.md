@@ -2,7 +2,7 @@
 title: Nooku featured project at Assembla
 author: Johan
 layout: post
-permalink: /2010/05/nooku-featured-project-at-assembla/
+permalink: /blog/2010/05/nooku-featured-project-at-assembla/
 dsq_thread_id:
   - 96489046
 categories:

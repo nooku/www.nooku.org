@@ -2,7 +2,7 @@
 title: Activity Streams with com_activities
 author: israel
 layout: post
-permalink: /2012/05/activity-streams-with-com_activities/
+permalink: /blog/2012/05/activity-streams-with-com_activities/
 dsq_thread_id:
   - 701470626
 categories:

@@ -6,7 +6,7 @@ excerpt: |
     During our three days at J! And Beyond, the International Joomla Conference, I was interviewed about Nooku Framework.
     We talked about the growing Nooku Community and the origins of the Nooku Content and Nooku Framework. In the middle it gets a bit technical, but hold on, after that there’s some fun stuff about the Joomlasphere’s obsession with Swahili names.
 layout: post
-permalink: /2010/06/jack-bremer-interviews-mathias-verraes/
+permalink: /blog/2010/06/jack-bremer-interviews-mathias-verraes/
 dsq_thread_id:
   - 104556634
 categories:

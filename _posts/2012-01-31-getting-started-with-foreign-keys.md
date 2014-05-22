@@ -2,7 +2,7 @@
 title: Getting started with foreign keys
 author: Gergo
 layout: post
-permalink: /2012/01/getting-started-with-foreign-keys/
+permalink: /blog/2012/01/getting-started-with-foreign-keys/
 dsq_thread_id:
   - 558967726
 categories:
