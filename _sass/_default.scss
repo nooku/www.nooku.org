@@ -6,3 +6,11 @@
 @media (max-width: 767px) {
 @import "responsive-small";
 }
+
+@media (max-width: 1005px) {
+	.ribbon {
+		position: absolute !important;
+   		top: -9999px !important;
+   		left: -9999px !important;
+	}
+}
