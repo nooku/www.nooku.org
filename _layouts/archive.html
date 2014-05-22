@@ -7,7 +7,11 @@
                     <h2>
                         {{ page.title }}
                     </h2>
-                    {{ content }}
+                    <div class="monthly-archive">
+                        <ul>
+                            {{ content }}
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-sm-3">
                     <ul>
@@ -16,7 +20,7 @@
                             {% capture currentyearshort %}{{post.date | date: "%Y/%m"}}{% endcapture %}
                             {% if currentyear != year %}
                                 <li><a href="/blog/{{ currentyearshort }}">{{ currentyear }}</a></li>
-                                {% capture year %}{{currentyear}}{% endcapture %} 
+                                {% capture year %}{{currentyear}}{% endcapture %}
                             {% endif %}
                         {% endfor %}
                     </ul>
