@@ -37,21 +37,19 @@ description: Nooku is a project for developers, integrators and hackers alike. T
           <hr>
         {% endfor %}
         <div class="pagination">
-  {% if paginator.previous_page == 1 %}
-    <a href="/blog" class="previous btn btn-default btn-xs text-center">Previous</a>
-  {% endif %}
-  {% if paginator.previous_page > 1 %}
-     <a href="/blog/page{{ paginator.previous_page }}" class="previous btn btn-default btn-xs text-center">Previous</a>
-  {% else %}
-  <!--  -->
-  {% endif %}
-  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="/blog/page{{ paginator.next_page }}" class="next btn btn-default btn-xs text-center">Next</a>
-  {% else %}
-    <!--<span class="next ">Next</span>-->
-  {% endif %}
-</div>
+          {% if paginator.previous_page == 1 %}
+            <a href="/blog" class="previous btn btn-default btn-xs text-center">Previous</a>
+          {% endif %}
+          {% if paginator.previous_page > 1 %}
+            <a href="/blog/page{{ paginator.previous_page }}" class="previous btn btn-default btn-xs text-center">Previous</a>
+          {% endif %}
+          <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+          {% if paginator.next_page %}
+            <a href="/blog/page{{ paginator.next_page }}" class="next btn btn-default btn-xs text-center">Next</a>
+            {% else %}
+            <!--<span class="next ">Next</span>-->
+          {% endif %}
+        </div>
       </div>
       <div class="col-sm-3">    
         <ul>
