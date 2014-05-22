@@ -19,7 +19,7 @@
                             {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
                             {% capture currentyearshort %}{{post.date | date: "%Y/%m"}}{% endcapture %}
                             {% if currentyear != year %}
-                                <li><a href="/blog/{{ currentyearshort }}">{{ currentyear }}</a></li>
+                                <li><a href="{{ site.url }}/blog/{{ currentyearshort }}">{{ currentyear }}</a></li>
                                 {% capture year %}{{currentyear}}{% endcapture %}
                             {% endif %}
                         {% endfor %}
