@@ -21,4 +21,4 @@ paginate: 5
 paginate_path: "blog/page:num"
 
 # We don't want to publish some files
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'scripts']
