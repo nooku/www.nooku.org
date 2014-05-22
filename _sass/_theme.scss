@@ -119,8 +119,9 @@ blockquote p {
 }
 
 .section.blog {
-    h2 { font-size: $font-size-base * 1.8; margin-top: 20px; text-align: left;}
-    h3 { font-size: $font-size-base * 1; line-height:10px; margin-bottom: 28px; }
+    h2 { font-size: $font-size-base * 1.8; margin-top: 20px; text-align: left; font-weight:400;}
+    h3.text-muted { font-size: $font-size-base * 1; line-height:10px; margin-bottom: 28px; }
+    h3 { font-size: $font-size-base * 1.4;  margin-bottom: 10px; font-weight:400;}
 
     img {
         border-radius: 5px;
