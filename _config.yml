@@ -4,16 +4,14 @@ url: http://nooku.org
 pygments: true
 navigation:
 - text: About
-  url: /
-  active: /index.html
 - text: Manifesto
-  url: /manifesto
-  active: /manifesto/index.html
+  url: manifesto
 - text: Blog
-  url: /blog
-  active: /blog/
+  url: blog
   layout: blog
+
 monthly_archive:
+  layout: archive
   path: blog
 paginate: 5
 paginate_path: "blog/page:num"
