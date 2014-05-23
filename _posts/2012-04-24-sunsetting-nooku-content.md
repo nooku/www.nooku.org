@@ -9,9 +9,11 @@ categories:
   - Content
   - Partners
 ---
-[<img class="alignright" style="margin: 10px;" src="http://farm8.staticflickr.com/7268/6963235596_d99ba7451c_m.jpg" alt="Nooku Content Multi lingual Content Manager for Joomla" width="199" height="240" />][1]<span id="internal-source-marker_0.9985468608792871">The 17th of April 2012 marked the end of the state-of-the-art content translation tool for Joomla. The Nooku team is officially announcing the sunset of Nooku Content.</span>
+<span id="internal-source-marker_0.9985468608792871">The 17th of April 2012 marked the end of the state-of-the-art content translation tool for Joomla. The Nooku team is officially announcing the sunset of Nooku Content.</span>
 
 With the end of life of Joomla 1.5 coming up at the end of the month and the integrated [multilingual capabilities that are now available in Joomla 2.5][2], we feel there is no longer a need for a separate multilingual solution for Joomla.
+
+[<img class="alignright" style="margin: 10px;" src="http://farm8.staticflickr.com/7268/6963235596_d99ba7451c_m.jpg" alt="Nooku Content Multi lingual Content Manager for Joomla" width="199" height="240" />][1]
 
 With the sunset of Nooku Content, we are putting all our focus on growing Nooku as [a free and open source web application platform][3].
 

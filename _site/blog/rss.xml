@@ -8,7 +8,7 @@
         
             <item>
                 <title>Announcing Nooku Jam 13.1 Leuven</title>
-                <description>&lt;p&gt;We are happy to announce &lt;a href=&quot;http://nj131leuven.eventbrite.com/&quot;&gt;Nooku Jam 13.1&lt;/a&gt; which is taking place on &lt;strong&gt;Thursday &lt;/strong&gt;2 &amp;amp; Friday 3 May 2013&lt;strong&gt;** at the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; in **Leuven, BE&lt;/strong&gt;. Learn everything about the latest Nooku 13.1 release!&lt;/p&gt;
+                <description>&lt;p&gt;We are happy to announce &lt;a href=&quot;http://nj131leuven.eventbrite.com/&quot;&gt;Nooku Jam 13.1&lt;/a&gt; which is taking place on Thursday 2 &amp;amp; Friday 3 May 2013 at the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; in Leuven, BE. Learn everything about the latest Nooku 13.1 release!&lt;/p&gt;
 
 &lt;p&gt;Once again Nookuers from all over will come together. Expect lot’s of fun and two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.&lt;/p&gt;
 
@@ -286,19 +286,21 @@ Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/nooku/se
   How do you use com_activities in your component? Check out this code:
 &lt;/p&gt;
 
-&lt;pre class=&quot;brush: php; toolbar: true;&quot; style=&quot;text-align: left;&quot;&gt;class ComArticlesControllerArticle extends ComDefaultControllerDefault
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;class ComArticlesControllerArticle extends ComDefaultControllerDefault
 {
     protected function _initialize(KConfig $config)
     {
-        $config-&amp;gt;append(array(
-            &#39;behaviors&#39; =&amp;gt; array(
-                &#39;com://admin/activities.controller.behavior.loggable&#39;,
+        $config-&amp;amp;gt;append(array(
+            &amp;#39;behaviors&amp;#39; =&amp;amp;gt; array(
+                &amp;#39;com://admin/activities.controller.behavior.loggable&amp;#39;,
             )
         ));
 
         parent::_initialize($config);
     }
-}&lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p style=&quot;text-align: left;&quot;&gt;
   In your controller, simply add the “loggable” controller behavior from com_activities. By default, the loggable behavior is triggered on controller actions: add, edit and delete.
@@ -316,20 +318,24 @@ Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/nooku/se
   The behavior is also flexible, you can configure it to track only certain actions such as after login, or after logout as demonstrated in this code:
 &lt;/p&gt;
 
-&lt;pre class=&quot;brush: php; toolbar: true;&quot; style=&quot;text-align: left;&quot;&gt;$config-&amp;gt;append(array(
-    &#39;behaviors&#39; =&amp;gt; array(
-         $this-&amp;gt;getService(&#39;com://admin/activities.controller.behavior.loggable&#39;,
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;$config-&amp;amp;gt;append(array(
+    &amp;#39;behaviors&amp;#39; =&amp;amp;gt; array(
+         $this-&amp;amp;gt;getService(&amp;#39;com://admin/activities.controller.behavior.loggable&amp;#39;,
          array(
-             &#39;title_column&#39; =&amp;gt; &#39;name&#39;,
-             &#39;actions&#39;      =&amp;gt; array(&#39;after.login&#39;, &#39;after.logout&#39;)
+             &amp;#39;title_column&amp;#39; =&amp;amp;gt; &amp;#39;name&amp;#39;,
+             &amp;#39;actions&amp;#39;      =&amp;amp;gt; array(&amp;#39;after.login&amp;#39;, &amp;#39;after.logout&amp;#39;)
      ))),
-));&lt;/pre&gt;
+));&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p style=&quot;text-align: left;&quot;&gt;
   Aside from the HTML view, com_activities can also output the JSON format that follows the emerging Activity Streams standard. To do this, just append format=json in the URL e.g
 &lt;/p&gt;
 
-&lt;pre class=&quot;brush: php; toolbar: true;&quot; style=&quot;text-align: left;&quot;&gt;index.php?com_activities&amp;amp;view=activities&amp;amp;format=json.&lt;/pre&gt;
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;index.php?com_activities&amp;amp;view=activities&amp;amp;format=json.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p style=&quot;text-align: left;&quot;&gt;
   Using Nooku’s RESTful architecture, you can syndicate your component’s activity stream without additional effort.
@@ -362,9 +368,11 @@ Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/nooku/se
         
             <item>
                 <title>Sunsetting Nooku Content</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/nooku/6963235596/&quot; title=&quot;Nooku Content Multi lingual Content Manager for Joomla by Nooku, on Flickr&quot;&gt;&lt;img class=&quot;alignright&quot; style=&quot;margin: 10px;&quot; src=&quot;http://farm8.staticflickr.com/7268/6963235596_d99ba7451c_m.jpg&quot; alt=&quot;Nooku Content Multi lingual Content Manager for Joomla&quot; width=&quot;199&quot; height=&quot;240&quot; /&gt;&lt;/a&gt;&lt;span id=&quot;internal-source-marker_0.9985468608792871&quot;&gt;The 17th of April 2012 marked the end of the state-of-the-art content translation tool for Joomla. The Nooku team is officially announcing the sunset of Nooku Content.&lt;/span&gt;&lt;/p&gt;
+                <description>&lt;p&gt;&lt;span id=&quot;internal-source-marker_0.9985468608792871&quot;&gt;The 17th of April 2012 marked the end of the state-of-the-art content translation tool for Joomla. The Nooku team is officially announcing the sunset of Nooku Content.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;With the end of life of Joomla 1.5 coming up at the end of the month and the integrated &lt;a href=&quot;http://magazine.joomla.org/issues/Issue-Nov-2011/item/593-Build-a-Multilingual-Site-in-Joomla-1-7&quot;&gt;multilingual capabilities that are now available in Joomla 2.5&lt;/a&gt;, we feel there is no longer a need for a separate multilingual solution for Joomla.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/nooku/6963235596/&quot; title=&quot;Nooku Content Multi lingual Content Manager for Joomla by Nooku, on Flickr&quot;&gt;&lt;img class=&quot;alignright&quot; style=&quot;margin: 10px;&quot; src=&quot;http://farm8.staticflickr.com/7268/6963235596_d99ba7451c_m.jpg&quot; alt=&quot;Nooku Content Multi lingual Content Manager for Joomla&quot; width=&quot;199&quot; height=&quot;240&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;With the sunset of Nooku Content, we are putting all our focus on growing Nooku as &lt;a href=&quot;http://prezi.com/y8xf4syr9yrr/nooku-from-vision-to-architecture/&quot;&gt;a free and open source web application platform&lt;/a&gt;.&lt;/p&gt;
 
@@ -461,9 +469,9 @@ Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/nooku/se
 
 &lt;!--more--&gt;
 
-&lt;p&gt;&lt;span id=&quot;internal-source-marker_0.1697432892397046&quot;&gt;&amp;lt;/p&amp;gt; &amp;lt;h3 dir=&quot;ltr&quot;&amp;gt;
+&lt;h3 dir=&quot;ltr&quot;&gt;
   Share and collaborate
-&amp;lt;/h3&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/h3&gt;
 
 &lt;p&gt;
   A Nooku Jam is an open, participatory workshop-event, whose content is provided by participants. The concept is very similar to a &lt;a href=&quot;http://barcamp.org/w/page/405173/TheRulesOfBarCamp&quot;&gt;barcamp&lt;/a&gt;. It is an intense event with discussions, demos and interaction from the attendees.

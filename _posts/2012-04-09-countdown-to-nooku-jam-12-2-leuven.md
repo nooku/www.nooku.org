@@ -22,7 +22,8 @@ Join us in this creative and innovative Nooku event. [Register][2] today!
 
 <!--more-->
 
-<span id="internal-source-marker_0.1697432892397046"></p> <h3 dir="ltr">
+
+<h3 dir="ltr">
   Share and collaborate
 </h3>
 
@@ -47,7 +48,7 @@ Join us in this creative and innovative Nooku event. [Register][2] today!
 </p>
 
 <p>
-  <a href="http://nj122leuven.eventbrite.com/">Sign up</a> for Nooku Jam 12.2 Leuven today!</span>
+  <a href="http://nj122leuven.eventbrite.com/">Sign up</a> for Nooku Jam 12.2 Leuven today!
 </p>
 
  [1]: http://www.flandersdc.be/en

@@ -8,6 +8,7 @@
     <title>The magic of primary and unique keys</title>
     <meta name="description" content="{ page.description }}" />
     <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico" />
+    <link href="/assets/css/prism.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/style.css">
 
@@ -83,8 +84,10 @@
 
 <p>If primary and unique keys are properly defined in the database schema, it is possible to retrieve an item without writing any line of code. In com_harbour’s boats table, harbour_boat_id is a primary key, and slug is a unique key. It is possible to get the same boat by using any of these keys:</p>
 
-<pre class="brush: php; toolbar: true;">index.php?option=com_harbour&amp;view=boat&amp;id=4
-index.php?option=com_harbour&amp;view=boat&amp;slug=queen-mary-2</pre>
+<div>
+  <pre data-line=""><code class="language-php">index.php?option=com_harbour&amp;view=boat&amp;id=4
+index.php?option=com_harbour&amp;view=boat&amp;slug=queen-mary-2</code></pre>
+</div>
 
 <p>There is an important thing to note here. If an identity column exists (an auto increment key), the name “id” is used for it in the framework. So for example the column harbour_boat_id is accessed as $boat-&gt;id.</p>
 
@@ -131,18 +134,21 @@ index.php?option=com_harbour&amp;view=boat&amp;slug=queen-mary-2</pre>
     If the request is unique (it contains at least one unique state), Nooku Framework is able to fetch the row. The magic happens in KModelTable::_buildQueryWhere:
   </p>
   
-  <pre class="brush: php; toolbar: true;">$states = $this-&gt;_state-&gt;getData(true);
+<div>
+  <pre data-line=""><code class="language-php">$states = $this-&amp;gt;_state-&amp;gt;getData(true);
 
 if(!empty($states))
 {
-    $states = $this-&gt;getTable()-&gt;mapColumns($states);
-    foreach($states as $key =&gt; $value)
+    $states = $this-&amp;gt;getTable()-&amp;gt;mapColumns($states);
+    foreach($states as $key =&amp;gt; $value)
     {
         if(isset($value)) {
-            $query-&gt;where('tbl.'.$key, 'IN', $value);
+            $query-&amp;gt;where(&#39;tbl.&#39;.$key, &#39;IN&#39;, $value);
         }
     }
-}</pre>
+}</code></pre>
+</div>
+
   
   <p>
     The 1st line requests the unique states from KConfigState. If there are any (3rd line), it iterates through them (6th line) and adds a WHERE statement to the query (9th line).
@@ -797,5 +803,6 @@ if(!empty($states))
 </div>
 </div>
 <a class="ribbon" href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: absolute; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-right.png"> </a>
+<script src="/assets/js/prism.js"></script>
 </body>
 </html>

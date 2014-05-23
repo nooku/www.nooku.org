@@ -3,7 +3,7 @@ name: Nooku
 description: Nooku is a project for developers integrators and hackers alike. Through collaboration we innovate and grow Nooku
 url: http://www.nooku.org
 
-highlighter: pygments
+highlighter: prism
 
 navigation:
 - text: About

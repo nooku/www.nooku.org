@@ -12,8 +12,9 @@ categories:
 <span id="internal-source-marker_0.5432163879740983">It’s with great pleasure that we unveil our latest contribution to Nooku developers and development : the #Nooku IRC channel which is being officially launched today.</span>
 
 <p style="text-align: left;">
-  <a title="nooku-ascii by Nooku, on Flickr" href="http://www.flickr.com/photos/nooku/6853671028/"><img class="aligncenter" src="http://farm7.staticflickr.com/6048/6853671028_b1a7196c98_m.jpg" alt="nooku-ascii" width="240" height="121" /></a><br /> Internet Relay Chat (IRC) is a real time communication platform with millions of users and is also extensively used by developers. IRC is supported and used by many open source projects to help developers communicate and collaborate.
+   Internet Relay Chat (IRC) is a real time communication platform with millions of users and is also extensively used by developers. IRC is supported and used by many open source projects to help developers communicate and collaborate.
 </p>
+<a title="nooku-ascii by Nooku, on Flickr" href="http://www.flickr.com/photos/nooku/6853671028/"><img class="aligncenter" src="http://farm7.staticflickr.com/6048/6853671028_b1a7196c98_m.jpg" alt="nooku-ascii" width="240" height="121" /></a><br />
 
 To access the Nooku channel, you will need an IRC client. For some of the more noteworthy clients, we have come up with a list for you to check out. Point your client to connect to  [irc.nooku.org][1] on port 6667 and then type /join #Nooku or simply go to irc://irc.nooku.org
 

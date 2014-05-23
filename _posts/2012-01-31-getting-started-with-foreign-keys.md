@@ -44,23 +44,25 @@ tags:
     Assume that we have an articles table with two columns: article_id and title. We have an authors table as well with the columns: author_id and name. Here is the SQL code for the tables:
   </p>
   
-  <pre class="brush: php; toolbar: true;">CREATE TABLE IF NOT EXISTS `articles` (
+{% prism sql %}
+CREATE TABLE IF NOT EXISTS `articles` (
 `article_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 `title` VARCHAR(255) NOT NULL DEFAULT '',
 PRIMARY KEY (`article_id`)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
-
 CREATE TABLE IF NOT EXISTS `authors` (
 `author_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 `name` VARCHAR(255) NOT NULL DEFAULT '',
 PRIMARY KEY (`author_id`)
-) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;</pre>
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+{% endprism %}
   
   <p>
     We want to assign authors to articles. An author can belong to more than one articles, and an article can belong to more than one authors. So this is a many-to-many relation. That&#8217;s why we need a relation table too, which has article_id and author_id columns:
   </p>
   
-  <pre class="brush: php; toolbar: true;">CREATE TABLE IF NOT EXISTS `articles_authors` (
+{% prism sql %}
+CREATE TABLE IF NOT EXISTS `articles_authors` (
 `article_id` INT UNSIGNED NOT NULL,
 `author_id` INT UNSIGNED NOT NULL,
 FOREIGN KEY (`article_id`)
@@ -69,7 +71,8 @@ ON DELETE CASCADE,
 FOREIGN KEY (`author_id`)
 REFERENCES `authors`(`author_id`)
 ON DELETE RESTRICT
-) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;</pre>
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+{% endprism %}
   
   <p>
     As you can see, we specified the foreign keys with CASCADE and RESTRICT options. Let’s try to delete an article. Notice that relations in the articles_authors table are deleted with it automatically. Now let’s try to remove an author. If the author is referenced in the relation table, then MySQL refuses to delete it. This ensures referential integrity.

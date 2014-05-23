@@ -21,8 +21,10 @@ tags:
 
 If primary and unique keys are properly defined in the database schema, it is possible to retrieve an item without writing any line of code. In com\_harbour’s boats table, harbour\_boat_id is a primary key, and slug is a unique key. It is possible to get the same boat by using any of these keys:
 
-<pre class="brush: php; toolbar: true;">index.php?option=com_harbour&view=boat&id=4
-index.php?option=com_harbour&view=boat&slug=queen-mary-2</pre>
+{% prism php %}
+index.php?option=com_harbour&view=boat&id=4
+index.php?option=com_harbour&view=boat&slug=queen-mary-2
+{% endprism %}
 
 There is an important thing to note here. If an identity column exists (an auto increment key), the name &#8220;id&#8221; is used for it in the framework. So for example the column harbour\_boat\_id is accessed as $boat->id.
 
@@ -69,7 +71,8 @@ There is an important thing to note here. If an identity column exists (an auto 
     If the request is unique (it contains at least one unique state), Nooku Framework is able to fetch the row. The magic happens in KModelTable::_buildQueryWhere:
   </p>
   
-  <pre class="brush: php; toolbar: true;">$states = $this-&gt;_state-&gt;getData(true);
+{% prism php %}
+$states = $this-&gt;_state-&gt;getData(true);
 
 if(!empty($states))
 {
@@ -80,7 +83,8 @@ if(!empty($states))
             $query-&gt;where('tbl.'.$key, 'IN', $value);
         }
     }
-}</pre>
+}
+{% endprism %}
   
   <p>
     The 1st line requests the unique states from KConfigState. If there are any (3rd line), it iterates through them (6th line) and adds a WHERE statement to the query (9th line).
