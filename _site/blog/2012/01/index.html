@@ -74,13 +74,132 @@
                         
 <h2><a href="/blog/2012/01/onward-to-2012/">Onward to 2012</a></h2>
 <h3 class="text-muted">23 January 2012 by Johan</h3>
-<p><div> <p> <span id="internal-source-marker_0.2972320301923901">The beginning of every new year gives pause for both retrospective and prospective thought. We celebrate the new year as we take a look back at the year that was and get a glimpse of the year that will be.</span> </p> <h2> Looking back at the year that was </h2> <p> <em>Creativity, Innovation and Inspiration</em> &#8211; three words I will remember best...</p>
+<p><div>
+  <p>
+    <span id="internal-source-marker_0.2972320301923901">The beginning of every new year gives pause for both retrospective and prospective thought. We celebrate the new year as we take a look back at the year that was and get a glimpse of the year that will be.</span>
+  </p>
+  
+  <h2>
+    Looking back at the year that was
+  </h2>
+  
+  <p>
+    <em>Creativity, Innovation and Inspiration</em> &#8211; three words I will remember best from 2011. The platitude “hard work pays off” rang true this past year with the great work done in our little project.  Nooku development literally <a href="http://blog.nooku.org/2011/05/nooku-development-at-warpspeed/#more-1493">moved ahead at warp-speed</a> in 2011.
+  </p>
+  
+  <h3>
+    Growing the Nooku Platform
+  </h3>
+  
+  <ul>
+    <li>
+      Nooku Framework <a href="http://blog.nooku.org/2011/07/nooku-07-alpha-3-released/">grew</a> <a href="http://blog.nooku.org/2011/10/nooku-07-alpha-4-released/">to</a> an awesome RESTful framework for web development and especially for rapid development of powerful custom Joomla solutions.
+    </li>
+    <li>
+      Nooku Server. We saw the birth of <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">Nooku Server</a>, a multi-site web application platform. Based on <a href="http://blog.nooku.org/2011/01/creating-a-diet-for-nooku-server/">lightened core </a>of Joomla 1.5 and <a href="http://blog.nooku.org/2011/01/nooku-server-loses-40-weight/">optimised for performance and scalability</a>.
+    </li>
+    <li>
+      Nooku Components. Lot’s of innovation happened with the development of <a href="http://nooku.assembla.com/spaces/nooku-components/wiki">new re-usable components:</a> <a href="http://blog.nooku.org/2011/08/meet-com_files-joomla-file-management-2-0/">com_files</a>, com_activities, com_debug, com_groups, &#8230;
+    </li>
+  </ul>
+</div>
+
+</p>
 <a class="btn btn-default btn-sm text-center" href="/blog/2012/01/onward-to-2012/">Continue reading</a>
 <hr>
 
 <h2><a href="/blog/2012/01/getting-started-with-foreign-keys/">Getting started with foreign keys</a></h2>
 <h3 class="text-muted">31 January 2012 by Gergo</h3>
-<p><div> <p> An often asked question on the Nooku Framework mailing list is how to deal with relations in databases. Nooku Framework doesn&#8217;t support relations out of the box yet, but fortunately the InnoDB engine in MySQL does! </p> <p> There are three important rules that must be met in order to create relations: </p> <ol> <li> Both tables must be InnoDB tables and must...</p>
+<p><div>
+  <p>
+    An often asked question on the Nooku Framework mailing list is how to deal with relations in databases. Nooku Framework doesn&#8217;t support relations out of the box yet, but fortunately the InnoDB engine in MySQL does!
+  </p>
+  
+  <p>
+    There are three important rules that must be met in order to create relations:
+  </p>
+  
+  <ol>
+    <li>
+      Both tables must be InnoDB tables and must not be TEMPORARY tables.
+    </li>
+    <li>
+      Keys must have similar internal data types.
+    </li>
+    <li>
+      Both foreign and referenced keys need to be indexed.
+    </li>
+  </ol>
+  
+  <h3 dir="ltr">
+    A basic example
+  </h3>
+  
+  <p>
+    Let&#8217;s see the basics through an example:
+  </p>
+  
+  <p>
+    Assume that we have an articles table with two columns: article_id and title. We have an authors table as well with the columns: author_id and name. Here is the SQL code for the tables:
+  </p>
+  
+<div>
+  <pre data-line=""><code class="language-sql">CREATE TABLE IF NOT EXISTS `articles` (
+`article_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+`title` VARCHAR(255) NOT NULL DEFAULT &#39;&#39;,
+PRIMARY KEY (`article_id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+CREATE TABLE IF NOT EXISTS `authors` (
+`author_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(255) NOT NULL DEFAULT &#39;&#39;,
+PRIMARY KEY (`author_id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;</code></pre>
+</div>
+
+  
+  <p>
+    We want to assign authors to articles. An author can belong to more than one articles, and an article can belong to more than one authors. So this is a many-to-many relation. That&#8217;s why we need a relation table too, which has article_id and author_id columns:
+  </p>
+  
+<div>
+  <pre data-line=""><code class="language-sql">CREATE TABLE IF NOT EXISTS `articles_authors` (
+`article_id` INT UNSIGNED NOT NULL,
+`author_id` INT UNSIGNED NOT NULL,
+FOREIGN KEY (`article_id`)
+REFERENCES `articles`(`article_id`)
+ON DELETE CASCADE,
+FOREIGN KEY (`author_id`)
+REFERENCES `authors`(`author_id`)
+ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;</code></pre>
+</div>
+
+  
+  <p>
+    As you can see, we specified the foreign keys with CASCADE and RESTRICT options. Let’s try to delete an article. Notice that relations in the articles_authors table are deleted with it automatically. Now let’s try to remove an author. If the author is referenced in the relation table, then MySQL refuses to delete it. This ensures referential integrity.
+  </p>
+  
+  <h3 dir="ltr">
+    Keeping referential integrity
+  </h3>
+  
+  <p>
+    By using InnoDB, you can prevent accidental removal of referenced rows. Other than its roboust data management features, it has usability advantages too. For example some of the database management tools support foreign keys too. For example in Sequel Pro, an arrow is displayed next to the column’s value, and it takes you to the referenced row when you click on it. This little feature can be useful many times.
+  </p>
+  
+  <div>
+    <a title="foreignkeys by joomlatools, on Flickr" href="http://www.flickr.com/photos/joomlatools/6328763089/"><img src="http://farm7.static.flickr.com/6120/6328763089_2a1e7045a3_o.png" alt="foreignkeys" width="122" height="90" /></a>
+  </div>
+  
+  <p>
+    InnoDB has become the default engine in MySQL 5.5 and has many features over MyISAM. I am highly recommending every developer to consider using it in their applications.
+  </p>
+  
+  <p>
+    This was just a basic introduction to foreign keys, it is capable of much more! If you are interested, visit the <a href="http://dev.mysql.com/doc/refman/5.1/en/innodb-foreign-key-constraints.html">MySQL Reference Manual</a>.
+  </p>
+</div>
+</p>
 <a class="btn btn-default btn-sm text-center" href="/blog/2012/01/getting-started-with-foreign-keys/">Continue reading</a>
 <hr>
 

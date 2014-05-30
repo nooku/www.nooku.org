@@ -61,7 +61,7 @@ module Jekyll
 {% for post in page.posts %}
 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 <h3 class="text-muted">{{ post.date | date: "%d %B %Y"}} by {{ post.author }}</h3>
-<p>{{ post.content | truncatewords:65 }}</p>
+<p>{{ post.content | split:"<!--more-->" | first }}</p>
 <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
 <hr>
 {% endfor %}
