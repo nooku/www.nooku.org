@@ -75,7 +75,16 @@
             19 March 2012 by krisstoffer
           </h3>
           <p>
-            <p><span id="internal-source-marker_0.5432163879740983">It’s with great pleasure that we unveil our latest contribution to Nooku developers and development : the #Nooku IRC channel which is being officially launched today.</span></p> <p style="text-align: left;"> Internet Relay Chat (IRC) is a real time communication platform with millions of users and is also extensively used by developers. IRC is supported and used by many open source projects to help developers communicate...
+            <p><span id="internal-source-marker_0.5432163879740983">It’s with great pleasure that we unveil our latest contribution to Nooku developers and development : the #Nooku IRC channel which is being officially launched today.</span></p>
+
+<p style="text-align: left;">
+   Internet Relay Chat (IRC) is a real time communication platform with millions of users and is also extensively used by developers. IRC is supported and used by many open source projects to help developers communicate and collaborate.
+</p>
+<p><a title="nooku-ascii by Nooku, on Flickr" href="http://www.flickr.com/photos/nooku/6853671028/"><img class="aligncenter" src="http://farm7.staticflickr.com/6048/6853671028_b1a7196c98_m.jpg" alt="nooku-ascii" width="240" height="121" /></a><br /></p>
+
+<p>To access the Nooku channel, you will need an IRC client. For some of the more noteworthy clients, we have come up with a list for you to check out. Point your client to connect to  <a href="http://irc.nooku.org/">irc.nooku.org</a> on port 6667 and then type /join #Nooku or simply go to irc://irc.nooku.org</p>
+
+
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2012/03/introducing-nooku/">Continue reading</a>
           <hr>
@@ -87,7 +96,96 @@
             31 January 2012 by Gergo
           </h3>
           <p>
-            <div> <p> An often asked question on the Nooku Framework mailing list is how to deal with relations in databases. Nooku Framework doesn&#8217;t support relations out of the box yet, but fortunately the InnoDB engine in MySQL does! </p> <p> There are three important rules that must be met in order to create relations: </p> <ol> <li> Both tables must be InnoDB tables and must...
+            <div>
+  <p>
+    An often asked question on the Nooku Framework mailing list is how to deal with relations in databases. Nooku Framework doesn&#8217;t support relations out of the box yet, but fortunately the InnoDB engine in MySQL does!
+  </p>
+  
+  <p>
+    There are three important rules that must be met in order to create relations:
+  </p>
+  
+  <ol>
+    <li>
+      Both tables must be InnoDB tables and must not be TEMPORARY tables.
+    </li>
+    <li>
+      Keys must have similar internal data types.
+    </li>
+    <li>
+      Both foreign and referenced keys need to be indexed.
+    </li>
+  </ol>
+  
+  <h3 dir="ltr">
+    A basic example
+  </h3>
+  
+  <p>
+    Let&#8217;s see the basics through an example:
+  </p>
+  
+  <p>
+    Assume that we have an articles table with two columns: article_id and title. We have an authors table as well with the columns: author_id and name. Here is the SQL code for the tables:
+  </p>
+  
+<div>
+  <pre data-line=""><code class="language-sql">CREATE TABLE IF NOT EXISTS `articles` (
+`article_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+`title` VARCHAR(255) NOT NULL DEFAULT &#39;&#39;,
+PRIMARY KEY (`article_id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+CREATE TABLE IF NOT EXISTS `authors` (
+`author_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(255) NOT NULL DEFAULT &#39;&#39;,
+PRIMARY KEY (`author_id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;</code></pre>
+</div>
+
+  
+  <p>
+    We want to assign authors to articles. An author can belong to more than one articles, and an article can belong to more than one authors. So this is a many-to-many relation. That&#8217;s why we need a relation table too, which has article_id and author_id columns:
+  </p>
+  
+<div>
+  <pre data-line=""><code class="language-sql">CREATE TABLE IF NOT EXISTS `articles_authors` (
+`article_id` INT UNSIGNED NOT NULL,
+`author_id` INT UNSIGNED NOT NULL,
+FOREIGN KEY (`article_id`)
+REFERENCES `articles`(`article_id`)
+ON DELETE CASCADE,
+FOREIGN KEY (`author_id`)
+REFERENCES `authors`(`author_id`)
+ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;</code></pre>
+</div>
+
+  
+  <p>
+    As you can see, we specified the foreign keys with CASCADE and RESTRICT options. Let’s try to delete an article. Notice that relations in the articles_authors table are deleted with it automatically. Now let’s try to remove an author. If the author is referenced in the relation table, then MySQL refuses to delete it. This ensures referential integrity.
+  </p>
+  
+  <h3 dir="ltr">
+    Keeping referential integrity
+  </h3>
+  
+  <p>
+    By using InnoDB, you can prevent accidental removal of referenced rows. Other than its roboust data management features, it has usability advantages too. For example some of the database management tools support foreign keys too. For example in Sequel Pro, an arrow is displayed next to the column’s value, and it takes you to the referenced row when you click on it. This little feature can be useful many times.
+  </p>
+  
+  <div>
+    <a title="foreignkeys by joomlatools, on Flickr" href="http://www.flickr.com/photos/joomlatools/6328763089/"><img src="http://farm7.static.flickr.com/6120/6328763089_2a1e7045a3_o.png" alt="foreignkeys" width="122" height="90" /></a>
+  </div>
+  
+  <p>
+    InnoDB has become the default engine in MySQL 5.5 and has many features over MyISAM. I am highly recommending every developer to consider using it in their applications.
+  </p>
+  
+  <p>
+    This was just a basic introduction to foreign keys, it is capable of much more! If you are interested, visit the <a href="http://dev.mysql.com/doc/refman/5.1/en/innodb-foreign-key-constraints.html">MySQL Reference Manual</a>.
+  </p>
+</div>
+
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2012/01/getting-started-with-foreign-keys/">Continue reading</a>
           <hr>
@@ -99,7 +197,37 @@
             23 January 2012 by Johan
           </h3>
           <p>
-            <div> <p> <span id="internal-source-marker_0.2972320301923901">The beginning of every new year gives pause for both retrospective and prospective thought. We celebrate the new year as we take a look back at the year that was and get a glimpse of the year that will be.</span> </p> <h2> Looking back at the year that was </h2> <p> <em>Creativity, Innovation and Inspiration</em> &#8211; three words I will remember best...
+            <div>
+  <p>
+    <span id="internal-source-marker_0.2972320301923901">The beginning of every new year gives pause for both retrospective and prospective thought. We celebrate the new year as we take a look back at the year that was and get a glimpse of the year that will be.</span>
+  </p>
+  
+  <h2>
+    Looking back at the year that was
+  </h2>
+  
+  <p>
+    <em>Creativity, Innovation and Inspiration</em> &#8211; three words I will remember best from 2011. The platitude “hard work pays off” rang true this past year with the great work done in our little project.  Nooku development literally <a href="http://blog.nooku.org/2011/05/nooku-development-at-warpspeed/#more-1493">moved ahead at warp-speed</a> in 2011.
+  </p>
+  
+  <h3>
+    Growing the Nooku Platform
+  </h3>
+  
+  <ul>
+    <li>
+      Nooku Framework <a href="http://blog.nooku.org/2011/07/nooku-07-alpha-3-released/">grew</a> <a href="http://blog.nooku.org/2011/10/nooku-07-alpha-4-released/">to</a> an awesome RESTful framework for web development and especially for rapid development of powerful custom Joomla solutions.
+    </li>
+    <li>
+      Nooku Server. We saw the birth of <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">Nooku Server</a>, a multi-site web application platform. Based on <a href="http://blog.nooku.org/2011/01/creating-a-diet-for-nooku-server/">lightened core </a>of Joomla 1.5 and <a href="http://blog.nooku.org/2011/01/nooku-server-loses-40-weight/">optimised for performance and scalability</a>.
+    </li>
+    <li>
+      Nooku Components. Lot’s of innovation happened with the development of <a href="http://nooku.assembla.com/spaces/nooku-components/wiki">new re-usable components:</a> <a href="http://blog.nooku.org/2011/08/meet-com_files-joomla-file-management-2-0/">com_files</a>, com_activities, com_debug, com_groups, &#8230;
+    </li>
+  </ul>
+</div>
+
+
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2012/01/onward-to-2012/">Continue reading</a>
           <hr>
@@ -111,7 +239,29 @@
             08 December 2011 by Myra
           </h3>
           <p>
-            <div> <p> The recent Nooku Jam Leuven can be easily summed up in 2 words &#8211; <strong>incredibly inspiring</strong>! </p> <p> Twenty six <a href="https://twitter.com/#!/nooku/nj11leuven">attendees</a> discussed, collaborated and shared ideas on the 26th and 27th of November at the <a href="http://www.flandersdc.be/en">FlandersDC</a> Creativity Lab in Leuven, Belgium. The <a href="http://www.eventbrite.com/event/2326534728">Jam</a>, sponsored by <a href="http://www.moyoweb.nl/">Moyoweb</a>, <a href="http://beyounic.com/">Beyounic</a> and <a href="http://www.timble.net/">Timble</a>, was an inspiring weekend for the Nooku community....
+            <div>
+  <p>
+    The recent Nooku Jam Leuven can be easily summed up in 2 words &#8211; <strong>incredibly inspiring</strong>!
+  </p>
+  
+  <p>
+    Twenty six <a href="https://twitter.com/#!/nooku/nj11leuven">attendees</a> discussed, collaborated and shared ideas on the 26th and 27th of November at the <a href="http://www.flandersdc.be/en">FlandersDC</a> Creativity Lab in Leuven, Belgium. The <a href="http://www.eventbrite.com/event/2326534728">Jam</a>, sponsored by <a href="http://www.moyoweb.nl/">Moyoweb</a>, <a href="http://beyounic.com/">Beyounic</a> and <a href="http://www.timble.net/">Timble</a>, was an inspiring weekend for the Nooku community.
+  </p>
+  
+  <p>
+    The recipe : great ideas, creative people, lots of food and Belgian beer and an inspiring venue! Check the <a href="http://www.flickr.com/photos/valanx/sets/72157628152971783/">photostream</a> of David Deutsch for the evidence of the inspiring weekend.
+  </p>
+  
+  <h3 dir="ltr">
+    Looking Back
+  </h3>
+  
+  <p>
+    One of the rules of the Nooku Jam is : “You blog about the Jam” and that’s exactly what some of the jammers did.
+  </p>
+  
+  <p>
+    
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2011/12/impressions-from-nooku-jam-leuven/">Continue reading</a>
           <hr>
@@ -123,7 +273,33 @@
             06 December 2011 by Rey
           </h3>
           <p>
-            <div> <p> Following up on the success of the <a href="http://blog.nooku.org/2010/10/jamming-in-manila-with-nooku/">first Asian Nooku Jam in Manila</a> last September 2010. This year’s jam, was held in the heart of one of Metro Manila’s CBDs &#8211; Ortigas, where we were kindly given the run of the TechBar in the headquarters of <a href="http://www.exist.com/">Exist Software Labs</a>. </p> <h4 dir="ltr"> Jammers from all over </h4> <p> Demonstrating the global...
+            <div>
+  <p>
+    Following up on the success of the <a href="http://blog.nooku.org/2010/10/jamming-in-manila-with-nooku/">first Asian Nooku Jam in Manila</a> last September 2010. This year’s jam, was held in the heart of one of Metro Manila’s CBDs &#8211; Ortigas, where we were kindly given the run of the TechBar in the headquarters of <a href="http://www.exist.com/">Exist Software Labs</a>.
+  </p>
+  
+  <h4 dir="ltr">
+    Jammers from all over
+  </h4>
+  
+  <p>
+    Demonstrating the global reach of Nooku, two of our Jammers hailed from the foothills of the gods &#8211; Nepal.  Nischal Pradhan, founder and CEO of a software development firm in Nepal that utilizes Nooku technology, was in Manila when he found out that Mr. Nooku himself was going to be in town, he and some of his team, jumped at the chance to be part of the Jam.
+  </p>
+  
+  <p>
+    The other 13 Jammers were local Filipino IT professionals mainly working for private commercial companies and the academe.
+  </p>
+  
+  <h4 dir="ltr">
+    Sticky notes
+  </h4>
+  
+  <p>
+    The Jam kicked off with a free form sticky note session, where participants wrote questions and ideas they were interested to find out about Nooku. The sticky notes were then posted on a whiteboard and Johan used this to structure the agenda for the day &#8211; very unconference style!
+  </p>
+  
+  <p>
+    
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2011/12/nooku-jam-manila-2011/">Continue reading</a>
           <hr>

@@ -75,7 +75,43 @@
             20 January 2011 by Johan
           </h3>
           <p>
-            <p><a href="http://www.flickr.com/photos/nooku/5372849310/" title="Nooku Server Roadmap by Nooku, on Flickr"><img class="alignleft" style="margin: 0 10 0 10px;" src="http://farm6.static.flickr.com/5050/5372849310_d3e433eb13_m.jpg" alt="Nooku Server Roadmap" width="240" height="180" /></a></p> <div> <p> With Nooku Server’s <a href="http://blog.nooku.org/2011/01/creating-a-diet-for-nooku-server">diet established</a>, we now have a good idea of the work that needs to be done. A next step in the process is to define a little roadmap. </p> <p> Over the next 4 months, we are...
+            <p><a href="http://www.flickr.com/photos/nooku/5372849310/" title="Nooku Server Roadmap by Nooku, on Flickr"><img class="alignleft" style="margin: 0 10 0 10px;" src="http://farm6.static.flickr.com/5050/5372849310_d3e433eb13_m.jpg" alt="Nooku Server Roadmap" width="240" height="180" /></a></p>
+
+<div>
+  <p>
+    With Nooku Server’s <a href="http://blog.nooku.org/2011/01/creating-a-diet-for-nooku-server">diet established</a>, we now have a good idea of the work that needs to be done. A next step in the process is to define a little roadmap.
+  </p>
+  
+  <p>
+    Over the next 4 months, we are going to be rolling out alpha releases implementing the key ingredients as defined in our little diet and at the same time adding key features.
+  </p>
+  
+  <p>
+    We will be working towards releasing an alpha about once every four weeks. This gives the following roadmap :
+  </p>
+  
+  <ul>
+    <li>
+      Alpha 1 : February
+    </li>
+    <li>
+      Alpha 2 : March
+    </li>
+    <li>
+      Alpha 3 : April
+    </li>
+  </ul>
+  
+  <p>
+    Under ideal conditions Nooku Server would go beta in May 2011, right in time for <a href="http://www.jandbeyond.org">JAB11</a>.
+  </p>
+  
+  <p>
+    Our development flow will be focused on maintaining the stability of the Joomla 1.5 core. Scope for the alpha releases will be kept very limited in order to avoid <a href="http://en.wikipedia.org/wiki/Scope_creep">scope creep</a>. For each alpha we will focus on one major feature or task.
+  </p>
+  
+  <p>
+    
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2011/01/a-roadmap-for-nooku-server/">Continue reading</a>
           <hr>
@@ -87,7 +123,46 @@
             10 January 2011 by Johan
           </h3>
           <p>
-            <p><a href="http://www.flickr.com/photos/nooku/5342270399/" title="Nooku Server Diet by Nooku, on Flickr"><img class="alignright" style="margin-left: 10px; margin-right: 10px;" src="http://farm6.static.flickr.com/5247/5342270399_f6c6f84d3e_m.jpg" alt="Nooku Server Diet" width="160" height="240" /></a></p> <p>A little over a month ago we <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">announced our plans for Nooku Server</a>, a multi-site Joomla 1.5 distribution. Before starting to integrate new features in Nooku Server we are giving the Joomla core a thorough code, features and performance review.</p> <p><strong>Joomla 1.5 core...
+            <p><a href="http://www.flickr.com/photos/nooku/5342270399/" title="Nooku Server Diet by Nooku, on Flickr"><img class="alignright" style="margin-left: 10px; margin-right: 10px;" src="http://farm6.static.flickr.com/5247/5342270399_f6c6f84d3e_m.jpg" alt="Nooku Server Diet" width="160" height="240" /></a></p>
+
+<p>A little over a month ago we <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">announced our plans for Nooku Server</a>, a multi-site Joomla 1.5 distribution. Before starting to integrate new features in Nooku Server we are giving the Joomla core a thorough code, features and performance review.</p>
+
+<p><strong>Joomla 1.5 core feature survey</strong>. To get a better idea of the features used, or more importantly not used in Joomla 1.5, we did a <a href="http://blog.nooku.org/2010/12/putting-nooku-server-on-a-diet/">little survey</a> with very interesting results. Almost 250 people filled it out, big thanks to all of you who did!</p>
+
+<h3 id="results">Results</h3>
+
+<h4 id="which-joomla-core-features-do-you-use-">1. Which Joomla core features do you use ?</h4>
+
+<p>You can find the result <a href="https://joomlatools.wufoo.com/reports/nooku-server-features-to-remove/">here</a>. If we would apply the <a href="http://en.wikipedia.org/wiki/Pareto_principle">80/20 rule </a> the only feature that you really need and use is ‘<strong>Content</strong>’. All the rest of the core features is used less then 80%. If we turn the 80/20 rule around and we check which features are used at least by 20% of you, we get the following list:</p>
+
+<ol>
+  <li>82% – Content</li>
+  <li>68% – Search</li>
+  <li>46% – Contacts</li>
+  <li>34% – TinyMCE</li>
+  <li>32% – PDF rendering</li>
+  <li>29% – XML-RPC support</li>
+  <li>28% – Newsfeeds</li>
+  <li>22% – Banners</li>
+</ol>
+
+<p>Still an interesting list. You are not using LDAP, Gmail or the XStandard editor at all. You also don’t use any of the core site templates, nor do you require build in help.</p>
+
+<h4 id="what-is-the-number-one-feature-you-are-missing-in-the-joomla-core-">2. What is the number one feature you are missing in the Joomla core ?</h4>
+
+<p>You can find the result <a href="https://joomlatools.wufoo.com/reports/nooku-server-features-to-add/">here</a>. If we look at the features you are missing most we get the following top 3:</p>
+
+<ol>
+  <li>20% – Multi-site</li>
+  <li>18% – Improved permissions</li>
+  <li>13% – Multi-lingual support</li>
+</ol>
+
+<p>The most interesting is that improved permissions, which is the major new feature for Joomla 1.6, is not the most needed feature. Instead most of you are looking for multi-site support.</p>
+
+<p>Based on the results of both questions we can conclude that what you really need is not a CMS but instead you are looking for a <strong>flexible, customisable, multi-site and multi-lingual web application platform</strong>. And that’s exactly what we are going to build!</p>
+
+
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2011/01/creating-a-diet-for-nooku-server/">Continue reading</a>
           <hr>
@@ -99,7 +174,22 @@
             09 January 2011 by Johan
           </h3>
           <p>
-            <p>Together with our friends from <a href="http://www.beyounic.com/">Beyounic</a> we are organising the first Nooku Jam of 2011 in beautiful city of Lugano, Switzerland on the <strong>19th of January 2011</strong>. The <a href="http://www.usi.ch/en/index.htm">University of Lugano</a> has kindly offered to host the jam on their campus.</p> <p><a href="http://www.nooku.org/framework"> Nooku Framework</a> is considered by many as one of the most interesting developments in the Joomlasphere of the last two years. Not only because of the <strong>spectacular...
+            <p>Together with our friends from <a href="http://www.beyounic.com/">Beyounic</a> we are organising the first Nooku Jam of 2011 in beautiful city of Lugano, Switzerland on the <strong>19th of January 2011</strong>. The <a href="http://www.usi.ch/en/index.htm">University of Lugano</a> has kindly offered to host the jam on their campus.</p>
+
+<p><a href="http://www.nooku.org/framework"> Nooku Framework</a> is considered by many as one of the most interesting developments in the Joomlasphere of the last two years. Not only because of the <strong>spectacular code reduction</strong> (up to 80%), but also for the many features that were previously unavailable to Joomla and PHP developers:</p>
+
+<ul>
+  <li>Near-zero-code HMVC</li>
+  <li>REST architecture</li>
+  <li>Object Relational Mapping</li>
+  <li>Out of the box security features</li>
+  <li>Extensibility through CoC, DI, Mixins …</li>
+  <li>Extreme re-usability</li>
+</ul>
+
+<p>If you are a Joomla or PHP developer looking to learn how to build better Joomla extensions faster you don’t want to miss this. Thanks to our sponsors the event is completely free. Don’t wait and <a href="http://nj11lug.eventbrite.com">register now</a>!</p>
+
+
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2011/01/nooku-jam-lugano/">Continue reading</a>
           <hr>
@@ -111,7 +201,43 @@
             06 January 2011 by Johan
           </h3>
           <p>
-            <p><a href="http://www.flickr.com/photos/nooku/5328896856/" title="Happy Nooku Year by Nooku, on Flickr"><img class="alignright" style="margin-left: 10px; margin-right: 10px;" src="http://farm6.static.flickr.com/5049/5328896856_1d8177a196_m.jpg" alt="Happy Nooku Year" width="192" height="146" /></a></p> <div> <p> This is my first blog post of 2011, so first things first: happy N(ew)ooku Year to all of you!  The beginning of a new year is an ideal moment to reflect on the past and also look forward to the future. </p>...
+            <p><a href="http://www.flickr.com/photos/nooku/5328896856/" title="Happy Nooku Year by Nooku, on Flickr"><img class="alignright" style="margin-left: 10px; margin-right: 10px;" src="http://farm6.static.flickr.com/5049/5328896856_1d8177a196_m.jpg" alt="Happy Nooku Year" width="192" height="146" /></a></p>
+
+<div>
+  <p>
+    This is my first blog post of 2011, so first things first: happy N(ew)ooku Year to all of you!  The beginning of a new year is an ideal moment to reflect on the past and also look forward to the future.
+  </p>
+  
+  <h3>
+    The year of you
+  </h3>
+  
+  <p>
+    2010 was the <a href="http://blog.nooku.org/2010/04/the-state-of-nooku/">year of the Nooku Community</a>, we’ve build some great new resources to help you collaborate, discuss and build Nooku-powered extensions :
+  </p>
+  
+  <p>
+    - The <a href="http://code.nooku.org/">Nooku Developer Portal</a>. We launched our new developer portal . The place to go for developers: you can find our code, bug trackers and activity streams.
+  </p>
+  
+  <p>
+    - The <a href="http://lists.nooku.org/">Nooku Mailing List</a>. We made the mailing list public, as well the <a href="http://wiki.nooku.org/">community-maintained wiki</a>. The place to go to ask questions or find information on how to get started with Nooku.
+  </p>
+  
+  <h3>
+    Growing an open community
+  </h3>
+  
+  <p>
+    We <a href="http://blog.nooku.org/2010/10/nooku-is-going-gplv3/">adopted the GPLv3, LGPLv3 and AGPLv3 </a>license and announced our <a href="http://blog.nooku.org/2010/11/nooku-contributor-agreement/">Nooku Contributor Agreement.</a> Both changes are forming the cornerstones on which we are growing Nooku as a truly <a href="http://jukkaz.wordpress.com/2010/11/08/models-of-corporate-open-source/">open community</a> of <a href="http://blogs.computerworlduk.com/simon-says/2010/09/open-source-community-types/index.htm">co-developers</a>.
+  </p>
+  
+  <p>
+    They also herald our ongoing commitment to the values of Free &amp; Open Source Software (FOSS) and reflect our beliefs that having diverse copyright ownership leads to a deeper mutual trust and an assurance that the playing-field remains equal for everyone involved.
+  </p>
+  
+  <p>
+    
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2011/01/happy-nooku-year/">Continue reading</a>
           <hr>
@@ -123,7 +249,19 @@
             03 January 2011 by Tom
           </h3>
           <p>
-            <p>On Saturday, 11 December 2010 Joomla integrators and PHP developers gathered in Rotterdam, NL for the first Dutch Nooku Jam.</p> <div class="wp-caption alignleft" style="width: 250px"> <a title="Nooku Jam Rotterdam NL - December 2010 by Nooku, on Flickr" href="http://www.flickr.com/photos/nooku/sets/72157625645821362/"><img class=" " src="http://farm6.static.flickr.com/5090/5280583648_5bdd954fa4_m.jpg" alt="Nooku Jam Rotterdam NL - December 2010" width="240" height="160" /></a><p class="wp-caption-text"> View all pictures on flickr.com/nooku </p> </div> <p>The jam, perfectly organized by Nooku...
+            <p>On Saturday, 11 December 2010 Joomla integrators and PHP developers gathered in Rotterdam, NL for the first Dutch Nooku Jam.</p>
+
+<div class="wp-caption alignleft" style="width: 250px">
+  <a title="Nooku Jam Rotterdam NL - December 2010 by Nooku, on Flickr" href="http://www.flickr.com/photos/nooku/sets/72157625645821362/"><img class="  " src="http://farm6.static.flickr.com/5090/5280583648_5bdd954fa4_m.jpg" alt="Nooku Jam Rotterdam NL - December 2010" width="240" height="160" /></a><p class="wp-caption-text">
+    View all pictures on flickr.com/nooku
+  </p>
+</div>
+
+<p>The jam, perfectly organized by Nooku community member Herman Peeren, was completely focused on Nooku Framework. Nooku is hot! This was once again demonstrated by the speed at which registrations for the event came in! For some people it was their first encounter with Nooku Framework, for others it was a great way to finally meet fellow Nooku community members face to face.</p>
+
+<p>In the morning lead architect Johan Janssens gave a general introduction of the Nooku Framework. Johan explained how the framework was born, how development is done and how the community is getting involved. He also explained the vision for the future and not to forget what benefits Nooku brings to Joomla extension development.</p>
+
+
           </p>
           <a class="btn btn-default btn-sm text-center" href="/blog/2011/01/jamming-in-rotterdam-with-nooku/">Continue reading</a>
           <hr>
