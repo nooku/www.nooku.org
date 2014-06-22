@@ -15,7 +15,7 @@
 &lt;p&gt;For those not familiar, Jekyll is an awesome open source generator of static sites written in Ruby. Jekyll can generate html pages from markdown and other markup syntax, without the
 need for a database. &lt;/p&gt;
 
-&lt;p&gt;Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge. if you have a group of uber trained geeks running around, well Wordpress is a bit overkill. &lt;/p&gt;
+&lt;p&gt;Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge, if you have a group of uber trained geeks running around, well Wordpress is a bit overkill. &lt;/p&gt;
 
 &lt;p&gt;Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, because the blog is now a static site it also provides a few additional benefits:  &lt;/p&gt;
 
@@ -23,7 +23,7 @@ need for a database. &lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;We don’t need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.&lt;/li&gt;
-  &lt;li&gt;We now have an improved publishing flow for the team based on git, and one less login account for each of us to remember.&lt;/li&gt;
+  &lt;li&gt;We now have an improved publishing flow for the team using git, and one less login account for each of us to remember.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;how-to-switch-from-wordpress-to-jekyll&quot;&gt;How to switch from Wordpress to Jekyll.&lt;/h3&gt;
