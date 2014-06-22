@@ -11,7 +11,7 @@ categories:
 tags:
   - development
 ---
-<div>
+
   <p>
     An often asked question on the Nooku Framework mailing list is how to deal with relations in databases. Nooku Framework doesn&#8217;t support relations out of the box yet, but fortunately the InnoDB engine in MySQL does!
   </p>
@@ -97,4 +97,3 @@ ON DELETE RESTRICT
   <p>
     This was just a basic introduction to foreign keys, it is capable of much more! If you are interested, visit the <a href="http://dev.mysql.com/doc/refman/5.1/en/innodb-foreign-key-constraints.html">MySQL Reference Manual</a>.
   </p>
-</div>

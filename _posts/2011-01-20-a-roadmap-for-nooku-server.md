@@ -13,7 +13,7 @@ tags:
 ---
 [<img class="alignleft" style="margin: 0 10 0 10px;" src="http://farm6.static.flickr.com/5050/5372849310_d3e433eb13_m.jpg" alt="Nooku Server Roadmap" width="240" height="180" />][1]
 
-<div>
+
   <p>
     With Nooku Server’s <a href="http://blog.nooku.org/2011/01/creating-a-diet-for-nooku-server">diet established</a>, we now have a good idea of the work that needs to be done. A next step in the process is to define a little roadmap.
   </p>
@@ -61,6 +61,6 @@ tags:
   <p>
     The release schedule of Nooku Framework will also be synced with that of Nooku Server. More info about the exact tasks/tickets for each alpha can be found on the <a href="https://nooku.assembla.com/spaces/nooku-framework/tickets">Nooku Framework ticket tracker</a>.
   </p>
-</div>
+
 
  [1]: http://www.flickr.com/photos/nooku/5372849310/ "Nooku Server Roadmap by Nooku, on Flickr"

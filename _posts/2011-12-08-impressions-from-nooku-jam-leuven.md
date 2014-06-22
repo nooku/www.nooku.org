@@ -11,7 +11,6 @@ categories:
 tags:
   - jam
 ---
-<div>
   <p>
     The recent Nooku Jam Leuven can be easily summed up in 2 words &#8211; <strong>incredibly inspiring</strong>!
   </p>
@@ -117,4 +116,3 @@ tags:
   <p style="text-align: center;">
     <a title="Nooku Jam Leuven group picture by Nooku, on Flickr" href="http://www.flickr.com/photos/nooku/6470890077/"><img class="aligncenter" src="http://farm8.staticflickr.com/7168/6470890077_49476776f8.jpg" alt="Nooku Jam Leuven group picture" width="500" height="333" /></a>
   </p>
-</div>

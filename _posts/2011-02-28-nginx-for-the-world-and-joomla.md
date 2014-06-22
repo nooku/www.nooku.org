@@ -34,11 +34,10 @@ For our install, we will be using [Ubuntu][2] 10.04 and installing/configuring:
   In this tutorial I will take you through the install and the outline how I have set things up to gain maximum performance.
 </div>
 
-<div>
-  <!--more-->
+
+<!--more-->
   
-  <strong></strong>
-</div>
+
 
 ### Install PHP
 

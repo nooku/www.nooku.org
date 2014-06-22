@@ -12,7 +12,7 @@ tags:
 ---
 <a title="J and Beyond 2011 | An International Joomla! Conference - May 6th-8th, 2011, Kerkrade, Netherlands" href="http://jandbeyond.org" target="_blank"><img class="alignright" style="border: 0px initial initial;" src="http://jandbeyond.org/images/stories/banners/JAB_2011_300x250.png" border="0" alt="J and Beyond 2011 | An International Joomla! Conference - May 6th-8th, 2011, Kerkrade, Netherlands" width="240" height="200" /></a>
 
-<div>
+
   <p>
     Joomla and the Knight of Open Source are putting up camp in Kerkrade, Netherlands on the 6-8 May for the second edition of <a href="http://jandbeyond.org/">J! And Beyond</a>.
   </p>
@@ -72,4 +72,3 @@ tags:
   <p>
     We hope to see many of you there for this historic event ! <strong>Nooku, Joomla, Molajo, &#8230; Alltogether on a ski slope</strong> ! Imagine that !
   </p>
-</div>

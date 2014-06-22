@@ -10,7 +10,7 @@ categories:
 tags:
   - jam
 ---
-<div>
+
   <p>
     Following up on the success of the <a href="http://blog.nooku.org/2010/10/jamming-in-manila-with-nooku/">first Asian Nooku Jam in Manila</a> last September 2010. This year’s jam, was held in the heart of one of Metro Manila’s CBDs &#8211; Ortigas, where we were kindly given the run of the TechBar in the headquarters of <a href="http://www.exist.com/">Exist Software Labs</a>.
   </p>
@@ -90,4 +90,3 @@ tags:
   <p>
     For more pictures check out the <a href="http://www.flickr.com/photos/nooku/sets/72157628291236103/">Nooku Jam Manila set on Flickr</a>.
   </p>
-</div>

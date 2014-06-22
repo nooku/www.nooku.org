@@ -10,7 +10,7 @@ categories:
 tags:
   - jam
 ---
-<div>
+
   <p>
     The biggest Nooku Jam of the year is happening this weekend in Belgium. With the theme “Creativity, Innovation and Inspiration”, the Nooku jam is coming home (technically a few miles from Nooku HQ). <a href="http://www.eventbrite.com/event/2326534728">Nooku Jam Leuven</a> brings Nookuers from all over.
   </p>
@@ -74,4 +74,3 @@ tags:
   <p>
     Interested to join us ? You can still <a href="http://nj11leuven.eventbrite.com/">sign-up for the Nooku Jam in Leuven</a>. See you there !
   </p>
-</div>

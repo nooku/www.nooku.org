@@ -27,7 +27,7 @@ tags:
 
 
 
-<div>
+
   <h3 id="internal-source-marker_0.3087748468387872">
     <!--more-->The Year of Nooku Platform
   </h3>
@@ -85,4 +85,3 @@ tags:
   <p>
     I recognize that for some, change is difficult. But this is technology! It’s the fastest game in the world! Let’s not fear this process but embrace it for the benefit of everyone.
   </p>
-</div>

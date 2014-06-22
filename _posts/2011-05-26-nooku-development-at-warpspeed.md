@@ -10,7 +10,7 @@ categories:
 tags:
   - development
 ---
-<div>
+
   <p>
     Not even 6 months ago we <a href="http://blog.nooku.org/2010/12/nooku-server-joomla-on-steroids/">announced our plans for Nooku Server</a>, a multi-site distribution of Joomla 1.5. We created a <a href="http://blog.nooku.org/2011/01/creating-a-diet-for-nooku-server/">diet for Nooku Server</a> and <a href="http://blog.nooku.org/2011/01/a-roadmap-for-nooku-server/">defined a roadmap</a>. We initially planned to add multi-site support, caching improvements and a new administrator template which we did in <a href="http://groups.google.com/group/nooku-framework/browse_thread/thread/bc8c88a8e81a75c9/3169bfda8bcad2cc?lnk=gst&q=alpha+1#3169bfda8bcad2cc">alpha 1</a> and <a href="http://groups.google.com/group/nooku-framework/browse_thread/thread/3dba8a70956726ff/ce7ab509bc774ecf?lnk=gst&q=alpha+2#ce7ab509bc774ecf">alpha 2</a>, and then … community happened!
   </p>
@@ -35,9 +35,9 @@ tags:
     Not less then 21 developers contributed to Nooku in the past year working on various projects. As you can see from <a href="http://www.ohloh.net/p/compare?project_0=Joomla%21&project_1=Nooku&project_2=Drupal+%28core%29">this link</a> and the graph above (taken from <a href="http://www.ohloh.net/p/compare?project_0=Joomla%21&project_1=Nooku&project_2=Drupal+%28core%29">Ohloh</a>) that’s more than double the amount of people who contributed to Joomla in the same period. Not bad huh!
   </div>
   
-  <div>
+
     <!--more-->
-  </div>
+
   
   <h3>
     Stick to the code
@@ -68,4 +68,3 @@ tags:
   <p style="text-align: left; font-size: 10px;">
     Photos taken by Nooku Contributor <a href="http://www.flickr.com/photos/valanx/">David Deutsch</a>
   </p>
-</div>

@@ -12,7 +12,6 @@ tags:
 ---
 [<img class="alignright" style="margin-left: 10px; margin-right: 10px;" src="http://farm6.static.flickr.com/5049/5328896856_1d8177a196_m.jpg" alt="Happy Nooku Year" width="192" height="146" />][1]
 
-<div>
   <p>
     This is my first blog post of 2011, so first things first: happy N(ew)ooku Year to all of you!  The beginning of a new year is an ideal moment to reflect on the past and also look forward to the future.
   </p>
@@ -127,6 +126,6 @@ tags:
   <p>
     Johan
   </p>
-</div>
+
 
  [1]: http://www.flickr.com/photos/nooku/5328896856/ "Happy Nooku Year by Nooku, on Flickr"

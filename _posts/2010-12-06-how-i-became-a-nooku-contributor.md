@@ -33,8 +33,9 @@ After a longer break, I re-joined the Joomla community about a year ago and was 
   </p>
 </div>
 
-<div>
-  <!--more--> Maintaining com_harbour is all about learning, giving back, collaborating and having lot’s of fun doing so. It’s not really hard to develop an example build on top of a PHP framework but to take the responsibility to maintain that example for an uprising framework is a quite an honour and a challenge. At least for me.</p> 
+
+  <!--more--> 
+  <p>Maintaining com_harbour is all about learning, giving back, collaborating and having lot’s of fun doing so. It’s not really hard to develop an example build on top of a PHP framework but to take the responsibility to maintain that example for an uprising framework is a quite an honour and a challenge. At least for me.</p> 
   
   <p>
     In the past my daily morning  routine consisted of reading the latest J! news and tweets, now I first read <a href="https://nooku.assembla.com/spaces/nooku-framework/stream">Nooku’s SVN logs</a>, <a href="http://lists.nooku.org">mailing list</a> and chats to get up to speed on the latest changes in the framework.
@@ -73,7 +74,7 @@ After a longer break, I re-joined the Joomla community about a year ago and was 
   <p>
     Christian Hent, aka captain &#8216;H&#8217;
   </p>
-</div>
+
 
  [1]: http://johan.janssens.me
  [2]: http://lists.nooku.org

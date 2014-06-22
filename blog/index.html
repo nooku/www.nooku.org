@@ -16,9 +16,9 @@ description: Nooku is a project for developers, integrators and hackers alike. T
           <h3 class="text-muted">
             {{ post.date | date: "%d %B %Y"}} by {{ post.author }}
           </h3>
-          <p>
+          <div class="excerpt">
             {{ post.content | split:"<!--more-->" | first }}
-          </p>
+          </div>
           <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
           <hr>
         {% endfor %}

@@ -28,7 +28,7 @@ index.php?option=com_harbour&view=boat&slug=queen-mary-2
 
 There is an important thing to note here. If an identity column exists (an auto increment key), the name &#8220;id&#8221; is used for it in the framework. So for example the column harbour\_boat\_id is accessed as $boat->id.
 
-<div>
+
   <h3 dir="ltr">
     A look under the hood
   </h3>
@@ -97,4 +97,3 @@ if(!empty($states))
   <p>
     In a next post we will dive deeper into foreign keys. Happy coding !
   </p>
-</div>

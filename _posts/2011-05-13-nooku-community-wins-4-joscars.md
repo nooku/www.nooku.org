@@ -17,7 +17,7 @@ tags:
   </p>
 </div>
 
-<div>
+
   <p>
     On Saturday May 7th, the attendees of <a href="http://www.jandbeyond.org/">J and Beyond 2011 </a>all gathered in the auditorium of Rolduc Conference Centre for the awards ceremony of the annual J.O.S.C.A.R.S &#8211; the Joomla Open Source Creative Artistic Recognition Awards.
   </p>
@@ -75,4 +75,3 @@ tags:
   <div style="font-size: 10px;">
     Photos taken by Nooku Contributor <a href="http://www.flickr.com/photos/valanx/">David Deutsch</a>
   </div>
-</div>

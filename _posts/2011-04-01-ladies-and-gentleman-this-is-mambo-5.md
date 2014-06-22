@@ -10,7 +10,7 @@ categories:
 tags:
   - press
 ---
-<div>
+
   <p>
     As we tweeted a few days ago we are preparing a major announcement.
   </p>
@@ -84,4 +84,3 @@ tags:
   <p>
     May the power in simplicity be with you!
   </p>
-</div>

@@ -12,7 +12,7 @@ tags:
 ---
 <a href="http://www.joomladagen.nl" target="_blank"><img class="alignright" style="border: 0px initial initial;" title="Joomla!days Netherlands - 2 & 3 April 2011, Doorn" src="http://www.joomladagen.nl/images/banners/joomladays11_125x125.gif" border="0" alt="Joomla!days Netherlands - 2 & 3 April 2011, Doorn" width="125" height="125" /></a>
 
-<div>
+
   <p>
     It’s almost time for the Joomla highlight of the year, the <a href="http://www.joomladagen.nl/">Dutch Joomladays</a>! This year they are taking place on the 2th and 3th of April at <a href="http://www.kaapdoorn.nl/">Kaapdoorn</a>, near <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=utrecht&aq=&sll=37.0625,-95.677068&sspn=64.792576,93.076172&ie=UTF8&hq=&hnear=Utrecht,+The+Netherlands&t=h&ll=52.093851,5.110703&spn=0.200591,0.363579&z=12">Utrecht</a>.
   </p>
@@ -68,4 +68,3 @@ tags:
   <p>
     We’ll be around from Friday evening and all through the event, so come and say hi or bombard us with your questions at the <a href="http://www.joomladagen.nl/2011/programma/dokter-joomla">Doctor Joomla sessions</a>. See you all at the Joomladays! For those of you staying at home, we will be <a href="http://www.twitter.com/nooku">twitting</a> live from the event, follow the event hashtag: <a id="ue95" title="#jd10nl" href="http://search.twitter.com/search?q=%23jd11nl">#jd11nl</a>
   </p>
-</div>
