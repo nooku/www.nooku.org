@@ -73,7 +73,7 @@ REFERENCES `authors`(`author_id`)
 ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
 {% endprism %}
-  
+
   <p>
     As you can see, we specified the foreign keys with CASCADE and RESTRICT options. Let’s try to delete an article. Notice that relations in the articles_authors table are deleted with it automatically. Now let’s try to remove an author. If the author is referenced in the relation table, then MySQL refuses to delete it. This ensures referential integrity.
   </p>
