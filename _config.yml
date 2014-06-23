@@ -8,17 +8,11 @@ highlighter: prism
 
 navigation:
 - text: About
-  target: self
 - text: Manifesto
-  url:  manifesto
-  target: self
+  url: manifesto
 - text: Blog
-  url:  blog
+  url: blog
   layout: blog
-  target: self
-- text: Github
-  url: https://github.com/nooku/nooku-framework
-  target: blank
 
 monthly_archive:
   layout: archive

@@ -3,12 +3,6 @@
   
   
   <url>
-    <loc>http://www.nooku.org/blog/2013/03/from-wordpress-to-jekyll/</loc>
-    <lastmod>2014-06-22T00:00:00+02:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>http://www.nooku.org/blog/2013/03/announcing-nooku-jam-13-1-leuven/</loc>
     <lastmod>2013-03-26T00:00:00+01:00</lastmod>
     <priority>0.8</priority>
@@ -713,322 +707,315 @@
   
   <url>
     <loc>http://www.nooku.org/blog/</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org/</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org/manifesto/</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.nooku.org</loc>
-    <lastmod>2014-06-22T16:51:43+02:00</lastmod>
+    <lastmod>2014-05-30T19:28:35+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

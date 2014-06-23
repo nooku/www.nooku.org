@@ -45,7 +45,7 @@
                                 {% assign current = nil %}
                                 {% if link.url == page.rooturl %}{% assign current = 'active' %}{% endif %}
                                 <li class="{{ current }}" role="menuitem">
-                                    <a href="{% if link.target != 'blank' %}/{% endif %}{{ link.url }}">{{ link.text }}</a>
+                                    <a href="/{{ link.url }}">{{ link.text }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
