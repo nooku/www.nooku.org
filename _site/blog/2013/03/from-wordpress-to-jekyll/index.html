@@ -77,14 +77,14 @@
                         22 June 2014 by Nick
                     </h3>
           
-                    <p>Did you notice ? Probably not. Last month we switched off the database responsible for keeping our blog up and running and moved to a static solution using <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+                    <p>Did you notice? Probably not. Last month we switched off the database responsible for keeping our blog up and running and moved to a static solution using <a href="http://jekyllrb.com/">Jekyll</a>.</p>
 
 <p><a href="http://jekyllrb.com/"><img src="https://farm6.staticflickr.com/5114/14294033867_cd87468a66_z.jpg" alt="jekyll" width="100%" /></a></p>
 
-<p>For those not familiar, Jekyll is an awesome open source generator of static sites written in Ruby. Jekyll can generate html pages from markdown and other markup syntax, without the
+<p>For those not familiar, Jekyll is an awesome open source generator of static sites written in Ruby. Jekyll can generate HTML pages from <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a> and other markup syntax, without the
 need for a database. </p>
 
-<p>Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge, if you have a group of uber trained geeks running around, well Wordpress is a bit overkill. </p>
+<p>Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge. If you have a group of uber trained geeks running around, well, Wordpress is a bit overkill.</p>
 
 <p>Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, because the blog is now a static site it also provides a few additional benefits:  </p>
 
@@ -92,20 +92,20 @@ need for a database. </p>
 
 <ul>
   <li>We don’t need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.</li>
-  <li>We now have an improved publishing flow for the team using git, and one less login account for each of us to remember.</li>
+  <li>We now have an improved publishing flow for the team using <a href="http://git-scm.com/">Git</a>, and one less login account for each of us to remember.</li>
 </ul>
 
 <h3 id="how-to-switch-from-wordpress-to-jekyll">How to switch from Wordpress to Jekyll.</h3>
 <p>While switching from Wordpress to Jekyll we had learned a few things along the way that might be useful if you are considered a similar transition.</p>
 
-<h3 id="properly-export-and-convert-every-wordpress-post-to-markdown-syntax">1. Properly export and convert every wordpress post to markdown syntax.</h3>
-<p>For this, we used the <a href="https://github.com/benbalter/wordpress-to-jekyll-exporter">wordpress to jekyll exporter</a>: a one-click wordpress plugin that converts all posts, pages, taxonomies, metadata and settings to markdown for you, ready to be dropped into Jekyll.</p>
+<h3 id="properly-export-and-convert-every-wordpress-post-to-markdown-syntax">1. Properly export and convert every Wordpress post to Markdown syntax.</h3>
+<p>For this, we used the <a href="https://github.com/benbalter/wordpress-to-jekyll-exporter">Wordpress to Jekyll exporter</a>: a one-click Wordpress plugin that converts all posts, pages, taxonomies, metadata and settings to Markdown for you, ready to be dropped into Jekyll.</p>
 
-<h3 id="create-an-archive-navigation-similar-to-what-is-built-in-into-wordpress">2. Create an archive navigation similar to what is built-in into wordpress.</h3>
+<h3 id="create-an-archive-navigation-similar-to-what-is-built-in-into-wordpress">2. Create an archive navigation similar to what is built-in into Wordpress.</h3>
 <p>Luckily Jekyll allow for plugins to be added in order to solve such needs, and a plugin that does just that is the <a href="https://github.com/shigeya/jekyll-monthly-archive-plugin">jekyll-monthly-archive-plugin</a>.</p>
 
 <h3 id="adding-readmore-separator-to-post-lists">3. Adding readmore separator to post lists.</h3>
-<p>When exporting wordpress posts using the jekyll exporter, the wordpress read more markup is exported as well into the new markdown files, in the form of:</p>
+<p>When exporting wordpress posts using the Jekyll exporter, the Wordpress read more markup is exported as well into the new markdown files, in the form of:</p>
 <div>
   <pre data-line=""><code class="language-html">&lt;!--more--&gt;</code></pre>
 </div>
@@ -124,7 +124,7 @@ var disqus_url = &#39;http://blog.nooku.org{{ page.permalink }}&#39;;</code></pr
 
 <p>( the same with the url and permalink)</p>
 
-<p>We are pretty happy with our Jekyll, if you are interested to learn what Jekyll can do for you ? Head over <a href="http://jekyllrb.com/">jekyllrb.com</a> to learn more.</p>
+<p>We are pretty happy with our Jekyll, if you are interested to learn what Jekyll can do for you? Head over <a href="http://jekyllrb.com/">jekyllrb.com</a> to learn more.</p>
 
 <p>Happy coding!</p>
 
