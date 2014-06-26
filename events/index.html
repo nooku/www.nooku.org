@@ -1,0 +1,24 @@
+---
+layout: events
+title: Events | Nooku
+rooturl: events
+---
+
+<div class="event_container">
+    {% for event in site.events reversed %}
+    <div class="event">
+        <header class="event__header">
+            <h1 class="event__title" role="heading">{{ event.title }}</h1>
+            <div class="event__date">
+                <div class="event__date__year">{{ event.date | date: "%Y" }}</div>
+                <div class="event__date__month">{{ event.date | date: "%b" }}</div>
+                <div class="event__date__day">{{ event.date | date: "%-d" }}</div>
+            </div>
+        </header>
+        <div class="event__image" style="background-image: url('../{{event.image}}');" aria-hidden="true"></div>
+        <div class="event__content">
+            {{ event.content }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
