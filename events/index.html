@@ -19,6 +19,9 @@ rooturl: events
             <div class="event__image" style="background-image: url('../{{event.image}}');" aria-hidden="true"></div>
             <div class="event__content">
                 {{ event.output }}
+                {% if event.readmore %}
+                <p><a href="{{event.readmore}}">Read more</a></p>
+                {% endif %}
             </div>
         </div><!--
         {% endfor %}
