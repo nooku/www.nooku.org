@@ -5,5 +5,4 @@ date: 2011-01-19
 image: images/events/2011/nooku-jam-lugano.jpg
 ---
 
-Once again Nookuers from all over will come together. Expect lot’s of fun and two days of mind blowing presentations,
-discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.
+Together with our friends from Beyounic we are organising the first Nooku Jam of 2011 in beautiful city of Lugano, Switzerland on the 19th of January 2011. The University of Lugano has kindly offered to host the jam on their campus.

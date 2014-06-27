@@ -2,8 +2,9 @@
 layout: event
 title: Nooku Jam Manila
 date: 2011-11-04
-image: images/events/temp3.jpg
+image: images/events/2011/nooku-jam-manilla.jpg
 ---
 
-Once again Nookuers from all over will come together. Expect lot’s of fun and two days of mind blowing presentations,
-discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.
+This year’s jam, was held in the heart of one of Metro Manila’s CBDs – Ortigas, where we were kindly given the run of the TechBar in the headquarters of Exist Software Labs.
+
+[Looking back](http://www.nooku.org/blog/2011/12/nooku-jam-manila-2011/)
