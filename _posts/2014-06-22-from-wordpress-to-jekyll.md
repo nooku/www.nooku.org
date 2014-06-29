@@ -21,7 +21,7 @@ Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, b
 *  We don't need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.
 * We now have an improved publishing flow for the team using [Git][6], and one less login account for each of us to remember.
 
-### How to switch from Wordpress to Jekyll.
+## How to switch from Wordpress to Jekyll.
 While switching from Wordpress to Jekyll we had learned a few things along the way that might be useful if you are considered a similar transition.
 
 ### 1. Properly export and convert every Wordpress post to Markdown syntax.
