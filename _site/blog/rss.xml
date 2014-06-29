@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Nooku</title>
+        <description>Nooku is a project for developers integrators and hackers alike. Through collaboration we innovate and grow Nooku</description>      
+        <link>/blog</link>
+        <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>From Wordpress to Jekyll</title>
+                <description>&lt;p&gt;Did you notice? Probably not. Last month we switched off the database responsible for keeping our blog up and running and moved to a static solution using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;&lt;img src=&quot;https://farm6.staticflickr.com/5114/14294033867_cd87468a66_z.jpg&quot; alt=&quot;jekyll&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For those not familiar, Jekyll is an awesome open source generator of static sites written in Ruby. Jekyll can generate HTML pages from &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; and other markup syntax, without the
+need for a database. &lt;/p&gt;
+
+&lt;p&gt;Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge. If you have a group of uber trained geeks running around, well, Wordpress is a bit overkill.&lt;/p&gt;
+
+&lt;p&gt;Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, because the blog is now a static site it also provides a few additional benefits:  &lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We don’t need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.&lt;/li&gt;
+  &lt;li&gt;We now have an improved publishing flow for the team using &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt;, and one less login account for each of us to remember.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-switch-from-wordpress-to-jekyll&quot;&gt;How to switch from Wordpress to Jekyll.&lt;/h3&gt;
+&lt;p&gt;While switching from Wordpress to Jekyll we had learned a few things along the way that might be useful if you are considered a similar transition.&lt;/p&gt;
+
+&lt;h3 id=&quot;properly-export-and-convert-every-wordpress-post-to-markdown-syntax&quot;&gt;1. Properly export and convert every Wordpress post to Markdown syntax.&lt;/h3&gt;
+&lt;p&gt;For this, we used the &lt;a href=&quot;https://github.com/benbalter/wordpress-to-jekyll-exporter&quot;&gt;Wordpress to Jekyll exporter&lt;/a&gt;: a one-click Wordpress plugin that converts all posts, pages, taxonomies, metadata and settings to Markdown for you, ready to be dropped into Jekyll.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-an-archive-navigation-similar-to-what-is-built-in-into-wordpress&quot;&gt;2. Create an archive navigation similar to what is built-in into Wordpress.&lt;/h3&gt;
+&lt;p&gt;Luckily Jekyll allow for plugins to be added in order to solve such needs, and a plugin that does just that is the &lt;a href=&quot;https://github.com/shigeya/jekyll-monthly-archive-plugin&quot;&gt;jekyll-monthly-archive-plugin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-readmore-separator-to-post-lists&quot;&gt;3. Adding readmore separator to post lists.&lt;/h3&gt;
+&lt;p&gt;When exporting wordpress posts using the Jekyll exporter, the Wordpress read more markup is exported as well into the new markdown files, in the form of:&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;By taking advantage of &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt; (the template engine that come with jekyll, which supports HTML as well as various flavours of markdown) you can simply use the liquid split filter by writing something like this:&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;{{ post.content | split:&amp;quot;&amp;lt;!--more--&amp;gt;&amp;quot; | first }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;disquss-threads&quot;&gt;4. Disquss threads.&lt;/h3&gt;
+&lt;p&gt;We have some nice discussions going on here on the blog and we didn’t want to lose them. Thankfully the Jekyll exporter also add the “dsq_thread_id”  to the generated markdown files. You can just access them via Liquid where you call the Disqus js plugin:&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;var disqus_identifier = &amp;#39;{{ page.dsq_thread_id }}&amp;#39;; 
+var disqus_url = &amp;#39;http://blog.nooku.org{{ page.permalink }}&amp;#39;;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;( the same with the url and permalink)&lt;/p&gt;
+
+&lt;p&gt;We are pretty happy with our Jekyll, if you are interested to learn what Jekyll can do for you? Head over &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyllrb.com&lt;/a&gt; to learn more.&lt;/p&gt;
+
+&lt;p&gt;Happy coding!&lt;/p&gt;
+
+</description>
+                <pubDate>Sun, 22 Jun 2014 00:00:00 +0200</pubDate>
+                <link>//blog/2013/03/from-wordpress-to-jekyll/</link>
+                <guid isPermaLink="true">//blog/2013/03/from-wordpress-to-jekyll/</guid>
+            </item>
+        
+            <item>
+                <title>Announcing Nooku Jam 13.1 Leuven</title>
+                <description>&lt;p&gt;We are happy to announce &lt;a href=&quot;http://nj131leuven.eventbrite.com/&quot;&gt;Nooku Jam 13.1&lt;/a&gt; which is taking place on Thursday 2 &amp;amp; Friday 3 May 2013 at the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; in Leuven, BE. Learn everything about the latest Nooku 13.1 release!&lt;/p&gt;
+
+&lt;p&gt;Once again Nookuers from all over will come together. Expect lot’s of fun and two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nj131leuven.eventbrite.com/&quot;&gt;Sign up for Nooku Jam 13.1 today!&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;looking-back-at-the-past-months&quot;&gt;Looking back at the past months&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/nooku/7026184369/&quot; title=&quot;Nooku Jam Leuven 2011 by Nooku, on Flickr&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7093/7026184369_53a09c5f4d.jpg&quot; alt=&quot;Nooku Jam Leuven 2011&quot; width=&quot;500&quot; height=&quot;205&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/nooku/collections/72157625031622509/&quot;&gt;photo highlights&lt;/a&gt; from our previous Jams.&lt;/p&gt;
+
+&lt;p&gt;It has been a little bit quiet in the past months on our blog, &lt;a href=&quot;http://blog.nooku.org/2013/03/a-little-update/&quot;&gt;until earlier this week&lt;/a&gt;. Some rumoured that Nooku is death, others claimed we moved to Mars, … in good Nooku tradition no news is good news! Stick to the code, right?!&lt;/p&gt;
+
+&lt;p&gt;Over the past months a lot of things happened :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We moved all our repositories from SVN to GIT&lt;/li&gt;
+  &lt;li&gt;Nooku Server &amp;amp; Nooku Components codebases have been moved into &lt;a href=&quot;https://nooku.assembla.com/code/nooku-framework/git/nodes/develop&quot;&gt;Nooku Framework&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nooku.assembla.com/code/nooku-server/git/nodes&quot;&gt;Nooku Server&lt;/a&gt; now hosts a LNMP (Linux, Nginx, Mysql and PHP) &lt;a href=&quot;http://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt; box&lt;/li&gt;
+  &lt;li&gt;We did lot’s and lot’s of refactoring, everything is now a component.&lt;/li&gt;
+  &lt;li&gt;Captain Oli started working on &lt;a href=&quot;https://github.com/nooku/nooku-guides&quot;&gt;Nooku Guides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Make sure to read our previous blog post for a complete overview: &lt;a href=&quot;http://blog.nooku.org/2013/03/a-little-update/&quot;&gt;A little update&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-a-nooku-jam&quot;&gt;What is a Nooku Jam?&lt;/h3&gt;
+
+&lt;p&gt;A Nooku Jam is an open, participatory workshop-event, whose content is provided by participants. The concept is very similar to a &lt;a href=&quot;http://barcamp.org/w/page/405173/TheRulesOfBarCamp&quot;&gt;barcamp&lt;/a&gt;. It is an intense event with discussions, demos and interaction from the attendees.&lt;/p&gt;
+
+&lt;p&gt;Nooku Jams are never your traditional conferences – they are more of an ad-hoc unconference born from the desire for people to share and learn in an open environment.  Anybody can speak on any topic that they are passionate about. For Nooku developers, this means their latest code, component, or mini project.&lt;/p&gt;
+
+&lt;h3 id=&quot;there-are-no-spectators-only-participants&quot;&gt;There are no spectators, only participants.&lt;/h3&gt;
+
+&lt;p&gt;Attendees must give a demo, a session, or help with one, or otherwise volunteer / contribute in some way to support the event. Participants won’t need to decide what to talk about until they get there. All presentations are scheduled the day they happen.&lt;/p&gt;
+
+&lt;p&gt;The day starts with the session suggestions. Everybody describes the kind of session they can do. Then the session gets pinned on the board for a certain time slot. After the planning – voila – there is a schedule and the sessions start.&lt;/p&gt;
+
+&lt;h3 id=&quot;its-always-about-community&quot;&gt;It’s always about community&lt;/h3&gt;
+
+&lt;p&gt;Anyone with something to contribute or with the desire to learn is welcome and invited to join a Nooku Jam. When you come, be prepared to share with other attendees. When you leave, be prepared to share it with the world.&lt;/p&gt;
+
+&lt;p&gt;The jam is the perfect event for Nooku magic offline! &lt;a href=&quot;http://nj131leuven.eventbrite.com/&quot;&gt;Register today&lt;/a&gt;, we only have 40 seats available!&lt;/p&gt;
+
+</description>
+                <pubDate>Tue, 26 Mar 2013 00:00:00 +0100</pubDate>
+                <link>//blog/2013/03/announcing-nooku-jam-13-1-leuven/</link>
+                <guid isPermaLink="true">//blog/2013/03/announcing-nooku-jam-13-1-leuven/</guid>
+            </item>
+        
+            <item>
+                <title>A little update</title>
+                <description>&lt;p&gt;It has been a little bit quiet in the past months on the blog. Some rumoured that Nooku is death, others claimed we moved to Mars, … in good Nooku tradition no news is good news! Stick to the code, right?!&lt;/p&gt;
+
+&lt;p&gt;Those of you who followed us closely have noticed the &lt;a href=&quot;https://www.ohloh.net/p/nooku&quot;&gt;constant stream of progress at lightning speed&lt;/a&gt;. Anything slower, is simply not fast enough.&lt;/p&gt;
+
+&lt;p&gt;Here is a little big update right from the coding frontline. Make yourself a coffee, get a beer, sit back relax. Here we go!&lt;/p&gt;
+
+&lt;h2 id=&quot;git8217-ting-it&quot;&gt;‘Git’-ting it&lt;/h2&gt;
+
+&lt;p&gt;The Nooku code base has been moved to &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt; at the beginning of the year. The SVN repositories are abandoned. They are probably invested with vermin, bugs, and other little unwanted creatures. Lights have been turned off, go there on your own accord. You have been warned!&lt;/p&gt;
+
+&lt;p&gt;The Nooku codebase has been brought back to onto 2 spaces on Assembla: &lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-framework&quot;&gt;Nooku Framework&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-server&quot;&gt;Nooku Server&lt;/a&gt;.&lt;br /&gt;
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nooku-framework&quot;&gt;Nooku Framework&lt;/h3&gt;
+
+&lt;p&gt;The Nooku Framework space now combines the Nooku Framework, Nooku Components &amp;amp; Nooku Server codebases.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.assembla.com/spaces/nooku-components&quot;&gt;Nooku Components&lt;/a&gt; repository is closed down and will be removed later this year.&lt;/p&gt;
+
+&lt;p&gt;All development is now being done in the Nooku Framework space and its &lt;a href=&quot;https://nooku.assembla.com/code/nooku-framework/git/nodes&quot;&gt;Git repository&lt;/a&gt;. If you want to keep up, this is the place to be. Development is happening in the &lt;a href=&quot;https://nooku.assembla.com/code/nooku-framework/git/nodes/develop&quot;&gt;develop branch&lt;/a&gt;. This will become the 13.1 release later this year.&lt;/p&gt;
+
+&lt;p&gt;Manual installation instructions for Nooku Framework can be found in the &lt;a href=&quot;https://nooku.assembla.com/code/nooku-framework/git/nodes/develop/README.md&quot;&gt;README&lt;/a&gt;. Not for the faint of hearted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-framework&quot;&gt;http://nooku.assembla.com/spaces/nooku-framework&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nooku-server&quot;&gt;Nooku Server&lt;/h3&gt;
+
+&lt;p&gt;The Nooku Server space now hosts a little-big-side-project we have been working on for quite some time. Drumroll! A LNMP (Linux, Nginx, Mysql and PHP) &lt;a href=&quot;http://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt; box. Nooku Server is a now a lightweight, reproducible, and portable development environment for Nooku Framework projects. Hurray!&lt;/p&gt;
+
+&lt;p&gt;Setup is &lt;a href=&quot;https://nooku.assembla.com/code/nooku-server/git/nodes/master/README.md&quot;&gt;death easy&lt;/a&gt;! What you get is a fully working multi-PHP (5.3 and 5.4) server for all your local Nooku development. Fully provisioned using &lt;a href=&quot;https://puppetlabs.com/&quot;&gt;Puppet&lt;/a&gt;, with lot’s of other goodies : &lt;a href=&quot;http://www.phpunit.de/&quot;&gt;PHPUnit&lt;/a&gt;, &lt;a href=&quot;http://getcomposer.org/&quot;&gt;Composer&lt;/a&gt;, &lt;a href=&quot;http://xdebug.org/&quot;&gt;XDebug&lt;/a&gt;, &lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt;, &lt;a href=&quot;https://scrutinizer-ci.com/docs/tools/php/php-analyzer/&quot;&gt;PHPAnalyser&lt;/a&gt;, &lt;a href=&quot;http://www.percona.com/&quot;&gt;Percona&lt;/a&gt;, …&lt;/p&gt;
+
+&lt;p&gt;Advantage of using Nooku Server is that everyone is running the exact same setup. In a next step we will make the Puppet provisioning scripts available so you can easily boot up your own servers on &lt;a href=&quot;http://aws.amazon.com/&quot;&gt;AWS&lt;/a&gt;, &lt;a href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt; etc.&lt;/p&gt;
+
+&lt;p&gt;The Nooku Server repository is not related to Nooku Framework. The Nooku Server master branch is currently configured to work with the Nooku Framework develop branch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-server&quot;&gt;http://nooku.assembla.com/spaces/nooku-server&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;release-pivot&quot;&gt;Release pivot&lt;/h2&gt;
+
+&lt;p&gt;In 2012 we &lt;a href=&quot;http://blog.nooku.org/2012/01/onward-to-2012/#more-2136&quot;&gt;set out with the idea to release 3 versions&lt;/a&gt; 12.1, 12.2 and 12.3. And so, we did. Well kinda. We learned that doing 3 releases a year is possible but hard with all the changes going on. Change of plans for 2013, or in startup terms, let’s pivot (just a tiny bit).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We are not tagging the 12.2 and 12.3 releases. The 12.2 release can be found in the Git master branch and is ready but not properly tested, probably will have smaller bugs. Use at your own risk.&lt;/li&gt;
+  &lt;li&gt;We are jumping straight to the 13.1 release. This will be the only major release for 2013, targeting April for a merge to the master branch to stabilise and bug fix. We might (probably will) have a 13.2 release but this will be a bug fix release only.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sparking-joomla&quot;&gt;Sparking Joomla&lt;/h2&gt;
+
+&lt;p&gt;Our 12.1 release was the last release that is compatible with Joomla. Time has come to stand on our own two feet. With the 13.1 release our refactoring effort will be completed. Three packages are left to be sparked: JCache, JParameter and JLanguage. Forward we go!&lt;/p&gt;
+
+&lt;h2 id=&quot;everything-is-a-component&quot;&gt;Everything is a Component&lt;/h2&gt;
+
+&lt;p&gt;After “Stick to the Code”, a new rule is born with 13.1: “Everything is a Component”! No more plugins, modules, … or any other lower order extension types, everything is now refactored to be or be part of a component!&lt;/p&gt;
+
+&lt;p&gt;Components will contain re-usable code, either base functionality which can be extended upon, or as part of an application package.&lt;/p&gt;
+
+&lt;p&gt;However, component refactoring is not completed yet. Re-usable component code still needs to be moved and namespaces need to be added. As of writing of this post we are 90% done with this.&lt;/p&gt;
+
+&lt;p&gt;As you can already guess having all the component code inside one folder opens up a lot of exciting possibilities: will make installing components using Composor easy, allows for using git submodules, and allow for distributing components as PHAR packages. Oh yes that too!&lt;/p&gt;
+
+&lt;h2 id=&quot;enough-talk&quot;&gt;Enough talk&lt;/h2&gt;
+
+&lt;p&gt;I hear y’all thinking, all fine and dandy but just show me the goods already. We got that covered! Our demo site has been updated to run from the develop branch. Refreshed hourly and updated daily with new and fresh code.&lt;/p&gt;
+
+&lt;p&gt;Go to: &lt;a href=&quot;http://demo.nooku.org&quot;&gt;http://demo.nooku.org&lt;/a&gt; (frontend login is not yet working), you can login to &lt;a href=&quot;http://demo.nooku.org/administrator&quot;&gt;http://demo.nooku.org/administrator&lt;/a&gt; (admin@localhost.home::admin). Enjoy!&lt;/p&gt;
+
+&lt;p&gt;Warning, Nooku is about cutting edge technologies. Our administrator interface is built on top of the webkit rendering engine. Non-webkit browsers are not supported, &lt;a href=&quot;www.google.com/chrome&quot;&gt;Chrome&lt;/a&gt; is advised.&lt;/p&gt;
+
+&lt;h2 id=&quot;pirates-code&quot;&gt;Pirates code&lt;/h2&gt;
+
+&lt;p&gt;“The code is more what you’d call “guidelines” than actual rules”. So to help sail you pirates along Captain Oli has started “Nooku Guides” and is writing some code guides for Nooku developers. We are hosting this on our Github account, fork away!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nooku/nooku-guides&quot;&gt;http://github.com/nooku/nooku-guides&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <pubDate>Mon, 18 Mar 2013 00:00:00 +0100</pubDate>
+                <link>//blog/2013/03/a-little-update/</link>
+                <guid isPermaLink="true">//blog/2013/03/a-little-update/</guid>
+            </item>
+        
+            <item>
+                <title>Announcing Nooku Jam 12.3 Leuven!</title>
+                <description>&lt;p&gt;We are happy to announce &lt;a href=&quot;http://nj123leuven.eventbrite.com/&quot;&gt;Nooku Jam 12.3 Leuven&lt;/a&gt; which is taking place on the 18-19th of October 2012 at the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; in Leuven, BE. Learn everything about the latest Nooku 12.3 release and how we are leaving our Joomla legacy behind !&lt;/p&gt;
+
+&lt;p&gt;Once again Nookuers from all over will come together. Expect lot’s of fun and two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nj123leuven.eventbrite.com/&quot;&gt;Sign up&lt;/a&gt; for Nooku Jam 12.3 Leuven today!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;looking-back-at-nooku-jam-122&quot;&gt;Looking back at Nooku Jam 12.2&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/nooku/7026184369/&quot; title=&quot;Nooku Jam Leuven 2011 by Nooku, on Flickr&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7093/7026184369_53a09c5f4d.jpg&quot; alt=&quot;Nooku Jam Leuven 2011&quot; width=&quot;500&quot; height=&quot;205&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/nooku/sets/72157630033392080/&quot;&gt;photo highlights&lt;/a&gt; from our previous Jam.&lt;/p&gt;
+
+&lt;p&gt;During our previous Jam lot’s of great sessions took place. A handful to mention:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tom’s talk about how we are bringing  &lt;a href=&quot;https://github.com/tomjanssens/talks/tree/master/jd12nl&quot;&gt;bootstrap and LESS&lt;/a&gt; to 12.3&lt;/li&gt;
+  &lt;li&gt;Oli demonstrated his &lt;a href=&quot;https://github.com/uketernity/Nooku-API-Authentication&quot;&gt;com_tokens component&lt;/a&gt; for RESTful tokenized authentication&lt;/li&gt;
+  &lt;li&gt;Oleg and Nils shared their experiences with &lt;a href=&quot;http://couchdb.apache.org/&quot;&gt;CouchDb&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Gergo did a demo on the new &lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-framework/wiki/12-3#3._kdatabasequery&quot;&gt;database query builder&lt;/a&gt; coming in 12.3&lt;/li&gt;
+  &lt;li&gt;Nick, Ercan and Stian discussed javascript MVC with &lt;a href=&quot;http://emberjs.com/&quot;&gt;EmberJS&lt;/a&gt; and &lt;a href=&quot;http://angularjs.org/&quot;&gt;AngularJS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;We talked about how to do agile development using &lt;a href=&quot;http://en.wikipedia.org/wiki/Kanban&quot;&gt;Kanban&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;and many more…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-is-a-nooku-jam&quot;&gt;What is a Nooku Jam?&lt;/h3&gt;
+
+&lt;p&gt;A Nooku Jam is an open, participatory workshop-event, whose content is provided by participants. The concept is very similar to a &lt;a href=&quot;http://barcamp.org/w/page/405173/TheRulesOfBarCamp&quot;&gt;barcamp&lt;/a&gt;. It is an intense event with discussions, demos and interaction from the attendees.&lt;/p&gt;
+
+&lt;p&gt;Nooku Jams are never your traditional conferences – they are more of an ad-hoc unconference born from the desire for people to share and learn in an open environment.  Anybody can speak on any topic that they are passionate about. For Nooku developers, this means their latest code, component, or mini project.&lt;/p&gt;
+
+&lt;h3 id=&quot;there-are-no-spectators-only-participants&quot;&gt;There are no spectators, only participants.&lt;/h3&gt;
+
+&lt;p&gt;Attendees must give a demo, a session, or help with one, or otherwise volunteer / contribute in some way to support the event. Participants won’t need to decide what to talk about until they get there. All presentations are scheduled the day they happen.&lt;/p&gt;
+
+&lt;p&gt;The day starts with the session suggestions. Everybody describes the kind of session they can do. Then the session gets pinned on the board for a certain time slot. After the planning – voila – there is a schedule and the sessions start.&lt;/p&gt;
+
+&lt;h3 id=&quot;its-always-about-community&quot;&gt;It’s always about community&lt;/h3&gt;
+
+&lt;p&gt;Anyone with something to contribute or with the desire to learn is welcome and invited to join a Nooku Jam. When you come, be prepared to share with other attendees. When you leave, be prepared to share it with the world.&lt;/p&gt;
+
+&lt;p&gt;The jam is the perfect event for Nooku magic offline! &lt;a href=&quot;http://nj123leuven.eventbrite.com/&quot;&gt;Register today&lt;/a&gt;, we only have 40 seats available!&lt;/p&gt;
+
+</description>
+                <pubDate>Thu, 06 Sep 2012 00:00:00 +0200</pubDate>
+                <link>//blog/2012/09/announcing-nooku-jam-12-3-leuven/</link>
+                <guid isPermaLink="true">//blog/2012/09/announcing-nooku-jam-12-3-leuven/</guid>
+            </item>
+        
+            <item>
+                <title>Looking back at Nooku Jam 12.2</title>
+                <description>&lt;p&gt;&lt;span id=&quot;internal-source-marker_0.9827679025474936&quot;&gt;The Nooku Jam 12.2 is over and like all Nooku events, we had a blast! Twenty four &lt;a href=&quot;https://twitter.com/#!/nooku/nj12leuven&quot;&gt;attendees&lt;/a&gt; flocked to the green grass of the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; on the 16th and 17th of May for two days of talks, coding, hacking, sharing and fun around the Nooku project.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.eventbrite.com/event/2326534728&quot;&gt;Jam&lt;/a&gt;, sponsored by &lt;a href=&quot;http://mindk.com/&quot;&gt;Mindk&lt;/a&gt;, &lt;a href=&quot;http://beyounic.com/&quot;&gt;Beyounic&lt;/a&gt; and &lt;a href=&quot;http://www.timble.net/&quot;&gt;Timble&lt;/a&gt;, was an inspiring weekend for the Nooku community.&lt;/p&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt;
+  The recipe: great ideas, creative people, lots of food and Belgian beer and an inspiring venue! Check our &lt;a href=&quot;http://www.flickr.com/photos/nooku/sets/72157630033392080/&quot;&gt;photostream&lt;/a&gt; or read Tom’s story on &lt;a href=&quot;http://sfy.co/12pR&quot;&gt;storify&lt;/a&gt; for evidence of the inspiring weekend.
+&lt;/p&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  The Talks
+&lt;/h3&gt;
+
+&lt;p&gt;The jam was full to the brim with presentations about Nooku, PHP and web technologies around it. For this Jam we invited Nils Adermann, from &lt;a href=&quot;http://getcomposer.org/&quot;&gt;ComposorPHP&lt;/a&gt; fame, to indulge us in all the great new stuff he is working on. We were impressed and you can bet that very soon Nooku will be composoretized!&lt;/p&gt;
+
+&lt;p&gt;Lot’s of other great sessions too. A handful to mention:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tom’s talk about how we are bringing  &lt;a href=&quot;https://github.com/tomjanssens/talks/tree/master/jd12nl&quot;&gt;bootstrap and LESS&lt;/a&gt; to 12.3&lt;/li&gt;
+  &lt;li&gt;Oli demonstrated his &lt;a href=&quot;https://github.com/uketernity/Nooku-API-Authentication&quot;&gt;com_tokens component&lt;/a&gt; for RESTful tokenized authentication&lt;/li&gt;
+  &lt;li&gt;Oleg and Nils shared their experiences with &lt;a href=&quot;http://couchdb.apache.org/&quot;&gt;CouchDb&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Gergo did a demo on the new &lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-framework/wiki/12-3#3._kdatabasequery&quot;&gt;database query builder&lt;/a&gt; coming in 12.3&lt;/li&gt;
+  &lt;li&gt;Nick, Ercan and Stian discussed javascript MVC with &lt;a href=&quot;http://emberjs.com/&quot;&gt;EmberJS&lt;/a&gt; and &lt;a href=&quot;http://angularjs.org/&quot;&gt;AngularJS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;We talked about how to do agile development using &lt;a href=&quot;http://en.wikipedia.org/wiki/Kanban&quot;&gt;Kanban&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;and many more…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course in true Nooku tradition there was &lt;a href=&quot;http://www.flickr.com/photos/nooku/7330288088/&quot;&gt;cake&lt;/a&gt; to celebrate &lt;a href=&quot;http://blog.nooku.org/2012/04/nooku-is-4/&quot;&gt;Nooku’s 4th birthday&lt;/a&gt;. Hip hip hooray!&lt;/p&gt;
+
+&lt;p&gt;Curious about what other people had to say about their Jam experience? Checkout the &lt;a href=&quot;http://www.moyoweb.nl/blog/2-nooku-news/13-nj12leuven.html&quot;&gt;blog post&lt;/a&gt; from the &lt;a href=&quot;http://www.moyoweb.nl/&quot;&gt;moyoweb&lt;/a&gt; guys.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  Thank you sponsors!
+&lt;/h3&gt;
+
+&lt;p&gt;A big thanks to our sponsors namely &lt;a href=&quot;http://www.beyounic.com/&quot;&gt;Beyounic&lt;/a&gt;, &lt;a href=&quot;http://www.mindk.com/&quot;&gt;Mindk&lt;/a&gt;, &lt;a href=&quot;http://timble.net/&quot;&gt;Timble&lt;/a&gt; and &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC&lt;/a&gt; for hosting the event. Special thanks also to Nils Adermann for coming over and joining the fun with folks from the Nooku community.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+  &lt;a title=&quot;Nooku Jam 12.2 by Nooku, on Flickr&quot; href=&quot;http://www.flickr.com/photos/nooku/7330314836/&quot;&gt;&lt;img class=&quot;aligncenter&quot; src=&quot;http://farm8.staticflickr.com/7215/7330314836_349de8b71f.jpg&quot; alt=&quot;Nooku Jam 12.2&quot; width=&quot;500&quot; height=&quot;333&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  Nooku Jam 12.3 in the works
+&lt;/h3&gt;
+
+&lt;p&gt;If you haven’t attended a Nooku Jam before or would love to attend again, we are happy to announce that Nooku Jam 12.3 will be on October 2012. See you then!&lt;/p&gt;
+
+</description>
+                <pubDate>Thu, 07 Jun 2012 00:00:00 +0200</pubDate>
+                <link>//blog/2012/06/looking-back-at-nooku-jam-12-2/</link>
+                <guid isPermaLink="true">//blog/2012/06/looking-back-at-nooku-jam-12-2/</guid>
+            </item>
+        
+            <item>
+                <title>Activity Streams with com_activities</title>
+                <description>&lt;p style=&quot;text-align: left;&quot;&gt;
+  As the web becomes more social, a new and interesting way to follow  people across the Internet has emerged. Termed as “Activity Streams”, it is popularized by sites like Facebook, Twitter, and other social websites, Activity Streams has now become an essential part of “the Social Web”.
+&lt;/p&gt;
+
+&lt;h3 style=&quot;text-align: left;&quot; dir=&quot;ltr&quot;&gt;
+  So what are “Activity Streams”?
+&lt;/h3&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  On the surface, it looks like a simple record of actions performed by people on the Internet. But what makes it interesting is the philosophy behind it. Activity Streams is rooted to a concept called &lt;a href=&quot;http://www.slideshare.net/factoryjoe/activity-streams-socialism-the-future-of-open-source&quot;&gt;Activity Theory&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  We may not be able to discuss the theory in detail , but I am quite certain that Activity Theory may drive the future of the social web. The concept is also very relevant to Open Source communities such as Nooku, as it explores the psychology behind collaboration, motivation and productivity.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  Philosophy aside, the technology behind Activity Streams is also evolving. As more and more websites use it, a standard is being developed which will allow Activity Streams to be syndicated in its own protocol instead of using RSS or Atom. To know more about the Activity Streams Standard, read the &lt;a href=&quot;http://activitystrea.ms/&quot;&gt;Draft&lt;/a&gt; and the &lt;a href=&quot;http://wiki.activitystrea.ms/w/page/1359261/FrontPage&quot;&gt;Wiki&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;h3 style=&quot;text-align: left;&quot; dir=&quot;ltr&quot;&gt;
+  Where does Nooku come into play?
+&lt;/h3&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  To easily integrate Activity Streams in your Nooku application, a new Nooku Component is here at your service &amp;#8211; com_activities. By using this, logging user actions in your Nooku component and rendering Activity Streams can be effortless.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  &lt;!--more--&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  How do you use com_activities in your component? Check out this code:
+&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;class ComArticlesControllerArticle extends ComDefaultControllerDefault
+{
+    protected function _initialize(KConfig $config)
+    {
+        $config-&amp;amp;gt;append(array(
+            &amp;#39;behaviors&amp;#39; =&amp;amp;gt; array(
+                &amp;#39;com://admin/activities.controller.behavior.loggable&amp;#39;,
+            )
+        ));
+
+        parent::_initialize($config);
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  In your controller, simply add the “loggable” controller behavior from com_activities. By default, the loggable behavior is triggered on controller actions: add, edit and delete.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  When the behavior is triggered, it logs the user(actor), the action(verb), the item in which the action was performed(object), the link to the object(target), and some metadata e.g. when the action was performed, and which application was used.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  When viewing the activity stream, these records are constructed together to form a meaningful sentence like “This &lt;em&gt;User&lt;/em&gt; has performed this &lt;em&gt;Action&lt;/em&gt; on this &lt;em&gt;Object&lt;/em&gt; on this &lt;em&gt;Date&lt;/em&gt;”.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  The behavior is also flexible, you can configure it to track only certain actions such as after login, or after logout as demonstrated in this code:
+&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;$config-&amp;amp;gt;append(array(
+    &amp;#39;behaviors&amp;#39; =&amp;amp;gt; array(
+         $this-&amp;amp;gt;getService(&amp;#39;com://admin/activities.controller.behavior.loggable&amp;#39;,
+         array(
+             &amp;#39;title_column&amp;#39; =&amp;amp;gt; &amp;#39;name&amp;#39;,
+             &amp;#39;actions&amp;#39;      =&amp;amp;gt; array(&amp;#39;after.login&amp;#39;, &amp;#39;after.logout&amp;#39;)
+     ))),
+));&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  Aside from the HTML view, com_activities can also output the JSON format that follows the emerging Activity Streams standard. To do this, just append format=json in the URL e.g
+&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre data-line=&quot;&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;index.php?com_activities&amp;amp;view=activities&amp;amp;format=json.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  Using Nooku’s RESTful architecture, you can syndicate your component’s activity stream without additional effort.
+&lt;/p&gt;
+
+&lt;h3 style=&quot;text-align: left;&quot; dir=&quot;ltr&quot;&gt;
+  Coming Soon in Nooku 12.2
+&lt;/h3&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  As the web evolves, Activity Streams can become an integral part of user driven websites. By using Nooku with com_activities, developers can easily integrate it to their applications. It’s a powerful feature and it’s so easy to implement in Nooku.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+  &lt;a title=&quot;Nooku Server - Activities by Nooku, on Flickr&quot; href=&quot;http://www.flickr.com/photos/nooku/7258732306/&quot;&gt;&lt;img class=&quot;aligncenter&quot; src=&quot;http://farm8.staticflickr.com/7219/7258732306_89ddbc8947.jpg&quot; alt=&quot;Nooku Server - Activities&quot; width=&quot;500&quot; height=&quot;337&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  Check the code of com_activities in the  &lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-components&quot;&gt;Nooku Components&lt;/a&gt; trunk or see it in action in &lt;a href=&quot;http://nooku.assembla.com/spaces/nooku-server&quot;&gt;Nooku Server&lt;/a&gt;’s. To view , look for “Activity Logs” under the Tools menu or check out the dashboard which shows the activities in a AJAX overlay. Coming to you in 12.2. Excited ? So are we !
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: left;&quot;&gt;
+  Happy Coding!
+&lt;/p&gt;
+</description>
+                <pubDate>Thu, 24 May 2012 00:00:00 +0200</pubDate>
+                <link>//blog/2012/05/activity-streams-with-com_activities/</link>
+                <guid isPermaLink="true">//blog/2012/05/activity-streams-with-com_activities/</guid>
+            </item>
+        
+            <item>
+                <title>Sunsetting Nooku Content</title>
+                <description>&lt;p&gt;&lt;span id=&quot;internal-source-marker_0.9985468608792871&quot;&gt;The 17th of April 2012 marked the end of the state-of-the-art content translation tool for Joomla. The Nooku team is officially announcing the sunset of Nooku Content.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;With the end of life of Joomla 1.5 coming up at the end of the month and the integrated &lt;a href=&quot;http://magazine.joomla.org/issues/Issue-Nov-2011/item/593-Build-a-Multilingual-Site-in-Joomla-1-7&quot;&gt;multilingual capabilities that are now available in Joomla 2.5&lt;/a&gt;, we feel there is no longer a need for a separate multilingual solution for Joomla.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/nooku/6963235596/&quot; title=&quot;Nooku Content Multi lingual Content Manager for Joomla by Nooku, on Flickr&quot;&gt;&lt;img class=&quot;alignright&quot; style=&quot;margin: 10px;&quot; src=&quot;http://farm8.staticflickr.com/7268/6963235596_d99ba7451c_m.jpg&quot; alt=&quot;Nooku Content Multi lingual Content Manager for Joomla&quot; width=&quot;199&quot; height=&quot;240&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;With the sunset of Nooku Content, we are putting all our focus on growing Nooku as &lt;a href=&quot;http://prezi.com/y8xf4syr9yrr/nooku-from-vision-to-architecture/&quot;&gt;a free and open source web application platform&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As &lt;a href=&quot;http://blog.nooku.org/2012/04/nooku-is-4/&quot;&gt;Nooku starts its 5th year,&lt;/a&gt; we will slowly leave our Joomla roots behind and wander off into the wider PHP galaxy. Exciting times!&lt;/p&gt;
+
+&lt;p&gt;But first, the tool that speaks your language is bidding adieu and we thank all our partners who helped us build Nooku Content.&lt;/p&gt;
+
+</description>
+                <pubDate>Tue, 24 Apr 2012 00:00:00 +0200</pubDate>
+                <link>//blog/2012/04/sunsetting-nooku-content/</link>
+                <guid isPermaLink="true">//blog/2012/04/sunsetting-nooku-content/</guid>
+            </item>
+        
+            <item>
+                <title>Nooku is 4!</title>
+                <description>&lt;p&gt;&lt;span id=&quot;internal-source-marker_0.9483104960527271&quot;&gt;How time flies… Today, Nooku is 4 years old! It has been an interesting journey! A journey of inspiration, creativity, collaboration… Of pushing boundaries.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;In the past 4 years, we &lt;a href=&quot;http://joomla-and-more.com/2011/03/17/how-nooku-framework-will-affect-you/&quot;&gt;got&lt;/a&gt; &lt;a href=&quot;http://www.rastinmehr.com/2009/05/23/nooku-framework-is-joomlas-missing-mvc-core/&quot;&gt;glorified&lt;/a&gt;, and &lt;a href=&quot;http://www.dionysopoulos.me/blog/why-i-am-not-using-nooku-anymore&quot;&gt;vilifie&lt;/a&gt;&lt;a href=&quot;http://www.dionysopoulos.me/blog/why-i-am-not-using-nooku-anymore&quot;&gt;d&lt;/a&gt;. We &lt;a href=&quot;http://vimeo.com/channels/nooku#24546453&quot;&gt;pursued a vision&lt;/a&gt;,&lt;a href=&quot;http://vimeo.com/channels/nooku#11054557&quot;&gt; challenged the status quo&lt;/a&gt;, &lt;a href=&quot;http://blog.nooku.org/2011/05/nooku-community-wins-4-joscars/&quot;&gt;received praise&lt;/a&gt;, above all, we kept to &lt;a href=&quot;http://blog.nooku.org/2011/04/the-nooku-manifesto/&quot;&gt;our principles&lt;/a&gt; and make &lt;a href=&quot;http://blog.nooku.org/2011/08/meet-com_files-joomla-file-management-2-0/&quot;&gt;good&lt;/a&gt; &lt;a href=&quot;http://blog.nooku.org/2011/04/nooku-desktop-web-meets-desktop/&quot;&gt;things&lt;/a&gt; &lt;a href=&quot;http://blog.nooku.org/2012/03/nooku-121-released/&quot;&gt;happen&lt;/a&gt;.&lt;a href=&quot;http://www.flickr.com/photos/nooku/7091171389/&quot; title=&quot;Beyond Joomla! by Nooku, on Flickr&quot;&gt;&lt;img class=&quot; alignright&quot; title=&quot;Beyond Joomla&quot; src=&quot;http://farm6.staticflickr.com/5199/7091171389_60a6fa3ae6_n.jpg&quot; alt=&quot;Beyond Joomla!&quot; width=&quot;202&quot; height=&quot;240&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  &lt;span style=&quot;font-weight: normal;&quot;&gt;Beyond Joomla!&lt;/span&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;As we start year 5, Nooku will slowly leave its Joomla roots behind and wander off into the wider PHP galaxy.&lt;/p&gt;
+
+&lt;p&gt;Let’s face it,  Joomla is moving ahead, but progresses slowly. We love Joomla and we want it to thrive. We believed that Nooku could make this happen and &lt;a href=&quot;http://ideas.joomla.org/forums/84261-joomla-idea-pool/suggestions/1850251-nooku-fm-integration&quot;&gt;so did some of you&lt;/a&gt;, but the time has come to move on.&lt;/p&gt;
+
+&lt;p&gt;In 2013, and with the release of 13.1, the Nooku Platform will run fully standalone. A release we are very much looking forward to. The PHP community is innovating at a fast pace and we want to be at the forefront, helping to evolve the web and continuously growing Nooku as a free and open source web application platform.&lt;/p&gt;
+
+&lt;p&gt;We recognize that for some, change is difficult. But this is technology! It’s the fastest game in the world! As a long time Joomla community member and &lt;a href=&quot;http://groups.google.com/group/joomla-dev-cms/browse_thread/thread/a477a550bb051f29?tvc=2&amp;amp;&quot;&gt;Nooku Rock Star,  Torkil Johnsen said&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“You have to chase and embrace innovation to stay in the game, not demand that it comes over to shine your shoes.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  &lt;!--more--&gt;
+&lt;/h3&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  &lt;span style=&quot;font-weight: normal;&quot;&gt;Blossoming community&lt;/span&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;Four years ago, we were not much more than a handful of people with a vision. Today, Nooku is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;an active team of 12 people&lt;/li&gt;
+  &lt;li&gt;500 subscribers in the developer’s&lt;a href=&quot;http://lists.nooku.org/&quot;&gt; discussion group&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;hundreds of websites powered by Nooku Server and Nooku Framework&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We’ve been out there a lot as well.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We presented Nooku on&lt;a href=&quot;http://blog.nooku.org/tag/joomladay/&quot;&gt; many Joomladays&lt;/a&gt; in all corners of the world.&lt;/li&gt;
+  &lt;li&gt;We co-organized more than 10&lt;a href=&quot;http://blog.nooku.org/tag/jam/&quot;&gt; Nooku Jams&lt;/a&gt; with our partners.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Code metrics are not a good measurement for the size or quality of a project, but they do help to&lt;a href=&quot;http://www.ohloh.net/p/nooku&quot;&gt; indicate progress&lt;/a&gt;. In our official repositories, we have:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4650 commits for Nooku Framework&lt;/li&gt;
+  &lt;li&gt;3600 commits for Nooku Server&lt;/li&gt;
+  &lt;li&gt;1650 commits for Nooku Components&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the past 4 years &lt;strong&gt;more than 30 developers&lt;/strong&gt; have contributed code to Nooku. Thanks You !&lt;/p&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  &lt;span style=&quot;font-weight: normal;&quot;&gt;Party rock!&lt;/span&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;In true Nooku tradition, we party! Join us in &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Nooku Jam Leuven&lt;/a&gt; to celebrate Nooku’s birthday. Party hard and learn more about the Nooku Platform and roadmap. The event is taking place on the 16-17th of May 2012 at the&lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt; FlandersDC Creativity Lab&lt;/a&gt; in Leuven, BE.&lt;/p&gt;
+
+&lt;p&gt;Nooku’ers from all over will come together for two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project and of course, to celebrate 4 great years of Nooku magic.&lt;/p&gt;
+
+&lt;p&gt;Happy 4th Birthday Nooku!&lt;/p&gt;
+
+</description>
+                <pubDate>Wed, 18 Apr 2012 00:00:00 +0200</pubDate>
+                <link>//blog/2012/04/nooku-is-4/</link>
+                <guid isPermaLink="true">//blog/2012/04/nooku-is-4/</guid>
+            </item>
+        
+            <item>
+                <title>Countdown to Nooku Jam 12.2 Leuven</title>
+                <description>&lt;p&gt;&lt;span id=&quot;internal-source-marker_0.1697432892397046&quot;&gt;The countdown begins for one of the most exciting Nooku events of the year. Have you signed up for &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Nooku Jam 12.2 Leuven&lt;/a&gt;?&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Expect two days of presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project on May 16 and 17 at the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; in Leuven, BE.&lt;/p&gt;
+
+&lt;p&gt;Checkout the video for impressions from last year’s Nooku Jam Leuven. Fun, fun and more fun awaits this year’s participants!&lt;/p&gt;
+
+&lt;p&gt;Join us in this creative and innovative Nooku event. &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Register&lt;/a&gt; today!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  Share and collaborate
+&lt;/h3&gt;
+
+&lt;p&gt;
+  A Nooku Jam is an open, participatory workshop-event, whose content is provided by participants. The concept is very similar to a &lt;a href=&quot;http://barcamp.org/w/page/405173/TheRulesOfBarCamp&quot;&gt;barcamp&lt;/a&gt;. It is an intense event with discussions, demos and interaction from the attendees.
+&lt;/p&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  No spectators, only participants.
+&lt;/h3&gt;
+
+&lt;p&gt;
+  Attendees must give a demo, a session, or help with one, or otherwise volunteer / contribute in some way to support the event. Participants won&amp;#8217;t need to decide what to talk about until they get there. All presentations are scheduled the day they happen.
+&lt;/p&gt;
+
+&lt;h3 dir=&quot;ltr&quot;&gt;
+  All about community
+&lt;/h3&gt;
+
+&lt;p&gt;
+  Anyone with something to contribute or with the desire to learn is welcome and invited to join a Nooku Jam. When you come, be prepared to share with other attendees. When you leave, be prepared to share it with the world.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Sign up&lt;/a&gt; for Nooku Jam 12.2 Leuven today!
+&lt;/p&gt;
+
+</description>
+                <pubDate>Mon, 09 Apr 2012 00:00:00 +0200</pubDate>
+                <link>//blog/2012/04/countdown-to-nooku-jam-12-2-leuven/</link>
+                <guid isPermaLink="true">//blog/2012/04/countdown-to-nooku-jam-12-2-leuven/</guid>
+            </item>
+        
+            <item>
+                <title>Announcing Nooku Jam 12.2 Leuven!</title>
+                <description>&lt;p&gt;We are happy to announce &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Nooku Jam 12.2 Leuven&lt;/a&gt; which is taking place on the 16-17th of May 2012 at the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; in Leuven, BE. Come and celebrate Nooku’s 4th birthday, and the release of Nooku 12.2 with our amazing community.&lt;/p&gt;
+
+&lt;p&gt;Once again Nookuers from all over will come together. Expect lot’s of fun and two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.&lt;/p&gt;
+
+&lt;h3 id=&quot;nooku-jam-leuven-2011-highlights&quot;&gt;Nooku Jam Leuven 2011 Highlights&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/nooku/7026184369/&quot; title=&quot;Nooku Jam Leuven 2011 by Nooku, on Flickr&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7093/7026184369_53a09c5f4d.jpg&quot; alt=&quot;Nooku Jam Leuven 2011&quot; width=&quot;500&quot; height=&quot;205&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/valanx/sets/72157628152971783/&quot;&gt;photo highlights&lt;/a&gt; and insights from last year’s Jam.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This jam (was) followed the more informal &lt;a href=&quot;http://barcamp.org/w/page/402984/FrontPage&quot;&gt;barcamp&lt;/a&gt; format, which relies on spontaneous input by all the attendants. The attendants were to come up with their own ideas for talks, along with things they would like to hear about. These poles of ideas were quickly refactored into walls of ideas. – Moyoweb&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;While the other events that I have been to always left me a little exhausted, I left this one feeling inspired and motivated. I’m looking forward to work with all the great guys around Nooku in the future and am excited about all the stuff that is coming up. – David Deutsch&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Sign up&lt;/a&gt; for Nooku Jam 12.2 Leuven today!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;what-is-a-nooku-jam&quot;&gt;What is a Nooku Jam?&lt;/h3&gt;
+
+&lt;p&gt;A Nooku Jam is an open, participatory workshop-event, whose content is provided by participants. The concept is very similar to a &lt;a href=&quot;http://barcamp.org/w/page/405173/TheRulesOfBarCamp&quot;&gt;barcamp&lt;/a&gt;. It is an intense event with discussions, demos and interaction from the attendees.&lt;/p&gt;
+
+&lt;p&gt;Nooku Jams are never your traditional conferences – they are more of an ad-hoc unconference born from the desire for people to share and learn in an open environment.  Anybody can speak on any topic that they are passionate about. For Nooku developers, this means their latest code, component, or mini project.&lt;/p&gt;
+
+&lt;h3 id=&quot;there-are-no-spectators-only-participants&quot;&gt;There are no spectators, only participants.&lt;/h3&gt;
+
+&lt;p&gt;Attendees must give a demo, a session, or help with one, or otherwise volunteer / contribute in some way to support the event. Participants won’t need to decide what to talk about until they get there. All presentations are scheduled the day they happen.&lt;/p&gt;
+
+&lt;p&gt;The day starts with the session suggestions. Everybody describes the kind of session they can do. Then the session gets pinned on the board for a certain time slot. After the planning – voila – there is a schedule and the sessions start.&lt;/p&gt;
+
+&lt;h3 id=&quot;its-always-about-community&quot;&gt;It’s always about community&lt;/h3&gt;
+
+&lt;p&gt;Anyone with something to contribute or with the desire to learn is welcome and invited to join a Nooku Jam. When you come, be prepared to share with other attendees. When you leave, be prepared to share it with the world.&lt;/p&gt;
+
+&lt;p&gt;The jam is the perfect event for Nooku magic offline! &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Register&lt;/a&gt; today, we only have 30 seats available.&lt;/p&gt;
+
+</description>
+                <pubDate>Thu, 29 Mar 2012 00:00:00 +0200</pubDate>
+                <link>//blog/2012/03/announcing-nooku-jam-12-2-leuven/</link>
+                <guid isPermaLink="true">//blog/2012/03/announcing-nooku-jam-12-2-leuven/</guid>
+            </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,98 @@
+.event_container {
+  background: #eee;
+  padding: 3em 0 1px;
+  margin-bottom: -40px;
+}
+
+.events {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.event {
+  background: #fff;
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  margin: 0 15px 30px;
+  text-align: left;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    max-width: 345px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 445px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 525px;
+  }
+
+  .event__header {
+    display: table;
+    width: 100%;
+  }
+
+  .event__title, .event__date {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 0;
+    min-height: 80px;
+    padding: 1em;
+    color: $brand-primary;
+  }
+
+  .event__content {
+    padding: 1em 1em 5px;
+  }
+
+  .event__image {
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .event__date {
+    background: #fff;
+    border-left: 1px solid #ddd;
+    width: 70px;
+    height: 70px;
+    vertical-align: top;
+
+    .event__date__year,
+    .event__date__month {
+      background: $brand-primary;
+      color: #fff;
+      font-size: 12px;
+      padding: 0 5px;
+      line-height: 22px;
+      border: 1px solid #fff;
+    }
+
+    .event__date__year {
+      float: right;
+      margin: 1px 1px 0 0;
+      border: none;
+    }
+
+    .event__date__day {
+      font-size: 30px;
+      color: #333;
+      font-weight: bold;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+}
