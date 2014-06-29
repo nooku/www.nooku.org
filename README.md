@@ -1,6 +1,8 @@
 # Nooku
 
 ## Installation & Usage
+Assuming you already have [Bundler](http://bundler.io/) installed:
+
     bundle install
     jekyll serve --watch
 
