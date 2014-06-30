@@ -26,7 +26,7 @@ need for a database. &lt;/p&gt;
   &lt;li&gt;We now have an improved publishing flow for the team using &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt;, and one less login account for each of us to remember.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;how-to-switch-from-wordpress-to-jekyll&quot;&gt;How to switch from Wordpress to Jekyll.&lt;/h3&gt;
+&lt;h2 id=&quot;how-to-switch-from-wordpress-to-jekyll&quot;&gt;How to switch from Wordpress to Jekyll.&lt;/h2&gt;
 &lt;p&gt;While switching from Wordpress to Jekyll we had learned a few things along the way that might be useful if you are considered a similar transition.&lt;/p&gt;
 
 &lt;h3 id=&quot;properly-export-and-convert-every-wordpress-post-to-markdown-syntax&quot;&gt;1. Properly export and convert every Wordpress post to Markdown syntax.&lt;/h3&gt;

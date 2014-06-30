@@ -10,17 +10,23 @@ description: Open Source PHP Framework for Web Applications. A project for devel
     <div class="row">
       <div class="col-sm-9">
         {% for post in paginator.posts %}
-          <h2>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h2>
-          <h3 class="text-muted">
-            {{ post.date | date: "%d %B %Y"}} by {{ post.author }}
-          </h3>
-          <div class="excerpt">
-            {{ post.content | split:"<!--more-->" | first }}
-          </div>
-          <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
-          <hr>
+          <article>
+            <header>
+              <h1>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h1>
+              <h3 class="text-muted">
+                {{ post.date | date: "%d %B %Y"}} by {{ post.author }}
+              </h3>
+            </header>
+            <section>
+              <div class="excerpt">
+                {{ post.content | split:"<!--more-->" | first }}
+              </div>
+              <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
+              <hr>
+            </section>
+          </article>
         {% endfor %}
           <ul class="pager">
           {% if paginator.previous_page == 1 %}
