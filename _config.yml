@@ -13,6 +13,8 @@ navigation:
 - text: Blog
   url: blog
   layout: blog
+- text: Events
+  url: events
 
 monthly_archive:
   layout: archive

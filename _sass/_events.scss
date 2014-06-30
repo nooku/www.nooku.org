@@ -15,20 +15,20 @@
   background: #fff;
   position: relative;
   display: block;
-  vertical-align: middle;
+  vertical-align: top;
   margin: 0 15px 30px;
   text-align: left;
 
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
   @media screen and (min-width: 768px) {
     display: inline-block;
-    max-width: 345px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    max-width: 445px;
-  }
-
-  @media screen and (min-width: 1200px) {
+    margin: 0 2% 40px;
+    width: 46%;
     max-width: 525px;
   }
 
