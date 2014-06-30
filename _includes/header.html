@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width" />
     <title>{% if page.title %}{{page.title}}{% else %}{{site.main_title}}{% endif %}</title>
-    {% if page.layout == "post" %}
-        <meta name="description" content="{{page.title}} - {{site.description}}" />
-        {% else %}
-        <meta name="description" content="{{site.description}}" />
-    {% endif %}
+    <meta name="description" content="{{site.description}}" />
 
     <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico" />
     <link href="/assets/css/prism.css" rel="stylesheet" type="text/css">
