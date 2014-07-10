@@ -84,11 +84,13 @@
                             </h3>
                         </header>
           
-                        <p>As you’ve most likely found out by now, we are all big fans of <a href="https://www.vagrantup.com">Vagrant</a> at Nooku HQ. Vagrant is the tool that powers our Nooku development environment and makes sure you can start coding right away by managing this virtual environment for you.</p>
+                        <p>As you’ve most likely found out by now, we are all big fans of <a href="https://www.vagrantup.com">Vagrant</a>. Vagrant is the tool that powers our Nooku development environment and makes sure you can start coding right away by managing this virtual environment for you.</p>
 
 <p>We’ve launched the first Nooku Server box little more than a year ago. In good Nooku tradition, we have revised our approach more than once over the past year.</p>
 
 <!--more-->
+
+<h3 id="a-little-bit-of-history">A little bit of history</h3>
 
 <p>The <a href="https://github.com/nooku/nooku-server/releases/tag/v1.0.0">v1.0 version</a> was a separate repository that required additional configuration before you could use it. You had to tell it where to find your Nooku Framework code first and then build the box yourself. </p>
 
@@ -96,11 +98,15 @@
 
 <p>Not to mention the fact that an updated version of PHP or MySQL could break our configuration, throw build errors all over the place and prevent you from getting a working box at all! </p>
 
+<h3 id="vagrant-cloud-to-the-rescue">Vagrant Cloud to the rescue</h3>
+
 <p><img src="https://farm3.staticflickr.com/2900/14433258990_bac699b844_m.jpg" title="Vagrant Cloud" width="220" style="float: right; margin: 6px" /></p>
 
 <p>With the recent release of <a href="https://vagrantcloud.com/">Vagrant Cloud</a>, however, all these issues are now a thing of the past. <a href="https://vagrantcloud.com/">Vagrant Cloud</a> is a hosted service for finding and sharing Vagrant boxes, managing Vagrant Share, and much more.  For a complete introduction, head over to their original <a href="https://www.vagrantup.com/blog/vagrant-1-5-and-vagrant-cloud.html">release announcement</a>.</p>
 
 <p>We moved the Vagrant configuration back into the separate Nooku Server repository and tagged it <a href="https://github.com/nooku/nooku-server/releases/tag/v3.0.0">v3.0</a>. We now build the box once after each new release and publish it as <a href="https://vagrantcloud.com/nooku/box">nooku/box</a> on Vagrant Cloud. </p>
+
+<h3 id="hassle-free-coding">Hassle-free coding</h3>
 
 <p>When you clone the Nooku Framework repository and run the <code>vagrant up</code> command, it will automatically download the latest build and you’ll be up and coding in no time! </p>
 
