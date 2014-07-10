@@ -7,6 +7,40 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Announcing Nooku Server v3.0</title>
+                <description>&lt;p&gt;As you’ve most likely found out by now, we are all big fans of &lt;a href=&quot;https://www.vagrantup.com&quot;&gt;Vagrant&lt;/a&gt; at Nooku HQ. Vagrant is the tool that powers our Nooku development environment and makes sure you can start coding right away by managing this virtual environment for you.&lt;/p&gt;
+
+&lt;p&gt;We’ve launched the first Nooku Server box little more than a year ago. In good Nooku tradition, we have revised our approach more than once over the past year.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/nooku/nooku-server/releases/tag/v1.0.0&quot;&gt;v1.0 version&lt;/a&gt; was a separate repository that required additional configuration before you could use it. You had to tell it where to find your Nooku Framework code first and then build the box yourself. &lt;/p&gt;
+
+&lt;p&gt;To try and improve this workflow, we moved the Vagrant configuration into Nooku Framework itself and tagged it &lt;a href=&quot;https://github.com/nooku/nooku-server/releases/tag/v2.0.0&quot;&gt;v2.0&lt;/a&gt;. Better, but not quite there yet: each time you clone the framework repository, you still had to build the box at first run. A time consuming process! &lt;/p&gt;
+
+&lt;p&gt;Not to mention the fact that an updated version of PHP or MySQL could break our configuration, throw build errors all over the place and prevent you from getting a working box at all! &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.hashicorp.com/images/blog/vagrant-cloud-5-weeks-in/logo-side-a35e4189.png&quot; title=&quot;Vagrant Cloud&quot; width=&quot;220&quot; style=&quot;float: right; margin: 6px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With the recent release of &lt;a href=&quot;https://vagrantcloud.com/&quot;&gt;Vagrant Cloud&lt;/a&gt;, however, all these issues are now a thing of the past. &lt;a href=&quot;https://vagrantcloud.com/&quot;&gt;Vagrant Cloud&lt;/a&gt; is a hosted service for finding and sharing Vagrant boxes, managing Vagrant Share, and much more.  For a complete introduction, head over to their original &lt;a href=&quot;https://www.vagrantup.com/blog/vagrant-1-5-and-vagrant-cloud.html&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We moved the Vagrant configuration back into the separate Nooku Server repository and tagged it &lt;a href=&quot;https://github.com/nooku/nooku-server/releases/tag/v3.0.0&quot;&gt;v3.0&lt;/a&gt;. We now build the box once after each new release and publish it as &lt;a href=&quot;https://vagrantcloud.com/nooku/box&quot;&gt;nooku/box&lt;/a&gt; on Vagrant Cloud. &lt;/p&gt;
+
+&lt;p&gt;When you clone the Nooku Framework repository and run the &lt;code&gt;vagrant up&lt;/code&gt; command, it will automatically download the latest build and you’ll be up and coding in no time! &lt;/p&gt;
+
+&lt;p&gt;Once you have downloaded the latest version, you’ll never have to redownload again. All your new Nooku Framework projects will &lt;em&gt;just work&lt;/em&gt; out of the box! &lt;/p&gt;
+
+&lt;p&gt;And best of all: as soon as we release a new version, Vagrant will tell you about it the next time you fire up one of your projects. It doesn’t get any easier than this!&lt;/p&gt;
+
+&lt;p&gt;All that’s left for you to do is to &lt;a href=&quot;https://github.com/nooku/nooku-framework#installation&quot;&gt;dive in&lt;/a&gt; the code headfirst and have fun!&lt;/p&gt;
+
+</description>
+                <pubDate>Thu, 10 Jul 2014 00:00:00 -0500</pubDate>
+                <link>//server/2014/07/10/announcing-nooku-server-v3.0.html</link>
+                <guid isPermaLink="true">//server/2014/07/10/announcing-nooku-server-v3.0.html</guid>
+            </item>
+        
+            <item>
                 <title>From Wordpress to Jekyll</title>
                 <description>&lt;p&gt;Did you notice? Probably not. Last month we switched off the database responsible for keeping our blog up and running and moved to a static solution using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 
@@ -560,53 +594,6 @@ Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/nooku/se
                 <pubDate>Mon, 09 Apr 2012 00:00:00 -0500</pubDate>
                 <link>//blog/2012/04/countdown-to-nooku-jam-12-2-leuven/</link>
                 <guid isPermaLink="true">//blog/2012/04/countdown-to-nooku-jam-12-2-leuven/</guid>
-            </item>
-        
-            <item>
-                <title>Announcing Nooku Jam 12.2 Leuven!</title>
-                <description>&lt;p&gt;We are happy to announce &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Nooku Jam 12.2 Leuven&lt;/a&gt; which is taking place on the 16-17th of May 2012 at the &lt;a href=&quot;http://www.flandersdc.be/en&quot;&gt;FlandersDC Creativity Lab&lt;/a&gt; in Leuven, BE. Come and celebrate Nooku’s 4th birthday, and the release of Nooku 12.2 with our amazing community.&lt;/p&gt;
-
-&lt;p&gt;Once again Nookuers from all over will come together. Expect lot’s of fun and two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.&lt;/p&gt;
-
-&lt;h3 id=&quot;nooku-jam-leuven-2011-highlights&quot;&gt;Nooku Jam Leuven 2011 Highlights&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/nooku/7026184369/&quot; title=&quot;Nooku Jam Leuven 2011 by Nooku, on Flickr&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7093/7026184369_53a09c5f4d.jpg&quot; alt=&quot;Nooku Jam Leuven 2011&quot; width=&quot;500&quot; height=&quot;205&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-Check out the some of the &lt;a href=&quot;http://www.flickr.com/photos/valanx/sets/72157628152971783/&quot;&gt;photo highlights&lt;/a&gt; and insights from last year’s Jam.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This jam (was) followed the more informal &lt;a href=&quot;http://barcamp.org/w/page/402984/FrontPage&quot;&gt;barcamp&lt;/a&gt; format, which relies on spontaneous input by all the attendants. The attendants were to come up with their own ideas for talks, along with things they would like to hear about. These poles of ideas were quickly refactored into walls of ideas. – Moyoweb&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;While the other events that I have been to always left me a little exhausted, I left this one feeling inspired and motivated. I’m looking forward to work with all the great guys around Nooku in the future and am excited about all the stuff that is coming up. – David Deutsch&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Sign up&lt;/a&gt; for Nooku Jam 12.2 Leuven today!&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3 id=&quot;what-is-a-nooku-jam&quot;&gt;What is a Nooku Jam?&lt;/h3&gt;
-
-&lt;p&gt;A Nooku Jam is an open, participatory workshop-event, whose content is provided by participants. The concept is very similar to a &lt;a href=&quot;http://barcamp.org/w/page/405173/TheRulesOfBarCamp&quot;&gt;barcamp&lt;/a&gt;. It is an intense event with discussions, demos and interaction from the attendees.&lt;/p&gt;
-
-&lt;p&gt;Nooku Jams are never your traditional conferences – they are more of an ad-hoc unconference born from the desire for people to share and learn in an open environment.  Anybody can speak on any topic that they are passionate about. For Nooku developers, this means their latest code, component, or mini project.&lt;/p&gt;
-
-&lt;h3 id=&quot;there-are-no-spectators-only-participants&quot;&gt;There are no spectators, only participants.&lt;/h3&gt;
-
-&lt;p&gt;Attendees must give a demo, a session, or help with one, or otherwise volunteer / contribute in some way to support the event. Participants won’t need to decide what to talk about until they get there. All presentations are scheduled the day they happen.&lt;/p&gt;
-
-&lt;p&gt;The day starts with the session suggestions. Everybody describes the kind of session they can do. Then the session gets pinned on the board for a certain time slot. After the planning – voila – there is a schedule and the sessions start.&lt;/p&gt;
-
-&lt;h3 id=&quot;its-always-about-community&quot;&gt;It’s always about community&lt;/h3&gt;
-
-&lt;p&gt;Anyone with something to contribute or with the desire to learn is welcome and invited to join a Nooku Jam. When you come, be prepared to share with other attendees. When you leave, be prepared to share it with the world.&lt;/p&gt;
-
-&lt;p&gt;The jam is the perfect event for Nooku magic offline! &lt;a href=&quot;http://nj122leuven.eventbrite.com/&quot;&gt;Register&lt;/a&gt; today, we only have 30 seats available.&lt;/p&gt;
-
-</description>
-                <pubDate>Thu, 29 Mar 2012 00:00:00 -0500</pubDate>
-                <link>//blog/2012/03/announcing-nooku-jam-12-2-leuven/</link>
-                <guid isPermaLink="true">//blog/2012/03/announcing-nooku-jam-12-2-leuven/</guid>
             </item>
         
     </channel>
