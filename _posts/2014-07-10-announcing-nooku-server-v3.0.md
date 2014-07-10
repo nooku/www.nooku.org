@@ -20,7 +20,7 @@ To try and improve this workflow, we moved the Vagrant configuration into Nooku 
 
 Not to mention the fact that an updated version of PHP or MySQL could break our configuration, throw build errors all over the place and prevent you from getting a working box at all! 
  
-<img src="http://www.hashicorp.com/images/blog/vagrant-cloud-5-weeks-in/logo-side-a35e4189.png" title="Vagrant Cloud" width="220" style="float: right; margin: 6px" />
+<img src="https://farm3.staticflickr.com/2900/14433258990_bac699b844_m.jpg" title="Vagrant Cloud" width="220" style="float: right; margin: 6px" />
 
 With the recent release of [Vagrant Cloud][1], however, all these issues are now a thing of the past. [Vagrant Cloud][1] is a hosted service for finding and sharing Vagrant boxes, managing Vagrant Share, and much more.  For a complete introduction, head over to their original [release announcement][5].
 
