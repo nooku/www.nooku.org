@@ -78,6 +78,30 @@
           <article>
             <header>
               <h1>
+                <a href="/blog/2011/03/jamming-in-stockholm-with-nooku/">Jamming in Stockholm with Nooku</a>
+              </h1>
+              <h3 class="text-muted">
+                11 March 2011 by Guest
+              </h3>
+            </header>
+            <section>
+              <div class="excerpt">
+                <p><em>This is a guest post from <a href="http://twitter.com/mblodau">Martin Blodau</a>, developer at <a href="http://pixpro.net/">Pixpro</a>, organiser of the first Joomlanight, and a Nooku community member.</em></p>
+
+<p>The first Nooku Jam in Stockholm took place on the 5th of February 2011, in the conference area of the Swedish Media Publisher’s Association (TU), the day after the first Joomla Night.</p>
+
+<p>We started the day with an overview about Nooku – its history, how it works, design patterns, examples and so much more. Pizza followed soon after! The pizza feast created a lot of lively discussions about the new possibilities of development with Nooku.</p>
+
+
+              </div>
+              <a class="btn btn-default btn-sm text-center" href="/blog/2011/03/jamming-in-stockholm-with-nooku/">Continue reading</a>
+              <hr>
+            </section>
+          </article>
+        
+          <article>
+            <header>
+              <h1>
                 <a href="/blog/2011/02/nginx-for-the-world-and-joomla/">Nginx for the world&#8230; and Joomla</a>
               </h1>
               <h3 class="text-muted">
@@ -221,41 +245,6 @@
             </section>
           </article>
         
-          <article>
-            <header>
-              <h1>
-                <a href="/blog/2011/02/rebuilding-demo-site-automatically/">Rebuilding a demo site automatically</a>
-              </h1>
-              <h3 class="text-muted">
-                08 February 2011 by Shayne
-              </h3>
-            </header>
-            <section>
-              <div class="excerpt">
-                <p>Recently I have been working on the demo server that will house our various demo sites.</p>
-
-<p>One of the common issues with a demo site is that to preserve its integrity you may need to either restrict access or have a periodic rebuild. Restricting access may work sometimes but it’s likely to inhibit people trying out anything that is administrative in nature. Hence rebuilding the site is a far more appealing alternative.</p>
-
-<p>The idea is basically delete everything and replace with a fresh copy, but to do so with minimum downtime. The result should be  a quick and secure rebuild. With that in mind we set about creating bash script that would rebuild the site as often as required (run as a cron job).</p>
-
-<p>To get started I mapped out the process.</p>
-
-<p><a href="http://www.flickr.com/photos/nooku/5415925562/" title="Site rebuilt workflow by Nooku, on Flickr"><img src="http://farm5.static.flickr.com/4145/5415925562_26ff253fa1.jpg" width="376" height="500" alt="Site rebuilt workflow" /></a></p>
-
-<p>As you can see we do everything using version control which in this case happened to be <a href="http://en.wikipedia.org/wiki/Apache_Subversion">subversion</a>.</p>
-
-<p>By updating then exporting into a temp folder, the longest part of the process is done prior to any impact on the site. I threw in the checkout logic so that the same script could be used to build a brand new site (as in, one that does not already exist).</p>
-
-<p>The first impact on the public site is the dropping of the database unless there have been changes to the repository that required database modifications.</p>
-
-<p>For a typical site the whole process takes 13 seconds when no changes have been committed to subversion, with less than 2 seconds of downtime.<br />
-
-              </div>
-              <a class="btn btn-default btn-sm text-center" href="/blog/2011/02/rebuilding-demo-site-automatically/">Continue reading</a>
-              <hr>
-            </section>
-          </article>
-        
           <ul class="pager">
           
           
@@ -268,6 +257,13 @@
       </div>
       <div class="col-sm-3">    
         <ul>
+          
+            
+            
+            
+              <li><a href="/blog/2014/07">July 2014</a></li>
+               
+            
           
             
             
