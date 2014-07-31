@@ -26,7 +26,6 @@ paginate_path: "blog/page:num"
 # Gems
 gems:
   - jekyll-sitemap
-  - jekyll-prism-plugin
 
 # collections
 collections:
