@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Manila
 date: 2011-11-04
 image: images/events/2011/nooku-jam-manilla.jpg

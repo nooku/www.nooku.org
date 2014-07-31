@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Rotterdam
 date: 2010-12-11
 image: images/events/2010/nooku-jam-rotterdam.jpg

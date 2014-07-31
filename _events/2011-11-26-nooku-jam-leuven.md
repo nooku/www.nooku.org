@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Leuven
 date: 2011-11-26
 image: images/events/2011/nooku-jam-leuven.jpg

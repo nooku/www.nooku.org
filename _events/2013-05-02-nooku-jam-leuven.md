@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Leuven 13.1
 date: 2013-05-02
 image: images/events/2013/nooku-jam-leuven-2013.jpg

@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Hamburg
 date: 2011-09-04
 image: images/events/2011/nooku-jam-hamburg.jpg

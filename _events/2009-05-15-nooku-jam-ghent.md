@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Ghent
 date: 2009-05-15
 image: images/events/2009/nooku-jam-ghent.jpg

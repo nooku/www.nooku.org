@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Manila
 date: 2010-09-20
 image: images/events/2010/nooku-jam-manila.jpg
