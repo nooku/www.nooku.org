@@ -40,7 +40,6 @@ GEM
       coffee-script (~> 2.2)
     jekyll-gist (1.1.0)
     jekyll-paginate (1.0.0)
-    jekyll-prism-plugin (0.0.1)
     jekyll-sass-converter (1.1.0)
       sass (~> 3.2)
     jekyll-sitemap (0.5.0)
@@ -90,7 +89,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-assets
-  jekyll-prism-plugin
   jekyll-sass-converter
   jekyll-sitemap
   rake
