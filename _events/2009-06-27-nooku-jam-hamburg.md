@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Hamburg
 date: 2009-06-27
 image: images/events/2009/nooku-jam-hamburg.jpg

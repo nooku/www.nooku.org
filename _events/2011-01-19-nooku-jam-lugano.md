@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Lugano
 date: 2011-01-19
 image: images/events/2011/nooku-jam-lugano.jpg
