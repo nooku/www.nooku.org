@@ -41,16 +41,7 @@ rooturl: blog
                     </article>
                 </div>
                 <div class="col-sm-3">
-                    <ul>
-                        {% for post in site.posts %}
-                            {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
-                            {% capture currentyearshort %}{{post.date | date: "%Y/%m"}}{% endcapture %}
-                            {% if currentyear != year %}
-                                <li><a href="/blog/{{ currentyearshort }}">{{ currentyear }}</a></li>
-                                {% capture year %}{{currentyear}}{% endcapture %} 
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
+
                 </div>
             </div>
         </div>

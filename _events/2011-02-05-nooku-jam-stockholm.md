@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Stockholm
 date: 2011-02-05
 image: images/events/2011/nooku-jam-stockholm.jpg
