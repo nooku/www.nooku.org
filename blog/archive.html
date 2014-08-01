@@ -8,7 +8,7 @@ description: Open Source PHP Framework for Web Applications. A project for devel
 <div class="section blog">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
                 {% for post in site.posts %}
                 {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
                 {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
