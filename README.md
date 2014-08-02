@@ -8,10 +8,7 @@ Assuming you already have [Bundler](http://bundler.io/) installed:
 
 The site is now available at ```http://localhost:4000```.
 
-For more information read [using Jekyll with GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages)
-
-_Note: Requires Ruby version 1.9.3 =>. For example use [rvm](https://rvm.io/)_
-
+For more information read [using Jekyll with GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages).
 
 ## Contributing
 
