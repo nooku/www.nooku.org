@@ -48,4 +48,4 @@ All that’s left for you to do is to [dive in][8] the code headfirst and have f
  [5]: https://www.vagrantup.com/blog/vagrant-1-5-and-vagrant-cloud.html
  [6]: https://github.com/nooku/nooku-server/releases/tag/v3.0.0
  [7]: https://vagrantcloud.com/nooku/box
- [8]: https://github.com/nooku/nooku-framework#installation
+ [8]: https://github.com/nooku/nooku-platform#installation

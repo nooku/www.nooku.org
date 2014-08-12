@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Florianopolis
 date: 2011-09-03
 image: images/events/2011/nooku-jam-florianopolis.jpg

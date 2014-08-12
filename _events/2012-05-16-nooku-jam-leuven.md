@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Nooku Jam Leuven 12.2
 date: 2012-05-16
 image: images/events/2012/nooku-jam-leuven-2012-2.jpg
