@@ -32,10 +32,5 @@ gems:
 collections:
 - events
 
-# SASS compilation
-sass:
-  sass_dir: _sass
-  style: :compressed
-
 # We don't want to publish some files
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'scripts']
+exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'README.md', 'node_modules', 'gruntfile.js', 'package.json', 'scripts']
