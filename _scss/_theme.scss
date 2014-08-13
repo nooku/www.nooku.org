@@ -1,6 +1,4 @@
 body {
-    padding: 6px;
-    background-color: $gray-lighter;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,9 +23,11 @@ blockquote p {
     font-size: 85%;
 }
 
-#wrapper {
-    border: 1px solid darken($gray-lighter, 15%);
-    background-color: $white;
+.section.header,
+.section.about,
+.section.blog {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section {
@@ -35,17 +35,35 @@ blockquote p {
 }
 
 .section.header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-    .navbar {
-        margin-top: 24px;
-        margin-bottom: 0px;
+  .brand {
+    text-align: center;
+  }
+
+  .navbar {
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+
+  .nav {
+    /* Align the items equally in the available space */
+    li {
+      display: table-cell;
+      width: 1%;
+      float: none;
+      text-align: center;
     }
+  }
+
+  .navbar-nav {
+    margin: 0;
+  }
 }
 
 .section.teaser {
-    padding: 20px 0 0px 0;
+    padding: 20px 20px 0;
     margin-bottom: 20px;
     border: 1px solid $navy;
     border-left:0;
@@ -179,6 +197,7 @@ blockquote p {
     @include box-shadow(inset rgba(0, 0, 0, .3) 0px 3px 3px);
     border: 1px solid $navy;
     margin-top: 40px;
+    text-align: center;
 
     .container {
         font-size: 80%;
@@ -187,10 +206,6 @@ blockquote p {
 
         a {
             color: $white;
-        }
-
-        .copyright {
-            text-align: right;
         }
     }
 }
@@ -245,7 +260,36 @@ background-color: lighten($navy, 10%);
     max-width: 750px;
 }
 
-.ribbon img {
-    width: 143px !important;
-}
+@include respond-min($breakpoint-charlie) {
+  body {
+    padding: 6px;
+    background-color: $gray-lighter;
+    font-family: 'Open Sans', sans-serif;
+  }
 
+  #wrapper {
+    border: 1px solid darken($gray-lighter, 15%);
+    background-color: $white;
+  }
+
+  .section.header,
+  .section.about,
+  .section.blog {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section.header {
+    .brand {
+      text-align: left;
+    }
+  }
+
+  .section.footer {
+    text-align: left;
+
+    .copyright {
+      text-align: right;
+    }
+  }
+}

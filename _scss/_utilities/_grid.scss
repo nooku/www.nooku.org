@@ -1,0 +1,37 @@
+@import "susy";
+
+$gutter-width: 3em;
+
+// Susy grid
+$susy: (
+  gutters: $gutter-width/4em,
+  gutter-position: before
+);
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.group {
+  // page acts as a container for our grid.
+  @include container;
+
+  .one-fourth  { @include gallery(6 of 12); }
+}
+
+@include respond-min($breakpoint-charlie) {
+  .group {
+    .one-half   { @include gallery(6 of 12); }
+    .one-third  { @include gallery(4 of 12); }
+    .one-fourth { @include gallery(3 of 12); }
+
+    .header__brand {
+      @include span(first 5 of 12);
+    }
+
+    .header__navigation {
+      @include span(7 of 12);
+    }
+  }
+}

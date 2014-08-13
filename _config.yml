@@ -21,7 +21,7 @@ monthly_archive:
   path: blog
 
 permalink: "/blog/:year/:month/:title"
-paginate: 5
+paginate: 3
 paginate_path: "blog/page:num"
 
 # Gems
