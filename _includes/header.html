@@ -40,20 +40,18 @@
                     <a href="/"><img src="/assets/img/logo.jpg" height="60px" width="123px" /></a>
                 </div>
                 <div class="header__navigation">
-                    <div class="navbar" role="navigation">
-                        <div class="container-fluid">
-                            <ul class="nav navbar-nav">
-                                {% for link in site.navigation %}
-                                {% assign current = nil %}
-                                {% if link.position == "top" %}
-                                {% if page.url contains link.url %}{% assign current = 'active' %}{% endif %}
-                                <li class="{{ current }}" role="menuitem">
-                                    <a href="{{ link.url }}">{{ link.text }}</a>
-                                </li>
-                                {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </div>
+                    <div role="navigation">
+                        <ul class="navbar">
+                            {% for link in site.navigation %}
+                            {% assign current = nil %}
+                            {% if link.position == "top" %}
+                            {% if page.url contains link.url %}{% assign current = ' active' %}{% endif %}
+                            <li class="navbar__item{{ current }}" role="menuitem">
+                                <a href="{{ link.url }}">{{ link.text }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>

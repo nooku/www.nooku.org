@@ -1,0 +1,12 @@
+.navbar {
+  list-style: none;
+}
+
+.navbar__item {
+  float: left;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
