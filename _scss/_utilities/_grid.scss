@@ -9,7 +9,12 @@ $susy: (
 );
 
 .container {
-  max-width: 750px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container--narrow {
+  max-width: 700px;
   margin: 0 auto;
 }
 

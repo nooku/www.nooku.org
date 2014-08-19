@@ -2,10 +2,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 { color:#333333; font-weight: 300; }
-
-h3 { font-size: 20px; margin: 0; line-height: 32px;}
-
 hr {
     border:none;
     color:white;
@@ -92,47 +88,6 @@ blockquote p {
         margin-top: 25px;
         margin-bottom: 30px;
         font-weight: 200;
-    }
-}
-
-.section.about {
-
-    h2 {
-        text-align: center;
-    }
-
-    h2 + p {
-        text-align: center;
-        font-weight: 300;
-        max-width: 600px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        margin-top: -8px;
-    }
-
-    p > .btn {
-        margin-top: 14px;
-    }
-
-    .thumbnails {
-        margin-bottom: 0;
-        list-style-image: none;
-        list-style-type: none;
-        margin-left: 0px; 
-        padding:0;
-
-        .thumbnail {
-            line-height:100px;
-            height: 112px;
-            text-align:center;
-            @include gradient-radial($white, #F8F8F8);
-
-            img {
-                display: inline;
-                max-height: 80%;
-                max-width: 80%;
-            }
-        }
     }
 }
 

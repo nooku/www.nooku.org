@@ -2,6 +2,12 @@
 
 @import "variables";
 @import "bootstrap";
+
+@import "_atoms/headings";
+
+@import "_molecules/thumbnails";
+@import "_molecules/subtitle";
+
 @import "theme";
 @import "events";
 

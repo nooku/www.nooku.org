@@ -3,10 +3,11 @@
         <div class="group">
             <div class="one-half">
                 <p>
-                    <a href="http://www.facebook.com/nooku.org">Facebook</a> |
-                    <a href="http://www.twitter.com/nooku">Twitter</a> |
-                    <a href="http://www.github.com/nooku">Github</a> |
-                    <a href="/blog/rss.xml">RSS</a>
+                    {% for link in site.navigation %}
+                    {% if link.position == "footer" %}
+                    <a href="{{ link.url }}">{{ link.text }}</a> |
+                    {% endif %}
+                    {% endfor %}
                 </p>
             </div>
             <div class="copyright one-half">
@@ -16,6 +17,7 @@
     </div>
 </div>
 </div>
-<script src="/assets/js/prism.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

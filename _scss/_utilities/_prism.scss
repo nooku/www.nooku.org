@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+php+php-extras+scss+bash+sql+http+ruby&plugins=line-numbers */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+css-extras+clike+javascript+php+php-extras+scss+bash+c+cpp+sql+http+ruby */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -14,6 +14,7 @@ pre[class*="language-"] {
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
+  line-height: 1.5;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -27,8 +28,7 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-  position:relative;
-  padding: 1em;
+  position: relative;
   margin: .5em 0;
   -webkit-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
   -moz-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
@@ -41,21 +41,23 @@ pre[class*="language-"] {
   background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-size: 3em 3em;
-  background-origin:content-box;
-  overflow:visible;
-  max-height:30em;
+  background-origin: content-box;
+  overflow: visible;
+  max-height: 30em;
 }
 
 code[class*="language"] {
-  max-height:29em;
-  display:block;
-  overflow:scroll;
+  max-height: inherit;
+  height: 100%;
+  padding: 0 1em;
+  display: block;
+  overflow: auto;
 }
 
 /* Margin bottom to accomodate shadow */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background-color:#fdfdfd;
+  background-color: #fdfdfd;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -64,7 +66,7 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  position:relative;
+  position: relative;
   padding: .2em;
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
@@ -79,7 +81,7 @@ pre[class*="language-"]:before,
 pre[class*="language-"]:after {
   content: '';
   z-index: -2;
-  display:block;
+  display: block;
   position: absolute;
   bottom: 0.75em;
   left: 0.18em;
@@ -131,6 +133,7 @@ pre[class*="language-"]:after {
 .token.selector,
 .token.attr-name,
 .token.string,
+.token.char,
 .token.function,
 .token.builtin {
   color: #2f9c0a;
@@ -155,6 +158,7 @@ pre[class*="language-"]:after {
 .token.important {
   color: #e90;
 }
+
 .language-css .token.string,
 .style .token.string {
   color: #a67f59;
@@ -173,13 +177,13 @@ pre[class*="language-"]:after {
   opacity: .7;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
   pre[class*="language-"]:before,
   pre[class*="language-"]:after {
-    bottom:14px;
-    -webkit-box-shadow:none;
-    -moz-box-shadow:none;
-    box-shadow:none;
+    bottom: 14px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 
 }
@@ -191,43 +195,15 @@ pre[class*="language-"]:after {
   color: #e0d7d1;
 }
 
-pre.line-numbers {
-	position: relative;
-	padding-left: 3.8em;
-	counter-reset: linenumber;
+/* Plugin styles: Line Numbers */
+pre[class*="language-"].line-numbers {
+  padding-left: 0;
 }
 
-pre.line-numbers > code {
-	position: relative;
+pre[class*="language-"].line-numbers code {
+  padding-left: 3.8em;
 }
 
-.line-numbers .line-numbers-rows {
-	position: absolute;
-	pointer-events: none;
-	top: 0;
-	font-size: 100%;
-	left: -3.8em;
-	width: 3em; /* works for line-numbers below 1000 lines */
-	letter-spacing: -1px;
-	border-right: 1px solid #999;
-
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-
+pre[class*="language-"].line-numbers .line-numbers-rows {
+  left: 0;
 }
-
-	.line-numbers-rows > span {
-		pointer-events: none;
-		display: block;
-		counter-increment: linenumber;
-	}
-
-		.line-numbers-rows > span:before {
-			content: counter(linenumber);
-			color: #999;
-			display: block;
-			padding-right: 0.8em;
-			text-align: right;
-		}

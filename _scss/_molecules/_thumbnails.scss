@@ -1,0 +1,20 @@
+.thumbnails {
+  margin-bottom: 0;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  padding:0;
+
+  .thumbnail {
+    line-height:100px;
+    height: 112px;
+    text-align:center;
+    @include gradient-radial($white, #F8F8F8);
+
+    img {
+      display: inline;
+      max-height: 80%;
+      max-width: 80%;
+    }
+  }
+}

@@ -2062,17 +2062,46 @@ a.thumbnail.active {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  font-family: 'Open Sans', sans-serif; }
-
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
   font-weight: 300; }
+
+h2 {
+  text-align: center; }
 
 h3 {
   font-size: 20px;
   margin: 0;
   line-height: 32px; }
+
+.thumbnails {
+  margin-bottom: 0;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0; }
+  .thumbnails .thumbnail {
+    line-height: 100px;
+    height: 112px;
+    text-align: center;
+    background-image: -webkit-radial-gradient(circle, white, #f8f8f8);
+    background-image: radial-gradient(circle, white, #f8f8f8);
+    background-repeat: no-repeat; }
+    .thumbnails .thumbnail img {
+      display: inline;
+      max-height: 80%;
+      max-width: 80%; }
+
+.subtitle {
+  text-align: center;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -8px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
 
 hr {
   border: none;
@@ -2141,35 +2170,6 @@ blockquote p {
     margin-top: 25px;
     margin-bottom: 30px;
     font-weight: 200; }
-
-.section.about h2 {
-  text-align: center; }
-.section.about h2 + p {
-  text-align: center;
-  font-weight: 300;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: -8px; }
-.section.about p > .btn {
-  margin-top: 14px; }
-.section.about .thumbnails {
-  margin-bottom: 0;
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0px;
-  padding: 0; }
-  .section.about .thumbnails .thumbnail {
-    line-height: 100px;
-    height: 112px;
-    text-align: center;
-    background-image: -webkit-radial-gradient(circle, white, #f8f8f8);
-    background-image: radial-gradient(circle, white, #f8f8f8);
-    background-repeat: no-repeat; }
-    .section.about .thumbnails .thumbnail img {
-      display: inline;
-      max-height: 80%;
-      max-width: 80%; }
 
 .section.blog h2 {
   font-size: 27px;
@@ -2376,7 +2376,11 @@ blockquote p {
       line-height: 40px; }
 
 .container {
-  max-width: 750px;
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.container--narrow {
+  max-width: 700px;
   margin: 0 auto; }
 
 .group {
