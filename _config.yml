@@ -5,11 +5,14 @@ main_title: Noooku
 url: http://www.nooku.org
 
 navigation:
-  - text: Services
-    url: /services
+  - text: Features
+    url: /features
     position: top
   - text: Get Started
     url: /get-started
+    position: top
+  - text: Services
+    url: /services
     position: top
   - text: Docs
     url: /docs

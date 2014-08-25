@@ -26,10 +26,6 @@ blockquote p {
   padding-right: 20px;
 }
 
-.section {
-    background-color: $white;
-}
-
 .section.header {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -217,14 +213,7 @@ background-color: lighten($navy, 10%);
 
 @include respond-min($breakpoint-charlie) {
   body {
-    padding: 6px;
-    background-color: $gray-lighter;
     font-family: 'Open Sans', sans-serif;
-  }
-
-  #wrapper {
-    border: 1px solid darken($gray-lighter, 15%);
-    background-color: $white;
   }
 
   .section.header,

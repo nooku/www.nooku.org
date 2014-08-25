@@ -1660,9 +1660,6 @@ blockquote p {
   padding-left: 20px;
   padding-right: 20px; }
 
-.section {
-  background-color: white; }
-
 .section.header {
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -1815,13 +1812,7 @@ blockquote p {
 
 @media screen and (min-width: 768px) {
   body {
-    padding: 6px;
-    background-color: #eeeeee;
     font-family: 'Open Sans', sans-serif; }
-
-  #wrapper {
-    border: 1px solid #c8c8c8;
-    background-color: white; }
 
   .section.header,
   .section.about,
