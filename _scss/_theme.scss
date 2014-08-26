@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -213,10 +213,6 @@ background-color: lighten($navy, 10%);
 }
 
 @include respond-min($breakpoint-charlie) {
-  body {
-    font-family: 'Open Sans', sans-serif;
-  }
-
   .section.header,
   .section.about,
   .section.blog {
