@@ -20,9 +20,6 @@ navigation:
   - text: Blog
     url: /blog
     position: top
-  - text: Events
-    url: /events
-    position: top
   - text: Platform
     url: /platform
     position: footer
@@ -37,6 +34,9 @@ navigation:
     position: footer
   - text: GitHub
     url: https://www.github.com/nooku
+    position: footer
+  - text: Events
+    url: /events
     position: footer
   - text: RSS
     url: /blog/rss.xml
