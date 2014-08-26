@@ -4,4 +4,16 @@ title: Features - Nooku
 description:
 ---
 
-Placeholder
+<div class="section features">
+    <div class="container">
+        <div class="group">
+            {% for feature in site.data.features.items %}
+            <div class="feature">
+                <img src="http://placehold.it/500x250">
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

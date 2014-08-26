@@ -38,5 +38,7 @@ $susy: (
     .header__navigation {
       @include span(7 of 12);
     }
+
+    .feature { @include gallery(4 of 12); }
   }
 }
