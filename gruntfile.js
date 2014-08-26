@@ -140,16 +140,6 @@ module.exports = function(grunt) {
         }
     });
 
-    // The default task will show the usage
-    grunt.registerTask('default', 'Prints usage', function () {
-        grunt.log.writeln('');
-        grunt.log.writeln('Product site development');
-        grunt.log.writeln('------------------------');
-        grunt.log.writeln('');
-        grunt.log.writeln('* run "grunt --help" to get an overview of all commands.');
-        grunt.log.writeln('* run "grunt dev"" to start developing.');
-    });
-
     // Register the default tasks.
-    grunt.registerTask('dev', ['concurrent:dev']);
+    grunt.registerTask('default', ['concurrent:dev']);
 };
