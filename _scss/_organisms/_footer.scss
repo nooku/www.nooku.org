@@ -17,7 +17,7 @@
 }
 
 @include respond-min($breakpoint-charlie) {
-  .section.footer {
+  .footer {
     text-align: left;
 
     .copyright {
