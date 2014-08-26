@@ -20,7 +20,8 @@
 <script src="/js/scripts.js"></script>
 <script type="text/javascript">
     responsivemenu.init({
-        wrapper: document.getElementsByClassName('navigation_container')[0]
+        wrapper: document.querySelector('.navigation_container'),
+        before_element: document.querySelector('.header__brand')
     });
 </script>
 <script>hljs.initHighlightingOnLoad();</script>

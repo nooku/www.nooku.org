@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
     <title>{% if page.title %}{{page.title}}{% else %}{{site.main_title}}{% endif %}</title>
 
@@ -31,8 +30,8 @@
     </script>
 </head>
 
-<body id="page" class="no-js">
-<script type="text/javascript">function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.getElementById("page");var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg," js-enabled")}</script>
+<body class="no-js">
+<script type="text/javascript">function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.body;var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg," js-enabled")}</script>
 
 <div class="section header">
     <div class="container">

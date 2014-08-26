@@ -1,5 +1,16 @@
+// Variables for in this file
+// If you want to change this number add the responsivemneu.scss file to your main
+// SCSS file and define the variable to your new wisth first like so:
+//
+// $screenwidth: 800px;
+// @import "responsivemenu";
+//
+// This way you don't have to touch this file
+
+$screenwidth: 600px !default;
+
 // Accessible hide
-.accessible-hide {
+%accessible-hide {
   position: absolute !important;
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
@@ -31,7 +42,7 @@
 }
 
 // Absolute menu
-.absolutemenu ul {
+.absolutemenu {
   position: absolute !important;
   top: 100% !important;
   left: 0 !important;
@@ -39,35 +50,31 @@
   z-index: 99;
 }
 
-/* Extend the accessible hide class to the closed class */
+/* Extend the accessible hide class to the closed class class */
 /* Only when JS is enabled since we add the closed class in the markup */
-.js-enabled .closed {
-  @extend .accessible-hide;
+.js-enabled {
+  .closed {
+    @extend %accessible-hide;
+  }
 }
 
 /* The menu itself */
 .navigation_container {
 
-  /* Hide the subtoggles initally */
-  .subtoggle {
-    display: none;
-  }
-
   li {
     position: relative;
 
-    &.parent:after {
-      content: " U+25BC";
-    }
-
-    /* initially hide all li>ul so we get a small list when JS is disables */
+    /* initially hide all li>ul so we get a small list when JS is disabled */
     ul {
       display: none;
     }
 
-    /* And show them on active items */
-    &.active > ul {
-      display: block;
+    /* And show them on active/current items */
+    &.active,
+    &.current {
+      & > ul {
+        display: block;
+      }
     }
   }
 
@@ -78,9 +85,14 @@
     }
   }
 
-  @media screen and (min-width:600px) {
+  @media screen and (min-width:$screenwidth) {
 
-    /* Hide again when JS is enabled but screen is big */
+    // Add styling for parents to show it has children
+    li.parent > a:after {
+      content: " \25bc";
+    }
+
+    /* Hide li>ul when JS is enabled and screen is big */
     &.initiated li ul,
     li ul,
     li.active ul {
@@ -89,20 +101,11 @@
       left: 0;
       top: 100%;
       z-index: 9;
-
-      &.parent:after {
-        content: " U+25BA";
-      }
-
-      ul {
-        top: 0;
-        left: 100%;
-      }
     }
 
     /* And show on hover */
     li:hover > ul {
-      display: block !important;
+      display: block;
     }
   }
 }
