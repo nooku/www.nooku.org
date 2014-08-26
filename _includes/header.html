@@ -30,7 +30,9 @@
 
     </script>
 </head>
-<body>
+
+<body id="page" class="no-js">
+<script type="text/javascript">function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.getElementById("page");var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg," js-enabled")}</script>
 
 <div class="section header">
     <div class="container">
@@ -39,8 +41,8 @@
                 <a href="/"><img src="/assets/img/logo.jpg" height="60px" width="123px" /></a>
             </div>
             <div class="header__navigation">
-                <div role="navigation">
-                    <ul class="navbar">
+                <div class="navigation_container" role="navigation">
+                    <ul class="navbar closed">
                         {% for link in site.navigation %}
                         {% assign current = nil %}
                         {% if link.position == "top" %}

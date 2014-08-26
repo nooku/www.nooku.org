@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'js/scripts.js': ['_scripts/*.js']
+                    'js/scripts.js': ['_scripts/apollo.js', '_scripts/*.js']
                 }
             }
         },
