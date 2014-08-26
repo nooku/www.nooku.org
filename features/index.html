@@ -11,8 +11,12 @@ description:
 
         <div class="group">
             {% for feature in site.data.features.items %}
-            <div class="feature">
-                <img src="http://placehold.it/500x250">
+            <div class="media media--vertical">
+                {% if feature.image %}
+                <img src="/images/features/{{ feature.image }}">
+                {% else %}
+                <img src="http://placehold.it/1024x768">
+                {% endif %}
                 <h3>{{ feature.title }}</h3>
                 <p>{{ feature.description }}</p>
             </div>

@@ -21,24 +21,31 @@ $susy: (
 .group {
   // page acts as a container for our grid.
   @include container;
-
-  .one-fourth  { @include gallery(6 of 12); }
+  margin: 0 40px;
 }
 
+.one-fourth  { @include gallery(6 of 12); }
+
 @include respond-min($breakpoint-charlie) {
-  .group {
-    .one-half   { @include gallery(6 of 12); }
-    .one-third  { @include gallery(4 of 12); }
-    .one-fourth { @include gallery(3 of 12); }
+   .one-half   { @include gallery(6 of 12); }
+   .one-third  { @include gallery(4 of 12); }
+   .one-fourth { @include gallery(3 of 12); }
 
-    .header__brand {
-      @include span(first 5 of 12);
-    }
+   .header__brand {
+     @include span(first 5 of 12);
+   }
 
-    .header__navigation {
-      @include span(7 of 12);
-    }
+   .header__navigation {
+     @include span(7 of 12);
+   }
 
-    .feature { @include gallery(4 of 12); }
-  }
+  .features .media { @include gallery(6 of 12); }
+}
+
+@include respond-min($breakpoint-delta) {
+
+}
+
+@include respond-min($breakpoint-echo) {
+   .features .media { @include gallery(4 of 12); }
 }

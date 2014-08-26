@@ -7,35 +7,41 @@
         {
             "title": "Out-of-the-box security",
             "description": "Nooku will securely encode output and filter all input to prevent against <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">XSS</a>, <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">SQL injection</a> and <a href=\"http://en.wikipedia.org/wiki/Cross-site_request_forgery\">CSRF attacks</a> automatically."
-        },{
+        },
+        {
             "title": "Dynamic (H)MVC",
             "description": "Nooku's dynamic and cascadable <a href=\"http://en.wikipedia.org/wiki/HMVC\">HMVC</a> takes the work out of your hands. Implement your business logic by specializing Nooku's core."
         },
         {
             "title": "Modular and extendable",
             "description": "You can package more functionality into your own components. Every class, custom or core, can be extended, re-used, and replaced."
-        },{
+        },
+        {
             "title": "Component based",
             "description": "Nooku features a <a href=\"http://en.wikipedia.org/wiki/Component-based_software_engineering\">component based architecture</a> using an <a href=\"http://martinfowler.com/articles/injection.html#InversionOfControl\">IoC</a> container powered by a <a href=\"http://martinfowler.com/articles/injection.html#FormsOfDependencyInjection\">dependency injector</a> and a <a href=\"http://martinfowler.com/articles/injection.html#UsingAServiceLocator\">service locator</a>."
         },
         {
             "title": "RESTful architecture",
             "description": "Nooku is designed around the <a href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HTTP protocol</a>. Each component automatically provides a <a href=\"http://martinfowler.com/articles/richardsonMaturityModel.html\">level 3</a> <a href=\"http://en.wikipedia.org/wiki/JSON\">JSON</a> <a href=\"https://en.wikipedia.org/wiki/Representational_state_transfer\">REST</a> API out of the box, no extra coding required.."
-        },{
+        },
+        {
+            "title": "Debugger",
+            "description": "Our debugger helps you with errors and exceptions by showing everything you need in one screen. You can see the exception, the code that threw it and the detailed stack trace all at once.",
+            "image": "debugger.png"
+        },
+        {
             "title": "Tortor Euismod Egestas",
             "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
         },
         {
             "title": "Tortor Euismod Egestas",
             "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
-        },{
-            "title": "Tortor Euismod Egestas",
-            "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
         },
         {
             "title": "Tortor Euismod Egestas",
             "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
-        },{
+        },
+        {
             "title": "Tortor Euismod Egestas",
             "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
         },
