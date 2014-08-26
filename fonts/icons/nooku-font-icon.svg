@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2014-8-26: Created.
+-->
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Tue Aug 26 10:58:08 2014
+ By Robin Poort
+Created by Robin Poort with FontForge 2.0 (http://fontforge.sf.net)
+</metadata>
+<defs>
+<font id="nooku-font-icon" horiz-adv-x="512" >
+  <font-face 
+    font-family="nooku-font-icon"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 512 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+F101-F103"
+  />
+    <missing-glyph />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" horiz-adv-x="239" 
+d="M-128 448zM160 -64h-96v256h-64v88h64v52c0 72 19 116 104 116h71v-88h-44c-33 0 -35 -13 -35 -36v-44h79l-9 -88h-70v-256v0z" />
+    <glyph glyph-name="uniF102" unicode="&#xf102;" 
+d="M256 448c141 0 256 -115 256 -256s-115 -256 -256 -256s-256 115 -256 256s115 256 256 256zM408 40v0c20 20 35 42 46 68s17 55 17 84s-6 58 -17 84s-26 48 -46 68s-42 35 -68 46s-55 17 -84 17s-58 -6 -84 -17s-48 -26 -68 -46s-35 -42 -46 -68s-17 -55 -17 -84
+s6 -58 17 -84s26 -48 46 -68s42 -35 68 -46c7 -3 15 -6 23 -8v39c0 20 6 36 20 45c-9 1 -17 2 -24 3s-15 4 -23 7s-15 6 -21 10s-13 9 -19 15s-11 13 -15 21s-7 18 -9 29s-4 23 -4 36c0 26 8 48 25 66c-8 20 -6 41 3 65c0 0 1 1 2 1h8s9 -2 14 -3s11 -4 19 -8s16 -9 25 -15
+c20 6 39 8 61 8c21 0 42 -2 62 -8c14 9 27 17 38 21s19 5 23 5l6 -1c9 -24 11 -45 3 -65c17 -18 25 -40 25 -66c0 -13 -1 -25 -3 -36s-6 -21 -10 -29s-9 -15 -15 -21s-12 -11 -18 -15s-14 -8 -22 -11s-16 -4 -23 -6s-15 -3 -24 -4c14 -9 21 -24 21 -44v-38c7 2 14 4 20 7
+c26 11 48 26 68 46z" />
+    <glyph glyph-name="uniF103" unicode="&#xf103;" 
+d="M512 351v0c-14 -21 -31 -40 -52 -55v-13c0 -139 -106 -299 -299 -299c-59 0 -115 17 -161 47c8 -1 17 -1 25 -1c49 0 95 17 131 45c-46 1 -86 31 -99 73c6 -1 13 -2 20 -2c10 0 19 1 28 3c-48 10 -84 52 -84 103v2c14 -8 30 -12 47 -13c-28 19 -47 51 -47 87
+c0 19 6 37 15 53c52 -64 129 -106 216 -110c-2 8 -3 16 -3 24c0 58 47 105 105 105c30 0 58 -13 77 -33c24 5 47 13 67 25c-8 -25 -24 -45 -46 -58c21 3 41 9 60 17z" />
+  </font>
+</defs></svg>

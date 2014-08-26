@@ -9,16 +9,46 @@ module.exports = function(grunt) {
     // grunt config
     grunt.initConfig
     ({
+
+        // Iconfont
+        webfont: {
+            icons: {
+                src: 'images/icons/*.svg',
+                dest: 'fonts/icons',
+                destCss: '_scss/utilities',
+                options: {
+                    font: 'nooku-font-icon',
+                    hashes: false,
+                    stylesheet: 'scss',
+                    relativeFontPath: '../fonts/icons/',
+                    template: 'fonts/icons/template.css'
+                }
+            }
+        },
+
         // Compile sass files
         sass: {
             dest: {
                 options: {
                     require: ['susy', 'illusion'],
-                    sourcemap: true
+                    sourcemap: true,
+                    style: 'compressed'
                 },
                 files: [{
                     'css/style.css': '_scss/style.scss'
                 }]
+            }
+        },
+
+        // Uglify
+        uglify: {
+            options: {
+                soureMap: true
+            },
+            build: {
+                files: {
+                    'js/scripts.js': ['_scripts/*.js']
+                }
             }
         },
 
@@ -28,12 +58,23 @@ module.exports = function(grunt) {
                 command: 'bundle exec jekyll build'
             },
             jekyllServe: {
-                command: 'bundle exec jekyll serve --watch'
+                command: 'bundle exec jekyll serve'
             }
         },
 
         // Watch files
         watch: {
+            fontcustom: {
+                files: [
+                    // Including
+                    'images/icons/*.svg'
+                ],
+                tasks: ['webfont'], // Fontcustom
+                options: {
+                    interrupt: false,
+                    atBegin: false
+                }
+            },
             css: {
                 files: [
                     // Including
@@ -42,6 +83,46 @@ module.exports = function(grunt) {
                 tasks: ['sass'], // Compile
                 options: {
                     interrupt: false,
+                    atBegin: true,
+                    livereload: true
+                }
+            },
+            uglify: {
+                files: [
+                    // Including
+                    '_scripts/*.js'
+                ],
+                tasks: ['uglify'], // Compile
+                options: {
+                    interrupt: false,
+                    atBegin: true
+                }
+            },
+            jekyll: {
+                files: [
+                    // Including
+                    '_events/*.*',
+                    '_includes/*.*',
+                    '_layouts/*.*',
+                    '_posts/*.*',
+                    'assets/*.*',
+                    'blog/*.*',
+                    'css/*.*',
+                    'events/*.*',
+                    'features/*.*',
+                    'fonts/*.*',
+                    'get-started/*.*',
+                    'images/*.*',
+                    'js/*.*',
+                    'manifesto/*.*',
+                    'consulting/*.*',
+                    'platform/*.*',
+                    'services/*.*',
+                    'index.html'
+                ],
+                tasks: ['shell:jekyllBuild'],
+                options: {
+                    interrupt: true,
                     atBegin: true,
                     livereload: true
                 }
@@ -59,6 +140,16 @@ module.exports = function(grunt) {
         }
     });
 
+    // The default task will show the usage
+    grunt.registerTask('default', 'Prints usage', function () {
+        grunt.log.writeln('');
+        grunt.log.writeln('Product site development');
+        grunt.log.writeln('------------------------');
+        grunt.log.writeln('');
+        grunt.log.writeln('* run "grunt --help" to get an overview of all commands.');
+        grunt.log.writeln('* run "grunt dev"" to start developing.');
+    });
+
     // Register the default tasks.
-    grunt.registerTask('default', ['concurrent:dev']);
+    grunt.registerTask('dev', ['concurrent:dev']);
 };
