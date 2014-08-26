@@ -2,7 +2,8 @@
     "items": [
         {
             "title": "Intuitive API",
-            "description": "Learn once, apply everywhere: the consistent object oriented <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">design pattern</a> based API is easy to learn, and a joy to work with."
+            "description": "Learn once, apply everywhere: the consistent object oriented <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">design pattern</a> based API is easy to learn, and a joy to work with.",
+            "image": "model.png"
         },
         {
             "title": "Out-of-the-box security",
@@ -10,7 +11,8 @@
         },
         {
             "title": "Dynamic (H)MVC",
-            "description": "Nooku's dynamic and cascadable <a href=\"http://en.wikipedia.org/wiki/HMVC\">HMVC</a> takes the work out of your hands. Implement your business logic by specializing Nooku's core."
+            "description": "Nooku's dynamic and cascadable <a href=\"http://en.wikipedia.org/wiki/HMVC\">HMVC</a> takes the work out of your hands. Implement your business logic by specializing Nooku's core.",
+            "image": "fetch.png"
         },
         {
             "title": "Modular and extendable",
@@ -31,12 +33,13 @@
         },
         {
             "title": "Joomla 2.x and 3.x",
-            "description": "Abstract differences between current and future Joomla versions.",
+            "description": "Abstract differences between current and future Joomla versions. Code it once, use it everywhere.",
             "image": "joomla32.png"
         },
         {
-            "title": "Tortor Euismod Egestas",
-            "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+            "title": "Short Tags",
+            "description": "Nooku has support for short tags and offers a simple and expressive syntax to make templates readable and fun to type.",
+            "image": "short-tags.png"
         },
         {
             "title": "Tortor Euismod Egestas",
