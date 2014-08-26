@@ -101,6 +101,7 @@ module.exports = function(grunt) {
             jekyll: {
                 files: [
                     // Including
+                    '_data/*.*',
                     '_events/*.*',
                     '_includes/*.*',
                     '_layouts/*.*',
