@@ -11,6 +11,7 @@ $susy: (
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .container--narrow {
@@ -19,9 +20,7 @@ $susy: (
 }
 
 .group {
-  // page acts as a container for our grid.
   @include container;
-  margin: 0 40px;
 }
 
 .one-fourth  { @include gallery(6 of 12); }

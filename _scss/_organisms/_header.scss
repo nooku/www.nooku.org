@@ -1,0 +1,37 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid lighten(#c8c8c8, 10%);
+
+  .brand {
+    text-align: center;
+  }
+
+  .navbar {
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+
+  .nav {
+    /* Align the items equally in the available space */
+    li {
+      display: table-cell;
+      width: 1%;
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .navbar-nav {
+    margin: 0;
+  }
+}
+
+@include respond-min($breakpoint-charlie) {
+  .header {
+    .brand {
+      text-align: left;
+    }
+  }
+}

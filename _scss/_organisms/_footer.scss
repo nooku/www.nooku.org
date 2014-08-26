@@ -1,0 +1,27 @@
+.footer {
+  @include gradient-radial(lighten($brand-primary, 5%), $brand-primary);
+  @include box-shadow(inset rgba(0, 0, 0, .3) 0px 3px 3px);
+  border: 1px solid $navy;
+  margin-top: 40px;
+  text-align: center;
+
+  .container {
+    font-size: 80%;
+    color: $white;
+    padding-top: 12px;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+@include respond-min($breakpoint-charlie) {
+  .section.footer {
+    text-align: left;
+
+    .copyright {
+      text-align: right;
+    }
+  }
+}

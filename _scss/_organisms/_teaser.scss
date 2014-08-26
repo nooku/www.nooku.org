@@ -1,0 +1,32 @@
+.teaser {
+  padding: 20px 20px 0;
+  margin-bottom: 20px;
+  border: 1px solid $navy;
+  border-left:0;
+  border-right:0;
+  background: lighten($brand-primary, 5%);
+  @include gradient-radial(lighten($brand-primary, 5%), $brand-primary);
+  @include box-shadow(inset rgba(0, 0, 0, .6) 0px 0px 10px);
+  color: white;
+
+  a {
+    color: $white;
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  .lead {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .brought-by {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-weight: 200;
+  }
+}

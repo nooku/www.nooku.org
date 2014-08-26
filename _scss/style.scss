@@ -6,11 +6,15 @@
 @import "_atoms/a";
 @import "_atoms/headings";
 
-@import "_molecules/header";
 @import "_molecules/media";
 @import "_molecules/navbar";
 @import "_molecules/thumbnails";
 @import "_molecules/subtitle";
+
+@import "_organisms/blog";
+@import "_organisms/footer";
+@import "_organisms/header";
+@import "_organisms/teaser";
 
 @import "theme";
 @import "events";

@@ -1,9 +1,11 @@
-.media.media--vertical {
-  h3 {
-    margin: 20px 0;
-  }
+.media__title {
+  margin: 20px 0;
+}
 
-  p {
-    margin-bottom: 40px;
-  }
+.media__text {
+  margin-bottom: 40px;
+}
+
+.media__image {
+  border: 1px solid $color-border;
 }
