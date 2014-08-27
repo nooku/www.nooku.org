@@ -46,5 +46,5 @@ $susy: (
 }
 
 @include respond-min($breakpoint-echo) {
-   .features .media { @include gallery(4 of 12); }
+
 }

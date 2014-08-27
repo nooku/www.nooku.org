@@ -3,7 +3,7 @@
         {
             "title": "Intuitive API",
             "description": "Learn once, apply everywhere: the consistent object oriented <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">design pattern</a> based API is easy to learn, and a joy to work with.",
-            "image": "model.png"
+            "image": "model.jpg"
         },
         {
             "title": "Out-of-the-box security",
@@ -12,7 +12,7 @@
         {
             "title": "Dynamic (H)MVC",
             "description": "Nooku's dynamic and cascadable <a href=\"http://en.wikipedia.org/wiki/HMVC\">HMVC</a> takes the work out of your hands. Implement your business logic by specializing Nooku's core.",
-            "image": "fetch.png"
+            "image": "fetch.jpg"
         },
         {
             "title": "Modular and extendable",
@@ -24,7 +24,8 @@
         },
         {
             "title": "RESTful architecture",
-            "description": "Nooku is designed around the <a href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HTTP protocol</a>. Each component automatically provides a <a href=\"http://martinfowler.com/articles/richardsonMaturityModel.html\">level 3</a> <a href=\"http://en.wikipedia.org/wiki/JSON\">JSON</a> <a href=\"https://en.wikipedia.org/wiki/Representational_state_transfer\">REST</a> API out of the box, no extra coding required.."
+            "description": "Nooku is designed around the <a href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HTTP protocol</a>. Each component automatically provides a <a href=\"http://martinfowler.com/articles/richardsonMaturityModel.html\">level 3</a> <a href=\"http://en.wikipedia.org/wiki/JSON\">JSON</a> <a href=\"https://en.wikipedia.org/wiki/Representational_state_transfer\">REST</a> API out of the box, no extra coding required..",
+            "image": "json.jpg"
         },
         {
             "title": "Debugger",
@@ -37,17 +38,9 @@
             "image": "joomla32.png"
         },
         {
-            "title": "Short Tags",
+            "title": "Templates",
             "description": "Nooku has support for short tags and offers a simple and expressive syntax to make templates readable and fun to type.",
-            "image": "short-tags.png"
-        },
-        {
-            "title": "Tortor Euismod Egestas",
-            "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
-        },
-        {
-            "title": "Tortor Euismod Egestas",
-            "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+            "image": "template.jpg"
         },
         {
             "title": "Tortor Euismod Egestas",
