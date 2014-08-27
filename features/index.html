@@ -4,17 +4,14 @@ title: Features - Nooku
 description:
 ---
 
+{% assign features = site.data.features.items | sort:"title" %}
+
 <h2>Nooku is different.</h2>
 <p class="subtitle">Our goal is to make it easier for developers to create more powerful custom extensions.</p>
 
 <div class="group features">
-    {% for feature in site.data.features.items %}
+    {% for feature in features %}
     <div class="media">
-        {% if feature.image %}
-        <img class="media__image" src="/images/features/{{ feature.image }}">
-        {% else %}
-        <img class="media__image" src="http://placehold.it/1000x500">
-        {% endif %}
         <h3 class="media__title">{{ feature.title }}</h3>
         <p class="media__text">{{ feature.description }}</p>
     </div>

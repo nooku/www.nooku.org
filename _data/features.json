@@ -3,20 +3,17 @@
         {
             "title": "Intuitive API",
             "description": "Learn once, apply everywhere: the consistent object oriented <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">design pattern</a> based API is easy to learn, and a joy to work with.",
-            "image": "model.jpg"
-        },
-        {
-            "title": "Out-of-the-box security",
-            "description": "Nooku will securely encode output and filter all input to prevent against <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">XSS</a>, <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">SQL injection</a> and <a href=\"http://en.wikipedia.org/wiki/Cross-site_request_forgery\">CSRF attacks</a> automatically."
+            "image": "api.jpg"
         },
         {
             "title": "Dynamic (H)MVC",
             "description": "Nooku's dynamic and cascadable <a href=\"http://en.wikipedia.org/wiki/HMVC\">HMVC</a> takes the work out of your hands. Implement your business logic by specializing Nooku's core.",
-            "image": "fetch.jpg"
+            "image": "hmvc.jpg"
         },
         {
             "title": "Modular and extendable",
-            "description": "You can package more functionality into your own components. Every class, custom or core, can be extended, re-used, and replaced."
+            "description": "You can package more functionality into your own components. Every class, custom or core, can be extended, re-used, and replaced.",
+            "image": "lego.jpg"
         },
         {
             "title": "Component based",
@@ -43,8 +40,13 @@
             "image": "template.jpg"
         },
         {
-            "title": "Tortor Euismod Egestas",
+            "title": "Behavior Driven",
             "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+        },
+        {
+            "title": "Out-of-the-box security",
+            "description": "Nooku will securely encode output and filter all input to prevent against <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">XSS</a>, <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">SQL injection</a> and <a href=\"http://en.wikipedia.org/wiki/Cross-site_request_forgery\">CSRF attacks</a> automatically.",
+            "image": "security.jpg"
         }
     ]
 }
