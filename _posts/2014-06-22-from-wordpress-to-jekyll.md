@@ -32,17 +32,17 @@ Luckily Jekyll allow for plugins to be added in order to solve such needs, and a
 
 ### 3. Adding readmore separator to post lists. 
 When exporting wordpress posts using the Jekyll exporter, the Wordpress read more markup is exported as well into the new markdown files, in the form of:
-<pre><code class="language-html"> <!--more--> </code></pre>
+{% highlight html %} <!--more--> {% endhighlight %}
   
 By taking advantage of [Liquid][4] (the template engine that come with jekyll, which supports HTML as well as various flavours of markdown) you can simply use the liquid split filter by writing something like this:
-<pre><code class="language-html">{% raw %}{{ post.content | split:"<!--more-->" | first }}{% endraw %}</code></pre>
+{% highlight html %}{% raw %}{{ post.content | split:"<!--more-->" | first }}{% endraw %}{% endhighlight %}
 
 ### 4. Disquss threads. 
 We have some nice discussions going on here on the blog and we didn't want to lose them. Thankfully the Jekyll exporter also add the “dsq_thread_id”  to the generated markdown files. You can just access them via Liquid where you call the Disqus js plugin:
-<pre><code class="language-html">{% raw %}
+{% highlight html %}{% raw %}
 var disqus_identifier = '{{ page.dsq_thread_id }}'; 
 var disqus_url = 'http://blog.nooku.org{{ page.permalink }}'; 
-{% endraw %}</code></pre>
+{% endraw %}{% endhighlight %}
 ( the same with the url and permalink)
 
 
