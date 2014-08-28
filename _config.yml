@@ -20,12 +20,6 @@ navigation:
   - text: Blog
     url: /blog
     position: top
-  - text: Platform
-    url: /platform
-    position: footer
-  - text: Manifesto
-    url: /manifesto
-    position: footer
   - text: Facebook
     url: https://www.facebook.com/nooku.org
     position: footer
@@ -34,6 +28,12 @@ navigation:
     position: footer
   - text: GitHub
     url: https://www.github.com/nooku
+    position: footer
+  - text: Platform
+    url: /platform
+    position: footer
+  - text: Manifesto
+    url: /manifesto
     position: footer
   - text: Events
     url: /events

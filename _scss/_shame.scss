@@ -55,3 +55,43 @@
 .group.images {
   padding: 30px 0;
 }
+
+.links a {
+  margin-right: 16px;
+}
+
+.facebook,
+.twitter,
+.github {
+  display: inline-block;
+  width: 20px;
+  height: 0;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.facebook {
+  @extend .icon-nooku-facebook;
+}
+
+.twitter {
+  @extend .icon-nooku-twitter;
+}
+
+.github {
+  @extend .icon-nooku-github;
+}
+
