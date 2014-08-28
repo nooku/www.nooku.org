@@ -16,6 +16,8 @@
   @include respond-min($breakpoint-charlie) {
     font-size: 1.25em;
   }
+
+  @include transition(all .2s ease-in-out);
 }
 
 .navbar__item {
@@ -33,6 +35,8 @@
     margin: 0 20px;
   }
 
+  @include transition(all .2s ease-in-out);
+
   a {
     color: #333;
     display: inline-block;
@@ -47,11 +51,30 @@
     &:hover {
       border-bottom-color: #88D8FD;
     }
+
+    @include transition(all .2s ease-in-out);
   }
 
   &.active {
     a {
       border-bottom-color: #1380b7;
+    }
+  }
+}
+
+.header--small {
+  .navigation_container {
+    height: 30px;
+    max-height: 30px;
+  }
+
+  .navbar {
+    padding: 0;
+
+    font-size: 1em;
+
+    a {
+      padding: 3px 0 0;
     }
   }
 }
