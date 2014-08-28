@@ -1,25 +1,36 @@
 .navigation_container {
   text-align: center;
-
-  @include respond-min($breakpoint-beta) {
-    height: 60px;
-  }
 }
 
 .navbar {
   z-index: 2;
   list-style: none;
-  font-size: 1.25em;
   display: inline-block;
   padding: 12px 0 0;
   margin: 20px 0 0;
+
+  @include respond-min($breakpoint-beta) {
+    margin: 0;
+  }
+
+  @include respond-min($breakpoint-charlie) {
+    font-size: 1.25em;
+  }
 }
 
 .navbar__item {
-  margin: 0 20px;
+  margin: 0 10px;
 
   @include respond-min($breakpoint-beta) {
     float: left;
+  }
+
+  @include respond-min($breakpoint-charlie) {
+    margin: 0 15px;
+  }
+
+  @include respond-min($breakpoint-delta) {
+    margin: 0 20px;
   }
 
   a {

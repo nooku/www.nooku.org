@@ -6,6 +6,7 @@
   border-bottom: 1px solid lighten(#c8c8c8, 10%);
   border-bottom: 1px solid rgba(0,0,0,.25);
   background: #fff;
+  min-height: 101px;
 
   @include respond-min($breakpoint-beta) {
     .brand {
@@ -14,15 +15,19 @@
   }
 }
 
-@include respond-min($breakpoint-charlie) {
-  .header {
-    .brand {
-      text-align: left;
-      font-size: 0;
-      line-height: 0;
+.header {
+  .brand {
+    text-align: left;
+    font-size: 0;
+    line-height: 0;
+    max-height: 60px;
 
-      a {
-        display: inline-block;
+    a {
+      display: inline-block;
+
+      img {
+        height: 60px;
+        max-width: none;
       }
     }
   }
