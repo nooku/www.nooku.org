@@ -7,17 +7,11 @@
   list-style: none;
   display: inline-block;
   padding: 12px 0 0;
-  margin: 20px 0 0;
-
-  @include respond-min($breakpoint-beta) {
-    margin: 0;
-  }
+  margin: 0;
 
   @include respond-min($breakpoint-charlie) {
-    font-size: 1.25em;
+    font-size: 1.125em;
   }
-
-  @include transition(all .2s ease-in-out);
 }
 
 .navbar__item {
@@ -35,8 +29,6 @@
     margin: 0 20px;
   }
 
-  @include transition(all .2s ease-in-out);
-
   a {
     color: #333;
     display: inline-block;
@@ -51,8 +43,6 @@
     &:hover {
       border-bottom-color: #88D8FD;
     }
-
-    @include transition(all .2s ease-in-out);
   }
 
   &.active {
@@ -61,24 +51,6 @@
     }
   }
 }
-
-.header--small {
-  .navigation_container {
-    height: 30px;
-    max-height: 30px;
-  }
-
-  .navbar {
-    padding: 0;
-
-    font-size: 1em;
-
-    a {
-      padding: 3px 0 0;
-    }
-  }
-}
-
 
 
 
