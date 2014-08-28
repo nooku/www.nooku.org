@@ -1,4 +1,6 @@
-@import "illusion";
+@import "illusion/basics";
+@import "illusion/ie";
+@import "illusion/reset";
 
 @import "_misc/variables";
 
@@ -10,6 +12,7 @@
 @import "_atoms/a";
 @import "_atoms/headings";
 
+@import "_molecules/background";
 @import "_molecules/button";
 @import "_molecules/media";
 @import "_molecules/navbar";

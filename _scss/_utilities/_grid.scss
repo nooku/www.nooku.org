@@ -31,11 +31,11 @@ $susy: (
    .one-fourth { @include gallery(3 of 12); }
 
    .header__brand {
-     @include span(first 5 of 12);
+     @include span(first 4 of 12);
    }
 
    .header__navigation {
-     @include span(7 of 12);
+     @include span(8 of 12);
    }
 
   .features .media { @include gallery(6 of 12); }

@@ -1,20 +1,22 @@
-// Breakpoints
-// -------------------------
-$breakpoint-alpha:    400px;
-$breakpoint-beta:     600px;
-$breakpoint-charlie:  768px;
-$breakpoint-delta:    1024px;
-$breakpoint-echo:     1280px;
+// Responsive breakpoints
+$breakpoint-alpha:      25em;                                 // 400px
+$breakpoint-beta:       37.5em;                               // 600px  Small tablets
+$breakpoint-charlie:    48em;                                 // 768px  Portrait bigger tablets
+$breakpoint-delta:      64em;                                 // 1024px Landscape bigger tablets
+$breakpoint-echo:       75em;                                 // 1200px Laptops
+$breakpoint-foxtrot:    90em;                                 // 1440px Desktop
+$breakpoint-golf:       100em;                                // 1600px Extra wide
 
 $white: #FFF;
 $gray-lighter: #eee;
+$color-body: #333;
 
 $brand-primary:         #085DAD;
 $navy: darken($brand-primary, 10%);
 
-$font-family-sans-serif:  "Open Sans", sans-serif;
+$base-font:  'Roboto', Helvetica, Arial, sans-serif;;
 
-$font-size-base:          17px;
+$font-size-base:          16px;
 $line-height-base:        1.5em;
 
 // Basics of a navbar

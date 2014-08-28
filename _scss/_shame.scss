@@ -1,6 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 300;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  font-family: $base-font;
+  font-weight: 300;
+  line-height: $line-height-base;
+  color: $color-body;
+  background: #fff;
+}
+
+body a:focus,
+body input:focus,
+body textarea:focus,
+body select:focus,
+body button:focus,
+body label[for]:focus {
+  outline: 3px solid #EABF36;
+}
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr,
+.highlight {
+  margin-top: 0;
+  margin-bottom: $line-height-base;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $brand-primary;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: #333;
+  }
 }
 
 hr {
