@@ -7,14 +7,27 @@
   background-color: #ffffff;
   color: #6ba82e;
 
-  box-shadow: inset 0 -2px #ccc;
+  box-shadow: inset 0 -2px #bbb;
   border: 1px solid #ccc;
 
   display: inline-block;
-  margin-bottom: 0;
   font-weight: 300;
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
+  margin-bottom: 3px;
+  text-shadow: none;
+
+  &:hover {
+    background: #c9eeff;
+    border-color: #004c87;
+    box-shadow: inset 0 -2px #7ac2ea;
+  }
+
+  &:active {
+    box-shadow: none;
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
 }

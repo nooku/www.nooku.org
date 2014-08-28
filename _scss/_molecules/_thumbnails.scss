@@ -11,7 +11,8 @@
     text-align:center;
 
     img {
-      display: inline;
+      display: inline-block;
+      vertical-align: middle;
       max-height: 80%;
       max-width: 80%;
     }

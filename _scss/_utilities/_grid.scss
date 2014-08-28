@@ -39,6 +39,10 @@ $susy: (
    }
 
   .features .media { @include gallery(6 of 12); }
+
+  .framework_feature {
+    @include gallery(6 of 12);
+  }
 }
 
 @include respond-min($breakpoint-delta) {

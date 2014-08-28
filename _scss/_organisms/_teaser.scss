@@ -6,12 +6,34 @@
   box-shadow: inset rgba(0, 0, 0, .6) 0px 0px 10px;
   color: white;
   text-align: center;
-
-  a {
-    color: $brand-primary;
-  }
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 
   h1 {
     font-size: 2.5em;
   }
+
+  @at-root .teaser__content {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+    line-height: 2em;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .button_container {
+    margin-bottom: 40px;
+
+    a {
+      color: $brand-primary;
+    }
+  }
+
+  .stats__github,
+  .stats__twitter {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
 }

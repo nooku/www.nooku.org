@@ -31,7 +31,6 @@ module.exports = function(grunt) {
             dest: {
                 options: {
                     require: ['susy', 'illusion'],
-                    sourcemap: true,
                     style: 'compressed'
                 },
                 files: [{
