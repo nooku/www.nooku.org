@@ -23,14 +23,6 @@
     ],
     "footer": [
         {
-            "text": "Platform",
-            "url": "/platform"
-        },
-        {
-            "text": "Manifesto",
-            "url": "/manifesto"
-        },
-        {
             "text": "Facebook",
             "url": "https://www.facebook.com/nooku.org"
         },
@@ -41,6 +33,14 @@
         {
             "text": "GitHub",
             "url": "https://www.github.com/nooku"
+        },
+        {
+            "text": "Platform",
+            "url": "/platform"
+        },
+        {
+            "text": "Manifesto",
+            "url": "/manifesto"
         },
         {
             "text": "Events",
