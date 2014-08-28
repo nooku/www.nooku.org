@@ -54,10 +54,6 @@
 
 .group.images {
   padding: 10px 0;
-
-  @include respond-min($breakpoint-beta) {
-    padding: 30px 0;
-  }
 }
 
 .links {
