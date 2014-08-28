@@ -25,18 +25,20 @@ $susy: (
 
 .one-fourth  { @include gallery(6 of 12); }
 
+@include respond-min($breakpoint-beta) {
+  .header__brand {
+    @include span(first 3 of 12);
+  }
+
+  .header__navigation {
+    @include span(9 of 12);
+  }
+}
+
 @include respond-min($breakpoint-charlie) {
    .one-half   { @include gallery(6 of 12); }
    .one-third  { @include gallery(4 of 12); }
    .one-fourth { @include gallery(3 of 12); }
-
-   .header__brand {
-     @include span(first 4 of 12);
-   }
-
-   .header__navigation {
-     @include span(8 of 12);
-   }
 
   .features .media { @include gallery(6 of 12); }
 

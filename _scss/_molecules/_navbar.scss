@@ -1,19 +1,37 @@
 .navigation_container {
   text-align: center;
-  height: 60px;
 }
 
 .navbar {
-  margin: 0;
+  z-index: 2;
   list-style: none;
-  font-size: 1.25em;
   display: inline-block;
-  padding: 12px 0;
+  padding: 12px 0 0;
+  margin: 20px 0 0;
+
+  @include respond-min($breakpoint-beta) {
+    margin: 0;
+  }
+
+  @include respond-min($breakpoint-charlie) {
+    font-size: 1.25em;
+  }
 }
 
 .navbar__item {
-  float: left;
-  margin: 0 20px;
+  margin: 0 10px;
+
+  @include respond-min($breakpoint-beta) {
+    float: left;
+  }
+
+  @include respond-min($breakpoint-charlie) {
+    margin: 0 15px;
+  }
+
+  @include respond-min($breakpoint-delta) {
+    margin: 0 20px;
+  }
 
   a {
     color: #333;
@@ -34,6 +52,137 @@
   &.active {
     a {
       border-bottom-color: #1380b7;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.button--hamburger {
+  float: right;
+  padding: 7px 12px;
+  color: $brand-primary;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 18px;
+  margin-right: 10px;
+  font-size: 16px;
+
+  &:after {
+    display: inline-block;
+    font-size: 30px;
+    content: '\2630';
+    vertical-align: text-bottom;
+    padding-left: 6px;
+  }
+
+  &:focus {
+    border-color: $brand-primary;
+    outline: none;
+    background: $brand-primary;
+    color: #fff;
+
+    .lines, .lines:before, .lines:after {
+      background: #fff;
+    }
+  }
+}
+
+// Prevent underline on touch devices
+@media screen and (orientation: landscape), screen and (orientation: portrait) {
+  .button--hamburger:hover {
+    text-decoration: none;
+  }
+}
+
+// Inspired by https://github.com/SaraSoueidan/navicon-transformicons
+@media (max-width: $breakpoint-beta) {
+  // Remove 'Hamburger Icon' with Unicode
+  .button--hamburger:after {
+    content: "";
+    content: none;
+  }
+
+  $transition: .2s ease-in-out; // increase this to see the transformations happen in slow motion
+  $button-size: 0.9375em;
+
+  // common to all three-liners
+  .button--hamburger {
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      transition: 0;
+    }
+
+    // Three-liners
+    .lines {
+      position: relative;
+      top: -4px;
+      margin-left: 8px;
+
+      &, &:before, &:after {
+        display: inline-block;
+        width: $button-size;
+        height: $button-size / 7;
+        background: $brand-primary;
+        border-radius: $button-size / 14;
+        transition: $transition;
+      }
+
+      &:before, &:after {
+        position: absolute;
+        left: 0;
+        content: '';
+        -webkit-transform-origin: $button-size / 14 center;
+        transform-origin: $button-size / 14 center;
+      }
+
+      &:before {
+        top: $button-size / 3.5;
+      }
+
+      &:after {
+        top: -$button-size / 3.5;
+      }
+    }
+
+    // Three-lines to x
+    &.close {
+      .lines {
+        background: transparent;
+
+        &:before, &:after {
+          -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          top: 0;
+          width: $button-size;
+        }
+
+        &:before {
+          -webkit-transform: rotate3d(0, 0, 1, 45deg);
+          transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        &:after {
+          -webkit-transform: rotate3d(0, 0, 1, -45deg);
+          transform: rotate3d(0, 0, 1, -45deg);
+        }
+      }
     }
   }
 }
