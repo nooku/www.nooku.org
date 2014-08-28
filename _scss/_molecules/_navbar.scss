@@ -9,13 +9,18 @@
   line-height: 24px;
   z-index: 2;
   list-style: none;
-  display: inline-block;
+  display: block;
   padding: 4px 0 0;
-  margin: 0;
+  margin: 20px 0 0;
+
+  @include respond-min($breakpoint-beta) {
+    display: inline-block;
+    margin: 0;
+  }
 }
 
 .navbar__item {
-  margin: 0 10px;
+
 
   @include respond-min($breakpoint-beta) {
     float: left;
@@ -34,7 +39,11 @@
     display: inline-block;
     text-decoration: none;
     padding: 6px 0 3px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 1px solid transparent;
+
+    @include respond-min($breakpoint-beta) {
+      border-bottom-width: 3px;
+    }
 
     &:visited {
       color: #333;
@@ -42,6 +51,10 @@
 
     &:hover {
       border-bottom-color: #88D8FD;
+    }
+
+    @include respond-min($breakpoint-beta) {
+      display: inline-block;
     }
   }
 
@@ -69,7 +82,7 @@
   border: 1px solid #bbb;
   border-radius: 8px;
   background-color: #fff;
-  margin-top: 18px;
+  margin-top: 3px;
   margin-right: 10px;
   font-size: 16px;
 
