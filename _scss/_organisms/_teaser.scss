@@ -1,23 +1,17 @@
 .teaser {
-  padding: 20px 20px 0;
-  margin-bottom: 20px;
+  padding: 40px 0 50px;
   border: 1px solid $navy;
   border-left:0;
   border-right:0;
   box-shadow: inset rgba(0, 0, 0, .6) 0px 0px 10px;
   color: white;
+  text-align: center;
 
   a {
-    color: $white;
+    color: $brand-primary;
   }
 
   h1 {
-    color: $white;
-  }
-
-  .lead {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 18px;
+    font-size: 2.5em;
   }
 }
