@@ -13,8 +13,12 @@
             "url": "/services"
         },
         {
-            "text": "Docs",
-            "url": "/docs"
+            "text": "Guides",
+            "url": "http://guides.nooku.org"
+        },
+        {
+            "text": "API",
+            "url": "http://api.nooku.org"
         },
         {
             "text": "Blog",
