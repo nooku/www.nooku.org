@@ -58,51 +58,58 @@
   }
 }
 
-.icon-nooku-joomla {
+.icon-nooku-google {
   @extend %icon;
   &:before {
     content:"\f104";
   }
 }
 
-.icon-nooku-linkedin {
+.icon-nooku-joomla {
   @extend %icon;
   &:before {
     content:"\f105";
   }
 }
 
-.icon-nooku-nooku-logo {
+.icon-nooku-linkedin {
   @extend %icon;
   &:before {
     content:"\f106";
   }
 }
 
-.icon-nooku-repeat {
+.icon-nooku-nooku-logo {
   @extend %icon;
   &:before {
     content:"\f107";
   }
 }
 
-.icon-nooku-stack {
+.icon-nooku-repeat {
   @extend %icon;
   &:before {
     content:"\f108";
   }
 }
 
-.icon-nooku-stopwatch {
+.icon-nooku-stack {
   @extend %icon;
   &:before {
     content:"\f109";
   }
 }
 
-.icon-nooku-twitter {
+.icon-nooku-stopwatch {
   @extend %icon;
   &:before {
     content:"\f10a";
+  }
+}
+
+.icon-nooku-twitter {
+  @extend %icon;
+  &:before {
+    content:"\f10b";
   }
 }
