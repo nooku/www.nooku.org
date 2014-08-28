@@ -1,5 +1,3 @@
-@import "bootstrap/variables";
-
 // Breakpoints
 // -------------------------
 $breakpoint-alpha:    400px;
@@ -9,6 +7,7 @@ $breakpoint-delta:    1024px;
 $breakpoint-echo:     1280px;
 
 $white: #FFF;
+$gray-lighter: #eee;
 
 $brand-primary:         #085DAD;
 $navy: darken($brand-primary, 10%);
@@ -16,6 +15,7 @@ $navy: darken($brand-primary, 10%);
 $font-family-sans-serif:  "Open Sans", sans-serif;
 
 $font-size-base:          17px;
+$line-height-base:        1.5em;
 
 // Basics of a navbar
 $navbar-height:                    30px;

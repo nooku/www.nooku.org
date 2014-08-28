@@ -1,6 +1,6 @@
 .footer {
-  @include gradient-radial(lighten($brand-primary, 5%), $brand-primary);
-  @include box-shadow(inset rgba(0, 0, 0, .3) 0px 3px 3px);
+  background: #096ac5;
+  box-shadow: inset rgba(0, 0, 0, .3) 0px 3px 3px;
   border: 1px solid $navy;
   margin-top: 40px;
   text-align: center;

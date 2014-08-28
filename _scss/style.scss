@@ -1,7 +1,11 @@
 @import "illusion";
 
-@import "variables";
-@import "bootstrap";
+@import "_misc/variables";
+
+@import "_utilities/grid";
+@import "_utilities/highlight";
+@import "_utilities/icons";
+@import "_utilities/responsivemenu";
 
 @import "_atoms/a";
 @import "_atoms/headings";
@@ -17,10 +21,8 @@
 @import "_organisms/header";
 @import "_organisms/teaser";
 
-@import "theme";
-@import "events";
+@import "_organisms/events";
 
-@import "_utilities/grid";
-@import "_utilities/highlight";
-@import "_utilities/icons";
-@import "_utilities/responsivemenu";
+
+
+@import "shame";

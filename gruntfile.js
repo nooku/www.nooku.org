@@ -15,7 +15,7 @@ module.exports = function(grunt) {
             icons: {
                 src: 'images/icons/*.svg',
                 dest: 'fonts/icons',
-                destCss: '_scss/utilities',
+                destCss: '_scss/_utilities',
                 options: {
                     font: 'nooku-font-icon',
                     hashes: false,

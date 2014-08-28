@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+hr {
+  border:none;
+  color:white;
+  height:1px;
+  background:$gray-lighter;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from($gray-lighter), to(#fff));
+  margin: 50px 0 40px;
+}
+
+blockquote p {
+  font-size: $font-size-base;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+
+

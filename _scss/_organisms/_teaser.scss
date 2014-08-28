@@ -5,8 +5,7 @@
   border-left:0;
   border-right:0;
   background: lighten($brand-primary, 5%);
-  @include gradient-radial(lighten($brand-primary, 5%), $brand-primary);
-  @include box-shadow(inset rgba(0, 0, 0, .6) 0px 0px 10px);
+  box-shadow: inset rgba(0, 0, 0, .6) 0px 0px 10px;
   color: white;
 
   a {
