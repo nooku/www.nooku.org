@@ -8,11 +8,11 @@
 
 .navbar {
   z-index: 2;
-  margin: 0;
   list-style: none;
   font-size: 1.25em;
   display: inline-block;
-  padding: 12px 0;
+  padding: 12px 0 0;
+  margin: 20px 0 0;
 }
 
 .navbar__item {
@@ -56,15 +56,16 @@
 
 .button--hamburger {
   float: right;
-  padding: 5px 12px;
+  padding: 7px 12px;
   color: $brand-primary;
   text-decoration: none;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #bbb;
   border-radius: 8px;
   background-color: #fff;
-  margin-top: 11px;
-  margin-right: -7px;
+  margin-top: 18px;
+  margin-right: 10px;
+  font-size: 16px;
 
   &:after {
     display: inline-block;

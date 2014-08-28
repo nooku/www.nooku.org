@@ -53,7 +53,19 @@
 }
 
 .group.images {
-  padding: 30px 0;
+  padding: 10px 0;
+
+  @include respond-min($breakpoint-beta) {
+    padding: 30px 0;
+  }
+}
+
+.links {
+  padding-bottom: 16px;
+
+  @include respond-min($breakpoint-beta) {
+    padding-bottom: 0;
+  }
 }
 
 .links a {
@@ -93,5 +105,18 @@
 
 .github {
   @extend .icon-nooku-github;
+}
+
+.platform {
+  &:before {
+    display: block;
+    content: " ";
+    height: 16px;
+    width: 100%;
+  }
+
+  @include respond-min($breakpoint-beta) {
+    margin-top: 0;
+  }
 }
 
