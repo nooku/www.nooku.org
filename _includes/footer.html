@@ -22,6 +22,14 @@
         togglecontent: 'menu <span class="lines"></span>',
         sticky: 1
     });
+
+    var header = document.querySelector('.header');
+
+    header.onclick = function() {
+        apollo.toggleClass(header, 'header--small');
+    }
+
+
 </script>
 </body>
 </html>
