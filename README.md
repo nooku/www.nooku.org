@@ -18,9 +18,3 @@ We love to hear your Nooku related adventures and feats! If you want to write a 
 * Create a `blog/yourblogpost` branch
 * Write your blog post in the `_posts` folder
 * Commit your work and send us a [pull request](https://help.github.com/articles/using-pull-requests)!
-
-### Code Highlight
-
-The site uses [Prism](http://prismjs.com/) to make code look pretty.
-
-    <pre><code class="language-css">p { color: red }</code></pre>
