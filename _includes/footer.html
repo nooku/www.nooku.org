@@ -2,14 +2,14 @@
     <div class="container">
         <div class="group">
             <div class="one-half">
-                <p>
+                <p class="links">
                     {% for link in site.data.pages.footer %}
-                    <a href="{{ link.url }}">{{ link.text }}</a> |
+                    <a href="{{ link.url }}" class="{{ link.text | downcase }}">{{ link.text }}</a>
                     {% endfor %}
                 </p>
             </div>
             <div class="copyright one-half">
-                <p>Copyright {{ site.time | date: "%Y" }} <a href="http://www.timble.net">Timble</a></p>
+                <p>Brought to you with ♥ by <a href="http://www.timble.net">Timble</a>.</p>
             </div>
         </div>
     </div>
