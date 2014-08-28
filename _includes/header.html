@@ -41,14 +41,12 @@
             <div class="header__navigation">
                 <div class="navigation_container" role="navigation">
                     <ul class="navbar closed">
-                        {% for link in site.navigation %}
+                        {% for item in site.data.pages.header %}
                         {% assign current = nil %}
-                        {% if link.position == "top" %}
-                        {% if page.url contains link.url %}{% assign current = ' active' %}{% endif %}
+                        {% if page.url contains item.url %}{% assign current = ' active' %}{% endif %}
                         <li class="navbar__item{{ current }}" role="menuitem">
-                            <a href="{{ link.url }}">{{ link.text }}</a>
+                            <a href="{{ item.url }}">{{ item.text }}</a>
                         </li>
-                        {% endif %}
                         {% endfor %}
                     </ul>
                 </div>

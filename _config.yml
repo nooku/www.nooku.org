@@ -4,44 +4,6 @@ description: Open Source PHP Framework for Web Applications. A project for devel
 main_title: Noooku
 url: http://www.nooku.org
 
-navigation:
-  - text: Features
-    url: /features
-    position: top
-  - text: Get Started
-    url: /get-started
-    position: top
-  - text: Services
-    url: /services
-    position: top
-  - text: Docs
-    url: /docs
-    position: top
-  - text: Blog
-    url: /blog
-    position: top
-  - text: Facebook
-    url: https://www.facebook.com/nooku.org
-    position: footer
-  - text: Twitter
-    url: https://www.twitter.com/nooku
-    position: footer
-  - text: GitHub
-    url: https://www.github.com/nooku
-    position: footer
-  - text: Platform
-    url: /platform
-    position: footer
-  - text: Manifesto
-    url: /manifesto
-    position: footer
-  - text: Events
-    url: /events
-    position: footer
-  - text: RSS
-    url: /blog/rss.xml
-    position: footer
-
 monthly_archive:
   layout: archive
   path: blog
