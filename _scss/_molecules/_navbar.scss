@@ -1,17 +1,17 @@
 .navigation_container {
   text-align: center;
+  font-size: 0;
+  line-height: 0;
 }
 
 .navbar {
+  font-size: 18px;
+  line-height: 24px;
   z-index: 2;
   list-style: none;
   display: inline-block;
-  padding: 12px 0 0;
+  padding: 4px 0 0;
   margin: 0;
-
-  @include respond-min($breakpoint-charlie) {
-    font-size: 1.125em;
-  }
 }
 
 .navbar__item {
