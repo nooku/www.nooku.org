@@ -1,5 +1,5 @@
 .teaser {
-  padding: 40px 0 50px;
+  padding: 60px 0 30px;
   border: 1px solid $navy;
   border-left:0;
   border-right:0;
@@ -10,11 +10,12 @@
 
   h1 {
     font-size: 2.5em;
+    margin-bottom: 0;
   }
 
   @at-root .teaser__content {
     font-size: 1.25em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     line-height: 2em;
 
     p {
@@ -23,7 +24,7 @@
   }
 
   .button_container {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     a {
       color: $brand-primary;
