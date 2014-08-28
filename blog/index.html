@@ -20,10 +20,12 @@ description: Open Source PHP Framework for Web Applications. A project for devel
         <div class="excerpt">
             {{ post.content | split:"<!--more-->" | first }}
         </div>
-        <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
-        <hr>
+        <p>
+            <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
+        </p>
     </section>
 </article>
+<hr>
 {% endfor %}
 <ul class="pager">
     {% if paginator.previous_page == 1 %}
