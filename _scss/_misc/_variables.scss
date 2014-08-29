@@ -12,9 +12,11 @@ $gray-lighter: #eee;
 $color-body: #333;
 
 $brand-primary:         #085DAD;
+$brand-primary--light:  lighten($brand-primary, 50%);
 $navy: darken($brand-primary, 10%);
 
-$base-font:  'Roboto', Helvetica, Arial, sans-serif;;
+$base-font: 'Roboto', Helvetica, Arial, sans-serif;
+$base-font-weight: 300;
 
 $font-size-base:          16px;
 $line-height-base:        1.5em;
@@ -34,3 +36,14 @@ $navbar-default-link-active-color:         #FFF;
 $navbar-default-link-active-bg:            lighten($navy, 10%);
 
 $color-border: #e5e5e5;
+
+$visited: #609;
+
+$focus-color: #EABF36;
+
+$spacing-xxl: 50px;
+$spacing-xl:  50px;
+$spacing-l:   40px;
+$spacing-m:   30px;
+$spacing-s:   20px;
+$spacing-xs:  10px;

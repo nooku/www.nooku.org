@@ -1,8 +1,8 @@
 .teaser {
-  padding: 60px 0 30px;
+  padding: $spacing-xxl 0 $spacing-m;
   border: 1px solid $navy;
-  border-left:0;
-  border-right:0;
+  border-left: 0;
+  border-right: 0;
   box-shadow: inset rgba(0, 0, 0, .6) 0px 0px 10px;
   color: white;
   text-align: center;
@@ -24,7 +24,7 @@
   }
 
   .button_container {
-    margin-bottom: 60px;
+    margin-bottom: $spacing-xxl;
 
     a {
       color: $brand-primary;
@@ -35,7 +35,7 @@
   .stats__twitter,
   .stats__google {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 $spacing-s;
   }
 
 }

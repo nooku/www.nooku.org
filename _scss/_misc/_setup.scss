@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: $base-font;
+  font-weight: $base-font-weight;
 }
 
 body, html {
@@ -14,8 +14,6 @@ body, html {
   margin: 0;
   height: 100%;
   position: relative;
-  font-family: $base-font;
-  font-weight: 300;
   line-height: $line-height-base;
   color: $color-body;
   background: #fff;
@@ -27,7 +25,7 @@ body textarea:focus,
 body select:focus,
 body button:focus,
 body label[for]:focus {
-  outline: 3px solid #EABF36;
+  outline: 3px solid $focus-color;
 }
 
 h1, h2, h3, h4, h5, h6, hgroup,
@@ -55,7 +53,7 @@ hr {
   height:1px;
   background:$gray-lighter;
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from($gray-lighter), to(#fff));
-  margin: 50px 0 40px;
+  margin: $spacing-xl 0 $spacing-l;
   clear: both;
 }
 
