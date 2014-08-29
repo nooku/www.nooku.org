@@ -123,6 +123,21 @@
 
 
 .trusted_by {
-  background: lighten($brand-primary, 50%);
+  background: lighten($brand-primary, 60%);
   padding: 40px 0 20px;
+
+  .thumbnails li {
+    padding: 0 30px 25px;
+
+    img {
+      opacity: .25;
+      @include transition(all .1s ease-in-out);
+    }
+
+    a:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
 }
