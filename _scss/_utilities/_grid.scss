@@ -79,6 +79,10 @@ $susy: (
       @include span(9 of 24);
     }
   }
+
+  .event {
+    @include gallery(6 of 12);
+  }
 }
 
 @include respond-min($breakpoint-delta) {
