@@ -1,4 +1,4 @@
-.events {
+.events_container {
   @extend %cf;
   margin-left: auto;
   margin-right: auto;
@@ -84,6 +84,7 @@
     width: 70px;
     height: 70px;
     vertical-align: top;
+    padding: 0;
 
     .event__date__year,
     .event__date__month {
