@@ -2,11 +2,11 @@ a {
   text-decoration: underline;
   color: $brand-primary;
 
-  &:hover {
-    text-decoration: none;
-  }
-
   &:visited {
     color: #609;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }
