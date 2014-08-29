@@ -13,6 +13,15 @@
     line-height: 100px;
     height: 112px;
     text-align: center;
+    display: block;
+    background: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      border: 1px solid #bbb;
+    }
 
     img {
       display: inline-block;

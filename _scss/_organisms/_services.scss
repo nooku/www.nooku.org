@@ -1,0 +1,17 @@
+.services {
+  text-align: center;
+
+  .one-third {
+    margin-bottom: $spacing-m;
+  }
+}
+
+.network__contact {
+  margin-bottom: $spacing-m;
+}
+
+.service__icon {
+  @extend %circle--icon;
+  line-height: 78px;
+  margin-bottom: $spacing-m;
+}

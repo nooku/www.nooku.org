@@ -3,6 +3,7 @@
 @import "illusion/reset";
 
 @import "_misc/variables";
+@import "_misc/placeholders";
 @import "_misc/setup";
 
 @import "_utilities/grid";
@@ -17,18 +18,23 @@
 @import "_molecules/background";
 @import "_molecules/button";
 @import "_molecules/content";
+@import "_molecules/features";
 @import "_molecules/flag";
+@import "_molecules/icons";
 @import "_molecules/media";
 @import "_molecules/navbar";
-@import "_molecules/thumbnails";
 @import "_molecules/subtitle";
+@import "_molecules/thumbnails";
 
 @import "_organisms/blog";
-@import "_organisms/footer";
-@import "_organisms/header";
-@import "_organisms/teaser";
-
 @import "_organisms/events";
-
+@import "_organisms/footer";
+@import "_organisms/get-started";
+@import "_organisms/home";
+@import "_organisms/header";
+@import "_organisms/platform";
+@import "_organisms/services";
+@import "_organisms/teaser";
+@import "_organisms/trusted";
 
 @import "shame";

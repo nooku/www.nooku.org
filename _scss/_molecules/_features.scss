@@ -1,0 +1,27 @@
+.framework_features {
+  @extend %cf;
+  font-size: 1.0625em;
+}
+
+.framework_feature {
+  margin-top: $spacing-l;
+  margin-bottom: $spacing-m;
+}
+
+.framework_feature__icon {
+  @extend %circle--icon;
+  line-height: 78px;
+}
+
+.framework_feature__icon {
+  margin: 0 $spacing-s 0 0;
+}
+
+.features {
+  @extend %cf;
+  padding-bottom: $spacing-m;
+}
+
+.features .media {
+  margin-bottom: $spacing-m;
+}

@@ -1,0 +1,35 @@
+.trusted_by {
+  background: $brand-primary;
+  padding: $spacing-l 0 $spacing-xs;
+  text-align: center;
+
+  .brands {
+    @extend %cf;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  a {
+    display: inline-block;
+    max-width: 200px;
+
+    @include respond-min($breakpoint-charlie) {
+      max-width: none;
+    }
+  }
+
+  img {
+    opacity: .85;
+    transition: opacity .1s ease-in-out;
+  }
+
+  a:hover img {
+    opacity: 1;
+  }
+
+  .thumbnails li {
+    padding: $spacing-xs $spacing-m 25px;
+  }
+}

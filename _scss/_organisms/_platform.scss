@@ -1,0 +1,16 @@
+.platform {
+  &:before {
+    display: block;
+    content: " ";
+    height: 16px;
+    width: 100%;
+  }
+
+  @include respond-min($breakpoint-beta) {
+    margin-top: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}

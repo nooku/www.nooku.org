@@ -29,3 +29,21 @@
     }
   }
 }
+
+.links {
+  padding-bottom: $spacing-s;
+
+  @include respond-min($breakpoint-charlie) {
+    padding-bottom: 0;
+  }
+}
+
+.links a {
+  margin-right: $spacing-s;
+}
+
+.heart {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #EA4437;
+  font-size: 1.125em;
+}
