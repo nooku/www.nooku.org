@@ -21,21 +21,21 @@ description: Open Source PHP Framework for Web Applications. A project for devel
             {{ post.content | split:"<!--more-->" | first }}
         </div>
         <p>
-            <a class="btn btn-default btn-sm text-center" href="{{ post.url }}">Continue reading</a>
+            <a href="{{ post.url }}">Continue reading...</a>
         </p>
     </section>
 </article>
 <hr>
 {% endfor %}
-<ul class="pager">
+<ul class="pagination group">
     {% if paginator.previous_page == 1 %}
-    <li class="previous"><a href="/blog">&larr; Newer</a></li>
+    <li class="pagination__previous"><a href="/blog">&larr; Newer</a></li>
     {% endif %}
     {% if paginator.previous_page > 1 %}
-    <li class="previous"><a href="/blog/page{{ paginator.previous_page }}">&larr; Newer</a></li>
+    <li class="pagination__previous"><a href="/blog/page{{ paginator.previous_page }}">&larr; Newer</a></li>
     {% endif %}
     {% if paginator.next_page %}
-    <li class="next"><a href="/blog/page{{ paginator.next_page }}">Older &rarr;</a></li>
+    <li class="pagination__next"><a href="/blog/page{{ paginator.next_page }}">Older &rarr;</a></li>
     {% else %}
     <!--<span class="next ">Next</span>-->
     {% endif %}

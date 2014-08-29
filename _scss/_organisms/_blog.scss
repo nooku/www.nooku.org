@@ -1,7 +1,13 @@
 .blog {
 
+  p, ul {
+    font-size: 1.125em;
+    line-height: 1.77777778em;
+  }
+
   h1 {
     margin-bottom: 16px;
+    font-size: 1.8em;
 
     a {
       text-decoration: none;
@@ -10,61 +16,27 @@
   }
 
   h2 {
-    font-size: $font-size-base * 1.8;
+    font-size: 1.4em;
     margin-top: $spacing-s;
-    text-align: left;
     font-weight: 400;
   }
 
-  h3.text-muted {
-    font-size: $font-size-base * 1;
-    line-height: 10px;
-    margin-bottom: $spacing-m;
-  }
-
   h3 {
-    font-size: $font-size-base * 1.4;
+    font-size: 1.2em;
     margin-bottom: $spacing-xs;
     font-weight: 400;
     margin-top: $spacing-m;
   }
 
   h3.text-muted {
-    margin-top: 0
+    margin-bottom: $spacing-m;
+    font-size: 1em;
+    margin-top: 0;
   }
 
   img {
     border-radius: 5px;
     height: auto;
-  }
-
-  .btn {
-    margin-top: $spacing-xs;
-  }
-
-  .page-header {
-    margin-bottom: $spacing-xs;
-    border-bottom: 0 none;
-    text-align: center;
-
-    h1 {
-      font-size: $font-size-base * 1.8;
-      line-height: $line-height-base * 1.8;
-      margin: 0;
-    }
-  }
-
-  .posts .post {
-    a.more-link {
-      display: block;
-      margin-top: $spacing-m;
-      text-align: center;
-      padding: $spacing-xs 0;
-    }
-  }
-
-  .sidebar {
-    margin-top: $spacing-m;
   }
 
   .alignright {
@@ -77,14 +49,5 @@
     float: left;
     margin-right: $spacing-s;
     margin-bottom: $spacing-s;
-  }
-
-  .pagination {
-    text-align: center;
-    width: 100%;
-  }
-
-  .pagination .next, .pagination .previous {
-    vertical-align: baseline;
   }
 }
