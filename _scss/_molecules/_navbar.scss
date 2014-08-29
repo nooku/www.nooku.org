@@ -24,9 +24,12 @@
 
   @include respond-min($breakpoint-beta) {
     float: left;
+    margin: 0 8px;
+    font-size: 16px;
   }
 
   @include respond-min($breakpoint-charlie) {
+    font-size: 18px;
     margin: 0 15px;
   }
 

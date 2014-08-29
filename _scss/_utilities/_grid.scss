@@ -45,6 +45,14 @@ $susy: (
   .framework_feature {
     @include gallery(6 of 12);
   }
+
+  .network__contact {
+    @include span(first 4 of 12);
+  }
+
+  .network__partners {
+    @include span(8 of 12);
+  }
 }
 
 @include respond-min($breakpoint-delta) {

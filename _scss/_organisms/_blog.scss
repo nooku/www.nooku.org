@@ -2,6 +2,11 @@
 
   h1 {
     margin-bottom: 16px;
+
+    a {
+      text-decoration: none;
+      color: $brand-primary;
+    }
   }
   h2 {
     font-size: $font-size-base * 1.8;

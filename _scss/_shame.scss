@@ -17,11 +17,11 @@
 
 .framework_features {
   @extend %cf;
-  font-size: 1.125em;
+  font-size: 1.0625em;
 }
 
 .framework_feature {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -154,4 +154,13 @@
   font-family: Helvetica, Arial, sans-serif;
   color: #EA4437;
   font-size: 1.125em;
+}
+
+.get-started {
+  text-align: center;
+
+  .group {
+    max-width: 600px;
+    margin-bottom: 50px;
+  }
 }
