@@ -29,8 +29,8 @@
   display: block;
   width: 78px;
   height: 78px;
-  background: #f2f2f2;
-  border: 1px solid #ddd;
+  background: transparent;
+  border: 1px solid #88D8FD;
   text-align: center;
   line-height: 78px;
   color: $brand-primary;
@@ -123,22 +123,24 @@
 
 
 .trusted_by {
-  background: lighten($brand-primary, 60%);
+  background: $brand-primary;
   padding: 40px 0 10px;
+
+  h2 {
+    color: #fff;
+  }
+
+  img {
+    opacity: .85;
+    transition: all .1s ease-in-out;
+  }
+
+  a:hover img {
+    opacity: 1;
+  }
 
   .thumbnails li {
     padding: 10px 30px 25px;
-
-    img {
-      opacity: .45;
-      @include transition(all .1s ease-in-out);
-    }
-
-    a:hover {
-      img {
-        opacity: 1;
-      }
-    }
   }
 }
 
@@ -146,4 +148,10 @@
 
 .features .media {
   margin-bottom: 30px;
+}
+
+.heart {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #EA4437;
+  font-size: 1.125em;
 }

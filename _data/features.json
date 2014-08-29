@@ -41,7 +41,7 @@
         },
         {
             "title": "Behavior Driven",
-            "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+            "description": "Modify system state or behavior by hooking into objects at different levels and phases of the execution."
         },
         {
             "title": "Out-of-the-box security",
