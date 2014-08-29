@@ -61,14 +61,15 @@
   }
 }
 
-.group.images {
+.builtwith {
+  @extend %cf;
   padding: 10px 0;
 }
 
 .links {
   padding-bottom: 16px;
 
-  @include respond-min($breakpoint-beta) {
+  @include respond-min($breakpoint-charlie) {
     padding-bottom: 0;
   }
 }
@@ -134,9 +135,19 @@
 .trusted_by {
   background: $brand-primary;
   padding: 40px 0 10px;
+  text-align: center;
+
+  .brands {
+    @extend %cf;
+  }
 
   h2 {
     color: #fff;
+  }
+
+  a {
+    display: inline-block;
+    max-width: 200px;
   }
 
   img {

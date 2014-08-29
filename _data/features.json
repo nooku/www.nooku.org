@@ -41,7 +41,7 @@
         },
         {
             "title": "Behavior Driven",
-            "description": "Modify system state or behavior by hooking into objects at different levels and phases of the execution."
+            "description": "Behaviors are injected into objects at runtime. By combining the functionality of mixins and command handlers they allow you to add new methods and react on object events."
         },
         {
             "title": "Out-of-the-box security",
