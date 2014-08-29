@@ -4,13 +4,13 @@ title: Features - Nooku
 description:
 ---
 
-<h2 class="text--center">Nooku is different</h2>
+<h1 class="text--center">Nooku is different</h1>
 <p class="subtitle">Our goal is to make it easier for developers to create more powerful custom extensions.</p>
 
 <div class="features">
     {% for feature in site.data.features.items | sort:"title" %}
     <div class="media">
-        <h3 class="media__title">{{ feature.title }}</h3>
+        <h2 class="media__title">{{ feature.title }}</h2>
         <p class="media__text">{{ feature.description }}</p>
     </div>
     {% endfor %}
