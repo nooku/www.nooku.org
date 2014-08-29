@@ -148,11 +148,15 @@
   a {
     display: inline-block;
     max-width: 200px;
+
+    @include respond-min($breakpoint-charlie) {
+      max-width: none;
+    }
   }
 
   img {
     opacity: .85;
-    transition: all .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
   }
 
   a:hover img {
@@ -191,4 +195,18 @@
 
 .services {
   text-align: center;
+
+  .one-third {
+    margin-bottom: 30px;
+  }
+}
+
+
+.need_help .one-third {
+  margin-bottom: 30px;
+}
+
+
+.network__contact {
+  margin-bottom: 30px;
 }
