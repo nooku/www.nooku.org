@@ -2,51 +2,51 @@
     "items": [
         {
             "title": "Intuitive API",
-            "description": "Learn once, apply everywhere: the consistent object oriented <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">design pattern</a> based API is easy to learn, and a joy to work with.",
-            "image": "api.jpg"
+            "description": "Designed to be simple. Learn once, apply everywhere: the consistent object oriented <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">design pattern</a> based API is easy to learn, and a joy to work with."
         },
         {
             "title": "Dynamic (H)MVC",
-            "description": "Nooku's dynamic and cascadable <a href=\"http://en.wikipedia.org/wiki/HMVC\">HMVC</a> takes the work out of your hands. Implement your business logic by specializing Nooku's core.",
-            "image": "hmvc.jpg"
+            "description": "Nooku's dynamic and cascadable <a href=\"http://en.wikipedia.org/wiki/HMVC\">HMVC</a> takes the work out of your hands. Implement your own business logic by specializing Nooku's core objects."
         },
         {
             "title": "Modular and extendable",
-            "description": "You can package more functionality into your own components. Every class, custom or core, can be extended, re-used, and replaced.",
-            "image": "lego.jpg"
+            "description": "You can package more functionality into your components. Anything the core cannot solve is extendible. Every class, object and template - custom or core - can be re-used or replaced."
         },
         {
             "title": "Component based",
-            "description": "Nooku features a <a href=\"http://en.wikipedia.org/wiki/Component-based_software_engineering\">component based architecture</a> using an <a href=\"http://martinfowler.com/articles/injection.html#InversionOfControl\">IoC</a> container powered by a <a href=\"http://martinfowler.com/articles/injection.html#FormsOfDependencyInjection\">dependency injector</a> and a <a href=\"http://martinfowler.com/articles/injection.html#UsingAServiceLocator\">service locator</a>."
+            "description": "Nooku features a <a href=\"http://en.wikipedia.org/wiki/Component-based_software_engineering\">component based architecture</a> using an <a href=\"http://martinfowler.com/articles/injection.html#InversionOfControl\">Inversion of Control</a> container and powered by a <a href=\"http://martinfowler.com/articles/injection.html#FormsOfDependencyInjection\">dependency injector</a> and <a href=\"http://martinfowler.com/articles/injection.html#UsingAServiceLocator\">service locator</a>."
         },
         {
             "title": "RESTful architecture",
-            "description": "Nooku is designed around the <a href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HTTP protocol</a>. Each component automatically provides a <a href=\"http://martinfowler.com/articles/richardsonMaturityModel.html\">level 3</a> <a href=\"http://en.wikipedia.org/wiki/JSON\">JSON</a> <a href=\"https://en.wikipedia.org/wiki/Representational_state_transfer\">REST</a> API out of the box, no extra coding required..",
-            "image": "json.jpg"
+            "description": "Nooku is designed around the <a href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HTTP protocol</a>. Each component automatically provides a <a href=\"http://martinfowler.com/articles/richardsonMaturityModel.html\">level 3</a> <a href=\"http://en.wikipedia.org/wiki/JSON\">JSON</a> <a href=\"https://en.wikipedia.org/wiki/Representational_state_transfer\">REST</a> API out of the box, no extra coding required."
         },
         {
             "title": "Debugger",
-            "description": "Our debugger helps you with errors and exceptions by showing everything you need in one screen. You can see the exception, the code that threw it and the detailed stack trace all at once.",
-            "image": "debugger.png"
+            "description": "Our debugger helps you with errors and exceptions by showing everything you need in one screen. You can see the exception, the code that threw it and the detailed stack trace all at once."
         },
         {
             "title": "Joomla 2.x and 3.x",
-            "description": "Abstract differences between current and future Joomla versions. Code it once, use it everywhere.",
-            "image": "joomla32.png"
+            "description": "The framework provides an adapter layer that abstracts differences between current and future Joomla versions. Code it once, use it everywhere."
         },
         {
             "title": "Templates",
-            "description": "Nooku has support for short tags and offers a simple and expressive syntax to make templates readable and fun to type.",
-            "image": "template.jpg"
+            "description": "Nooku's own templating engine offers a simple and expressive syntax. The engine is unintrusive, you can still use plain PHP for templating. Support for <a href=\"http://twig.sensiolabs.org/\">Twig</a> and <a href=\"http://daringfireball.net/projects/markdown/\">Markdown</a> is also provided."
         },
         {
-            "title": "Behavior Driven",
-            "description": "Behaviors are injected into objects at runtime. By combining the functionality of mixins and command handlers they allow you to add new methods and react on object events."
+            "title": "Behavior driven",
+            "description": "Behaviors are injected into objects at runtime. By combining the functionality of <a href=\"http://en.wikipedia.org/wiki/Mixin\">mixins</a> and <a href=\"http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern\">command handlers</a> they allow you to add new methods and react on object events."
         },
         {
             "title": "Out-of-the-box security",
-            "description": "Nooku will securely encode output and filter all input to prevent against <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">XSS</a>, <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">SQL injection</a> and <a href=\"http://en.wikipedia.org/wiki/Cross-site_request_forgery\">CSRF attacks</a> automatically.",
-            "image": "security.jpg"
+            "description": "Nooku securely encodes output to harden against <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">XSS</a> attacks and filters all data input to prevent against <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">SQL injections</a> and <a href=\"http://en.wikipedia.org/wiki/Cross-site_request_forgery\">CSRF attacks</a> automatically."
+        },
+        {
+            "title": "Request-response driven",
+            "description": "Nooku's request/response architecture provides out-of-the-box support for different transport mechanisms: <a href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">http</a>, <a href=\"http://en.wikipedia.org/wiki/Chunked_transfer_encoding\">chunked transfer encoding</a>, <a href=\"http://wiki.nginx.org/XSendfile\">sendfile</a>, <a href=\"http://en.wikipedia.org/wiki/Byte_serving\">byte serving</a>, <a href=\"http://en.wikipedia.org/wiki/Post/Redirect/Get\">redirect</a>..."
+        },
+        {
+            "title": "Groups and permissions",
+            "description": "Nooku's permission system integrates seamlessly with the <a href=\"http://docs.joomla.org/Access_Control_List\">Joomla ACL</a>. <a href=\"https://github.com/nooku/nooku-framework/blob/develop/code/libraries/koowa/components/com_koowa/controller/permission/abstract.php\">Default permission handling</a> is provided out-of-the-box. Custom permissions can be easliy added."
         }
     ]
 }
