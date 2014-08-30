@@ -23,7 +23,7 @@
     border-color: darken($brand-primary, 20%);
     background: $brand-primary;
     color: #fff;
-    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,1);
+    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,1);
 
     .lines, .lines:before, .lines:after {
       background: #fff;
