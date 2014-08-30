@@ -1,6 +1,10 @@
 .navigation_container {
   font-size: 0;
   line-height: 0;
+
+  @include respond-min($breakpoint-beta) {
+    text-align: right;
+  }
 }
 
 .navbar {
