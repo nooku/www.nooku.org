@@ -24,7 +24,8 @@
 }
 
 .navbar__item {
-   @include respond-min($breakpoint-beta) {
+  @include respond-min($breakpoint-beta) {
+    float: left;
     margin: 0 8px;
     font-size: 16px;
   }
