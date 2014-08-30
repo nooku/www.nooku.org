@@ -19,11 +19,11 @@
     padding-left: 6px;
   }
 
-  &:focus {
-    border-color: $brand-primary;
-    outline: none;
+  &.togglebutton--closed {
+    border-color: darken($brand-primary, 20%);
     background: $brand-primary;
     color: #fff;
+    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,1);
 
     .lines, .lines:before, .lines:after {
       background: #fff;
@@ -95,7 +95,7 @@
     }
 
     // Three-lines to x
-    &.close {
+    &.togglebutton--closed {
       .lines {
         background: transparent;
 
