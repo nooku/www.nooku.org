@@ -11,7 +11,7 @@ description:
     {% for feature in site.data.features.items | sort:"title" %}
     <div class="media">
         <h2 class="media__title">{{ feature.title }}</h2>
-        <p class="media__text">{{ feature.description }}</p>
+        <p class="media__body">{{ feature.description }}</p>
     </div>
     {% endfor %}
 </div>

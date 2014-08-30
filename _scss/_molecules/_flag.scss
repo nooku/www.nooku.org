@@ -15,7 +15,6 @@
   .flag--bottom & {
     vertical-align: bottom;
   }
-
 }
 
 .flag__image {
@@ -31,6 +30,11 @@
     padding-left: $spacing-xs;
   }
 
+  > .icon {
+    @extend %circle--icon;
+    line-height: 78px;
+    margin: 0 $spacing-s 0 0;
+  }
 }
 
 .flag__body {

@@ -1,3 +1,9 @@
+.framework_features {
+  @extend %cf;
+  font-size: 1.0625em;
+  padding-top: $spacing-s;
+}
+
 .builtwith {
   @extend %cf;
   padding: $spacing-xs 0;
