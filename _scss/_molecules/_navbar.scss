@@ -12,22 +12,22 @@
   padding: 4px 0 0;
   margin: 20px 0 0;
 
-  @include respond-min($breakpoint-alpha) {
-    @include column-count(2);
-  }
-
   @include respond-min($breakpoint-beta) {
-    @include column-count(1);
     display: inline-block;
     margin: 0;
   }
 }
 
 .navbar__item {
-  @include respond-min($breakpoint-beta) {
+  @include respond-min(320px) {
     float: left;
+    width: 50%;
+  }
+
+  @include respond-min($breakpoint-beta) {
     margin: 0 8px;
     font-size: 16px;
+    width: auto;
   }
 
   @include respond-min($breakpoint-charlie) {
