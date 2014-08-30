@@ -1,5 +1,5 @@
 .teaser {
-  padding: $spacing-xxl 0 $spacing-m;
+  padding: $spacing-xxl 0 $spacing-s;
   border: 1px solid $navy;
   border-left: 0;
   border-right: 0;
@@ -35,7 +35,7 @@
   .stats__twitter,
   .stats__google {
     display: inline-block;
-    margin: 0 $spacing-s;
+    margin: 0 $spacing-s $spacing-xs;
   }
 
 }
