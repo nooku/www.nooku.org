@@ -10,24 +10,23 @@
   }
 
   .thumbnail {
-    line-height: 100px;
+    line-height: 112px;
     height: 112px;
     text-align: center;
     display: block;
-    background: #f9f9f9;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #fff;
     border-radius: 6px;
     transition: all .2s ease-in-out;
 
     &:hover {
-      border: 1px solid #bbb;
+      border: 1px solid $brand-primary--light;
     }
 
     img {
       display: inline-block;
       vertical-align: middle;
-      max-height: 80%;
-      max-width: 80%;
+      max-height: 70%;
+      max-width: 70%;
     }
   }
 }
