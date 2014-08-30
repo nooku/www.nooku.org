@@ -32,3 +32,13 @@
 .github {
   @extend .icon-nooku-github;
 }
+
+@mixin icon-color($color)
+{
+  border-color: lighten($color, 15%) !important; color: $color !important;
+}
+
+.icon--red      { @include icon-color($color-red); }
+.icon--blue     { @include icon-color($color-blue); }
+.icon--green    { @include icon-color($color-green); }
+.icon--orange   { @include icon-color($color-orange); }
