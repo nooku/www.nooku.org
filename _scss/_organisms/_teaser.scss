@@ -1,5 +1,5 @@
 .teaser {
-  padding: $spacing-xxl 0 $spacing-s;
+  padding: $spacing-xl $spacing-m $spacing-s;
   border: 1px solid $navy;
   border-left: 0;
   border-right: 0;
@@ -9,8 +9,14 @@
   text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 
   h1 {
-    font-size: 2.5em;
+    font-size: 2.125em;
     margin-bottom: 0;
+  }
+
+  @include respond-min($breakpoint-beta) {
+    h1 {
+      font-size: 2.5em;
+    }
   }
 
   @at-root .teaser__content {
