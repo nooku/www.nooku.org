@@ -23,6 +23,7 @@ $susy: (
   @include container;
 }
 
+.builtwith,
 .trusted_by {
   li {
     @include gallery(6 of 12);
@@ -38,10 +39,6 @@ $susy: (
 
   .header__navigation {
     @include span(9 of 12);
-  }
-
-  .builtwith li {
-    @include gallery(6 of 12);
   }
 }
 
