@@ -9,8 +9,11 @@
 }
 
 .navigation_container {
+  @extend %cf;
   font-size: 0;
   line-height: 0;
+  font-family: $base-font;
+  font-weight: $base-font-weight;
 
   @include respond-min($breakpoint-beta) {
     text-align: right;
@@ -18,6 +21,7 @@
 }
 
 .navbar {
+  @extend %cf;
   font-size: 18px;
   line-height: 24px;
   z-index: 2;
