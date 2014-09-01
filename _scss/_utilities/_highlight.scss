@@ -11,6 +11,32 @@
     margin: 0;
     text-align: left;
     overflow: auto;
+
+    $selectioncolor: darken(#073642, 10%);
+
+    &::selection {
+      background: $selectioncolor;
+    }
+
+    &::-moz-selection {
+      background: $selectioncolor;
+    }
+
+    code::selection {
+      background: $selectioncolor;
+    }
+
+    code::-moz-selection {
+      background: $selectioncolor;
+    }
+
+    span::selection {
+      background: $selectioncolor;
+    }
+
+    span::-moz-selection {
+      background: $selectioncolor;
+    }
   }
 }
 

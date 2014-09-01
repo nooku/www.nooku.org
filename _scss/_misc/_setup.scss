@@ -20,6 +20,7 @@ body select:focus,
 body button:focus,
 body label[for]:focus {
   outline: 3px solid $focus-color;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, hgroup,

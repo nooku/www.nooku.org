@@ -76,6 +76,10 @@
       border-bottom-color: $brand-primary--light;
     }
 
+    &:focus {
+      border-bottom-color: transparent;
+    }
+
     @include respond-min($breakpoint-beta) {
       display: inline-block;
     }
