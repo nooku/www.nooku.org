@@ -38,12 +38,17 @@
   @extend .icon-nooku-feed;
 }
 
-@mixin icon-color($color)
-{
-  border-color: lighten($color, 15%) !important; color: $color !important;
-}
+.service__icon {
+  border-right: none;
+  border-bottom: 1px dashed #88D8FD;
 
-.icon--red      { @include icon-color($color-red); }
-.icon--blue     { @include icon-color($color-blue); }
-.icon--green    { @include icon-color($color-green); }
-.icon--orange   { @include icon-color($color-orange); }
+  @include respond-min($breakpoint-alpha) {
+    border-right: 1px dashed #88D8FD;
+    border-bottom: none;
+  }
+
+  @include respond-min($breakpoint-charlie) {
+    border-right: none;
+    border-bottom: 1px dashed #88D8FD;
+  }
+}

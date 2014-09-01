@@ -11,7 +11,7 @@
 }
 
 .service__icon {
-  @extend %circle--icon;
+  @extend %icon--large;
   line-height: 78px;
   margin-bottom: $spacing-m;
 }

@@ -9,16 +9,16 @@
   }
 }
 
-%circle--icon {
+%icon--large {
   display: block;
   width: 78px;
   height: 78px;
   background: transparent;
-  border: 1px solid #88D8FD;
+  border: 1px solid transparent;
   text-align: center;
   line-height: 78px;
   color: $brand-primary;
-  border-radius: 78px;
   font-size: 40px;
   margin: 0 auto;
+  border-right: 1px dashed #88D8FD;
 }
