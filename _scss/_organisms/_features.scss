@@ -1,4 +1,9 @@
 .features {
   @extend %cf;
   padding: $spacing-s 0;
+
+  h2 {
+    border-bottom: 1px dashed #88D8FD;
+    padding-bottom: 8px;
+  }
 }
