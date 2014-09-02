@@ -1,6 +1,7 @@
 .container--content {
   padding: $spacing-xl $spacing-s $spacing-l;
 
+  /* remove this for now since this needs more work
   a:not(.thumbnail):not(.blog__header):not(.blog__readmore):not(.button):not([href*="nooku.org"]) {
     display: inline-block;
     margin-right: 1em;
@@ -29,5 +30,5 @@
       top: 50%;
       margin-top: -.5em;
     }
-  }
+  }*/
 }

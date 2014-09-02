@@ -17,7 +17,7 @@
     max-width: 200px;
 
     @include respond-min($breakpoint-charlie) {
-      max-width: none;
+      max-width: 100%;
     }
   }
 
