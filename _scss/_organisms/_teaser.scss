@@ -30,11 +30,11 @@
   }
 
   .button_container {
-    margin-bottom: $spacing-xxl;
+    margin-bottom: $spacing-xs;
+  }
 
-    a {
-      color: $brand-primary;
-    }
+  .slogan_container {
+    margin-bottom: $spacing-xxl;
   }
 
   .stats__github,

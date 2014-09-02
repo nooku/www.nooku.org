@@ -58,93 +58,100 @@
   }
 }
 
-.icon-nooku-facebook {
+.icon-nooku-extern {
   @extend %icon;
   &:before {
     content:"\f104";
   }
 }
 
-.icon-nooku-feed {
+.icon-nooku-facebook {
   @extend %icon;
   &:before {
     content:"\f105";
   }
 }
 
-.icon-nooku-github {
+.icon-nooku-feed {
   @extend %icon;
   &:before {
     content:"\f106";
   }
 }
 
-.icon-nooku-google {
+.icon-nooku-github {
   @extend %icon;
   &:before {
     content:"\f107";
   }
 }
 
-.icon-nooku-joomla {
+.icon-nooku-google {
   @extend %icon;
   &:before {
     content:"\f108";
   }
 }
 
-.icon-nooku-linkedin {
+.icon-nooku-joomla {
   @extend %icon;
   &:before {
     content:"\f109";
   }
 }
 
-.icon-nooku-nooku-logo {
+.icon-nooku-linkedin {
   @extend %icon;
   &:before {
     content:"\f10a";
   }
 }
 
-.icon-nooku-power-cord {
+.icon-nooku-nooku-logo {
   @extend %icon;
   &:before {
     content:"\f10b";
   }
 }
 
-.icon-nooku-repeat {
+.icon-nooku-power-cord {
   @extend %icon;
   &:before {
     content:"\f10c";
   }
 }
 
-.icon-nooku-stack {
+.icon-nooku-repeat {
   @extend %icon;
   &:before {
     content:"\f10d";
   }
 }
 
-.icon-nooku-stopwatch {
+.icon-nooku-stack {
   @extend %icon;
   &:before {
     content:"\f10e";
   }
 }
 
-.icon-nooku-twitter {
+.icon-nooku-stopwatch {
   @extend %icon;
   &:before {
     content:"\f10f";
   }
 }
 
-.icon-nooku-user4 {
+.icon-nooku-twitter {
   @extend %icon;
   &:before {
     content:"\f110";
+  }
+}
+
+.icon-nooku-user4 {
+  @extend %icon;
+  &:before {
+    content:"\f111";
   }
 }

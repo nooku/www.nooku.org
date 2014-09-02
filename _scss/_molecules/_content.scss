@@ -1,3 +1,8 @@
 .container--content {
   padding: $spacing-xl $spacing-s $spacing-l;
+
+  a:not(.thumbnail):not(.button):not([href*="nooku.org"]):after {
+    font-family: Helvetica, Arial, sans-serif;
+    content:" →";
+  }
 }

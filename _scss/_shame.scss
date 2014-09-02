@@ -1,0 +1,10 @@
+.cta_container {
+  background: #eee;
+  padding: $spacing-l 0;
+  border-top: 1px solid #ddd;
+
+  span {
+    display: inline-block;
+    margin: 0 $spacing-m;
+  }
+}

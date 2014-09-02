@@ -12,6 +12,11 @@
     a {
       text-decoration: none;
       color: $brand-primary;
+
+      &:hover {
+        text-decoration: underline;
+        color: lighten($brand-primary, 10%);
+      }
     }
   }
 
