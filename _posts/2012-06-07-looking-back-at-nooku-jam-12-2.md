@@ -14,6 +14,8 @@ tags:
 
 The [Jam][1], sponsored by [Mindk][2], [Beyounic][3] and [Timble][4], was an inspiring weekend for the Nooku community.
 
+<!--more-->
+
 <p dir="ltr">
   The recipe: great ideas, creative people, lots of food and Belgian beer and an inspiring venue! Check our <a href="http://www.flickr.com/photos/nooku/sets/72157630033392080/">photostream</a> or read Tom’s story on <a href="http://sfy.co/12pR">storify</a> for evidence of the inspiring weekend.
 </p>
@@ -37,8 +39,6 @@ Lot’s of other great sessions too. A handful to mention:
 Of course in true Nooku tradition there was [cake][13] to celebrate [Nooku’s 4th birthday][14]. Hip hip hooray!
 
 Curious about what other people had to say about their Jam experience? Checkout the [blog post][15] from the [moyoweb][16] guys.
-
-<!--more-->
 
 <h3 dir="ltr">
   Thank you sponsors!

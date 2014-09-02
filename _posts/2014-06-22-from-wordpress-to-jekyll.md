@@ -10,15 +10,15 @@ Did you notice? Probably not. Last month we switched off the database responsibl
 <img src="https://farm6.staticflickr.com/5114/14294033867_cd87468a66_z.jpg" alt="jekyll" width="100%" />
 
 For those not familiar, Jekyll is an awesome open source generator of static sites written in Ruby. Jekyll can generate HTML pages from [Markdown][5] and other markup syntax, without the
-need for a database. 
-
-Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge. If you have a group of uber trained geeks running around, well, Wordpress is a bit overkill.
-
-Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, because the blog is now a static site it also provides a few additional benefits:  
+need for a database.
 
 <!--more-->
 
-*  We don't need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.
+Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge. If you have a group of uber trained geeks running around, well, Wordpress is a bit overkill.
+
+Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, because the blog is now a static site it also provides a few additional benefits:
+
+* We don't need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.
 * We now have an improved publishing flow for the team using [Git][6], and one less login account for each of us to remember.
 
 ## How to switch from Wordpress to Jekyll.

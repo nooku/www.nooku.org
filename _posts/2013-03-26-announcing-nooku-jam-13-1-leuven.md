@@ -13,11 +13,11 @@ tags:
 ---
 We are happy to announce [Nooku Jam 13.1][1] which is taking place on Thursday 2 & Friday 3 May 2013 at the [FlandersDC Creativity Lab][2] in Leuven, BE. Learn everything about the latest Nooku 13.1 release!
 
+<!--more-->
+
 Once again Nookuers from all over will come together. Expect lot&#8217;s of fun and two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.
 
 [Sign up for Nooku Jam 13.1 today!][1]
-
-<!--more-->
 
 ### Looking back at the past months
 
