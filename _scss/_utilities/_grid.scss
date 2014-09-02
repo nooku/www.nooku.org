@@ -43,7 +43,7 @@
     }
   }
 
-  .event {
+  .events--past .event {
     @include gallery(6 of 12);
   }
 }
