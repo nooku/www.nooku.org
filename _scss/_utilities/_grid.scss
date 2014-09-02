@@ -46,6 +46,10 @@
   .event {
     @include gallery(6 of 12);
   }
+
+  .jam__item {
+    @include gallery(6 of 12)
+  }
 }
 
 @include respond-min($breakpoint-delta) {
