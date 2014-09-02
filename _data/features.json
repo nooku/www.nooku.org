@@ -46,7 +46,7 @@
         },
         {
             "title": "Groups and permissions",
-            "description": "Nooku's permission system integrates seamlessly with the <a href=\"http://docs.joomla.org/Access_Control_List\">Joomla ACL</a>. <a href=\"https://github.com/nooku/nooku-framework/blob/develop/code/libraries/koowa/components/com_koowa/controller/permission/abstract.php\">Default permission handling</a> is provided out-of-the-box. Custom permissions can be easliy added."
+            "description": "Nooku's permission system integrates seamlessly with the <a href=\"http://docs.joomla.org/Access_Control_List\">Joomla ACL</a>. <a href=\"https://github.com/nooku/nooku-framework/blob/develop/code/libraries/koowa/components/com_koowa/controller/permission/abstract.php\">Default permission handling</a> is provided out-of-the-box. Custom permissions can be easily added."
         }
     ]
 }
