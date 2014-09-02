@@ -3,8 +3,21 @@
   padding: $spacing-l 0;
   border-top: 1px solid #ddd;
 
-  span {
+  #fieldEmail {
+    width: 100%;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    height: 47px;
+    line-height: 47px;
+    margin: 0 10px;
     display: inline-block;
-    margin: 0 $spacing-m;
+    position: relative;
+    top: 3px;
+    margin-bottom: 16px;
   }
 }
+

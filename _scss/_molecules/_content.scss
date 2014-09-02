@@ -1,8 +1,33 @@
 .container--content {
   padding: $spacing-xl $spacing-s $spacing-l;
 
-  a:not(.thumbnail):not(.button):not([href*="nooku.org"]):after {
-    font-family: Helvetica, Arial, sans-serif;
-    content:" →";
+  a:not(.thumbnail):not(.button):not([href*="nooku.org"]) {
+    display: inline-block;
+    margin-right: 1em;
+    position: relative;
+
+    &:after {
+      speak: none;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      text-transform: none;
+      line-height: 1em;
+      font-size: .75em;
+      font: {
+        style: normal;
+        variant: normal;
+        weight: normal;
+        family: 'nooku-font-icon';
+      }
+      content:" \f104";
+      display: inline-block;
+      position: absolute;
+      text-decoration: none;
+      right: -1.33333em;
+      top: 50%;
+      margin-top: -.5em;
+    }
   }
 }

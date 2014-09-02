@@ -5,7 +5,7 @@
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Tue Sep  2 09:41:28 2014
+Created by FontForge 20120731 at Tue Sep  2 12:46:02 2014
  By Robin Poort
 Created by Robin Poort with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -36,7 +36,7 @@ c13 -22 70 30 42 -17c-18 -33 -66 -105 -60 -143c1 -55 -56 -11 -76 7c-13 36 -5 100
 c15 7 -25 25 -4 22c10 1 47 13 37 21c20 12 36 -29 55 1c14 23 -6 28 -23 16c-10 11 17 35 41 45c8 3 15 6 21 5c12 -14 35 -17 36 1c-30 14 -63 22 -97 22c-49 0 -96 -15 -134 -44c10 -5 17 -10 7 -18c-8 -23 -39 -54 -67 -50c-14 -25 -24 -52 -28 -80c23 -8 29 -23 24 -28
 c-12 -10 -19 -25 -23 -41c8 -46 29 -87 63 -121c42 -42 98 -66 158 -66s116 24 158 66z" />
     <glyph glyph-name="uniF104" unicode="&#xf104;" 
-d="M128 448h384v-384l-128 128l-256 -256l-128 128l256 256z" />
+d="M200 448h312v-312l-104 104l-56 -56v-248h-352v352h248l56 56zM320 -32v184l-120 -120l-104 104l120 120h-184v-288h288zM480 213v203h-203l49 -49l23 -23l-23 -23l-33 -33h1l-152 -152l58 -58l152 152v-1l33 33l23 23l23 -23z" />
     <glyph glyph-name="uniF105" unicode="&#xf105;" horiz-adv-x="239" 
 d="M-128 448zM160 -64h-96v256h-64v88h64v52c0 72 19 116 104 116h71v-88h-44c-33 0 -35 -13 -35 -36v-44h79l-9 -88h-70v-256v0z" />
     <glyph glyph-name="uniF106" unicode="&#xf106;" 
