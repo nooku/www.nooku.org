@@ -7,7 +7,7 @@ permalink: /blog/2013/03/from-wordpress-to-jekyll/
 
 Did you notice? Probably not. Last month we switched off the database responsible for keeping our blog up and running and moved to a static solution using [Jekyll][1].
 
-[<img src="https://farm6.staticflickr.com/5114/14294033867_cd87468a66_z.jpg" alt="jekyll" width="100%" />][1]
+<img src="https://farm6.staticflickr.com/5114/14294033867_cd87468a66_z.jpg" alt="jekyll" width="100%" />
 
 For those not familiar, Jekyll is an awesome open source generator of static sites written in Ruby. Jekyll can generate HTML pages from [Markdown][5] and other markup syntax, without the
 need for a database. 
