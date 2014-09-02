@@ -37,6 +37,8 @@
 }
 
 .navbar__item {
+  line-height: 24px;
+
   @include respond-min(320px) {
     float: left;
     width: 50%;
