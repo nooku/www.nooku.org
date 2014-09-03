@@ -39,11 +39,6 @@
     margin-top: 0;
   }
 
-  img {
-    border-radius: 5px;
-    height: auto;
-  }
-
   .alignright {
     float: right;
     margin-left: $spacing-s;
@@ -55,4 +50,9 @@
     margin-right: $spacing-s;
     margin-bottom: $spacing-s;
   }
+}
+
+.blog__image {
+  border-radius: 5px;
+  margin-bottom: $spacing-s;
 }

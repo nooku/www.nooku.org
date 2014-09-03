@@ -16,6 +16,9 @@ description: We are blogging since 2008 around Nooku and Joomla extension develo
         </h3>
     </header>
     <section>
+        {% if post.image %}
+        <img class="blog__image" src="{{ post.image }}" />
+        {% endif %}
         <div class="excerpt">
             {{ post.content | split:"<!--more-->" | first }}
         </div>

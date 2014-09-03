@@ -15,6 +15,10 @@ layout: compress
             </h3>
         </header>
 
+        {% if page.image %}
+        <img class="blog__image" src="{{ page.image }}" />
+        {% endif %}
+
         {{ content }}
 
         <hr>
