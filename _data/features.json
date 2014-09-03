@@ -30,7 +30,7 @@
         },
         {
             "title": "Templates",
-            "description": "Nooku's own templating engine offers a simple and expressive syntax. The engine is unintrusive, you can still use plain PHP for templating. Support for <a href=\"http://twig.sensiolabs.org/\">Twig</a> and <a href=\"http://daringfireball.net/projects/markdown/\">Markdown</a> is also provided."
+            "description": "Our templating engine offers a simple and expressive syntax. The engine is unintrusive, you can still use plain PHP for templating. Support for <a href=\"http://twig.sensiolabs.org/\">Twig</a>, <a href=\"http://mustache.github.io/\">Mustache</a> and <a href=\"http://daringfireball.net/projects/markdown/\">Markdown</a> is also provided."
         },
         {
             "title": "Behavior driven",
