@@ -1,0 +1,21 @@
+---
+layout: default
+title: Nooku is different | Features
+description: Our goal is to make it easier for developers to create more powerful custom extensions.
+---
+
+<h1 class="text--center">Nooku is different</h1>
+<p class="subtitle">Our goal is to make it easier for developers to create more powerful custom extensions.</p>
+
+<div class="features">
+    {% for feature in site.data.features.items | sort:"title" %}
+    <div class="media">
+        <h2 class="media__title">{{ feature.title }}</h2>
+        <p class="media__body">{{ feature.description }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<p class="text--center">
+    <a class="button" href="/get-started/">Get started</a>
+</p>

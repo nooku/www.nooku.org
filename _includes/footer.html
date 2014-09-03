@@ -1,21 +1,26 @@
-<div class="section footer">
+<div class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <p>
-                    <a href="http://www.facebook.com/nooku.org">Facebook</a> |
-                    <a href="http://www.twitter.com/nooku">Twitter</a> |
-                    <a href="http://www.github.com/nooku">Github</a> |
-                    <a href="/blog/rss.xml">RSS</a>
+        <div class="group">
+            <div class="links_container">
+                <p class="links">
+                    {% for link in site.data.pages.footer %}
+                    <a href="{{ link.url }}" class="{{ link.text | downcase }}">{{ link.text }}</a>
+                    {% endfor %}
                 </p>
             </div>
-            <div class="copyright col-sm-6">
-                <p>Copyright {{ site.time | date: "%Y" }} <a href="http://www.timble.net">Timble</a></p>
+            <div class="copyright">
+                <p>Brought to you with <span class="heart">♥</span> by <a href="http://www.timble.net">Timble</a></p>
             </div>
         </div>
     </div>
 </div>
-</div>
-<script src="/assets/js/prism.js"></script>
+<script src="/js/scripts.js"></script>
+<script type="text/javascript">
+    responsivemenu.init({
+        wrapper: document.querySelector('.header'),
+        toggleclass: 'button--hamburger',
+        togglecontent: 'menu <span class="lines"></span>'
+    });
+</script>
 </body>
 </html>

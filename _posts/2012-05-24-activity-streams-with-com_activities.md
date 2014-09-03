@@ -47,7 +47,7 @@ tags:
   How do you use com_activities in your component? Check out this code:
 </p>
 
-<pre><code class="language-php">
+{% highlight php startinline %}
 class ComArticlesControllerArticle extends ComDefaultControllerDefault
 {
     protected function _initialize(KConfig $config)
@@ -61,7 +61,7 @@ class ComArticlesControllerArticle extends ComDefaultControllerDefault
         parent::_initialize($config);
     }
 }
-</code></pre>
+{% endhighlight %}
 
 <p style="text-align: left;">
   In your controller, simply add the “loggable” controller behavior from com_activities. By default, the loggable behavior is triggered on controller actions: add, edit and delete.
@@ -79,7 +79,7 @@ class ComArticlesControllerArticle extends ComDefaultControllerDefault
   The behavior is also flexible, you can configure it to track only certain actions such as after login, or after logout as demonstrated in this code:
 </p>
 
-<pre><code class="language-php">
+{% highlight php startinline %}
 $config-&gt;append(array(
     'behaviors' =&gt; array(
          $this-&gt;getService('com://admin/activities.controller.behavior.loggable',
@@ -88,15 +88,15 @@ $config-&gt;append(array(
              'actions'      =&gt; array('after.login', 'after.logout')
      ))),
 ));
-</code></pre>
+{% endhighlight %}
 
 <p style="text-align: left;">
   Aside from the HTML view, com_activities can also output the JSON format that follows the emerging Activity Streams standard. To do this, just append format=json in the URL e.g
 </p>
 
-<pre><code class="language-php">
+{% highlight php startinline %}
 index.php?com_activities&view=activities&format=json.
-</code></pre>
+{% endhighlight %}
 
 <p style="text-align: left;">
   Using Nooku’s RESTful architecture, you can syndicate your component’s activity stream without additional effort.

@@ -1,0 +1,40 @@
+.flag {
+  display: table;
+  width: 100%;
+}
+
+.flag__image,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+
+  .flag--top & {
+    vertical-align: top;
+  }
+
+  .flag--bottom & {
+    vertical-align: bottom;
+  }
+}
+
+.flag__image {
+  > img {
+    display: block;
+    max-width: none;
+  }
+
+  .flag--rev & {
+    padding-right: 0;
+    padding-left: $spacing-xs;
+  }
+
+  > .icon {
+    @extend %icon--large;
+    line-height: 78px;
+    margin: 0 $spacing-s 0 0;
+  }
+}
+
+.flag__body {
+  width: 100%;
+}

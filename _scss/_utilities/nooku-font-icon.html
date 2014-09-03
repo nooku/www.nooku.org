@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>nooku-font-icon</title>
+		<style>
+		body {
+			margin:0;
+			padding:10px 20px;
+			background:#fff;
+			color:#222;
+			}
+		h1, div, footer {
+			font-family:"Helvetica Neue", Arial, sans-serif;
+			}
+		h1 {
+			margin:0 0 20px;
+			font-size:32px;
+			font-weight:normal;
+			}
+		.icons {
+			margin-bottom:40px;
+			-webkit-column-count:5;
+			   -moz-column-count:5;
+			        column-count:5;
+			-webkit-column-gap:20px;
+			   -moz-column-gap:20px;
+			        column-gap:20px;
+			}
+		.icons__item,
+		.icons__item i {
+			line-height:2em;
+			cursor:pointer;
+			}
+		.icons__item:hover {
+			color:#3c90be;
+			}
+		.icons__item i {
+			display:inline-block;
+			width:32px;
+			text-align:center;
+			}
+		.icons__item:hover i {
+			-webkit-transform:scale(1.5);
+			        transform:scale(1.5);
+			}
+		footer {
+			margin-top:40px;
+			font-size:14px;
+			color:#999;
+			}
+
+		@font-face {
+  font-family: "nooku-font-icon";
+  src:    url("../fonts/icons/nooku-font-icon.eot");
+  src:    url("../fonts/icons/nooku-font-icon.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/icons/nooku-font-icon.woff") format("woff"),
+  url("../fonts/icons/nooku-font-icon.ttf") format("truetype"),
+  url("../fonts/icons/nooku-font-icon.svg#nooku-font-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "nooku-font-icon";
+    src: url("../fonts/icons/nooku-font-icon.svg#nooku-font-icon") format("svg");
+  }
+}
+
+/* Font icon pseudo-element base styles */
+%icon {
+  speak: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-transform: none;
+  line-height: 1;
+  font: {
+    style: normal;
+    variant: normal;
+    weight: normal;
+    family: 'nooku-font-icon';
+  }
+  &:before {
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+
+.icon-nooku-briefcase {
+  @extend %icon;
+  &:before {
+    content:"\f101";
+  }
+}
+
+.icon-nooku-code {
+  @extend %icon;
+  &:before {
+    content:"\f102";
+  }
+}
+
+.icon-nooku-earth {
+  @extend %icon;
+  &:before {
+    content:"\f103";
+  }
+}
+
+.icon-nooku-extern {
+  @extend %icon;
+  &:before {
+    content:"\f104";
+  }
+}
+
+.icon-nooku-facebook {
+  @extend %icon;
+  &:before {
+    content:"\f105";
+  }
+}
+
+.icon-nooku-feed {
+  @extend %icon;
+  &:before {
+    content:"\f106";
+  }
+}
+
+.icon-nooku-github {
+  @extend %icon;
+  &:before {
+    content:"\f107";
+  }
+}
+
+.icon-nooku-google {
+  @extend %icon;
+  &:before {
+    content:"\f108";
+  }
+}
+
+.icon-nooku-joomla {
+  @extend %icon;
+  &:before {
+    content:"\f109";
+  }
+}
+
+.icon-nooku-linkedin {
+  @extend %icon;
+  &:before {
+    content:"\f10a";
+  }
+}
+
+.icon-nooku-nooku-logo {
+  @extend %icon;
+  &:before {
+    content:"\f10b";
+  }
+}
+
+.icon-nooku-power-cord {
+  @extend %icon;
+  &:before {
+    content:"\f10c";
+  }
+}
+
+.icon-nooku-repeat {
+  @extend %icon;
+  &:before {
+    content:"\f10d";
+  }
+}
+
+.icon-nooku-stack {
+  @extend %icon;
+  &:before {
+    content:"\f10e";
+  }
+}
+
+.icon-nooku-stopwatch {
+  @extend %icon;
+  &:before {
+    content:"\f10f";
+  }
+}
+
+.icon-nooku-twitter {
+  @extend %icon;
+  &:before {
+    content:"\f110";
+  }
+}
+
+.icon-nooku-user4 {
+  @extend %icon;
+  &:before {
+    content:"\f111";
+  }
+}
+
+		</style>
+	</head>
+	<body>
+		<h1>nooku-font-icon</h1>
+
+		<div class="icons" id="icons">
+			
+				<div class="icons__item" data-name="briefcase"><i class="icon-nooku- icon-nooku-briefcase"></i> icon-nooku-briefcase</div>
+			
+				<div class="icons__item" data-name="code"><i class="icon-nooku- icon-nooku-code"></i> icon-nooku-code</div>
+			
+				<div class="icons__item" data-name="earth"><i class="icon-nooku- icon-nooku-earth"></i> icon-nooku-earth</div>
+			
+				<div class="icons__item" data-name="extern"><i class="icon-nooku- icon-nooku-extern"></i> icon-nooku-extern</div>
+			
+				<div class="icons__item" data-name="facebook"><i class="icon-nooku- icon-nooku-facebook"></i> icon-nooku-facebook</div>
+			
+				<div class="icons__item" data-name="feed"><i class="icon-nooku- icon-nooku-feed"></i> icon-nooku-feed</div>
+			
+				<div class="icons__item" data-name="github"><i class="icon-nooku- icon-nooku-github"></i> icon-nooku-github</div>
+			
+				<div class="icons__item" data-name="google"><i class="icon-nooku- icon-nooku-google"></i> icon-nooku-google</div>
+			
+				<div class="icons__item" data-name="joomla"><i class="icon-nooku- icon-nooku-joomla"></i> icon-nooku-joomla</div>
+			
+				<div class="icons__item" data-name="linkedin"><i class="icon-nooku- icon-nooku-linkedin"></i> icon-nooku-linkedin</div>
+			
+				<div class="icons__item" data-name="nooku-logo"><i class="icon-nooku- icon-nooku-nooku-logo"></i> icon-nooku-nooku-logo</div>
+			
+				<div class="icons__item" data-name="power-cord"><i class="icon-nooku- icon-nooku-power-cord"></i> icon-nooku-power-cord</div>
+			
+				<div class="icons__item" data-name="repeat"><i class="icon-nooku- icon-nooku-repeat"></i> icon-nooku-repeat</div>
+			
+				<div class="icons__item" data-name="stack"><i class="icon-nooku- icon-nooku-stack"></i> icon-nooku-stack</div>
+			
+				<div class="icons__item" data-name="stopwatch"><i class="icon-nooku- icon-nooku-stopwatch"></i> icon-nooku-stopwatch</div>
+			
+				<div class="icons__item" data-name="twitter"><i class="icon-nooku- icon-nooku-twitter"></i> icon-nooku-twitter</div>
+			
+				<div class="icons__item" data-name="user4"><i class="icon-nooku- icon-nooku-user4"></i> icon-nooku-user4</div>
+			
+		</div>
+
+		
+
+		<h1>Usage</h1>
+		<pre><code>&lt;i class=&quot;icon-nooku- icon-nooku-<span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+		
+
+		<footer>Generated by <a href="https://github.com/sapegin/grunt-webfont">grunt-webfont</a>.</footer>
+
+		<script>
+		(function() {
+			document.getElementById('icons').onclick = function(e) {
+				e = e || window.event;
+				var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
+				document.getElementById('name').innerHTML = name;
+				document.getElementById('name2').innerHTML = name;
+			}
+		})();
+		</script>
+	</body>
+</html>

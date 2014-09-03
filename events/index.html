@@ -1,13 +1,18 @@
 ---
-layout: events
-title: Events | Nooku
-rooturl: events
+layout: default
+title: Nooku around the world
+description: Mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.
 ---
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
 <div class="event_container">
-    <div class="events"><!--
+    <div class="events_container">
+        <h1>Upcoming events</h1>
+        <div class="events events--upcoming">
         {% for event in site.events reversed %}
-        --><div class="event">
+        {% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
+        {% if event_date >= nowunix %}
+        <div class="event">
             <header class="event__header">
                 <h1 class="event__title" role="heading">{{ event.title }}</h1>
                 <div class="event__date">
@@ -19,11 +24,41 @@ rooturl: events
             <div class="event__image" style="background-image: url('../{{event.image}}');" aria-hidden="true"></div>
             <div class="event__content">
                 {{ event.output }}
+
                 {% if event.readmore %}
-                <p><a class="btn btn-default btn-sm" href="{{event.readmore}}">Read more</a></p>
+                <p class="text--center"><a class="button" href="{{event.readmore}}">Get your ticket</a></p>
                 {% endif %}
             </div>
-        </div><!--
+        </div>
+        {% endif %}
         {% endfor %}
-    --></div>
+        </div>
+
+        <h1>Past events</h1>
+        <div class="events events--past">
+        {% for event in site.events reversed %}
+        {% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
+        {% if event_date < nowunix %}
+        <div class="event">
+            <header class="event__header">
+                <h1 class="event__title" role="heading">{{ event.title }}</h1>
+                <div class="event__date">
+                    <div class="event__date__year">{{ event.date | date: "%Y" }}</div>
+                    <div class="event__date__month">{{ event.date | date: "%b" }}</div>
+                    <div class="event__date__day">{{ event.date | date: "%-d" }}</div>
+                </div>
+            </header>
+            <div class="event__image" style="background-image: url('../{{event.image}}');" aria-hidden="true"></div>
+            <div class="event__content">
+                {{ event.output }}
+
+                {% if event.readmore %}
+                <p><a href="{{event.readmore}}">Read more</a></p>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+    </div>
 </div>

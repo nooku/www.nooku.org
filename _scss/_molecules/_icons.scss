@@ -1,0 +1,54 @@
+.facebook,
+.twitter,
+.github,
+.feed {
+  display: inline-block;
+  width: 20px;
+  height: 0;
+  padding-top: $spacing-s;
+  overflow: hidden;
+  position: relative;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.facebook {
+  @extend .icon-nooku-facebook;
+}
+
+.twitter {
+  @extend .icon-nooku-twitter;
+}
+
+.github {
+  @extend .icon-nooku-github;
+}
+
+.feed {
+  @extend .icon-nooku-feed;
+}
+
+.service__icon {
+  border-right: none;
+  border-bottom: 1px dashed #88D8FD;
+
+  @include respond-min($breakpoint-alpha) {
+    border-right: 1px dashed #88D8FD;
+    border-bottom: none;
+  }
+
+  @include respond-min($breakpoint-charlie) {
+    border-right: none;
+    border-bottom: 1px dashed #88D8FD;
+  }
+}

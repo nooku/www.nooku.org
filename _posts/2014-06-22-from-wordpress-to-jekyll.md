@@ -7,18 +7,18 @@ permalink: /blog/2013/03/from-wordpress-to-jekyll/
 
 Did you notice? Probably not. Last month we switched off the database responsible for keeping our blog up and running and moved to a static solution using [Jekyll][1].
 
-[<img src="https://farm6.staticflickr.com/5114/14294033867_cd87468a66_z.jpg" alt="jekyll" width="100%" />][1]
+<img src="https://farm6.staticflickr.com/5114/14294033867_cd87468a66_z.jpg" alt="jekyll" width="100%" />
 
 For those not familiar, Jekyll is an awesome open source generator of static sites written in Ruby. Jekyll can generate HTML pages from [Markdown][5] and other markup syntax, without the
-need for a database. 
-
-Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge. If you have a group of uber trained geeks running around, well, Wordpress is a bit overkill.
-
-Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, because the blog is now a static site it also provides a few additional benefits:  
+need for a database.
 
 <!--more-->
 
-*  We don't need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.
+Don’t get us wrong. Wordpress is great for blogging, if you are looking for a simple and streamlined user interface that requires almost no technical knowledge. If you have a group of uber trained geeks running around, well, Wordpress is a bit overkill.
+
+Jekyll to the rescue! Jekyll not only makes things simpler, leaner and faster, because the blog is now a static site it also provides a few additional benefits:
+
+* We don't need to run php and mysql where we host the blog, resulting in less resources used on our servers, near to zero maintenance and increased security.
 * We now have an improved publishing flow for the team using [Git][6], and one less login account for each of us to remember.
 
 ## How to switch from Wordpress to Jekyll.
@@ -32,17 +32,17 @@ Luckily Jekyll allow for plugins to be added in order to solve such needs, and a
 
 ### 3. Adding readmore separator to post lists. 
 When exporting wordpress posts using the Jekyll exporter, the Wordpress read more markup is exported as well into the new markdown files, in the form of:
-<pre><code class="language-html"> <!--more--> </code></pre>
+{% highlight html %} <!--more--> {% endhighlight %}
   
 By taking advantage of [Liquid][4] (the template engine that come with jekyll, which supports HTML as well as various flavours of markdown) you can simply use the liquid split filter by writing something like this:
-<pre><code class="language-html">{% raw %}{{ post.content | split:"<!--more-->" | first }}{% endraw %}</code></pre>
+{% highlight html %}{% raw %}{{ post.content | split:"<!--more-->" | first }}{% endraw %}{% endhighlight %}
 
 ### 4. Disquss threads. 
 We have some nice discussions going on here on the blog and we didn't want to lose them. Thankfully the Jekyll exporter also add the “dsq_thread_id”  to the generated markdown files. You can just access them via Liquid where you call the Disqus js plugin:
-<pre><code class="language-html">{% raw %}
+{% highlight html %}{% raw %}
 var disqus_identifier = '{{ page.dsq_thread_id }}'; 
 var disqus_url = 'http://blog.nooku.org{{ page.permalink }}'; 
-{% endraw %}</code></pre>
+{% endraw %}{% endhighlight %}
 ( the same with the url and permalink)
 
 

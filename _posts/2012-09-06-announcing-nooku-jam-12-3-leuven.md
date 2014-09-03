@@ -12,11 +12,11 @@ tags:
 ---
 We are happy to announce [Nooku Jam 12.3 Leuven][1] which is taking place on the 18-19th of October 2012 at the [FlandersDC Creativity Lab][2] in Leuven, BE. Learn everything about the latest Nooku 12.3 release and how we are leaving our Joomla legacy behind !
 
+<!--more-->
+
 Once again Nookuers from all over will come together. Expect lot&#8217;s of fun and two days of mind blowing presentations, discussions, brainstorms, workshops, and hackathons around specific areas of the Nooku project.
 
 [Sign up][1] for Nooku Jam 12.3 Leuven today!
-
-<!--more-->
 
 ### Looking back at Nooku Jam 12.2
 

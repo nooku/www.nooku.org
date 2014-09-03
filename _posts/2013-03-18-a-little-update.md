@@ -11,6 +11,8 @@ categories:
 ---
 It has been a little bit quiet in the past months on the blog. Some rumoured that Nooku is death, others claimed we moved to Mars, &#8230; in good Nooku tradition no news is good news! Stick to the code, right?!
 
+<!--more-->
+
 Those of you who followed us closely have noticed the [constant stream of progress at lightning speed][1]. Anything slower, is simply not fast enough.
 
 Here is a little big update right from the coding frontline. Make yourself a coffee, get a beer, sit back relax. Here we go!
@@ -19,8 +21,7 @@ Here is a little big update right from the coding frontline. Make yourself a cof
 
 The Nooku code base has been moved to [Git][2] at the beginning of the year. The SVN repositories are abandoned. They are probably invested with vermin, bugs, and other little unwanted creatures. Lights have been turned off, go there on your own accord. You have been warned!
 
-The Nooku codebase has been brought back to onto 2 spaces on Assembla: [Nooku Framework][3] & [Nooku Server][4].  
-<!--more-->
+The Nooku codebase has been brought back to onto 2 spaces on Assembla: [Nooku Framework][3] & [Nooku Server][4].
 
 ### Nooku Framework
 

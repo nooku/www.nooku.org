@@ -1,0 +1,21 @@
+.platform {
+  &:before {
+    display: block;
+    content: " ";
+    height: 16px;
+    width: 100%;
+  }
+
+  @include respond-min($breakpoint-beta) {
+    margin-top: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.what_platform {
+  max-width: 700px;
+  margin: 0 auto;
+}

@@ -1,0 +1,63 @@
+// Responsive breakpoints
+$breakpoint-alpha:      25em;                                 // 400px
+$breakpoint-beta:       37.5em;                               // 600px  Small tablets
+$breakpoint-charlie:    48em;                                 // 768px  Portrait bigger tablets
+$breakpoint-delta:      64em;                                 // 1024px Landscape bigger tablets
+$breakpoint-echo:       75em;                                 // 1200px Laptops
+$breakpoint-foxtrot:    90em;                                 // 1440px Desktop
+$breakpoint-golf:       100em;                                // 1600px Extra wide
+
+$white: #FFF;
+$gray-lighter: #eee;
+$color-body: #333;
+
+$brand-primary:         #085DAD;
+$brand-primary--light:  lighten($brand-primary, 50%);
+$navy: darken($brand-primary, 10%);
+
+$color-blue:    #156daa;
+$color-green:   #58a135;
+$color-orange:  #f58d32;
+$color-red:     #e12b28;
+
+$base-font: 'Roboto', Helvetica, Arial, sans-serif;
+$base-font-weight: 300;
+
+$font-size-base:          16px;
+$line-height-base:        1.5em;
+
+// Basics of a navbar
+$navbar-height:                    30px;
+
+$navbar-default-color:             #FFF;
+$navbar-default-bg:                darken($navy, 5%);
+$navbar-default-border:            darken($navbar-default-bg, 12%);
+
+// Navbar links
+$navbar-default-link-color:                #FFF;
+$navbar-default-link-hover-color:          #FFF;
+$navbar-default-link-hover-bg:             lighten($navy, 10%);
+$navbar-default-link-active-color:         #FFF;
+$navbar-default-link-active-bg:            lighten($navy, 10%);
+
+$color-border: #e5e5e5;
+
+$visited: #609;
+
+$focus-color: #EABF36;
+
+$spacing-xxl: 60px;
+$spacing-xl:  50px;
+$spacing-l:   40px;
+$spacing-m:   30px;
+$spacing-s:   20px;
+$spacing-xs:  10px;
+
+
+
+// Susy grid
+$gutter-width: 3em;
+$susy: (
+  gutters: $gutter-width/4em,
+  gutter-position: before
+);

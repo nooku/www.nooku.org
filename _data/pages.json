@@ -1,0 +1,58 @@
+{
+    "header": [
+        {
+            "text": "Features",
+            "url": "/features"
+        },
+        {
+            "text": "Get Started",
+            "url": "/get-started"
+        },
+        {
+            "text": "Services",
+            "url": "/services"
+        },
+        {
+            "text": "Guides",
+            "url": "http://guides.nooku.org"
+        },
+        {
+            "text": "API",
+            "url": "http://api.nooku.org"
+        },
+        {
+            "text": "Blog",
+            "url": "/blog"
+        }
+    ],
+    "footer": [
+        {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/nooku.org"
+        },
+        {
+            "text": "Twitter",
+            "url": "https://www.twitter.com/nooku"
+        },
+        {
+            "text": "GitHub",
+            "url": "https://www.github.com/nooku"
+        },
+        {
+            "text": "Feed",
+            "url": "/blog/rss.xml"
+        },
+        {
+            "text": "Platform",
+            "url": "/platform"
+        },
+        {
+            "text": "Manifesto",
+            "url": "/manifesto"
+        },
+        {
+            "text": "Events",
+            "url": "/events"
+        }
+    ]
+}

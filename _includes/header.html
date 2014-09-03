@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
     <title>{% if page.title %}{{page.title}}{% else %}{{site.main_title}}{% endif %}</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta content="text/html; charset=utf-8" http-equiv="content-type"  />
-    <meta name="description" content="{{site.description}}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name=”mobile-web-app-capable” content=”yes” />
-    <meta name="apple-mobile-web-app-title" content="Nooku">
+    {% include metadata.html %}
 
     <link rel="shortcut icon" type="image/ico" href="{{ site.url }}/images/favicon.ico" />
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}/images/xtouch-icon.png" />
     <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}/images/xtouch-icon.png"/>
-    <link rel="stylesheet" href="/assets/css/prism.css" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700' type='text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/style.css">
 
     <script>
@@ -30,30 +22,29 @@
 
     </script>
 </head>
-<body>
 
-<div id="wrapper">
-    <div class="section header">
-        <div class="container container-centered">
-            <div class="row">
-                <div class="brand col-sm-5">
-                    <a href="/"><img src="/assets/img/logo.jpg" height="60px" width="123px" /></a>
-                </div>
-                <div class="col-sm-7">
-                    <div class="navbar" role="navigation">
-                        <div class="container-fluid">
-                            <ul class="nav navbar-nav">
-                                {% for link in site.navigation %}
-                                {% assign current = nil %}
-                                {% if link.url == page.rooturl %}{% assign current = 'active' %}{% endif %}
-                                <li class="{{ current }}" role="menuitem">
-                                    <a href="/{{ link.url }}">{{ link.text }}</a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
+<body class="no-js">
+<script type="text/javascript">function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.body;var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg," js-enabled")}</script>
+
+<div class="header">
+    <div class="container">
+        <div class="group">
+            <div class="header__brand brand">
+                <a href="/"><img src="/images/layout/logo.png" alt="Nooku Logo" /></a>
+            </div>
+            <div class="header__navigation">
+                <div class="navigation_container" role="navigation">
+                    <ul class="navbar closed">
+                        {% for item in site.data.pages.header %}
+                        {% assign current = nil %}
+                        {% if page.url contains item.url %}{% assign current = ' active' %}{% endif %}
+                        <li class="navbar__item{{ current }}" role="menuitem">
+                            <a href="{{ item.url }}">{{ item.text }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>

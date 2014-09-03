@@ -1,0 +1,35 @@
+.services {
+  text-align: center;
+
+  .one-third {
+    margin-bottom: $spacing-m;
+  }
+}
+
+.network__contact {
+  margin-bottom: $spacing-m;
+}
+
+.service__icon {
+  @extend %icon--large;
+  line-height: 78px;
+  margin-bottom: $spacing-m;
+}
+
+@include respond-min-max($breakpoint-alpha, $breakpoint-charlie) {
+  .services {
+    text-align: left;
+
+    .one-third {
+      margin-bottom: $spacing-l;
+    }
+  }
+
+  .service__icon {
+    float: left;
+  }
+
+  .service__content {
+    margin-left: 100px;
+  }
+}

@@ -1,0 +1,73 @@
+body {
+  font-family: $base-font;
+  font-weight: $base-font-weight;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  line-height: $line-height-base;
+  color: $color-body;
+  background: #fff;
+}
+
+body a:focus,
+body input:focus,
+body textarea:focus,
+body select:focus,
+body button:focus,
+body label[for]:focus {
+  outline: 3px solid $focus-color;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr,
+.highlight,
+.excerpt {
+  margin-top: 0;
+  margin-bottom: $line-height-base;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: none;
+  color: white;
+  height: 1px;
+  background: $gray-lighter;
+  background: radial-gradient($gray-lighter 0%, #fff 75%);
+  margin: $spacing-xl 0 $spacing-l;
+  clear: both;
+}
+
+strong {
+  font-weight: 400;
+}
+
+blockquote p {
+  font-size: $font-size-base;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

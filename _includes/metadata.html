@@ -1,0 +1,38 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="text/html; charset=utf-8" http-equiv="content-type"  />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name=”mobile-web-app-capable” content=”yes” />
+<meta name="apple-mobile-web-app-status-bar-style" content="#e2e2e2">
+<meta name="apple-mobile-web-app-title" content="Nooku">
+
+{% if page.description %}
+<meta name="description" content="{{ page.description | truncate: 160 }}" />
+<meta name="twitter:description" content="{{ page.description | truncate: 160 }}" />
+{% elsif page.excerpt %}
+<meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}" />
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 160 }}" />
+{% else %}
+<meta name="description" content="{{ site.description | truncate: 160 }}" />
+<meta name="twitter:description" content="{{ site.description | truncate: 160 }}" />
+{% endif %}
+
+<meta property="og:title" content="{% if page.title %}{{page.title}}{% else %}{{site.main_title}}{% endif %}" />
+<meta name="twitter:site" content="@Nooku">
+<meta name="twitter:card" content="summary">
+{% if page.date %}
+<meta property="og:type" content="article" />
+{% else %}
+<meta property="og:type" content="website" />
+{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:site_name" content="Nooku" />
+<meta property="og:image" content="{{ site.url }}/images/xtouch-icon.png" />
+<meta property="og:image:width" content="152" />
+<meta property="og:image:height" content="152" />
+{% if page.image %}
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="{{ site.url }}/images/blog/{{ page.image }}" />
+{% endif %}
