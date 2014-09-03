@@ -2,7 +2,7 @@
 title: Belgian Police Web Platform uses Nooku
 author: Tom
 layout: post
-image: /images/blog/2014/banner-leuven.jpg
+image: /images/blog/2014/police-leuven.jpg
 ---
 
 If you have been following our blog or attended one of our [Nooku Jams](http://www.nooku.org/events/) in the past years you probably already heard us talking about the "Belgian Police Web Platform".
