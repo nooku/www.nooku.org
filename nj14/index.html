@@ -6,18 +6,18 @@ extra_footer_markup: '<script type="text/javascript">
     var map;
     function initialize() {
         var mapOptions = {
-            center: new google.maps.LatLng(51.5729932,-3.4767516),
-            zoom: 4,
+            center: new google.maps.LatLng(50.884469,4.711804),
+            zoom: 15,
             scrollwheel: false,
             keyboardShortcuts: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: [{"featureType":"water","stylers":[{"color":"#B5D0CF"},{"visibility":"on"}]},{"featureType":"landscape","stylers":[{"color":"#F2EEE8"}]},{"featureType":"road","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]}]
+            styles: [{"featureType":"all","stylers":[{"saturation":0},{"hue":"#e7ecf0"}]},{"featureType":"road","stylers":[{"saturation":-70}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"simplified"},{"saturation":-60}]}]
         };
         map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
         var marker = new google.maps.Marker({
             map: map,
             draggable: false,
-            position: new google.maps.LatLng(50.98724, 5.0475056)
+            position: new google.maps.LatLng(50.884469,4.711804)
         });
         var center;
         function calculateCenter() {
@@ -33,30 +33,15 @@ extra_footer_markup: '<script type="text/javascript">
 
     function googleMap() {
 
-        alert("yes!");
-
-        var viewportwidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        var static_container = document.getElementById("googlemap_static_container");
         var dynamic_container = document.getElementById("googlemap_dynamic_container");
 
-        if ( viewportwidth >= 600 ) {
-
-            apollo.addClass(static_container, "accessible-hide");
-            apollo.removeClass(dynamic_container, "accessible-hide");
-
-            if ( apollo.hasClass(dynamic_container, "uninitialized") ) {
-                setTimeout(function() {
-                    apollo.removeClass(dynamic_container, "uninitialized");
-                    initialize();
-                },1000);
-            }
-
-        } else {
-
-            apollo.addClass(dynamic_container, "accessible-hide");
-            apollo.removeClass(static_container, "accessible-hide");
-
+        if ( apollo.hasClass(dynamic_container, "uninitialized") ) {
+            setTimeout(function() {
+                apollo.removeClass(dynamic_container, "uninitialized");
+                initialize();
+            },1000);
         }
+
     }
     googleMap();
     google.maps.event.addDomListener(window, "resize", function() {
@@ -117,7 +102,7 @@ extra_footer_markup: '<script type="text/javascript">
     </div>
     <div class="jam__item">
         <h2>Hotels</h2>
-        <p>
+        <p style="line-height: 0;">
             <img src="/images/jams/flandersDC.jpg" alt="Flanders DC" />
         </p>
         <p>There are a number of hotels at walking distance from the venue:</p>
