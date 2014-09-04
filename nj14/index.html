@@ -2,6 +2,68 @@
 layout: nookujam
 title: Nooku Jam 14
 description: Unconference event focussed on Nooku Framework 2.0.
+extra_footer_markup: '<script type="text/javascript">
+    var map;
+    function initialize() {
+        var mapOptions = {
+            center: new google.maps.LatLng(51.5729932,-3.4767516),
+            zoom: 4,
+            scrollwheel: false,
+            keyboardShortcuts: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"featureType":"water","stylers":[{"color":"#B5D0CF"},{"visibility":"on"}]},{"featureType":"landscape","stylers":[{"color":"#F2EEE8"}]},{"featureType":"road","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]}]
+        };
+        map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+        var marker = new google.maps.Marker({
+            map: map,
+            draggable: false,
+            position: new google.maps.LatLng(50.98724, 5.0475056)
+        });
+        var center;
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+        google.maps.event.addDomListener(map, "idle", function() {
+            calculateCenter();
+        });
+        google.maps.event.addDomListener(window, "resize", function() {
+            map.setCenter(center);
+        });
+    }
+
+    function googleMap() {
+
+        alert("yes!");
+
+        var viewportwidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var static_container = document.getElementById("googlemap_static_container");
+        var dynamic_container = document.getElementById("googlemap_dynamic_container");
+
+        if ( viewportwidth >= 600 ) {
+
+            apollo.addClass(static_container, "accessible-hide");
+            apollo.removeClass(dynamic_container, "accessible-hide");
+
+            if ( apollo.hasClass(dynamic_container, "uninitialized") ) {
+                setTimeout(function() {
+                    apollo.removeClass(dynamic_container, "uninitialized");
+                    initialize();
+                },1000);
+            }
+
+        } else {
+
+            apollo.addClass(dynamic_container, "accessible-hide");
+            apollo.removeClass(static_container, "accessible-hide");
+
+        }
+    }
+    googleMap();
+    google.maps.event.addDomListener(window, "resize", function() {
+        googleMap();
+    });
+
+</script>'
 ---
 
 <h2 class="text--center h1">What's this all about?</h2>
@@ -46,7 +108,9 @@ description: Unconference event focussed on Nooku Framework 2.0.
     <div class="jam__item">
         <h2>Venue</h2>
         <div class="map-container" style="margin-bottom: 1.5em">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2517.1210989598153!2d4.711804000000001!3d50.884469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160d246a55a4b%3A0x915ed43c8b783ee!2sFlanders+DC+%7C+Inspiratie.+Creativiteit.+Innovatie.!5e0!3m2!1sen!2sbe!4v1409666169467" width="600" height="450" frameborder="0" style="border:0"></iframe>
+            <div id="googlemap_dynamic_container" class="uninitialized">
+                <div id="map-canvas"></div>
+            </div>
         </div>
         <p>The event venue is very well connected, the train station is only 100m away. Travel time by train from Brussels Airport is only 20 minutes.</p>
         <p><strong>Diestsevest 76, 3000 Leuven, Belgium</strong></p>

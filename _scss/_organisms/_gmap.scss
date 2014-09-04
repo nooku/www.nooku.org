@@ -1,0 +1,32 @@
+// Static container
+#googlemap_static_container {
+    background: #fff;
+    display: block;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    background: url("http://maps.googleapis.com/maps/api/staticmap?center=Valleilaan+57,Diest,Belgium&zoom=4&size=400x300&scale=2&markers=color:red%7C50.98724,5.0475056&style=feature:water%7Ccolor:0xB5D0CF%7Cvisibility:on&style=feature:landscape%7Ccolor:0xF2EEE8&style=feature:road%7Csaturation:-100%7Clightness:25&style=feature:road.highway%7Cvisibility:simplified&style=feature:road.arterial%7Celement:labels.icon%7Cvisibility:off&style=feature:administrator%7Celement:labels.text.fill%7Ccolor:0x444444&style=feature:transit%7Cvisibility:off&style=feature:poi%7Cvisibility:off&sensor=false");
+    background-position: center;
+    background-size: cover;
+}
+
+// Dynamic container
+#map-canvas {
+  width: 100%;
+  height: 500px;
+  display: block;
+
+  img {
+    max-width: none;
+  }
+
+  @media screen and (min-height: 850px) {
+    height: 750px;
+  }
+
+  @media screen and (min-height: 1100px) {
+    height: 1000px;
+  }
+}
