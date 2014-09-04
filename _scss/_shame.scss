@@ -81,3 +81,52 @@
   max-width: 720px;
   margin: 0 auto;
 }
+
+.contact_nooku {
+  text-align: center;
+}
+
+.channels {
+  @extend %cf;
+  padding: $spacing-xs 0;
+}
+
+.channel {
+  &__item {
+    padding: $spacing-m;
+    border: 1px solid #ddd;
+    display: block;
+    transition: all .2s ease-in-out;
+  }
+
+  &__item--email {
+    border-color: lighten($color-red, 20%);
+    &, &:visited {
+      color: $color-red;
+    }
+    &:hover {
+      background: $color-red;
+      color: #fff;
+    }
+  }
+  &__item--twitter {
+    border-color: lighten($color-green, 20%);
+    &, &:visited {
+      color: $color-green;
+    }
+    &:hover {
+      background: $color-green;
+      color: #fff;
+    }
+  }
+  &__item--facebook {
+    border-color: lighten($color-orange, 20%);
+    &, &:visited {
+      color: $color-orange;
+    }
+    &:hover {
+      background: $color-orange;
+      color: #fff;
+    }
+  }
+}

@@ -50,6 +50,10 @@
   .jam__item {
     @include gallery(6 of 12)
   }
+
+  .channel {
+    @include gallery(4 of 12);
+  }
 }
 
 @include respond-min($breakpoint-delta) {

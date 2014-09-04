@@ -53,6 +53,10 @@
         {
             "text": "Events",
             "url": "/events"
+        },
+        {
+            "text": "Contact",
+            "url": "/contact"
         }
     ]
 }
