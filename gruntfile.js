@@ -121,7 +121,8 @@ module.exports = function(grunt) {
                     'consulting/*.*',
                     'platform/*.*',
                     'services/*.*',
-                    'index.html'
+                    'index.html',
+                    'blog.rss'
                 ],
                 tasks: ['shell:jekyllBuild'],
                 options: {
