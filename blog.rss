@@ -15,7 +15,7 @@ layout: none
         <image>
             <url>{{ site.url }}/images/layout/logo.png</url>
             <title>Nooku</title>
-            <link>{{ site.url }}</link>
+            <link>{{ site.url }}/blog</link>
         </image>
 
         <atom:link href="{{ site.url }}/blog.rss" rel="self" type="application/rss+xml" />
@@ -25,6 +25,9 @@ layout: none
             <title>{{ post.title | xml_escape }}</title>
             <dc:creator>{{ post.author }}</dc:creator>
             <description>
+                {% if post.image %}
+                <img src="{{ site.url }}{{ post.image }}" />
+                {% endif %}
                 {{ post.content | xml_escape }}
             </description>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
