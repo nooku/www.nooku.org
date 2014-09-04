@@ -40,7 +40,7 @@
         },
         {
             "text": "Feed",
-            "url": "/blog/rss.xml"
+            "url": "/blog.rss"
         },
         {
             "text": "Platform",
