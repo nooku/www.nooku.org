@@ -101,32 +101,32 @@
   }
 
   &__item--email {
-    border-color: lighten($color-red, 20%);
-    &, &:visited {
-      color: $color-red;
-    }
-    &:hover {
-      background: $color-red;
-      color: #fff;
-    }
-  }
-  &__item--twitter {
-    border-color: lighten($color-green, 20%);
-    &, &:visited {
-      color: $color-green;
-    }
-    &:hover {
-      background: $color-green;
-      color: #fff;
-    }
-  }
-  &__item--facebook {
     border-color: lighten($color-orange, 20%);
     &, &:visited {
       color: $color-orange;
     }
     &:hover {
       background: $color-orange;
+      color: #fff;
+    }
+  }
+  &__item--twitter {
+    border-color: lighten(#55ACEE, 20%);
+    &, &:visited {
+      color: #55ACEE;
+    }
+    &:hover {
+      background: #55ACEE;
+      color: #fff;
+    }
+  }
+  &__item--facebook {
+    border-color: lighten(#3b5998, 20%);
+    &, &:visited {
+      color: #3b5998;
+    }
+    &:hover {
+      background: #3b5998;
       color: #fff;
     }
   }
