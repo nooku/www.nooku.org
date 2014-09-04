@@ -108,6 +108,7 @@ module.exports = function(grunt) {
                     '_posts/*.*',
                     'assets/*.*',
                     'blog/*.*',
+                    'contact/*.*',
                     'css/*.*',
                     'events/*.*',
                     'features/*.*',
