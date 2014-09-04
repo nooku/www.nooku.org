@@ -1,11 +1,11 @@
 .cta_container {
   background: #eee;
-  padding: $spacing-l 0;
+  padding: $spacing-l $spacing-xs;
   border-top: 1px solid #ddd;
 
   #fieldEmail {
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
+    max-width: 100%;
     background: #fff;
     border: 1px solid #ccc;
     padding: 5px 10px;
@@ -13,7 +13,7 @@
     border-radius: 5px;
     height: 47px;
     line-height: 47px;
-    margin: 0 10px;
+    margin: 0;
     display: inline-block;
     position: relative;
     top: 3px;
