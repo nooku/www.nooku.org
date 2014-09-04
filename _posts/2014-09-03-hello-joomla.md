@@ -13,6 +13,6 @@ Last summer we decided to pick development up again and start work on [Nooku Fra
 
 With Nooku Framework 2.0 we are going back to our Joomla roots! The 2.0 stable version will be released in the coming days. Together with the new site we are also launching our [developer guides](http://guides.nooku.org/) and [API reference](http://api.nooku.org/) for Nooku Framework 2.0.
 
-Big kudos goes to all [Timble developers](http://www.timble.net/about/#our-team) and Nooku contributors and Joomla developers who helped grow Nooku in the past 6 years.
+Big kudos goes to all [Timble developers](http://www.timble.net/about/#our-team) and Nooku contributors who helped to grow Nooku in the past 6 years.
 
 Thank you!
