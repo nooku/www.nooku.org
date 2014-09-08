@@ -6,7 +6,7 @@ image: /images/blog/2014/nooku-jam-2011.jpg
 description: An unconference event focusing on developing with Nooku and Joomla.
 ---
 
-We are happy to announce [Nooku Jam 14](http://www.nooku.org/nj14/) which is taking place on **Thursday 29 & Friday 30 October 2014** at the [FlandersDC](http://www.flandersdc.be/en) Creativity Lab in **Leuven, Belgium**. Come and celebrate the Nooku Framework 2.0 release with us!
+We are happy to announce [Nooku Jam 14](http://www.nooku.org/nj14/) which is taking place on **Wednesday 29 & Thursday 30 October 2014** at the [FlandersDC](http://www.flandersdc.be/en) Creativity Lab in **Leuven, Belgium**. Come and celebrate the Nooku Framework 2.0 release with us!
 
 <!--more-->
 
