@@ -98,36 +98,43 @@
     display: block;
     transition: all .2s ease-in-out;
     margin-bottom: $spacing-m;
+    border-radius: 6px;
   }
 
   &__item--email {
     &, &:visited {
-      color: $color-orange;
+      background: lighten($color-orange,25%);
+      color: #000;
+      border-color: $color-orange;
     }
     &:hover {
       background: $color-orange;
-      color: #fff;
       border-color: darken($color-orange,20%);
+      color: #fff;
     }
   }
   &__item--twitter {
     &, &:visited {
-      color: #55ACEE;
+      background: lighten(#55ACEE,25%);
+      color: #000;
+      border-color: #55ACEE;
     }
     &:hover {
       background: #55ACEE;
-      color: #fff;
       border-color: darken(#55ACEE,20%);
+      color: #fff;
     }
   }
   &__item--facebook {
     &, &:visited {
-      color: #3b5998;
+      background: lighten(#3b5998,35%);
+      color: #000;
+      border-color: lighten(#3b5998,10%);
     }
     &:hover {
       background: #3b5998;
-      color: #fff;
       border-color: darken(#3b5998,20%);
+      color: #fff;
     }
   }
 }
