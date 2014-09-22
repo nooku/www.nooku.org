@@ -36,20 +36,19 @@
   }
 }
 .order_container {
-  max-height: 350px;
   overflow: hidden;
   margin-bottom: $spacing-s;
 
   @include respond-min(490px) {
-    max-height: 330px;
+    max-height: 460px;
   }
 
   @include respond-min(515px) {
-    max-height: 290px;
+    max-height: 430px;
   }
 
   @include respond-min(620px) {
-    max-height: 270px;
+    max-height: 350px;
   }
 }
 
