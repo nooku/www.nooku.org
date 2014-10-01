@@ -26,7 +26,7 @@ In case you missed it, Composer is a dependency manager for PHP. It will downloa
 
 We've created an installer plugin for Composer that knows how to handle the different packages we need to throw at it.
 
-When you install the framework through Composer, the plugin knows that it should not only download it, but install and enable it as well! Simply require the "nooku/nooku-framework" package in your composer.json and you're done! 
+When you install the framework through Composer, the plugin knows that it should not only download it, but install and enable it as well! All you have to do is require the "nooku/nooku-framework" package in your composer.json and you're done! 
 
 See our [Getting Started](http://www.nooku.org/get-started/) page for a copy-paste-ready example.
 
@@ -44,7 +44,7 @@ Of course, you want to be able to distribute your amazing Nooku Framework Joomla
 
 By publishing your extension on [Packagist](http://packagist.org) as a `joomla-extension` type and requiring our installer, you tell the plugin to process your repository as any other Joomla extension. 
 
-The plugin will download your code, and invoke Joomla's [JInstaller](http://api.joomla.org/cms-3/classes/JInstaller.html) class and install your extension. This works in exactly the same way as uploading an extension package through Joomla's Extension Manager interface. That means you can also include SQL files or pre- and postflight script files.
+The plugin will download your code, invoke Joomla's [JInstaller](http://api.joomla.org/cms-3/classes/JInstaller.html) class and install your extension. This works in exactly the same way as uploading an extension package through Joomla's Extension Manager interface. That means you can also include SQL files or pre- and postflight script files.
 
 To see an example, you can take a look at our example [Tada extension](https://github.com/nooku/nooku-pkg_tada). 
 
