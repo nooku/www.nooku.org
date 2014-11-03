@@ -12,6 +12,7 @@ description: Mind blowing presentations, discussions, brainstorms, workshops, an
         {% for event in site.events reversed %}
         {% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
         {% if event_date >= nowunix %}
+        {% assign upcoming_event = true %}
         <div class="event">
             <header class="event__header">
                 <h1 class="event__title" role="heading">{{ event.title }}</h1>
@@ -32,7 +33,13 @@ description: Mind blowing presentations, discussions, brainstorms, workshops, an
         </div>
         {% endif %}
         {% endfor %}
+
+        {% if upcoming_event != true %}
+        <p>No events planned yet, but you can always <a href="/contact">contact us</a> to say hi.</p>
+        {% endif %}
         </div>
+
+        <hr />
 
         <h1>Past events</h1>
         <div class="events events--past">
