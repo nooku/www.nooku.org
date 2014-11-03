@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "Nooku website",
     "author": "Timble",
+    "repository": "https://github.com/nooku/www.nooku.org.git",
     "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-concurrent": "~0.5.0",

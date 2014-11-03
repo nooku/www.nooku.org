@@ -86,7 +86,6 @@ GEM
     mercenary (0.3.4)
     mini_portile (0.6.0)
     minitest (5.4.0)
-    narray (0.6.0.9)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     parslet (1.5.0)
@@ -96,8 +95,6 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rb-fsevent (0.9.4)
-    rb-gsl (1.16.0.2)
-      narray (>= 0.5.9)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdiscount (2.1.7)
@@ -120,5 +117,4 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   illusion
-  rb-gsl
   susy
