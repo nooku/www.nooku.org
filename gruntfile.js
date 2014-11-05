@@ -119,6 +119,7 @@ module.exports = function(grunt) {
                     'js/*.*',
                     'manifesto/*.*',
                     'nj14/*.*',
+                    'phpfest14/*.*',
                     'consulting/*.*',
                     'platform/*.*',
                     'services/*.*',
