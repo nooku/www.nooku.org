@@ -1,3 +1,12 @@
+.contact_nooku {
+  text-align: center;
+}
+
+.channels {
+  @extend %cf;
+  padding: $spacing-m 0 0;
+}
+
 .channel {
   &__item {
     padding: $spacing-m;
