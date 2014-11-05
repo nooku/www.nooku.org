@@ -68,7 +68,7 @@
   height: 100%;
 }
 
-.teaser--jam {
+.teaser--event {
   padding: $spacing-m;
 
   h2 {
@@ -76,7 +76,11 @@
   }
 }
 
-.jam_intro {
+.sponsors {
+  @extend %cf;
+}
+
+.event_intro {
   max-width: 720px;
   margin: 0 auto;
 }
@@ -90,53 +94,7 @@
   padding: $spacing-m 0 0;
 }
 
-.channel {
-  &__item {
-    padding: $spacing-m;
-    border: 1px solid #ddd;
-    display: block;
-    transition: all .2s ease-in-out;
-    margin-bottom: $spacing-m;
-    border-radius: 6px;
-  }
 
-  &__item--email {
-    &, &:visited {
-      background: lighten($color-orange,25%);
-      color: #000;
-      border-color: $color-orange;
-    }
-    &:hover {
-      background: $color-orange;
-      border-color: darken($color-orange,20%);
-      color: #fff;
-    }
-  }
-  &__item--twitter {
-    &, &:visited {
-      background: lighten(#55ACEE,25%);
-      color: #000;
-      border-color: #55ACEE;
-    }
-    &:hover {
-      background: #55ACEE;
-      border-color: darken(#55ACEE,20%);
-      color: #fff;
-    }
-  }
-  &__item--facebook {
-    &, &:visited {
-      background: lighten(#3b5998,35%);
-      color: #000;
-      border-color: lighten(#3b5998,10%);
-    }
-    &:hover {
-      background: #3b5998;
-      border-color: darken(#3b5998,20%);
-      color: #fff;
-    }
-  }
-}
 
 .margin-bottom {
   margin-bottom: 1em;
