@@ -14,17 +14,18 @@
 .order_container {
   overflow: hidden;
   margin-bottom: $spacing-s;
+  max-height: 260px;
 
   @include respond-min(490px) {
-    max-height: 460px;
+    max-height: 260px;
   }
 
   @include respond-min(515px) {
-    max-height: 430px;
+    max-height: 230px;
   }
 
   @include respond-min(620px) {
-    max-height: 350px;
+    max-height: 230px;
   }
 }
 
