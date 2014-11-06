@@ -1,5 +1,5 @@
 ---
-title: Nooku Jam Leuven 13.1
+title: Nooku Jam Leuven 13
 date: 2013-05-02
 image: images/events/2013/nooku-jam-leuven-2013.jpg
 readmore: http://www.nooku.org/blog/2013/03/announcing-nooku-jam-13-1-leuven/
