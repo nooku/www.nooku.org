@@ -20,7 +20,7 @@
   }
 }
 
-@include respond-min($breakpoint-charlie) {
+@include breakpoint($charlie) {
   .footer {
     text-align: left;
 
@@ -33,7 +33,7 @@
 .links {
   padding-bottom: $spacing-s;
 
-  @include respond-min($breakpoint-charlie) {
+  @include breakpoint($charlie) {
     padding-bottom: 0;
   }
 }

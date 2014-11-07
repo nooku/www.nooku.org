@@ -12,7 +12,7 @@
 
 .one-fourth  { @include gallery(6 of 12); }
 
-@include respond-min($breakpoint-charlie) {
+@include breakpoint($charlie) {
    .one-half   { @include gallery(6 of 12); }
    .one-third  { @include gallery(4 of 12); }
    .one-fourth { @include gallery(3 of 12); }
@@ -58,10 +58,10 @@
   }
 }
 
-@include respond-min($breakpoint-delta) {
+@include breakpoint($delta) {
 
 }
 
-@include respond-min($breakpoint-echo) {
+@include breakpoint($echo) {
 
 }

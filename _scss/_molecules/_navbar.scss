@@ -1,4 +1,4 @@
-@include respond-min($breakpoint-beta) {
+@include breakpoint($beta) {
   .header__brand {
     @include span(first 3 of 12);
   }
@@ -15,7 +15,7 @@
   font-family: $base-font;
   font-weight: $base-font-weight;
 
-  @include respond-min($breakpoint-beta) {
+  @include breakpoint($beta) {
     text-align: right;
   }
 }
@@ -30,7 +30,7 @@
   padding: 4px 0 0;
   margin: 20px 0 0;
 
-  @include respond-min($breakpoint-beta) {
+  @include breakpoint($beta) {
     display: inline-block;
     margin: 0;
   }
@@ -42,23 +42,23 @@
   margin: 0;
   padding: 0;
 
-  @include respond-min(320px) {
+  @include breakpoint(320px) {
     float: left;
     width: 50%;
   }
 
-  @include respond-min($breakpoint-beta) {
+  @include breakpoint($beta) {
     margin: 0 8px;
     font-size: 16px;
     width: auto;
   }
 
-  @include respond-min($breakpoint-charlie) {
+  @include breakpoint($charlie) {
     font-size: 18px;
     margin: 0 15px;
   }
 
-  @include respond-min($breakpoint-delta) {
+  @include breakpoint($delta) {
     margin: 0 20px;
   }
 
@@ -69,7 +69,7 @@
     padding: 6px 0 3px;
     border-bottom: 1px solid transparent;
 
-    @include respond-min($breakpoint-beta) {
+    @include breakpoint($beta) {
       border-bottom-width: 3px;
     }
 
@@ -85,7 +85,7 @@
       border-bottom-color: transparent;
     }
 
-    @include respond-min($breakpoint-beta) {
+    @include breakpoint($beta) {
       display: inline-block;
     }
   }

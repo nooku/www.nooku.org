@@ -9,7 +9,7 @@
   font-family: $base-font;
   font-weight: $base-font-weight;
 
-  @include respond-min($breakpoint-beta) {
+  @include breakpoint($beta) {
     .brand {
       text-align: center;
     }

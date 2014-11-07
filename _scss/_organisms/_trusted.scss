@@ -16,7 +16,7 @@
     display: inline-block;
     max-width: 200px;
 
-    @include respond-min($breakpoint-charlie) {
+    @include breakpoint($charlie) {
       max-width: 100%;
     }
   }

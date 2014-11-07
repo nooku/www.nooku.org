@@ -6,15 +6,15 @@
   position: relative;
   overflow: hidden;
 
-  @media screen and (min-width: 0) { // Don't use respond-min here
+  @media screen and (min-width: 0) { // Don't use breakpoint here
     background-image: url("../images/layout/background_small.jpg");
   }
 
-  @media screen and (min-width: $breakpoint-delta) { // Don't use respond-min here
+  @media screen and (min-width: $delta) { // Don't use breakpoint here
     background-image: url("../images/layout/background_medium.jpg");
   }
 
-  @media screen and (min-width: $breakpoint-foxtrot) { // Don't use respond-min here
+  @media screen and (min-width: $foxtrot) { // Don't use breakpoint here
     background-image: url("../images/layout/background_large.jpg");
   }
 }
@@ -26,15 +26,15 @@
   position: relative;
   overflow: hidden;
 
-  @media screen and (min-width: 0) { // Don't use respond-min here
+  @media screen and (min-width: 0) { // Don't use breakpoint here
     background-image: url("../images/layout/upcoming_background_small.jpg");
   }
 
-  @media screen and (min-width: $breakpoint-delta) { // Don't use respond-min here
+  @media screen and (min-width: $delta) { // Don't use breakpoint here
     background-image: url("../images/layout/upcoming_background_medium.jpg");
   }
 
-  @media screen and (min-width: $breakpoint-foxtrot) { // Don't use respond-min here
+  @media screen and (min-width: $foxtrot) { // Don't use breakpoint here
     background-image: url("../images/layout/upcoming_background_large.jpg");
   }
 }
