@@ -4,7 +4,7 @@
   color: #fff;
   text-align: center;
 
-  @include respond-min($breakpoint-beta) {
+  @include breakpoint($beta) {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;

@@ -16,15 +16,15 @@
   margin-bottom: $spacing-s;
   max-height: 260px;
 
-  @include respond-min(490px) {
+  @include breakpoint(490px) {
     max-height: 260px;
   }
 
-  @include respond-min(515px) {
+  @include breakpoint(515px) {
     max-height: 230px;
   }
 
-  @include respond-min(620px) {
+  @include breakpoint(620px) {
     max-height: 230px;
   }
 }

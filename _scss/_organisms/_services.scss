@@ -16,7 +16,7 @@
   margin-bottom: $spacing-m;
 }
 
-@include respond-min-max($breakpoint-alpha, $breakpoint-charlie) {
+@include breakpoint($alpha, range, $charlie) {
   .services {
     text-align: left;
 
