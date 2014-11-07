@@ -9,7 +9,7 @@
 }
 
 .navigation_container {
-  @extend %cf;
+  @extend %clearfix;
   font-size: 0;
   line-height: 0;
   font-family: $base-font;
@@ -21,7 +21,7 @@
 }
 
 .navbar {
-  @extend %cf;
+  @extend %clearfix;
   font-size: 18px;
   line-height: 24px;
   z-index: 2;
