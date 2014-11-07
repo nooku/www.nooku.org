@@ -3,7 +3,7 @@
 }
 
 .channels {
-  @extend %cf;
+  @extend %clearfix;
   padding: $spacing-m 0 0;
 }
 

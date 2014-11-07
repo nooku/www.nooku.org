@@ -1,8 +1,8 @@
 .jam {
-  @extend %cf;
+  @extend %clearfix;
 
   .jam__item {
-    @extend %cf;
+    @extend %clearfix;
     margin-bottom: $spacing-m;
   }
 
@@ -54,7 +54,7 @@
 }
 
 .sponsors {
-  @extend %cf;
+  @extend %clearfix;
 }
 
 .event_intro {
