@@ -1,6 +1,7 @@
 ---
 title: Hello Joomla!
 author: Johan
+image: /images/blog/2014/nooku_joomla.jpg
 layout: post
 ---
 Today we are extremely proud to release our new Nooku site. More then [6 years ago](http://www.nooku.org/blog/2008/04/party-time-%E2%80%94-website-launch/) we set out to create a multi-lingual extension for [Joomla](http://www.joomla.org/), a year later we [launched Nooku Framework](http://www.nooku.org/blog/2009/05/nooku-framework-the-api-that-speaks-for-itself/) to help developers create custom Joomla extensions.
