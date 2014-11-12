@@ -30,17 +30,13 @@ p, figure,
 pre, table, fieldset, hr,
 .highlight,
 .excerpt {
+  font-style: normal;
   margin-top: 0;
   margin-bottom: $line-height-base;
 
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 hr {

@@ -2,7 +2,7 @@
 title: Nooku Jam 14 - The Highlights
 author: Tom
 layout: post
-image: /images/blog/2014/nooku-jam-2011.jpg
+image: /images/blog/2014/nooku-jam-14.jpg
 description: Highlights of our unconference event focusing on developing with Nooku and Joomla.
 ---
 

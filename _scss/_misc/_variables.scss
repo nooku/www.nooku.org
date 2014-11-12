@@ -1,12 +1,3 @@
-// Responsive breakpoints
-$breakpoint-alpha:      25em;                                 // 400px
-$breakpoint-beta:       37.5em;                               // 600px  Small tablets
-$breakpoint-charlie:    48em;                                 // 768px  Portrait bigger tablets
-$breakpoint-delta:      64em;                                 // 1024px Landscape bigger tablets
-$breakpoint-echo:       75em;                                 // 1200px Laptops
-$breakpoint-foxtrot:    90em;                                 // 1440px Desktop
-$breakpoint-golf:       100em;                                // 1600px Extra wide
-
 $white: #FFF;
 $gray-lighter: #eee;
 $color-body: #333;
@@ -52,7 +43,6 @@ $spacing-l:   40px;
 $spacing-m:   30px;
 $spacing-s:   20px;
 $spacing-xs:  10px;
-
 
 
 // Susy grid

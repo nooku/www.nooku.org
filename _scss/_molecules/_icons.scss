@@ -42,12 +42,12 @@
   border-right: none;
   border-bottom: 1px dashed #88D8FD;
 
-  @include respond-min($breakpoint-alpha) {
+  @include breakpoint($alpha) {
     border-right: 1px dashed #88D8FD;
     border-bottom: none;
   }
 
-  @include respond-min($breakpoint-charlie) {
+  @include breakpoint($charlie) {
     border-right: none;
     border-bottom: 1px dashed #88D8FD;
   }

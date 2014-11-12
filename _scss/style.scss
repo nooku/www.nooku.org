@@ -1,18 +1,14 @@
-@import "illusion/basics";
-@import "illusion/ie";
-@import "illusion/reset";
+@import "illusion";
 @import "susy";
 
 @import "_misc/variables";
 @import "_misc/placeholders";
-@import "_misc/boxsizing";
 @import "_misc/setup";
 @import "_misc/container";
 
 @import "_utilities/grid";
 @import "_utilities/highlight";
 @import "_utilities/nooku-font-icon";
-@import "_utilities/responsivemenu";
 @import "_utilities/button--hamburger";
 
 @import "_atoms/a";

@@ -5,7 +5,7 @@
   box-shadow: inset 0 3px 3px rgba(0,0,0,.3);
 
   .brands {
-    @extend %cf;
+    @extend %clearfix;
   }
 
   h2 {
@@ -16,7 +16,7 @@
     display: inline-block;
     max-width: 200px;
 
-    @include respond-min($breakpoint-charlie) {
+    @include breakpoint($charlie) {
       max-width: 100%;
     }
   }

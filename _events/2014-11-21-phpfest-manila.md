@@ -1,5 +1,5 @@
 ---
-title: PHPFest 14
+title: PHPFest Manila
 date: 2014-11-21
 image: images/phpfest/phpfest14/venue.jpg
 readmore: http://www.nooku.org/phpfest14/

@@ -1,8 +1,8 @@
 .jam {
-  @extend %cf;
+  @extend %clearfix;
 
   .jam__item {
-    @extend %cf;
+    @extend %clearfix;
     margin-bottom: $spacing-m;
   }
 
@@ -14,17 +14,18 @@
 .order_container {
   overflow: hidden;
   margin-bottom: $spacing-s;
+  max-height: 260px;
 
-  @include respond-min(490px) {
-    max-height: 460px;
+  @include breakpoint(490px) {
+    max-height: 260px;
   }
 
-  @include respond-min(515px) {
-    max-height: 430px;
+  @include breakpoint(515px) {
+    max-height: 230px;
   }
 
-  @include respond-min(620px) {
-    max-height: 350px;
+  @include breakpoint(620px) {
+    max-height: 230px;
   }
 }
 
@@ -53,7 +54,7 @@
 }
 
 .sponsors {
-  @extend %cf;
+  @extend %clearfix;
 }
 
 .event_intro {

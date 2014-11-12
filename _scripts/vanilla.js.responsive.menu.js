@@ -121,6 +121,17 @@
         return settings;
     };
 
+    function getParents(element, tag, stop) {
+        var nodes = [];
+        while (element.parentNode && element.parentNode != stop) {
+            element = element.parentNode;
+            if (element.tagName == tag) {
+                nodes.push(element);
+            }
+        }
+        return nodes
+    }
+
     // Initialize
     function initialize(settings) {
 
@@ -132,7 +143,7 @@
         }
 
         // Add a class when JS is initiated
-        apollo.addClass(menu, settings.initiated_class);
+        apollo.addClass(settings.wrapper, settings.initiated_class);
 
         // Creating the main toggle button
         var toggle_element = document.createElement(settings.toggletype);
@@ -159,14 +170,23 @@
             }
         });
 
+        // Adding parent classes
+        var parents = menu.getElementsByTagName('li');
+        for (var i = 0; i < parents.length; i++) {
+            var isparent = parents[i].getElementsByTagName('ul')[0];
+            if (isparent) {
+                apollo.addClass(isparent.parentNode, 'parent');
+            }
+        }
+
         // Adding classes
         function classes() {
 
-            // Check current viewport width
-            var viewportwidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            // Check current wrapper width
+            var windowwidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-            // If screen is small and if the menu is not already opened
-            if ( viewportwidth < settings.width && !apollo.hasClass(menu, 'opened') ) {
+            // If wrapper is small and if the menu is not already opened
+            if ( windowwidth < settings.width && !apollo.hasClass(menu, 'opened') ) {
 
                 // Show the toggle button(s)
                 apollo.removeClass(togglebutton, 'closed');
@@ -177,7 +197,7 @@
                 });
 
                 // Hide the menu
-                apollo.removeClass(menu, 'opened');
+                apollo.removeClass(menu, ['opened', 'fullmenu']);
                 apollo.addClass(menu, 'closed');
 
                 // Make the menu absolute positioned
@@ -185,7 +205,7 @@
                     apollo.addClass(menu, 'absolutemenu');
                 }
 
-            } else if ( viewportwidth >= settings.width ) {
+            } else if ( windowwidth >= settings.width ) {
 
                 // Hide the toggle button(s)
                 apollo.addClass(togglebutton, 'closed');
@@ -197,6 +217,7 @@
 
                 // Show the menu and remove all classes
                 apollo.removeClass(menu, ['opened', 'closed']);
+                apollo.addClass(menu, ['fullmenu']);
 
                 // Undo absolute positioning
                 if ( settings.absolute == 1 && apollo.hasClass(menu, 'absolutemenu') ) {
@@ -255,6 +276,27 @@
             stickyMenu();
         }, true);
 
+        // Accessible focus menu
+        var menulinks = menu.getElementsByTagName('a');
+        for (var i = 0; i < menulinks.length; i++) {
+            menulinks[i].onfocus = function() {
+                // Remove the class
+                var siblings = this.parentNode.parentNode.querySelectorAll('li');
+                if (siblings) {
+                    for (var i = 0; i < siblings.length; i++) {
+                        apollo.removeClass(siblings[i], 'focused');
+                    }
+                }
+                // Add the class
+                var parent = getParents(this, "LI", menu);
+                if (parent) {
+                    for (var i = 0; i < parent.length; i++) {
+                        apollo.addClass(parent[i], 'focused');
+                    }
+                }
+            }
+        }
+
         // Clicking the toggle button
         togglebutton.onclick = function() {
 
@@ -307,7 +349,10 @@
      */
     exports.init = function ( options ) {
         // feature test
-        if ( !supports ) return;
+        if ( !supports ) {
+            document.body.className += ' no-responsive-menu';
+            return;
+        }
         settings = extend( defaults, options || {} ); // Merge user options with defaults
         initialize(settings);
     };
