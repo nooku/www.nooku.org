@@ -6,7 +6,7 @@ image: /images/blog/2014/phpfest-manila.jpg
 description: Calling all PHP developers in and around Manila to join us for the first ever PHPFest.
 ---
 
-Calling all PHP developers in and around **Manila** to join us for the first ever PHPFest on **Friday 21th November 2014 from 6pm till 10pm** at [PaletExpress](http://www.paletexpress.com/our-spaces/manila-palet-express/).
+Are you a web developer based in or around **Manila**? Do you use PHP? Join us for the first ever PHPFest on **Friday 21th November 2014 from 6pm till 10pm** at [PaletExpress](http://www.paletexpress.com/our-spaces/manila-palet-express/), Makati, Manila.
 
 <!--more-->
 
@@ -16,7 +16,7 @@ PHPFest is an open, participatory event, whose content is provided by participan
 
 ## Lightning talks
 
-During PHPFest we will open the floor for lightning talks. We would love to hear all the great stuff that is happening in **Drupal**, **Wordpress**, **Joomla**, … what new libraries are being worked on in **Lavarel**, **Symfony**, **Zend**, … What great tools you use and love for developing with PHP?
+During PHPFest we will open the floor for lightning talks. We would love to hear all the great stuff that is happening in **Drupal**, **Wordpress**, **Joomla**, … what new libraries are being worked on in **Laravel**, **Symfony**, **Zend**, … What great tools you use and love for developing with PHP?
 
 What cool things are you working on yourself? Come and tell us about it! You get **10 minutes**, no slides required.
 
@@ -30,6 +30,6 @@ Of course! You can drop right in after work, drinks and food will be waiting.
 
 ## Register now
 
-Check our [event page](http://www.nooku.org/phpfest14/) to complete your registration today!
+Check our [event page](http://www.nooku.org/phpfest14/) to complete your registration today! Registration is required to get in. Don't forget to register.
 
 See you on the 21th!
