@@ -34,7 +34,7 @@ See our [Getting Started](http://www.nooku.org/get-started/) page for a copy-pas
 
 The Composer plugin also deals with reusable Nooku components. These components lie at the heart of Nooku Framework's [component-based architecture](https://en.wikipedia.org/wiki/Component-based_software_engineering): they are ready-made building blocks that extend upon the framework and can be used to implement common functionalities like: activity logging, category support, file management, tagging or version control, etc.
 
-In the weeks to come we will start releasing more re-usable components. How these work will be covered in a future blog post. Once ready, a re-usable component can be installed through Composer.
+In the weeks to come we will start releasing more re-usable components. At the moment, you can already make use of our [Nooku Activities](https://github.com/nooku/nooku-activities) component to automatically log events and expose activity streams. How these components work will be covered in a future blog post. Once ready, a re-usable component can be installed through Composer.
 
 The installer will download these components into the vendor directory, alongside any other libraries or packages you required. Afterwards, the framework will invoke Composer's autoloader to make these components accessible throughout your Joomla application.
 
