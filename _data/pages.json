@@ -47,6 +47,10 @@
             "url": "/platform"
         },
         {
+            "text": "Demo",
+            "url": "/demo"
+        },
+        {
             "text": "Manifesto",
             "url": "/manifesto"
         },
