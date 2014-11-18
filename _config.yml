@@ -21,4 +21,13 @@ collections:
 - events
 
 # We don't want to publish some files
-exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'README.md', 'node_modules', 'gruntfile.js', 'package.json', 'scripts']
+exclude: [
+'CNAME',
+'Gemfile',
+'Gemfile.lock',
+'README.md',
+'node_modules',
+'gruntfile.js',
+'package.json',
+'scripts'
+]

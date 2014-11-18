@@ -1,0 +1,12 @@
+{
+    "name": "www.nooku.org",
+    "description": "",
+    "homepage": "",
+    "keywords": [
+    ],
+    "author": "",
+    "private": true,
+    "dependencies": {
+        "stack": "timble/stack#master"
+    }
+}

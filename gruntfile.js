@@ -124,6 +124,7 @@ module.exports = function(grunt) {
                     'consulting/*.*',
                     'platform/*.*',
                     'services/*.*',
+                    'stack/*.*',
                     'index.html',
                     'blog.rss'
                 ],

@@ -1,6 +1,5 @@
 /.sass-cache/
 /_site/
 /node_modules
-/css/*.css.map
-style.css.map
+*.css.map
 bower_components
