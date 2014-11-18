@@ -1,97 +1,100 @@
-$stack-color: blue !default;
-$stack-size-logo: 5.625em !default;
+$stack-color--button-background: blue !default;
+$stack-color--button-text: #fff !default;
+$stack-size--logo: 5.625em !default;
 
 .stack-group__container {
-    @extend %clearfix;
+  @extend %clearfix;
 }
 
 .stack-group {
-    margin-bottom: $stack-size-logo / 2;
+  margin-bottom: $stack-size--logo / 2;
 
-    &:last-child {
-        margin-bottom: $stack-size-logo / 4;
-    }
+  &:last-child {
+    margin-bottom: $stack-size--logo / 4;
+  }
 }
 
 .stack-group__header {
-    display: block;
-    padding: 1.25em 0 0 0;
-    margin: 0;
-    text-align: center;
+  display: block;
+  padding: 1.25em 0 0 0;
+  margin: 0;
+  text-align: center;
 }
+
 .stack-item__container {
-    padding-top: $stack-size-logo;
+  padding-top: $stack-size--logo;
 }
 
 .stack-item__container--simple {
-    padding-top: $stack-size-logo / 2;
+  padding-top: $stack-size--logo / 2;
 }
 
 .stack-item {
-    border-radius: 0.3125em;
-    border: 1px solid #DCDCDC;
-    text-align: center;
+  border-radius: 0.3125em;
+  border: 1px solid #DCDCDC;
+  text-align: center;
+  padding: 1em;
 }
 
 .stack-item__logo {
-    height: $stack-size-logo;
-    width: $stack-size-logo;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid #DCDCDC;
-    margin: (-$stack-size-logo / 2) auto 0 auto;
-    text-align: center;
+  height: $stack-size--logo;
+  width: $stack-size--logo;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #DCDCDC;
+  margin: (-$stack-size--logo / 2) auto 0 auto;
+  text-align: center;
 
-    /* The ghost, nudged to maintain perfect centering */
-    /* Credits: http://css-tricks.com/centering-in-the-unknown */
-    &:before {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      margin-right: -0.25em; /* Adjusts for spacing */
-    }
+  /* The ghost, nudged to maintain perfect centering */
+  /* Credits: http://css-tricks.com/centering-in-the-unknown */
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
 
-    img {
-        display: inline-block;
-        vertical-align: middle;
-        width: 50px;
-    }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+  }
 }
 
 .stack-item__title {
-    color: $stack-color;
-    margin: 1.25em;
+  color: $stack-color--button-background;
+  margin: 1.25em;
 }
 
 .stack-item__description {
-    line-height: 1.5em;
-    margin: 0 1.25em 1.25em;
+  line-height: 1.5em;
+  margin: 0 1.25em 1.25em;
 }
 
 .stack-item__button {
-    height: auto;
-    background-color: $stack-color;
-    border-radius: 0.3125em;
-    color: white;
-    display: block;
-    padding: 0.625em;
-    margin: 0 1.25em 1.25em;
-    text-decoration: none;
+  height: auto;
+  background-color: $stack-color--button-background;
+  border-radius: 0.3125em;
+  color: white;
+  display: block;
+  padding: 0.625em;
+  margin: 0 1.25em 0;
+  text-decoration: none;
 
-    &:hover {
-        background-color: lighten($stack-color, 12%);
-        color: white;
-    }
+  &:hover {
+    background-color: lighten($stack-color--button-background, 12%);
+    color: $stack-color--button-text;
+  }
 
-    &:focus,
-    &:visited {
-        color: white;
-    }
+  &:focus,
+  &:visited {
+    color: $stack-color--button-text;
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .stack-item__description {
-        min-height: 70px;
-    }
+  .stack-item__description {
+    min-height: 70px;
+  }
 }
