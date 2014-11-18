@@ -12,6 +12,12 @@
 
 .one-fourth  { @include gallery(6 of 12); }
 
+@include breakpoint($beta) {
+  .stack-item__container {
+    @include gallery(6 of 12);
+  }
+}
+
 @include breakpoint($charlie) {
    .one-half   { @include gallery(6 of 12); }
    .one-third  { @include gallery(4 of 12); }
@@ -53,15 +59,8 @@
     @include gallery(6 of 12)
   }
 
+  .stack-item__container,
   .channel {
     @include gallery(4 of 12);
   }
-}
-
-@include breakpoint($delta) {
-
-}
-
-@include breakpoint($echo) {
-
 }

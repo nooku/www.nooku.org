@@ -10,6 +10,26 @@ module.exports = function(grunt) {
     grunt.initConfig
     ({
 
+        // Copy bower files
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['bower_components/stack/logos/*.*'],
+                        dest: 'images/stack/logos',
+                        flatten: true
+                    },
+                    {
+                        expand: true,
+                        src: ['bower_components/stack/scss/*.*'],
+                        dest: '_scss/_utilities',
+                        flatten: true
+                    }
+                ]
+            }
+        },
+
         // Iconfont
         webfont: {
             icons: {
@@ -110,6 +130,7 @@ module.exports = function(grunt) {
                     'blog/*.*',
                     'contact/*.*',
                     'css/*.*',
+                    'demo/*.*',
                     'events/*.*',
                     'features/*.*',
                     'fonts/*.*',
@@ -123,6 +144,7 @@ module.exports = function(grunt) {
                     'consulting/*.*',
                     'platform/*.*',
                     'services/*.*',
+                    'stack/*.*',
                     'index.html',
                     'blog.rss'
                 ],
@@ -147,5 +169,5 @@ module.exports = function(grunt) {
     });
 
     // Register the default tasks.
-    grunt.registerTask('default', ['concurrent:dev']);
+    grunt.registerTask('default', ['copy', 'concurrent:dev']);
 };
