@@ -3,3 +3,4 @@
 /node_modules
 /css/*.css.map
 style.css.map
+bower_components
