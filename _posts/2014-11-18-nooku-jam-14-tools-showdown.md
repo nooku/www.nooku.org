@@ -15,7 +15,7 @@ The list below is the result of a very fast-paced showdown. Attendees only got 3
 ## Chrome Extensions
 
 * [Dimensions](https://chrome.google.com/webstore/detail/dimensions/baocaagndhipibgklemoalmkljaimfdj) - A tool for designers to measure screen dimensions
-* [Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna?hl=en) - Prints useful information to the Javascript console by enabling the debug version of the Google Analytics javascri
+* [Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna?hl=en) - Prints useful information to the Javascript console by enabling the debug version of the Google Analytics javascript
 * [Color Contrast Analyser](https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll) - Analyze a web page for conformance with WCAG 2.0 Color Contrast requirements
 * [Control Freak](https://chrome.google.com/webstore/detail/control-freak/jgnchehlaggacipokckdlbdemfeohdhc) - Create and apply your own synced tweaks to web pages
 * [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en) - The easiest way to identify fonts on web pages
