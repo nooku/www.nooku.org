@@ -1,82 +1,80 @@
-{
-    "items": [
-        {
-            "title": "Application & Data",
-            "type": "card",
-            "data": [
-                {
-                    "title": "Joomla",
-                    "description": "Content management system",
-                    "url": "http://www.joomla.org/"
-                },
-                {
-                    "title": "jQuery",
-                    "description": "The Write Less, Do More, JavaScript Library.",
-                    "url": "http://www.jquery.com/"
-                },
-                {
-                    "title": "Sass",
-                    "description": "Syntactically Awesome Style Sheets",
-                    "url": "http://sass-lang.com/"
-                },
-                {
-                    "title": "MySQL",
-                    "description": "The world's most popular open source database.",
-                    "url": "http://www.mysql.com/"
-                },
-                {
-                    "title": "nginx",
-                    "description": "A high performance web server powering busiest sites on the Internet.",
-                    "url": "http://nginx.org/"
-                },
-                {
-                    "title": "PHP",
-                    "description": "General-purpose scripting language, especially suited to web development.",
-                    "url": "http://php.net/"
-                }
-            ]
-        },
-        {
-            "title": "Dev Ops",
-            "type": "card",
-            "data": [
-                {
-                    "title": "Composer",
-                    "description": "Dependency Manager for PHP.",
-                    "url": "https://getcomposer.org/"
-                },
-                {
-                    "title": "Git",
-                    "description": "Distributed version control system.",
-                    "url": "http://git-scm.com/"
-                },
-                {
-                    "title": "Vagrant",
-                    "description": "A tool for building and distributing development environments",
-                    "url": "https://www.vagrantup.com/"
-                },
-                {
-                    "title": "VirtualBox",
-                    "description": "Run nearly any operating system on a single machine simultaneously.",
-                    "url": "https://www.virtualbox.org/"
-                }
-            ]
-        },
-        {
-            "title": "Other",
-            "type": "simple",
-            "data": [
-                {
-                    "title": "Imagine",
-                    "description": "PHP 5.3 Object Oriented image manipulation library.",
-                    "url": "https://github.com/avalanche123/Imagine"
-                },
-                {
-                    "title": "Select2",
-                    "description": "jQuery based replacement for select boxes.",
-                    "url": "http://ivaynberg.github.io/select2/"
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "title": "Application & Data",
+        "type": "card",
+        "data": [
+            {
+                "title": "Joomla",
+                "description": "Content management system",
+                "url": "http://www.joomla.org/"
+            },
+            {
+                "title": "jQuery",
+                "description": "The Write Less, Do More, JavaScript Library.",
+                "url": "http://www.jquery.com/"
+            },
+            {
+                "title": "Sass",
+                "description": "Syntactically Awesome Style Sheets",
+                "url": "http://sass-lang.com/"
+            },
+            {
+                "title": "MySQL",
+                "description": "The world's most popular open source database.",
+                "url": "http://www.mysql.com/"
+            },
+            {
+                "title": "nginx",
+                "description": "A high performance web server powering busiest sites on the Internet.",
+                "url": "http://nginx.org/"
+            },
+            {
+                "title": "PHP",
+                "description": "General-purpose scripting language, especially suited to web development.",
+                "url": "http://php.net/"
+            }
+        ]
+    },
+    {
+        "title": "Dev Ops",
+        "type": "card",
+        "data": [
+            {
+                "title": "Composer",
+                "description": "Dependency Manager for PHP.",
+                "url": "https://getcomposer.org/"
+            },
+            {
+                "title": "Git",
+                "description": "Distributed version control system.",
+                "url": "http://git-scm.com/"
+            },
+            {
+                "title": "Vagrant",
+                "description": "A tool for building and distributing development environments",
+                "url": "https://www.vagrantup.com/"
+            },
+            {
+                "title": "VirtualBox",
+                "description": "Run nearly any operating system on a single machine simultaneously.",
+                "url": "https://www.virtualbox.org/"
+            }
+        ]
+    },
+    {
+        "title": "Other",
+        "type": "simple",
+        "data": [
+            {
+                "title": "Imagine",
+                "description": "PHP 5.3 Object Oriented image manipulation library.",
+                "url": "https://github.com/avalanche123/Imagine"
+            },
+            {
+                "title": "Select2",
+                "description": "jQuery based replacement for select boxes.",
+                "url": "http://ivaynberg.github.io/select2/"
+            }
+        ]
+    }
+]

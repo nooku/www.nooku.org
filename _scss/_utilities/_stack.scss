@@ -1,9 +1,18 @@
-$stack-color--button-background: blue !default;
-$stack-color--button-text: #fff !default;
+$stack-color--main: blue !default;
+$stack-color--text: #fff !default;
 $stack-size--logo: 5.625em !default;
 
 .stack-group__container {
-  @extend %clearfix;
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 .stack-group {
@@ -63,7 +72,7 @@ $stack-size--logo: 5.625em !default;
 }
 
 .stack-item__title {
-  color: $stack-color--button-background;
+  color: $stack-color--main;
   margin: 1.25em;
 }
 
@@ -74,7 +83,7 @@ $stack-size--logo: 5.625em !default;
 
 .stack-item__button {
   height: auto;
-  background-color: $stack-color--button-background;
+  background-color: $stack-color--main;
   border-radius: 0.3125em;
   color: white;
   display: block;
@@ -83,13 +92,13 @@ $stack-size--logo: 5.625em !default;
   text-decoration: none;
 
   &:hover {
-    background-color: lighten($stack-color--button-background, 12%);
-    color: $stack-color--button-text;
+    background-color: lighten($stack-color--main, 12%);
+    color: $stack-color--text;
   }
 
   &:focus,
   &:visited {
-    color: $stack-color--button-text;
+    color: $stack-color--text;
   }
 }
 
