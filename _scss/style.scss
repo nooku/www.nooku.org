@@ -10,6 +10,7 @@
 @import "_utilities/highlight";
 @import "_utilities/nooku-font-icon";
 @import "_utilities/button--hamburger";
+@import "_utilities/stack";
 
 @import "_atoms/a";
 @import "_atoms/headings";
@@ -42,7 +43,5 @@
 @import "_organisms/services";
 @import "_organisms/teaser";
 @import "_organisms/trusted";
-
-@import "../bower_components/stack/scss/stack";
 
 @import "shame";
