@@ -8,23 +8,38 @@
             {% if include.class %}
                 {% assign button_class = include.class %}
             {% endif %}
-            {% for tool in site.data.vendor.stack %}
-                {% assign tool_title =  tool.title | replace: ' ', '-' | downcase %}
-                {% if tool_title == item_title %}
-                    <div class="stack-item__container stack-item__container--{{ group.type }}" id="{{ tool_title }}">
-                        <div class="stack-item">
-                            {% if group.type != "simple" %}
-                                <div class="stack-item__logo">
-                                    <img src="/images/stack/logos/{{ tool_title }}.png" />
-                                </div>
-                            {% endif %}
-                            <h3 class="stack-item__title">{{ tool.title }}</h3>
-                            <p class="stack-item__description">{{ tool.description }}</p>
-                            <a class="{{ button_class }}" href="{{ tool.url }}">Visit {{ tool.title }}</a>
+            {% if item.description %}
+                <div class="stack-item__container stack-item__container--{{ group.type }}" id="{{ item_title }}">
+                    <div class="stack-item">
+                        {% if group.type != "simple" %}
+                        <div class="stack-item__logo">
+                            <img src="/images/stack/{{ item_title }}.png" />
                         </div>
+                        {% endif %}
+                        <h3 class="stack-item__title">{{ item.title }}</h3>
+                        <p class="stack-item__description">{{ item.description }}</p>
+                        <a class="{{ button_class }}" href="{{ item.url }}">Visit {{ item.title }}</a>
                     </div>
-                {% endif %}
-            {% endfor %}
+                </div>
+            {% else %}
+                {% for tool in site.data.vendor.stack %}
+                    {% assign tool_title =  tool.title | replace: ' ', '-' | downcase %}
+                    {% if tool_title == item_title %}
+                        <div class="stack-item__container stack-item__container--{{ group.type }}" id="{{ tool_title }}">
+                            <div class="stack-item">
+                                {% if group.type != "simple" %}
+                                <div class="stack-item__logo">
+                                    <img src="/images/stack/vendor/{{ tool_title }}.png" />
+                                </div>
+                                {% endif %}
+                                <h3 class="stack-item__title">{{ tool.title }}</h3>
+                                <p class="stack-item__description">{{ tool.description }}</p>
+                                <a class="{{ button_class }}" href="{{ tool.url }}">Visit {{ tool.title }}</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
         {% endfor %}
     </div>
 </div>

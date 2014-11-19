@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         src: ['bower_components/stack/logos/*.*'],
-                        dest: 'images/stack/logos',
+                        dest: 'images/stack/vendor',
                         flatten: true
                     },
                     {
