@@ -31,6 +31,12 @@ module.exports = function(grunt) {
                         src: ['bower_components/stack/template/*.*'],
                         dest: '_includes',
                         flatten: true
+                    },
+                    {
+                        expand: true,
+                        src: ['bower_components/stack/json/*.*'],
+                        dest: '_data/vendor',
+                        flatten: true
                     }
                 ]
             }
