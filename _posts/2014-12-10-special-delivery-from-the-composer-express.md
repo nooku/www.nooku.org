@@ -2,15 +2,8 @@
 title: Special delivery from the Composer Express!
 author: Steven
 layout: post
-categories:
-  - Framework
-tags:
-  - composer
-  - joomla
-  - installation
+image: /images/blog/2014/lego-forklift.jpg
 ---
-
-<img src="https://farm4.staticflickr.com/3866/15389250225_e9aca3c35c_o.jpg" width="280" height="210" alt="Lego Forklift" style="float: right; margin: 6px">
 
 With the release of Nooku Framework 2.0 stable we needed an efficient way to distribute the framework and install it in Joomla. 
 
