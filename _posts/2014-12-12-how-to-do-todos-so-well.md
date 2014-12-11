@@ -65,8 +65,8 @@ the extensions table in the database, create views and add records to the databa
 
 #### [Backend](http://guides.nooku.org/get-started/com_todo-backend.md)
 
-What good would a Joomla Component Tutorial be without touching on the most important areas of concern with the backend. We do that and
-also try to bring forward some important concepts. You will create more views, add toolbars, and learn a little about the dispatcher.
+What good would a Joomla Component Tutorial be without touching on the most important areas of concern with regard to backend. We do that and
+also try to bring forward and reinforce more important concepts. You will create more views, add toolbars, and learn a little about the dispatcher.
 
 * [Component Entry Point](get-started/backend-entry-point.md)
 * [Create a View](get-started/create-a-view.md)
