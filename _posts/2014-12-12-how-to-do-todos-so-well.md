@@ -18,14 +18,14 @@ get things done with Nooku Framework.
 
 You will see examples of
 
-* specialized table objects
+* table objects
 * behaviors
 * http dispatchers
 * models
 * template helpers
 * views
 * tie your Todo Items into Search
-* showing you items in a module
+* showing your items in a module
 
 <!-- DRESS THIS UP WITH A BUTTON-->
 [Get It on Github](https://github.com/nooku/joomla-todo)
@@ -57,24 +57,24 @@ Some quick tips getting set up with the Joomlatools Vagrant Box, and installing 
 After you have your environment up and running, we do the Front side of a Todo component. You'll register the component with
 the extensions table in the database, create views and add records to the database.
 
-* [Register the Component](http://guides.nooku.org/get-started/register-the-component.md)
-* [Component Entry Point](http://guides.nooku.org/get-started/component-entry-point.md)
-* [Hello World!](http://guides.nooku.org/get-started/hello-world-todos.md)
-* [The Database Table](http://guides.nooku.org/get-started/creating-the-database.md)
-* [Your First Todo List View](http://guides.nooku.org/get-started/your-first-todo-list-view.md)
+* [Register the Component](http://guides.nooku.org/get-started/register-the-component.md) - get your component into the extensions table.
+* [Component Entry Point](http://guides.nooku.org/get-started/component-entry-point.md) - fire things off by calling your component's dispatcher
+* [Hello World!](http://guides.nooku.org/get-started/hello-world-todos.md) - gets your first output into the browser
+* [The Database Table](http://guides.nooku.org/get-started/creating-the-database.md) - real data, in your database table
+* [Your First Todo List View](http://guides.nooku.org/get-started/your-first-todo-list-view.md) - add a view that makes sense
 
 #### [Backend](http://guides.nooku.org/get-started/com_todo-backend.md)
 
-What good would a Joomla Component Tutorial be without touching on the most important areas of concern with regard to backend. We do that and
+What good would a Joomla Component Tutorial be without touching on the most important areas of concern regarding the backend. We do that and
 also try to bring forward and reinforce more important concepts. You will create more views, add toolbars, and learn a little about the dispatcher.
 
-* [Component Entry Point](get-started/backend-entry-point.md)
-* [Create a View](get-started/create-a-view.md)
-* [The Dispatcher](get-started/the-dispatcher.md)
-* [The Controller Package](get-started/the-controller-package.md)
-* [Load a Form to Edit Todos](get-started/load-a-form-to-edit-todo-items.md)
-* [Toolbar for Item Form](get-started/add-toolbar-to-item-view.md)
-* [Toolbar for List View](get-started/add-toolbar-to-list-view.md)
+* [Component Entry Point](get-started/backend-entry-point.md) - this time, get things going in the backend
+* [Create a View](get-started/create-a-view.md) - create a more administrator focused view
+* [The Dispatcher](get-started/the-dispatcher.md) - we talk about how to use this to set a default controller for your component
+* [The Controller Package](get-started/the-controller-package.md) - Controller toolbars and a little bit of theory
+* [Load a Form to Edit Todos](get-started/load-a-form-to-edit-todo-items.md) - this step gets the edit form into your component
+* [Toolbar for Item Form](get-started/add-toolbar-to-item-view.md) - using the default implementation of the toolbar, no need to handle your forms
+* [Toolbar for List View](get-started/add-toolbar-to-list-view.md) - using the same toolbar class for a list view
 
 After completing this complete tutorial series you will be well on your way to being a _Nooku Framework officianado_. You'll see
 some of the Magic that lets you write much less code for your given application, and get comfortable with some of the productivity tools
