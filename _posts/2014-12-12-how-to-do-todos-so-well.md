@@ -2,7 +2,7 @@
 title: How to do Todo sooo well, with Nooku
 author: Cameron
 layout: post
-image: /
+image: /images/blog/2014/getting-started-with-nooku-todo.jpg
 description: Getting started help with a Todo Component tutorial and a complete Todo Joomla Package
 ---
 
