@@ -4,6 +4,15 @@
         "type": "card",
         "data": [
             {
+                "title": "ckeditor"
+            },
+            {
+                "title": "dropbox zxcvbn"
+            },
+            {
+                "title": "imagine"
+            },
+            {
                 "title": "joomla"
             },
             {
@@ -13,13 +22,37 @@
                 "title": "sass"
             },
             {
+                "title": "mailcatcher"
+            },
+            {
+                "title": "mariadb"
+            },
+            {
                 "title": "mysql"
             },
             {
                 "title": "nginx"
             },
             {
+                "title": "pagespeed"
+            },
+            {
                 "title": "php"
+            },
+            {
+                "title": "plupload"
+            },
+            {
+                "title": "swift mailer"
+            },
+            {
+                "title": "varnish cache"
+            },
+            {
+                "title": "xdebug"
+            },
+            {
+                "title": "yaml"
             }
         ]
     },
@@ -46,10 +79,13 @@
         "type": "simple",
         "data": [
             {
-                "title": "imagine"
+                "title": "prettify"
             },
             {
                 "title": "select2"
+            },
+            {
+                "title": "webgrind"
             }
         ]
     }

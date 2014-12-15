@@ -8,7 +8,7 @@
             {% if include.class %}
                 {% assign button_class = include.class %}
             {% endif %}
-            {% if item.description %}
+            {% if item.description and item.url %}
                 <div class="stack-item__container stack-item__container--{{ group.type }}" id="{{ item_title }}">
                     <div class="stack-item">
                         {% if group.type != "simple" %}

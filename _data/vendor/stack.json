@@ -5,6 +5,11 @@
         "url": "https://github.com/toddmotto/apollo"
     },
     {
+        "title": "AGIV",
+        "description": "Flemish Geographical Information Agency.",
+        "url": "https://www.agiv.be"
+    },
+    {
         "title": "Bower",
         "description": "A package manager for the web.",
         "url": "http://bower.io/"
@@ -15,9 +20,19 @@
         "url": "http://capistranorb.com/"
     },
     {
+        "title": "CKEditor",
+        "description": "The best web text editor for everyone.",
+        "url": "http://ckeditor.com/"
+    },
+    {
         "title": "Composer",
         "description": "Dependency Manager for PHP.",
         "url": "https://getcomposer.org/"
+    },
+    {
+        "title": "Dropbox zxcvbn",
+        "description": "ZXCVBN named after a crappy password, is a password strength estimation library.",
+        "url": "https://github.com/dropbox/zxcvbn"
     },
     {
         "title": "datetimepicker",
@@ -35,8 +50,13 @@
         "url": "http://git-scm.com/"
     },
     {
+        "title": "Google Maps API",
+        "description": "Build highly customisable maps with your own content and imagery.",
+        "url": "https://developers.google.com/maps/"
+    },
+    {
         "title": "Grunt",
-        "description": "The JavaScript Task Runner",
+        "description": "The JavaScript Task Runner.",
         "url": "http://gruntjs.com/"
     },
     {
@@ -50,8 +70,13 @@
         "url": "https://github.com/avalanche123/Imagine"
     },
     {
+        "title": "Jekyll",
+        "description": "Transform your plain text into static websites and blogs.",
+        "url": "http://jekyllrb.com/"
+    },
+    {
         "title": "Joomla",
-        "description": "Content management system",
+        "description": "Content management system.",
         "url": "http://www.joomla.org/"
     },
     {
@@ -68,6 +93,11 @@
         "title": "Mailcatcher",
         "description": "Catches mail and serves it through a dream.",
         "url": "https://github.com/sj26/mailcatcher"
+    },
+    {
+        "title": "MariaDB",
+        "description": "An enhanced, drop-in replacement for MySQL.",
+        "url": "https://mariadb.org/"
     },
     {
         "title": "MySQL",
@@ -95,6 +125,11 @@
         "url": "http://php.net/"
     },
     {
+        "title": "Plupload",
+        "description": "At its core Plupload is visually flat and you can customize it however you like.",
+        "url": "http://www.plupload.com/"
+    },
+    {
         "title": "PHP-JWT",
         "description": "PEAR package for JWT.",
         "url": "https://github.com/firebase/php-jwt"
@@ -110,8 +145,13 @@
         "url": "https://github.com/jamesallardice/Placeholders.js/"
     },
     {
+        "title": "Prettify",
+        "description": "Allows syntax highlighting of source code snippets in an html page.",
+        "url": "https://code.google.com/p/google-code-prettify/"
+    },
+    {
         "title": "Sass",
-        "description": "Syntactically Awesome Style Sheets",
+        "description": "Syntactically Awesome Style Sheets.",
         "url": "http://sass-lang.com/"
     },
     {
@@ -125,13 +165,38 @@
         "url": "http://susy.oddbird.net/"
     },
     {
+        "title": "Swift Mailer",
+        "description": "Swift Mailer integrates into any web app written in PHP 5",
+        "url": "http://swiftmailer.org/"
+    },
+    {
         "title": "Vagrant",
-        "description": "A tool for building and distributing development environments",
+        "description": "A tool for building and distributing development environments.",
         "url": "https://www.vagrantup.com/"
+    },
+    {
+        "title": "Varnish Cache",
+        "description": "Varnish makes websites fly!",
+        "url": "https://www.varnish-cache.org/"
     },
     {
         "title": "VirtualBox",
         "description": "Run nearly any operating system on a single machine simultaneously.",
         "url": "https://www.virtualbox.org/"
+    },
+    {
+        "title": "Webgrind",
+        "description": "Webgrind is a Xdebug profiling web frontend in PHP5.",
+        "url": "https://github.com/jokkedk/webgrind"
+    },
+    {
+        "title": "Xdebug",
+        "description": "A powerful debugger for PHP.",
+        "url": "http://xdebug.org/"
+    },
+    {
+        "title": "YAML",
+        "description": "YAML is a human friendly data serialization standard for all programming languages.",
+        "url": "https://github.com/symfony/yaml"
     }
 ]
