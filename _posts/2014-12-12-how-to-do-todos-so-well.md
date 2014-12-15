@@ -24,11 +24,10 @@ You will see examples of
 * models
 * template helpers
 * views
-* tie your Todo Items into Search
-* showing your items in a module
+* Todo item searching
+* showing items in a module
 
-<!-- DRESS THIS UP WITH A BUTTON-->
-[Get It on Github](https://github.com/nooku/joomla-todo)
+<a class="button" href="https://github.com/nooku/joomla-todo">Get It on Github</a>
 
 Better yet, just run this command this command in your Joomla root directory.
 
@@ -43,7 +42,7 @@ composer require nooku/joomla-todo:1.*
 [Getting Started](http://guides.nooku.org/get-started.md) is sometimes the hardest part about working with a Framework.
 Without good examples and supporting documentation getting to know the major concepts, structure, and conventions can be challenging.
 
-There is no Question that Nooku is powerful, but getting started with it doesn't need to be hard. To get you going we've taken a
+There is no Question that Nooku is powerful, but getting started with it doesn't need to be hard. We've taken a
 step by step approach describing how to build out an actual working version of the Todo Component from the ground up.
 
 ### Some of the Highlights
@@ -69,14 +68,14 @@ What good would a Joomla Component Tutorial be without touching on the most impo
 also try to bring forward and reinforce more important concepts. You will create more views, add toolbars, and learn a little about the dispatcher.
 
 * [Component Entry Point](get-started/backend-entry-point.md) - this time, get things going in the backend
-* [Create a View](get-started/create-a-view.md) - create a more administrator focused view
-* [The Dispatcher](get-started/the-dispatcher.md) - we talk about how to use this to set a default controller for your component
+* [Create a View](get-started/create-a-view.md) - create a more "administrator" focused view
+* [The Dispatcher](get-started/the-dispatcher.md) - we talk about how to use the dispatcher to set a default controller for your component
 * [The Controller Package](get-started/the-controller-package.md) - Controller toolbars and a little bit of theory
 * [Load a Form to Edit Todos](get-started/load-a-form-to-edit-todo-items.md) - this step gets the edit form into your component
 * [Toolbar for Item Form](get-started/add-toolbar-to-item-view.md) - using the default implementation of the toolbar, no need to handle your forms
 * [Toolbar for List View](get-started/add-toolbar-to-list-view.md) - using the same toolbar class for a list view
 
-After completing this complete tutorial series you will be well on your way to being a _Nooku Framework officianado_. You'll see
+After completing each step in the tutorial series you will be well on your way to becoming a _Nooku Framework officianado_. You'll see
 some of the Magic that lets you write much less code for your given application, and get comfortable with some of the productivity tools
 that allow you to write code, instead of setting up instances of Joomla.
 
