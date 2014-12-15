@@ -7,6 +7,6 @@
     "author": "",
     "private": true,
     "dependencies": {
-        "stack": "timble/stack#master"
+        "stack": "timble/stack"
     }
 }
