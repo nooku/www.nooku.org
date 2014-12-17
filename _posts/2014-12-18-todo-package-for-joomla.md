@@ -1,46 +1,55 @@
 ---
-title: How to do Todo sooo well, with Nooku
-author: Cameron
+title: Off to the Races - Todo Tutorial and Package for Joomla!
+author: Cameron Barr
 layout: post
 image: /images/blog/2014/getting-started-with-nooku-todo.jpg
 description: Getting started help with a Todo Component tutorial and a complete Todo Joomla Package
 ---
 
-Nooku Framework 2.0 is out and we've been hard at work getting some of our supporting documentation together. Part of that work has been adding a new
-[Todo Component Tutorial series]((http://guides.nooku.org/get-started.md)) to the Guides. But another big part has been in producing
-a robust example [Todo Package](https://github.com/nooku/joomla-todo) that goes even beyond what the tutorial explains.
+[Getting Started](http://guides.nooku.org/get-started.md) is sometimes the hardest part about working with a framework.
+Without good examples and supporting documentation getting to know the major concepts, structure, and conventions can be challenging.
 
-<!--more-->
+Nooku Framework 2.1 is out and we've been hard at work getting that supporting documentation together. <!--more--> Part of that work has been adding a new
+[Todo Component Tutorial series]((http://guides.nooku.org/get-started.md)) to the Guides. But another big part has been in producing
+a robust example [Todo Package](https://github.com/nooku/joomla-todo) that goes even beyond what the tutorial explains. Both
+serve to show you how to build solid Joomla! extensions quickly.
+
 ## The Todo Package
 
 We believe in _Letting the code do the talking_, and so with the Todo Package you get a lot of nice working examples of how to
 get things done with Nooku Framework.
 
-You will see examples of
+There is a great example of how to use the [Bootstrapper](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/resources/config/bootstrapper.php)
+in your component. You can define object instantiation by its identifier in this one file. _Beautiful_.
 
-* table objects
-* behaviors
-* http dispatchers
-* models
-* template helpers
-* views
-* Todo item searching
-* showing items in a module
+Need to see how a [Frontend Toolbar](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/controller/toolbar/item.php) might get built in the front end?
+Or, tell your [controller](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/controller/item.php) to allow JSON responses when requested? We show them both.
+
+We have a custom template helper to add delete functionality to the front end for Todo items. We show you how you might
+couple your item into Joomla! ACL with a [table behavior](https://github.com/nooku/joomla-todo/blob/master/administrator/components/com_todo/database/behavior/permissible.php) and use that
+in the templates. The _`canPerform`_ method gets mixed right into the item's interface..._That is handy_!
+
+There are great examples of how you could use the [behavior helper](https://github.com/nooku/nooku-framework/blob/master/code/libraries/koowa/components/com_koowa/template/helper/behavior.php)
+package in your [forms](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/views/item/tmpl/form.html.php), not to mention displaying
+how you might [organize your view layouts and templates](https://github.com/nooku/joomla-todo/tree/master/site/components/com_todo/views/item/tmpl).
+
+We even show you how you might plug todo items into the Joomla! Search Api and display your items in a module.
+
+## _and so much more_
+
+You can...
 
 <a class="button" href="https://github.com/nooku/joomla-todo">Get It on Github</a>
 
-Better yet, just run this command this command in your Joomla root directory.
+Or, if you want to see it in action, just run this command this command in your Joomla root directory. It will install the package for you.
 
-```shell
-composer require nooku/joomla-todo:1.*
+```
+$ composer require nooku/joomla-todo:1.*
 ```
 
 >Only last week we highlighted in our blog [Nooku's Composer supported distribution architecture](http://www.nooku.org/blog/2014/12/special-delivery-from-the-composer-express/)
 
-## Help Getting Started...
-
-[Getting Started](http://guides.nooku.org/get-started.md) is sometimes the hardest part about working with a Framework.
-Without good examples and supporting documentation getting to know the major concepts, structure, and conventions can be challenging.
+## Help Getting Started...The Tutorial
 
 There is no Question that Nooku is powerful, but getting started with it doesn't need to be hard. We've taken a
 step by step approach describing how to build out an actual working version of the Todo Component from the ground up.
