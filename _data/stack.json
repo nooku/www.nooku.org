@@ -1,17 +1,7 @@
 [
     {
-        "title": "Application & Data",
-        "type": "card",
+        "title": "Technologies",
         "data": [
-            {
-                "title": "ckeditor"
-            },
-            {
-                "title": "dropbox zxcvbn"
-            },
-            {
-                "title": "imagine"
-            },
             {
                 "title": "joomla"
             },
@@ -20,9 +10,6 @@
             },
             {
                 "title": "sass"
-            },
-            {
-                "title": "mailcatcher"
             },
             {
                 "title": "mariadb"
@@ -40,16 +27,33 @@
                 "title": "php"
             },
             {
+                "title": "varnish cache"
+            }
+        ]
+    },
+    {
+        "title": "Libraries",
+        "data": [
+            {
+                "title": "ckeditor"
+            },
+            {
+                "title": "dropbox zxcvbn"
+            },
+            {
+                "title": "imagine"
+            },
+            {
                 "title": "plupload"
             },
             {
+                "title": "prettify"
+            },
+            {
+                "title": "select2"
+            },
+            {
                 "title": "swift mailer"
-            },
-            {
-                "title": "varnish cache"
-            },
-            {
-                "title": "xdebug"
             },
             {
                 "title": "yaml"
@@ -58,7 +62,6 @@
     },
     {
         "title": "Dev Ops",
-        "type": "card",
         "data": [
             {
                 "title": "composer"
@@ -67,25 +70,19 @@
                 "title": "git"
             },
             {
+                "title": "mailcatcher"
+            },
+            {
                 "title": "vagrant"
             },
             {
                 "title": "virtualbox"
-            }
-        ]
-    },
-    {
-        "title": "Other",
-        "type": "simple",
-        "data": [
-            {
-                "title": "prettify"
-            },
-            {
-                "title": "select2"
             },
             {
                 "title": "webgrind"
+            },
+            {
+                "title": "xdebug"
             }
         ]
     }

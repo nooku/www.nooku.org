@@ -9,9 +9,9 @@
                 {% assign button_class = include.class %}
             {% endif %}
             {% if item.description and item.url %}
-                <div class="stack-item__container stack-item__container--{{ group.type }}" id="{{ item_title }}">
+                <div class="stack-item__container stack-item__container" id="{{ item_title }}">
                     <div class="stack-item">
-                        {% if group.type != "simple" %}
+                        {% if tool.logo != "none" %}
                         <div class="stack-item__logo">
                             <img src="/images/stack/{{ item_title }}.png" />
                         </div>
@@ -25,9 +25,9 @@
                 {% for tool in site.data.vendor.stack %}
                     {% assign tool_title =  tool.title | replace: ' ', '-' | downcase %}
                     {% if tool_title == item_title %}
-                        <div class="stack-item__container stack-item__container--{{ group.type }}" id="{{ tool_title }}">
+                        <div class="stack-item__container stack-item__container" id="{{ tool_title }}">
                             <div class="stack-item">
-                                {% if group.type != "simple" %}
+                                {% if tool.logo != "none" %}
                                 <div class="stack-item__logo">
                                     <img src="/images/stack/vendor/{{ tool_title }}.png" />
                                 </div>

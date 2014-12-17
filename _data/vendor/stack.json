@@ -147,7 +147,8 @@
     {
         "title": "Prettify",
         "description": "Allows syntax highlighting of source code snippets in an html page.",
-        "url": "https://code.google.com/p/google-code-prettify/"
+        "url": "https://code.google.com/p/google-code-prettify/",
+        "logo": "none"
     },
     {
         "title": "Sass",
@@ -157,7 +158,8 @@
     {
         "title": "Select2",
         "description": "jQuery based replacement for select boxes.",
-        "url": "http://ivaynberg.github.io/select2/"
+        "url": "http://ivaynberg.github.io/select2/",
+        "logo": "none"
     },
     {
         "title": "Susy",
@@ -187,7 +189,8 @@
     {
         "title": "Webgrind",
         "description": "Webgrind is a Xdebug profiling web frontend in PHP5.",
-        "url": "https://github.com/jokkedk/webgrind"
+        "url": "https://github.com/jokkedk/webgrind",
+        "logo": "none"
     },
     {
         "title": "Xdebug",
