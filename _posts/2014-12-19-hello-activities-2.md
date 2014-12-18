@@ -193,7 +193,7 @@ class ComFooModelActivities extends ComActivitiesModelActivities
 }
 {% endhighlight %}
 
-It is as simple as that!.
+It is as simple as that!
 
 ## What is new?
 
@@ -210,8 +210,8 @@ Nooku Activities can be found in our [Nooku Github space](https://github.com/noo
 composer require nooku/nooku-activities:2.*
 ```
 
-Feel free to fork it, break it and improve it!. Pull Requests are of course always welcome!.
+Feel free to fork it, break it and improve it! Pull Requests are of course always welcome!
 
 We hope that you will enjoy working with this component as much as we have.
 
-Happy coding!.
+Happy coding!
