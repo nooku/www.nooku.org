@@ -44,10 +44,10 @@
 
   .footer {
     .links_container {
-      @include span(first 15 of 24);
+      @include span(first 18 of 24);
     }
     .copyright {
-      @include span(9 of 24);
+      @include span(6 of 24);
     }
   }
 
