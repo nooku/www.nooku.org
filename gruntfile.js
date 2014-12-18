@@ -17,13 +17,25 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         src: ['bower_components/stack/logos/*.*'],
-                        dest: 'images/stack/logos',
+                        dest: 'images/stack/vendor',
                         flatten: true
                     },
                     {
                         expand: true,
                         src: ['bower_components/stack/scss/*.*'],
                         dest: '_scss/_utilities',
+                        flatten: true
+                    },
+                    {
+                        expand: true,
+                        src: ['bower_components/stack/template/*.*'],
+                        dest: '_includes',
+                        flatten: true
+                    },
+                    {
+                        expand: true,
+                        src: ['bower_components/stack/json/*.*'],
+                        dest: '_data/vendor',
                         flatten: true
                     }
                 ]
