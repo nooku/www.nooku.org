@@ -1,11 +1,12 @@
 @import "illusion";
 @import "susy";
-@import "../bower_components/stack/scss/stack";
 
 @import "_misc/variables";
 @import "_misc/placeholders";
 @import "_misc/setup";
 @import "_misc/container";
+
+@import "../bower_components/stack/scss/stack";
 
 @import "_utilities/grid";
 @import "_utilities/highlight";

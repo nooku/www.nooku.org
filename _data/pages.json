@@ -59,6 +59,10 @@
             "url": "/events"
         },
         {
+            "text": "Stack",
+            "url": "/stack"
+        },
+        {
             "text": "Contact",
             "url": "/contact"
         }
