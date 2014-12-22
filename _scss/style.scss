@@ -1,5 +1,6 @@
 @import "illusion";
 @import "susy";
+@import "../bower_components/stack/scss/stack";
 
 @import "_misc/variables";
 @import "_misc/placeholders";
@@ -10,7 +11,6 @@
 @import "_utilities/highlight";
 @import "_utilities/nooku-font-icon";
 @import "_utilities/button--hamburger";
-@import "_utilities/stack";
 
 @import "_atoms/a";
 @import "_atoms/blockquote";
