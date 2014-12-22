@@ -6,11 +6,12 @@
 @import "_misc/setup";
 @import "_misc/container";
 
+@import "../bower_components/stack/scss/stack";
+
 @import "_utilities/grid";
 @import "_utilities/highlight";
 @import "_utilities/nooku-font-icon";
 @import "_utilities/button--hamburger";
-@import "_utilities/stack";
 
 @import "_atoms/a";
 @import "_atoms/blockquote";

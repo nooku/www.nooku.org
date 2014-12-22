@@ -22,14 +22,8 @@ module.exports = function(grunt) {
                     },
                     {
                         expand: true,
-                        src: ['bower_components/stack/scss/*.*'],
-                        dest: '_scss/_utilities',
-                        flatten: true
-                    },
-                    {
-                        expand: true,
                         src: ['bower_components/stack/template/*.*'],
-                        dest: '_includes',
+                        dest: '_includes/vendor',
                         flatten: true
                     },
                     {
