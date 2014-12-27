@@ -1,27 +1,31 @@
-name: Nooku
-
-description: A solid, modern framework and lean architecture for building Joomla extensions.
-main_title: Nooku - Joomla Extension Framework
-url: http://www.nooku.org
-
-monthly_archive:
-  layout: archive
-  path: blog
-
+# Pagination
 permalink: "/blog/:year/:month/:title"
 paginate: 4
 paginate_path: "blog/page:num"
 
-# Gems
-gems:
-  - jekyll-sitemap
+# Blog
+monthly_archive:
+  layout: archive
+  path: blog
+
+# Site info
+name: Nooku
+url: http://www.nooku.org
+main_title: Nooku - Joomla Extension Framework
+description: A solid, modern framework and lean architecture for building Joomla extensions.
 
 # collections
 collections:
 - events
 
+# Gems
+gems:
+  - jekyll-sitemap
+
 # We don't want to publish some files
 exclude: [
+'bower.json',
+'bower_components',
 'CNAME',
 'Gemfile',
 'Gemfile.lock',

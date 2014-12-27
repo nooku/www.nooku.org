@@ -44,13 +44,5 @@ $spacing-m:   30px;
 $spacing-s:   20px;
 $spacing-xs:  10px;
 
-
-// Susy grid
-$gutter-width: 3em;
-$susy: (
-  gutters: $gutter-width/4em,
-  gutter-position: before
-);
-
 // Color for the stack
 $stack-color--main: #085DAD;

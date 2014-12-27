@@ -1,0 +1,25 @@
+// Custom gallery mixin for Neat
+@mixin gallery($span: $columns of $container) {
+
+  // Variables
+  $columns: nth($span, 1);
+  $container: nth($span, 3);
+  $omega: $container / $columns;
+
+  // Reset all previous NTH values
+  &:nth-child(n+1) {
+    clear: none;
+    margin-right: flex-gutter();
+  }
+
+  // Use Neat span-columns to align items
+  @include span-columns($span);
+
+  // Custom omega since @include omega won't work with custom variables
+  &:nth-child(#{$omega}n) {
+    margin-right: 0;
+  }
+  &:nth-child(#{$omega}n+1) {
+    clear: left;
+  }
+}

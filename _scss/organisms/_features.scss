@@ -1,4 +1,4 @@
 .features {
-  @extend %clearfix;
+  @include clearfix;
   padding: $spacing-s 0;
 }

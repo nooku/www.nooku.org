@@ -19,5 +19,4 @@
 * Removed [Bootstrap](http://getbootstrap.com/)
 
 ## v2.0
-
 Short version: brand new website featuring an adaptive design and powered by Jekyll.
