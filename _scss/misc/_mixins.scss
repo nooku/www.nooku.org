@@ -9,7 +9,8 @@
   // Reset all previous NTH values
   &:nth-child(n+1) {
     clear: none;
-    margin-right: flex-gutter();
+    // Set the margin back using flex-gutter function and set amount of columns to amount specified above within mixin
+    margin-right: flex-gutter($container-columns: $container);
   }
 
   // Use Neat span-columns to align items
