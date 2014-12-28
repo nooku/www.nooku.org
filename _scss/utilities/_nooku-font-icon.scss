@@ -36,122 +36,69 @@
   }
 }
 
+// Creating the map
+$icons: (
+  briefcase: "\f101",
+  code: "\f102",
+  earth: "\f103",
+  extern: "\f104",
+  facebook: "\f105",
+  feed: "\f106",
+  github: "\f107",
+  google: "\f108",
+  joomla: "\f109",
+  linkedin: "\f10a",
+  nooku-logo: "\f10b",
+  power-cord: "\f10c",
+  repeat: "\f10d",
+  stack: "\f10e",
+  stopwatch: "\f10f",
+  twitter: "\f110",
+  user4: "\f111",);
 
-.icon-nooku-briefcase {
-  @extend %icon;
-  &:before {
-    content:"\f101";
+
+// Creating classnames of all icons
+@each $name, $icon in $icons {
+  .icon-nooku-#{$name} {
+    @extend %icon;
+    &:before {
+      content: "#{$icon}";
+    }
   }
 }
 
-.icon-nooku-code {
-  @extend %icon;
+// For adding icons to elements using CSS pseudo-elements
+@mixin icon-before($icon: false, $styles: false) {
   &:before {
-    content:"\f102";
+    @if $icon {
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      @extend %icon;
+    }
+    @content;
   }
 }
-
-.icon-nooku-earth {
-  @extend %icon;
-  &:before {
-    content:"\f103";
+@mixin icon-after($icon: false, $styles: false) {
+  &:after {
+    @if $icon {
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      @extend %icon;
+    }
+    @content;
   }
 }
-
-.icon-nooku-extern {
-  @extend %icon;
-  &:before {
-    content:"\f104";
-  }
-}
-
-.icon-nooku-facebook {
-  @extend %icon;
-  &:before {
-    content:"\f105";
-  }
-}
-
-.icon-nooku-feed {
-  @extend %icon;
-  &:before {
-    content:"\f106";
-  }
-}
-
-.icon-nooku-github {
-  @extend %icon;
-  &:before {
-    content:"\f107";
-  }
-}
-
-.icon-nooku-google {
-  @extend %icon;
-  &:before {
-    content:"\f108";
-  }
-}
-
-.icon-nooku-joomla {
-  @extend %icon;
-  &:before {
-    content:"\f109";
-  }
-}
-
-.icon-nooku-linkedin {
-  @extend %icon;
-  &:before {
-    content:"\f10a";
-  }
-}
-
-.icon-nooku-nooku-logo {
-  @extend %icon;
-  &:before {
-    content:"\f10b";
-  }
-}
-
-.icon-nooku-power-cord {
-  @extend %icon;
-  &:before {
-    content:"\f10c";
-  }
-}
-
-.icon-nooku-repeat {
-  @extend %icon;
-  &:before {
-    content:"\f10d";
-  }
-}
-
-.icon-nooku-stack {
-  @extend %icon;
-  &:before {
-    content:"\f10e";
-  }
-}
-
-.icon-nooku-stopwatch {
-  @extend %icon;
-  &:before {
-    content:"\f10f";
-  }
-}
-
-.icon-nooku-twitter {
-  @extend %icon;
-  &:before {
-    content:"\f110";
-  }
-}
-
-.icon-nooku-user4 {
-  @extend %icon;
-  &:before {
-    content:"\f111";
+@mixin icon-both($icon: false, $styles: false) {
+  &:before,
+  &:after {
+    @if $icon {
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      @extend %icon;
+    }
+    @content;
   }
 }
