@@ -8,5 +8,9 @@
     "private": true,
     "dependencies": {
         "stack": "timble/stack"
+    },
+    "devDependencies": {
+        "neat": "~1.7.0",
+        "illusion": "timble/illusion#master"
     }
 }

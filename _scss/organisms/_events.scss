@@ -1,12 +1,12 @@
 .events_container {
-  @extend %clearfix;
+  @include clearfix;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   max-width: 1200px;
 
   .events {
-    @extend %clearfix;
+    @include clearfix;
   }
 
   .events--upcoming {

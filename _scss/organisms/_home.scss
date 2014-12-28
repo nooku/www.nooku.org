@@ -1,10 +1,10 @@
 .framework_features {
-  @extend %clearfix;
+  @include clearfix;
   font-size: 1.0625em;
   padding-top: $spacing-s;
 }
 
 .builtwith {
-  @extend %clearfix;
+  @include clearfix;
   padding: $spacing-xs 0;
 }

@@ -1,12 +1,15 @@
-@import "illusion";
-@import "susy";
+// Vendor
+@import "../bower_components/bourbon/dist/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+@import "../bower_components/illusion/sass/illusion";
 
-@import "_misc/variables";
-@import "_misc/placeholders";
-@import "_misc/container";
+@import "misc/variables";
+@import "misc/mixins";
+@import "misc/placeholders";
+@import "misc/container";
 
-@import "_utilities/button--hamburger";
+@import "utilities/button--hamburger";
 
-@import "_molecules/navbar";
+@import "molecules/navbar";
 
-@import "_organisms/header";
+@import "organisms/header";

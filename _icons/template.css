@@ -36,11 +36,53 @@
   }
 }
 
-<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
-.<%= classPrefix %><%= glyphs[glyphIdx] %> {
-  @extend %icon;
-  &:before {
-    content:"<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>";
+/* Creating the map */
+$icons: (<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+  <%= glyphs[glyphIdx] %>: "<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>",<% } %>);
+
+
+/* Creating classnames of all icons */
+@each $name, $icon in $icons {
+  .<%= classPrefix %>#{$name} {
+    @extend %icon;
+    &:before {
+      content: "#{$icon}";
+    }
   }
 }
-<% } %>
+
+/* For adding icons to elements using CSS pseudo-elements */
+@mixin icon-before($icon: false, $styles: false) {
+  &:before {
+    @if $icon {
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      @extend %icon;
+    }
+    @content;
+  }
+}
+@mixin icon-after($icon: false, $styles: false) {
+  &:after {
+    @if $icon {
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      @extend %icon;
+    }
+    @content;
+  }
+}
+@mixin icon-both($icon: false, $styles: false) {
+  &:before,
+  &:after {
+    @if $icon {
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      @extend %icon;
+    }
+    @content;
+  }
+}
