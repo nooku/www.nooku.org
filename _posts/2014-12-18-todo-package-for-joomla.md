@@ -9,7 +9,7 @@ description: Getting started help with a Todo Component tutorial and a complete 
 [Getting Started](http://guides.nooku.org/get-started.md) is sometimes the hardest part about working with a framework.
 Without good examples and supporting documentation getting to know the major concepts, structure, and conventions can be challenging.
 
-Nooku Framework 2.1 is out and we've been hard at work getting that supporting documentation together. <!--more--> Part of that work has been adding a new
+Nooku Framework 2.0 is out and we've been hard at work getting that supporting documentation together. <!--more--> Part of that work has been adding a new
 [Todo Component Tutorial series]((http://guides.nooku.org/get-started.md)) to the Guides. But another big part has been in producing
 a robust example [Todo Package](https://github.com/nooku/joomla-todo) that goes even beyond what the tutorial explains. Both
 serve to show you how to build solid Joomla! extensions quickly.
