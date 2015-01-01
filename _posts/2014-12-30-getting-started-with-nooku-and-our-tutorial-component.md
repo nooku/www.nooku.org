@@ -17,8 +17,6 @@ Without good code examples and supporting documentation getting to know the majo
 
 With [Nooku Framework 2.0 out](http://www.nooku.org/blog/2014/09/hello-joomla/) and about we've been hard at work to create getting started documentation to guide you through your first steps.  It’s an unwritten rule among framework developers that a good getting started guide should demonstrate how to build a Todo MVC component. With Nooku we do no different!
 
-<a class="button" href="http://guides.nooku.org/getting-started.html">Todo Component Tutorial</a>
-
 In our Nooku guides you will find a new step by step [getting started tutorial](http://guides.nooku.org/getting-started.html) that takes you through the creation of such an extension for Joomla using Nooku Framework. For the lazy developers among you, you can find the [fully working Todo on Github](https://github.com/nooku/joomla-todo). Just [install using Composer](#getting) and check it out.
 
 We also added some extra features in the package that are not covered yet in the tutorial itself. Both serve to show you how to build solid Joomla! extensions quickly.
