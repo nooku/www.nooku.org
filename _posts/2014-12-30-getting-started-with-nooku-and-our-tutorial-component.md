@@ -36,9 +36,7 @@ There are great examples of how you could use the [behavior template helper](htt
 We even show you how you might plug todo items into the Joomla! Smart Search API and display your items in a module, **and so much more.**
 
 <a id="getting"></a>
-So go ahead and...
-
-<a class="button" href="https://github.com/nooku/joomla-todo">Get it on Github</a>
+So go ahead and... <a class="button" href="https://github.com/nooku/joomla-todo">Get it on Github</a>
 
 Or, if you want to see it in action, just run this command this single command in your Joomla root directory. It will install the package for you.
 
