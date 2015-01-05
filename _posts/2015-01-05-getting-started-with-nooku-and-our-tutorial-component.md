@@ -2,7 +2,7 @@
 title: Getting started with Nooku and our Todo component.
 author: Cameron Barr
 layout: post
-image: /images/blog/2014/getting-started-with-nooku-todo.jpg
+image: /images/blog/2015/getting-started-with-nooku-todo.jpg
 description: Getting started with Nooku and our Todo component.
 ---
 
