@@ -1,5 +1,7 @@
 .group {
-  @include container;
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sponsors,
@@ -27,11 +29,11 @@
   .framework_features .media { @include gallery(6 of 12); }
 
   .network__contact {
-    @include span(first 4 of 12);
+    @include span-columns( 4 of 12);
   }
 
   .network__partners {
-    @include span(8 of 12);
+    @include span-columns(8 of 12);
   }
 
   .sponsors,
@@ -44,10 +46,10 @@
 
   .footer {
     .links_container {
-      @include span(first 15 of 24);
+      @include span-columns( 18 of 24);
     }
     .copyright {
-      @include span(9 of 24);
+      @include span-columns(6 of 24);
     }
   }
 

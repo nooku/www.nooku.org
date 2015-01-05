@@ -1,48 +1,64 @@
-@import "illusion";
-@import "susy";
+// Bourbon
+@import "../bower_components/bourbon/dist/bourbon";
 
-@import "_misc/variables";
-@import "_misc/placeholders";
-@import "_misc/setup";
-@import "_misc/container";
+// Neat
+$gutter: golden-ratio(1em, 2) !global; // must be placed here
+@import "../bower_components/neat/app/assets/stylesheets/neat";
 
-@import "_utilities/grid";
-@import "_utilities/highlight";
-@import "_utilities/nooku-font-icon";
-@import "_utilities/button--hamburger";
-@import "_utilities/stack";
+// Illusion
+@import "../bower_components/illusion/sass/illusion";
 
-@import "_atoms/a";
-@import "_atoms/blockquote";
-@import "_atoms/headings";
-@import "_atoms/lists";
+// Setup
+@import "misc/variables";
+@import "misc/mixins";
+@import "misc/placeholders";
+@import "misc/setup";
+@import "misc/container";
 
-@import "_molecules/background";
-@import "_molecules/button";
-@import "_molecules/content";
-@import "_molecules/flag";
-@import "_molecules/icons";
-@import "_molecules/media";
-@import "_molecules/navbar";
-@import "_molecules/newsletter";
-@import "_molecules/pagination";
-@import "_molecules/subtitle";
-@import "_molecules/thumbnails";
-@import "_molecules/upcoming";
+// Stack (load after variables)
+@import "../bower_components/stack/scss/stack";
 
-@import "_organisms/blog";
-@import "_organisms/contact";
-@import "_organisms/event";
-@import "_organisms/events";
-@import "_organisms/features";
-@import "_organisms/footer";
-@import "_organisms/get-started";
-@import "_organisms/gmap";
-@import "_organisms/home";
-@import "_organisms/header";
-@import "_organisms/platform";
-@import "_organisms/services";
-@import "_organisms/teaser";
-@import "_organisms/trusted";
+// Utilities
+@import "utilities/grid";
+@import "utilities/highlight";
+@import "utilities/nooku-font-icon";
+@import "utilities/button--hamburger";
 
+// Atoms
+@import "atoms/a";
+@import "atoms/blockquote";
+@import "atoms/headings";
+@import "atoms/lists";
+
+// Molecules
+@import "molecules/background";
+@import "molecules/button";
+@import "molecules/content";
+@import "molecules/flag";
+@import "molecules/icons";
+@import "molecules/media";
+@import "molecules/navbar";
+@import "molecules/newsletter";
+@import "molecules/pagination";
+@import "molecules/subtitle";
+@import "molecules/thumbnails";
+@import "molecules/upcoming";
+
+// Organisms
+@import "organisms/blog";
+@import "organisms/contact";
+@import "organisms/event";
+@import "organisms/events";
+@import "organisms/features";
+@import "organisms/footer";
+@import "organisms/get-started";
+@import "organisms/gmap";
+@import "organisms/home";
+@import "organisms/header";
+@import "organisms/platform";
+@import "organisms/services";
+@import "organisms/teaser";
+@import "organisms/trusted";
+
+// Shame, shame, shame...
 @import "shame";

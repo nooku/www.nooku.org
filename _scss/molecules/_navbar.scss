@@ -1,15 +1,15 @@
 @include breakpoint($beta) {
   .header__brand {
-    @include span(first 3 of 12);
+    @include span-columns( 3 of 12);
   }
 
   .header__navigation {
-    @include span(9 of 12);
+    @include span-columns(9 of 12);
   }
 }
 
 .navigation_container {
-  @extend %clearfix;
+  @include clearfix;
   font-size: 0;
   line-height: 0;
   font-family: $base-font;
@@ -21,7 +21,7 @@
 }
 
 .navbar {
-  @extend %clearfix;
+  @include clearfix;
   font-size: 18px;
   line-height: 24px;
   z-index: 2;
