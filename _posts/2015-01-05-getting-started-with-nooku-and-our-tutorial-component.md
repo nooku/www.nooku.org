@@ -44,11 +44,9 @@ $ composer require nooku/joomla-todo:1.*
 
 ### Composer Support
 
-Only last week we highlighted in our blog [Nooku's Composer supported distribution architecture](http://www.nooku.org/blog/2014/12/special-delivery-from-the-composer-express/).
+Only last week we highlighted in our blog [Nooku's Composer supported distribution architecture](http://www.nooku.org/blog/2014/12/special-delivery-from-the-composer-express/). If you haven't read it yet, now is the time!
 
-**_If you haven't read it yet, now is the time!_**
-
-That’s all we have so far for you. Now it’s your turn. Can you help us by [writing a tutorial](http://guides.nooku.org/contribute/write-a-tutorial.html) or send in a PR (pull request) to improve the Todo component?
+That’s all we have so far for you. Now it’s your turn. You can help us by [writing a tutorial](http://guides.nooku.org/contribute/write-a-tutorial.html), or by sending in a PR (pull request) to improve the Todo component.
 
 **Happy Coding!**
 
