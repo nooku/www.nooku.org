@@ -205,7 +205,7 @@ Since [Activities 1.0](http://www.nooku.org/blog/2012/05/activity-streams-with-c
 - Made activities fully translatable.
 - Re-factored loggable package.
 
-Nooku Activities can be found in our [Nooku Github space](https://github.com/nooku/nooku-activities/). The component can be installed using [composer](https://packagist.org/packages/nooku/activities-component/):
+Nooku Activities can be found in our [Nooku Github space](https://github.com/nooku/nooku-activities/). The component can be installed using [composer](https://packagist.org/packages/nooku/nooku-activities/):
 
 ```
 composer require nooku/nooku-activities:2.*
