@@ -124,7 +124,8 @@ The resulting output should look something like the following:
 	"entities": [
 		{
 			"id": "cc4978e5a89a422d90f23b80b6404dc0",
-			"title": "<a href="http://site.dev/administrator/index.php?option=com_users&task=user.edit&id=951">Super User</a> <span >created</span> a new <span >item</span> with the title <a class="object" href="http://site.dev/administrator/index.php?option=com_todo&view=item&id=6">Pay phone bill</a>",			"story": "Super User created a new item with the title Pay phone bill",
+			"title": "<a href="http://site.dev/administrator/index.php?option=com_users&task=user.edit&id=951">Super User</a> <span >created</span> a new <span >item</span> with the title <a class="object" href="http://site.dev/administrator/index.php?option=com_todo&view=item&id=6">Pay phone bill</a>",
+			"story": "Super User created a new item with the title Pay phone bill",
 			"published": "2014-12-18T15:57:04+00:00",
 			"verb": "add",
 			"format": "{actor} {action} a new {object.type} with the title {object}",
