@@ -6,7 +6,7 @@ image: /images/blog/2014/activity-streams.png
 description: Announcing the release of Nooku Activities 2.0, a re-usable component for logging and exposing activities.
 ---
 
-As the web becomes more social, new and interesting way to follow people across the Internet has emerged. Termed as “Activity Streams”. A term popularized by sites like Facebook, Twitter, ... Today we have services like [Zapier](https://zapier.com) and [IFTTT](https://ifttt.com) that allow to "connect the web" while relying on user activities.
+As the web becomes more social, new and interesting ways to follow people across the Internet have emerged. **“Activity Streams”**, a term popularized by sites like Facebook and Twitter, are the backbone of services such as [Zapier](https://zapier.com) and [IFTTT](https://ifttt.com) which allow to "connect the web" relying on user activities.
 
 ## What are “Activity Streams”?
 
