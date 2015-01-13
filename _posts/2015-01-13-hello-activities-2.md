@@ -6,9 +6,11 @@ image: /images/blog/2014/activity-streams.png
 description: Announcing the release of Nooku Activities 2.0, a re-usable component for logging and exposing activities.
 ---
 
-Tracking user activities or even reacting to such events is something that is getting more and more attention by the day. Not so far along, an [specification](http://activitystrea.ms) for dealing with activities and their streams did not even exist. Today we have services like [Zapier](https://zapier.com) and [IFTTT](https://ifttt.com) that allow to "connect the web" while relying on user activities.
+[Nooku Activities](https://github.com/nooku/nooku-activities/) is a component built on top of the [Nooku Framework](http://www.nooku.org/) for logging and exposing user activities.
 
 <!--more-->
+
+Tracking user activities or even reacting to such events is something that is getting more and more attention by the day. Not so far along, an [specification](http://activitystrea.ms) for dealing with activities and their streams did not even exist. Today we have services like [Zapier](https://zapier.com) and [IFTTT](https://ifttt.com) that allow to "connect the web" while relying on user activities.
 
 In its simplest form, a user activity consists of an actor, a verb, optionally an object and sometimes a target. An activity tells the story of a person performing an action. Sometimes this action is performed on or with an object, and sometimes a target is also involved:
 
@@ -16,7 +18,6 @@ In its simplest form, a user activity consists of an actor, a verb, optionally a
 - John shared a video
 - Tom logged in
 
-[Nooku Activities](https://github.com/nooku/nooku-activities/) is a component built on top of the [Nooku Framework](http://www.nooku.org/) for logging and exposing user activities.
 
 If you ever came across Nooku before, you probably already know that **reusability** is one of the key features of the Framework. In other words, it enforces a basic but powerful rule: *develop it once, reuse it everywhere*.
 
