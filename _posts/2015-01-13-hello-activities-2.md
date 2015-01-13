@@ -30,8 +30,7 @@ If you ever came across Nooku before, you probably already know that **reusabili
 
 Through inheritance, reusable components may be extended and completely overridden avoiding developers the tedious task of repeating themselves. The old [copy/paste](http://en.wikipedia.org/wiki/Copy_and_paste_programming) days are long gone and reusable components are here to stay.
 
-Nooku Activities is our first reusable component to be publicly released. Because it is a reusable component, Nooku Activities is also application agnostic, *i.e.* it is not bound to Joomla! or any other application. The component only relies on the Framework as its only dependency.
-
+Because it is a reusable component, Nooku Activities is also application agnostic, *i.e.* it is not bound to Joomla! or any other application. The component only relies on the Framework as its only dependency.
 
 ## Logging Activities
 
@@ -90,7 +89,9 @@ The specification provides a complete description on how JSON should be serializ
 
 {% endhighlight %}
 
-In Nooku Activities we pushed the limit a bit further by extending the specification and making streams "smarter". We have added additional properties such as **story** and **format**. Story is a plain text representation of the activity message while format provides an advanced templating system for allowing clients to render their own activity messages. An example of these new properties in action will get presented in the next section.
+In Nooku Activities we pushed the limit a bit further by extending the specification and making streams "smarter". We have added additional properties such as **story** and **format**. 
+
+Story is a plain text representation of the activity message while format provides an advanced templating system for allowing clients to render their own activity messages. An example of these new properties in action will get presented in the next section.
 
 ## Integrating Activities
 
