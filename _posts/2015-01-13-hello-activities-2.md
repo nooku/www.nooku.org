@@ -14,7 +14,7 @@ On the surface, it looks like a simple record of actions performed by people on 
 
 Philosophy aside, the technology behind Activity Streams is also evolving. As more and more websites use it, a standard is being developed which allows [Activity Streams](http://activitystrea.ms) to be syndicated in its own protocol (instead of using RSS or Atom).
 
-[Nooku Activities](https://github.com/nooku/nooku-activities/) is a component built on top of the [Nooku Framework](http://www.nooku.org/) that implements this [standard]((http://activitystrea.ms) and allows for logging, exposing and syndicating user activities.
+[Nooku Activities](https://github.com/nooku/nooku-activities/) is a component built on top of the [Nooku Framework](http://www.nooku.org/) that implements this [standard](http://activitystrea.ms) and allows for logging, exposing and syndicating user activities.
 
 <!--more-->
 
