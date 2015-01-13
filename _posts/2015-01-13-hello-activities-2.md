@@ -16,7 +16,7 @@ In its simplest form, a user activity consists of an actor, a verb, optionally a
 - John shared a video
 - Tom logged in
 
-**Nooku Activities** is a component built on top of the **Nooku Framework** for logging and exposing user activities.
+[Nooku Activities](https://github.com/nooku/nooku-activities/) is a component built on top of the [Nooku Framework](http://www.nooku.org/) for logging and exposing user activities.
 
 If you ever came across Nooku before, you probably already know that **reusability** is one of the key features of the Framework. In other words, it enforces a basic but powerful rule: *develop it once, reuse it everywhere*.
 
@@ -205,7 +205,7 @@ Since [Activities 1.0](http://www.nooku.org/blog/2012/05/activity-streams-with-c
 - Made activities fully translatable.
 - Re-factored loggable package.
 
-Nooku Activities can be found in our [Nooku Github space](https://github.com/nooku/nooku-activities/). The component can be installed using [composer](https://packagist.org/packages/nooku/nooku-activities/):
+Nooku Activities can be found in our [Nooku Github space](https://github.com/nooku/). The component can be installed using [composer](https://packagist.org/packages/nooku/nooku-activities/):
 
 ```
 composer require nooku/nooku-activities:2.*
