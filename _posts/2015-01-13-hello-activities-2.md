@@ -6,11 +6,17 @@ image: /images/blog/2014/activity-streams.png
 description: Announcing the release of Nooku Activities 2.0, a re-usable component for logging and exposing activities.
 ---
 
-[Nooku Activities](https://github.com/nooku/nooku-activities/) is a component built on top of the [Nooku Framework](http://www.nooku.org/) for logging and exposing user activities.
+As the web becomes more social, new and interesting way to follow people across the Internet has emerged. Termed as “Activity Streams”. A term popularized by sites like Facebook, Twitter, ... Today we have services like [Zapier](https://zapier.com) and [IFTTT](https://ifttt.com) that allow to "connect the web" while relying on user activities.
+
+## What are “Activity Streams”?
+
+On the surface, it looks like a simple record of actions performed by people on the Internet. But what makes it interesting is the philosophy behind it. Activity Streams is rooted to a concept called [Activity Theory](http://www.slideshare.net/factoryjoe/activity-streams-socialism-the-future-of-open-source).
+
+Philosophy aside, the technology behind Activity Streams is also evolving. As more and more websites use it, a standard is being developed which allows [Activity Streams](http://activitystrea.ms) to be syndicated in its own protocol (instead of using RSS or Atom).
+
+[Nooku Activities](https://github.com/nooku/nooku-activities/) is a component built on top of the [Nooku Framework](http://www.nooku.org/) that implements this [standard]((http://activitystrea.ms) and allows for logging, exposing and syndicating user activities.
 
 <!--more-->
-
-Tracking user activities or even reacting to such events is something that is getting more and more attention by the day. Not so far along, an [specification](http://activitystrea.ms) for dealing with activities and their streams did not even exist. Today we have services like [Zapier](https://zapier.com) and [IFTTT](https://ifttt.com) that allow to "connect the web" while relying on user activities.
 
 In its simplest form, a user activity consists of an actor, a verb, optionally an object and sometimes a target. An activity tells the story of a person performing an action. Sometimes this action is performed on or with an object, and sometimes a target is also involved:
 
@@ -18,6 +24,7 @@ In its simplest form, a user activity consists of an actor, a verb, optionally a
 - John shared a video
 - Tom logged in
 
+## A re-usable component
 
 If you ever came across Nooku before, you probably already know that **reusability** is one of the key features of the Framework. In other words, it enforces a basic but powerful rule: *develop it once, reuse it everywhere*.
 
