@@ -1,5 +1,5 @@
 ---
-title: Hello Activities 2.0
+title: Hello Nooku Activities 2.0
 author: Arunas Mazeika
 layout: post
 image: /images/blog/2014/activity-streams.png
