@@ -783,6 +783,9 @@ blockquote p {
 .margin-bottom {
   margin-bottom: 1em; }
 
+[tabindex="-1"]:focus {
+  outline: none !important; }
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -2341,8 +2344,6 @@ ul {
       position: relative;
       padding: 10px 16px;
       margin: 3px; }
-    .skip a:visited {
-      color: #333; }
 
 .teaser {
   *zoom: 1;
