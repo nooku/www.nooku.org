@@ -193,17 +193,7 @@ Not all activities are rendered the same. Nooku activities includes a **powerful
 
 As shown in the above code examples, Nooku Activities may be used AS IS by simply adding a few lines of code. The component may also serve as the backbone of a more complex activity logging application. Each single part of the component may be extended and overridden.
 
-As an example, adding a model class in `/model/activities.php` is all that is needed for specializing the activities model:
-
-{% highlight php %}
-<?php
-
-class ComFooModelActivities extends ComActivitiesModelActivities
-{
-}
-{% endhighlight %}
-
-It is as simple as that!
+A working live example on how to extend Nooku Activities may be found in the [Joomla Todo Github space](https://github.com/nooku/joomla-todo). Joomla Todo is a demo component built using the Nooku Framework.
 
 ## What is new?
 
