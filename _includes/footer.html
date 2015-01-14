@@ -2,14 +2,14 @@
     <div class="container">
         <div class="group">
             <div class="links_container">
-                <p class="links">
+                <p class="links" role="navigation">
                     {% for link in site.data.pages.footer %}
                     <a href="{{ link.url }}" class="{{ link.text | downcase }}">{{ link.text }}</a>
                     {% endfor %}
                 </p>
             </div>
             <div class="copyright">
-                <p>Built with <span class="heart">♥</span> by <a href="http://www.timble.net">Timble</a></p>
+                <p>Built with <span class="heart" aria-hidden="true">♥</span><span class="accessible-hide">love</span> by <a href="http://www.timble.net">Timble</a></p>
             </div>
         </div>
     </div>

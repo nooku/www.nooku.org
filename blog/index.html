@@ -10,15 +10,15 @@ description: We are blogging since 2008 around Nooku and Joomla extension develo
         <h1>
             <a class="blog__header" href="{{ post.url }}">{{ post.title }}</a>
         </h1>
-
-        <h3 class="text-muted">
+        <p class="post_date">
             {{ post.date | date: "%d %B %Y"}} by {{ post.author }}
-        </h3>
+        </p>
     </header>
     <section>
         {% if post.image %}
-        <img class="blog__image" src="{{ post.image }}" />
+        <img class="blog__image" src="{{ post.image }}" alt="" aria-hidden="true" />
         {% endif %}
+
         <div class="excerpt">
             {{ post.content | split:"<!--more-->" | first }}
         </div>
@@ -43,6 +43,5 @@ description: We are blogging since 2008 around Nooku and Joomla extension develo
     {% endif %}
 </ul>
 
-<h3>Archive</h3>
-<p>We are blogging since 2008, check <a href="/blog/archive.html">our archive</a> if you wanna dive into the
-    past.</p>
+<h2>Archive</h2>
+<p>We are blogging since 2008, check <a href="/blog/archive.html">our archive</a> if you wanna dive into the past.</p>

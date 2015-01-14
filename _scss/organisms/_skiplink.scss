@@ -5,16 +5,15 @@
 
   a {
     display: inline-block;
+    padding: 10px 16px;
     position: absolute;
     left: -9999em;
     top: 0;
     z-index: 9;
 
-
     &:focus {
       left: 0;
       position: relative;
-      padding: 10px 16px;
       margin: 3px;
     }
   }

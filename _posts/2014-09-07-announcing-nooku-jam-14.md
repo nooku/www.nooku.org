@@ -3,6 +3,7 @@ title: Announcing Nooku Jam 14
 author: Johan
 layout: post
 image: /images/blog/2014/nooku-jam-2011.jpg
+image-alt: Photograph of Nooku Jam 2011
 description: An unconference event focusing on developing with Nooku and Joomla.
 ---
 
