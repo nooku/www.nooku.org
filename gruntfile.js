@@ -1,10 +1,7 @@
 module.exports = function(grunt) {
 
-    // measures the time each task takes
-    require('time-grunt')(grunt);
-
     // load time-grunt and all grunt plugins found in the package.json
-    require( 'load-grunt-tasks' )( grunt );
+    require('jit-grunt')(grunt);
 
     // grunt config
     grunt.initConfig
@@ -17,42 +14,47 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         src: ['bower_components/stack/logos/*.*'],
-                        dest: 'images/stack/logos',
+                        dest: 'images/stack/vendor',
                         flatten: true
                     },
                     {
                         expand: true,
-                        src: ['bower_components/stack/scss/*.*'],
-                        dest: '_scss/_utilities',
+                        src: ['bower_components/stack/template/*.*'],
+                        dest: '_includes/vendor',
+                        flatten: true
+                    },
+                    {
+                        expand: true,
+                        src: ['bower_components/stack/json/*.*'],
+                        dest: '_data/vendor',
                         flatten: true
                     }
                 ]
             }
         },
 
+
         // Iconfont
         webfont: {
             icons: {
-                src: 'images/icons/*.svg',
+                src: '_icons/icons/*.svg',
                 dest: 'fonts/icons',
-                destCss: '_scss/_utilities',
+                destCss: '_scss/utilities',
                 options: {
                     font: 'nooku-font-icon',
                     hashes: false,
                     stylesheet: 'scss',
                     relativeFontPath: '../fonts/icons/',
-                    template: 'fonts/icons/template.css'
+                    template: '_icons/template.css',
+                    htmlDemo: false
                 }
             }
         },
 
+
         // Compile sass files
         sass: {
             dest: {
-                options: {
-                    require: ['susy', 'illusion'],
-                    style: 'compressed'
-                },
                 files: [{
                     'css/style.css': '_scss/style.scss',
                     'css/header.css': '_scss/header.scss'
@@ -67,7 +69,35 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'js/scripts.js': ['_scripts/apollo.js', '_scripts/*.js']
+                    'js/scripts.js': [
+                        '_scripts/apollo.js',
+                        '_scripts/*.js'
+                    ]
+                }
+            }
+        },
+
+        // Browser Sync
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        '_site/*.*',
+                        // Exclude for refresh so browser only refreshes once
+                        '!_site/blog.rss',
+                        '!_site/CHANGELOG.md',
+                        '!_site/sitemap.xml'
+                    ]
+                },
+                options: {
+                    port: 6652, // NOKU (Nooku) on phone keypad
+                    open: true, // Opens site in your default browser, no need to remember the port
+                    notify: false,
+                    watchTask: true,
+                    injectChanges: false,
+                    server: {
+                        baseDir: '_site'
+                    }
                 }
             }
         },
@@ -75,10 +105,7 @@ module.exports = function(grunt) {
         // Shell commands
         shell: {
             jekyllBuild: {
-                command: 'bundle exec jekyll build'
-            },
-            jekyllServe: {
-                command: 'bundle exec jekyll serve'
+                command: 'jekyll build'
             }
         },
 
@@ -87,11 +114,11 @@ module.exports = function(grunt) {
             fontcustom: {
                 files: [
                     // Including
-                    'images/icons/*.svg'
+                    '_icons/icons/*.svg'
                 ],
-                tasks: ['webfont'], // Fontcustom
+                tasks: ['webfont', 'sass'], // Fontcustom
                 options: {
-                    interrupt: false,
+                    interrupt: true,
                     atBegin: false
                 }
             },
@@ -102,9 +129,8 @@ module.exports = function(grunt) {
                 ],
                 tasks: ['sass'], // Compile
                 options: {
-                    interrupt: false,
-                    atBegin: true,
-                    livereload: true
+                    interrupt: true,
+                    atBegin: false
                 }
             },
             uglify: {
@@ -114,8 +140,8 @@ module.exports = function(grunt) {
                 ],
                 tasks: ['uglify'], // Compile
                 options: {
-                    interrupt: false,
-                    atBegin: true
+                    interrupt: true,
+                    atBegin: false
                 }
             },
             jekyll: {
@@ -146,28 +172,17 @@ module.exports = function(grunt) {
                     'services/*.*',
                     'stack/*.*',
                     'index.html',
-                    'blog.rss'
+                    'config.yml'
                 ],
                 tasks: ['shell:jekyllBuild'],
                 options: {
-                    interrupt: true,
-                    atBegin: true,
-                    livereload: true
+                    interrupt: false,
+                    atBegin: true
                 }
-            }
-        },
-
-        // Concurrently tasking
-        concurrent: {
-            options: {
-                logConcurrentOutput: true
-            },
-            dev: {
-                tasks: ["shell:jekyllServe", "watch"]
             }
         }
     });
 
-    // Register the default tasks.
-    grunt.registerTask('default', ['copy', 'concurrent:dev']);
+    // The dev task will be used during development
+    grunt.registerTask('default', ['browserSync', 'watch']);
 };

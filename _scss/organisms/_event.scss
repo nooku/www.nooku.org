@@ -1,0 +1,63 @@
+.jam {
+  @include clearfix;
+
+  .jam__item {
+    @include clearfix;
+    margin-bottom: $spacing-m;
+  }
+
+  h2 {
+    margin-bottom: $spacing-m;
+  }
+}
+
+.order_container {
+  overflow: hidden;
+  margin-bottom: $spacing-s;
+  max-height: 260px;
+
+  @include breakpoint(490px) {
+    max-height: 260px;
+  }
+
+  @include breakpoint(515px) {
+    max-height: 230px;
+  }
+
+  @include breakpoint(620px) {
+    max-height: 230px;
+  }
+}
+
+.map-container {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.teaser--event {
+  padding: $spacing-m;
+
+  h2 {
+    margin-top: $spacing-xs;
+  }
+}
+
+.sponsors {
+  @include clearfix;
+}
+
+.event_intro {
+  max-width: 720px;
+  margin: 0 auto;
+}

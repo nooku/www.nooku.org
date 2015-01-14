@@ -1,0 +1,60 @@
+.teaser {
+  @include clearfix;
+  padding: $spacing-xl $spacing-m $spacing-s;
+  border: 1px solid $navy;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: inset rgba(0, 0, 0, .6) 0px 0px 10px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+
+  h1 {
+    font-size: 2.125em;
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($beta) {
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+
+  .button_container {
+    margin-bottom: $spacing-xs;
+  }
+
+  .slogan_container {
+    margin-bottom: $spacing-xxl;
+  }
+
+  .stats__github,
+  .stats__twitter,
+  .stats__google {
+    display: inline-block;
+    margin: 0 $spacing-s $spacing-xs;
+  }
+
+}
+
+.teaser__content {
+  font-size: 1.25em;
+  margin-bottom: 3em;
+  line-height: 2em;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.teaser__stats {
+  a {
+    color: $white;
+    opacity: 0.75;
+    transition: opacity 0.1s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
