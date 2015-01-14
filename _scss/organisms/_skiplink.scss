@@ -1,20 +1,21 @@
 .skip {
-  background: #f6f6f6;
-  font-family: $base-font;
-  font-weight: $base-font-weight;
-
   a {
-    display: inline-block;
-    padding: 10px 16px;
+    background: $focus-color;
+    color: #333;
+    font-family: $base-font;
+    font-weight: $base-font-weight;
+    display: block;
+    padding: 10px 16px 12px;
     position: absolute;
-    left: -9999em;
+    left: -9999px;
     top: 0;
+    width: 100%;
+    height: auto;
     z-index: 9;
+    margin: 0;
 
     &:focus {
       left: 0;
-      position: relative;
-      margin: 3px;
     }
   }
 }
