@@ -2,7 +2,7 @@
     <div class="container">
         <div class="group">
             <div class="links_container">
-                <p class="links" role="navigation">
+                <p class="links">
                     {% for link in site.data.pages.footer %}
                     <a href="{{ link.url }}" class="{{ link.text | downcase }}">{{ link.text }}</a>
                     {% endfor %}
@@ -17,7 +17,9 @@
 <script src="/js/scripts.js?{{'now' | date: '%s'}}"></script>
 <script type="text/javascript">
     responsivemenu.init({
-        wrapper: document.querySelector('.header'),
+        wrapper: document.getElementsByClassName('header__navigation')[0],
+        menu: document.getElementsByClassName('navigation_container')[0],
+        before_element: document.getElementsByClassName('header__navigation')[0],
         toggleclass: 'button--hamburger',
         togglecontent: 'menu <span class="lines"></span>'
     });

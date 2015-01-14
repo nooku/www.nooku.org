@@ -38,8 +38,8 @@
                 <a href="/"><img src="/images/layout/logo.png" alt="Nooku Logo" /></a>
             </div>
             <div class="header__navigation">
-                <nav class="navigation_container" role="navigation">
-                    <ul class="navbar closed">
+                <nav class="closed navigation_container">
+                    <ul class="navbar" role="navigation">
                         {% for item in site.data.pages.header %}
                         {% assign current = nil %}
                         {% if page.url contains item.url %}{% assign current = ' active' %}{% endif %}
