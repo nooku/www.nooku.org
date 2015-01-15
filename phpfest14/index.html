@@ -19,6 +19,25 @@ extra_footer_markup: '<script type="text/javascript">
             draggable: false,
             position: new google.maps.LatLng(14.546782,121.015617)
         });
+        /* Accessible maps start */
+        var button, divs = map.getDiv().getElementsByTagName("div");
+        var i = 0;
+        setTimeout(function() {
+            while ( divs[i] ) {
+                if ( divs[i].getAttribute("log") || ( divs[i].getAttribute("title") && divs[i].getAttribute("title") != "" ) ) {
+                    button = document.createElement( "button" );
+                    button.setAttribute("value", divs[i].getAttribute( "title" ) );
+                    button.innerHTML = divs[i].getAttribute("title");
+                    divs[i].appendChild( button );
+                    if ( divs[i].getAttribute("log") ) {
+                        divs[i].style.filter = "";
+                        divs[i].style.background = "url( http://www.google.com/intl/en_ALL/mapfiles/transparent.png )";
+                    }
+                }
+                i++;
+            }
+        },1000);
+        /* Accessible maps end */
         var center;
         function calculateCenter() {
             center = map.getCenter();
@@ -91,11 +110,6 @@ extra_footer_markup: '<script type="text/javascript">
     </div>
 
     <hr />
-
-    <h2 class="text--center">Order your ticket</h2>
-    <div class="order_container" style="width:100%; text-align:left;">
-        <iframe src="//eventbrite.nl/tickets-external?eid=14195881263&ref=etckt" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-    </div>
 
     <div class="group">
         <div class="one-half">

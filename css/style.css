@@ -2255,6 +2255,22 @@ ul {
   display: block; }
   #map-canvas img {
     max-width: none; }
+  #map-canvas button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-indent: -100em;
+    background: transparent;
+    border: 3px solid transparent;
+    cursor: pointer; }
+    #map-canvas button:focus {
+      outline: none;
+      border: 3px solid #EABF36; }
 
 .framework_features {
   *zoom: 1;
