@@ -778,6 +778,34 @@ blockquote p {
 .margin-bottom {
   margin-bottom: 1em; }
 
+/* Don't use display: none to hide elements to keep thing accessible */
+.accessible-hide {
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  width: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important; }
+
+/* Visually hide stuff but keep it accessible */
+/* Don't use display: none to hide elements to keep thing accessible */
+.accessible-hide {
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  width: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important; }
+
+/* Negative tabindex make sure you can jump to other areas without visually visible */
+/* We are using this to jump to #content area when using the skiplink */
+[tabindex="-1"]:focus {
+  outline: none !important; }
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -1405,7 +1433,9 @@ blockquote p {
   content: "\f111"; }
 
 .button--hamburger {
-  float: right;
+  position: absolute;
+  top: 19px;
+  right: 12px;
   padding: 7px 12px;
   color: #085DAD;
   text-decoration: none;
@@ -1413,8 +1443,6 @@ blockquote p {
   border: 1px solid #bbb;
   border-radius: 8px;
   background-color: #fff;
-  margin-top: 3px;
-  margin-right: 10px;
   font-size: 16px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif; }
   .button--hamburger:after {
@@ -1932,12 +1960,8 @@ ul {
   font-size: 1.4em;
   margin-top: 20px;
   font-weight: 400; }
-.blog h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+.blog .post_date {
   font-weight: 400;
-  margin-top: 30px; }
-.blog h3.text-muted {
   margin-bottom: 30px;
   font-size: 1em;
   margin-top: 0; }
@@ -2230,6 +2254,22 @@ ul {
   display: block; }
   #map-canvas img {
     max-width: none; }
+  #map-canvas button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-indent: -100em;
+    background: transparent;
+    border: 3px solid transparent;
+    cursor: pointer; }
+    #map-canvas button:focus {
+      outline: none;
+      border: 3px solid #EABF36; }
 
 .framework_features {
   *zoom: 1;
@@ -2320,6 +2360,23 @@ ul {
   .service__content {
     margin-left: 100px; }
  }
+
+.skip a {
+  background: #EABF36;
+  color: #333;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  display: block;
+  padding: 10px 16px 12px;
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+  margin: 0; }
+  .skip a:focus {
+    left: 0; }
 
 .teaser {
   *zoom: 1;

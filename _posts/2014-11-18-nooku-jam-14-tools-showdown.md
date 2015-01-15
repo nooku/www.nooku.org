@@ -3,6 +3,7 @@ title: Nooku Jam 14 - Tools Showdown
 author: Peter Raeves
 layout: post
 image: /images/blog/2014/tools-showdown.jpg
+image-alt: An impression photo of the Nooku Jam 2014
 description: List of great tools to build things for the web from our Nooku Jam 14 showdown session.
 ---
 

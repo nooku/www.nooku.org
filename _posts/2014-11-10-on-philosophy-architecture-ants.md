@@ -3,6 +3,7 @@ title: On Philosophy, Architecture and Ants
 author: Joachim van de Haterd
 layout: post
 image: /images/blog/2014/philosophy-architecture-and-ants.jpg
+image-alt: Photograph of Rastin Mehr giving a presentation on Nooku Jam 2014 
 description: A report on the 2014 Nooku Jam by Joachim van de Haterd
 ---
 

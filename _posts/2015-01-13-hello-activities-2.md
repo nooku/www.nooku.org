@@ -3,6 +3,7 @@ title: Hello Nooku Activities 2.0
 author: Arunas Mazeika
 layout: post
 image: /images/blog/2014/activity-streams.png
+image-alt: Activity streams logo
 description: Announcing the release of Nooku Activities 2.0, a re-usable component for logging and exposing activities.
 ---
 

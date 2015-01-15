@@ -13,6 +13,7 @@ $gutter: golden-ratio(1em, 2) !global; // must be placed here
 @import "misc/mixins";
 @import "misc/placeholders";
 @import "misc/setup";
+@import "misc/accessibility";
 @import "misc/container";
 
 // Stack (load after variables)
@@ -57,6 +58,7 @@ $gutter: golden-ratio(1em, 2) !global; // must be placed here
 @import "organisms/header";
 @import "organisms/platform";
 @import "organisms/services";
+@import "organisms/skiplink";
 @import "organisms/teaser";
 @import "organisms/trusted";
 

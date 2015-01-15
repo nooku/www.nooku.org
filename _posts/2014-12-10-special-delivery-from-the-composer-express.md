@@ -3,6 +3,7 @@ title: Special delivery from the Composer Express!
 author: Steven Rombauts
 layout: post
 image: /images/blog/2014/lego-forklift.jpg
+image-alt: A Lego forklift scene
 ---
 
 With the release of Nooku Framework 2.0 stable we needed an efficient way to distribute the framework and install it in Joomla. 

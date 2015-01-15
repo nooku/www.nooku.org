@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: http://ogp.me/ns#" lang="en">
 <head>
     <title>{% if page.title %}{{page.title}}{% else %}{{site.main_title}}{% endif %}</title>
 
@@ -29,21 +29,30 @@
 <div class="header">
     <div class="container">
         <div class="group">
+            <div class="skip">
+                <div class="container__skip">
+                    <a href="#content">Skip to main content</a>
+                </div>
+            </div>
             <div class="header__brand brand">
                 <a href="/"><img src="/images/layout/logo.png" alt="Nooku Logo" /></a>
             </div>
             <div class="header__navigation">
-                <div class="navigation_container" role="navigation">
-                    <ul class="navbar closed">
+                <nav class="closed navigation_container">
+                    <ul class="navbar" role="navigation">
                         {% for item in site.data.pages.header %}
                         {% assign current = nil %}
-                        {% if page.url contains item.url %}{% assign current = ' active' %}{% endif %}
-                        <li class="navbar__item{{ current }}" role="menuitem">
-                            <a href="{{ item.url }}">{{ item.text }}</a>
+                        {% assign current-accessible = nil %}
+                        {% if page.url contains item.url %}
+                            {% assign current = ' active' %}
+                            {% assign current-accessible = '<span class="accessible-hide">: current page</span>' %}
+                        {% endif %}
+                        <li class="navbar__item{{ current }}">
+                            <a href="{{ item.url }}">{{ item.text }}{{ current-accessible }}</a>
                         </li>
                         {% endfor %}
                     </ul>
-                </div>
+                </nav>
             </div>
         </div>
     </div>

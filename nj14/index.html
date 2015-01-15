@@ -19,6 +19,25 @@ extra_footer_markup: '<script type="text/javascript">
             draggable: false,
             position: new google.maps.LatLng(50.884469,4.711804)
         });
+        /* Accessible maps start */
+        var button, divs = map.getDiv().getElementsByTagName("div");
+        var i = 0;
+        setTimeout(function() {
+            while ( divs[i] ) {
+                if ( divs[i].getAttribute("log") || ( divs[i].getAttribute("title") && divs[i].getAttribute("title") != "" ) ) {
+                    button = document.createElement( "button" );
+                    button.setAttribute("value", divs[i].getAttribute( "title" ) );
+                    button.innerHTML = divs[i].getAttribute("title");
+                    divs[i].appendChild( button );
+                    if ( divs[i].getAttribute("log") ) {
+                        divs[i].style.filter = "";
+                        divs[i].style.background = "url( http://www.google.com/intl/en_ALL/mapfiles/transparent.png )";
+                    }
+                }
+                i++;
+            }
+        },1000);
+        /* Accessible maps end */
         var center;
         function calculateCenter() {
             center = map.getCenter();

@@ -3,6 +3,7 @@ title: PHPFest Manila
 author: Johan
 layout: post
 image: /images/blog/2014/phpfest-manila.jpg
+image-alt: two stuffed elephants with PHP logo 
 description: Calling all PHP developers in and around Manila to join us for the first ever PHPFest.
 ---
 
