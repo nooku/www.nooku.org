@@ -779,7 +779,7 @@ blockquote p {
   margin-bottom: 1em; }
 
 /* Don't use display: none to hide elements to keep thing accessible */
-.accessible-hide {
+.accessible-hide, .highlight:before, .highlight:after {
   position: absolute !important;
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
@@ -791,7 +791,7 @@ blockquote p {
 
 /* Visually hide stuff but keep it accessible */
 /* Don't use display: none to hide elements to keep thing accessible */
-.accessible-hide {
+.accessible-hide, .highlight:before, .highlight:after {
   position: absolute !important;
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
@@ -1114,6 +1114,12 @@ blockquote p {
   padding: 10px;
   margin: 0 0 30px;
   border-radius: 3px; }
+  .highlight:before, .highlight:after {
+    display: block; }
+  .highlight:before {
+    content: "Start code example:"; }
+  .highlight:after {
+    content: "End code example:"; }
   .highlight, .highlight code, .highlight kbd, .highlight pre, .highlight samp {
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace; }
   .highlight pre {

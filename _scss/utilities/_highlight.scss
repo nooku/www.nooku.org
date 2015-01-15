@@ -5,6 +5,20 @@
   margin: 0 0 $spacing-m;
   border-radius: 3px;
 
+  &:before,
+  &:after {
+    display: block;
+    @extend .accessible-hide;
+  }
+
+  &:before {
+    content: "Start code example:";
+  }
+
+  &:after {
+    content: "End code example:";
+  }
+
   &, code, kbd, pre, samp {
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
   }
