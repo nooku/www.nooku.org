@@ -1,0 +1,22 @@
+<article class="blogpost">
+    <header>
+        <h1>
+            <a class="blog__header" href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
+        <p class="post_date">
+            {{ post.date | date: "%d %B %Y"}} by {{ post.author }}
+        </p>
+    </header>
+    <section>
+        {% if post.image %}
+        <img class="blog__image" src="{{ post.image }}" alt="" aria-hidden="true" />
+        {% endif %}
+
+        <div class="excerpt">
+            <p>{{ post.content | truncatewords: 40 | strip_html }}</p>
+        </div>
+        <p>
+            <a  class="blog__readmore" href="{{ post.url }}">Continue reading...</a>
+        </p>
+    </section>
+</article>

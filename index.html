@@ -1,5 +1,7 @@
 ---
 layout: homepage
+featured_post1: 2014-11-12-phpfest-manila
+featured_post2: 2014-11-03-nooku-jam-14-highlights
 ---
 
 <h2 class="h1 text--center">For like-minded developers</h2>
@@ -51,12 +53,58 @@ layout: homepage
     </div>
 </div>
 
+
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{% assign event_count = true %}
+
+{% for event in site.events %}
+{% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
+{% if event_date >= nowunix %}
+{% assign upcoming_event = true %}
+{% if event_count == true %}
 <div class="upcoming_event upcoming_background">
-    <h2 class="h1">PHPFest 14</h2>
-    <h3>Friday 21th November from 6pm till 10pm - <span class="nowrap">Manilla, Philippines</span></h3>
-    <p class="content">PHPFest is a gathering of software development geeks.<br />Focussed around the PHP programming language but open to anyone.</p>
-    <p class="button_container"><a class="button button--alternative" href="phpfest14">Join us!</a></p>
+    <h2 class="h1">{{ event.title }}</h2>
+    <h3>{{ event.subtitle }}</h3>
+    <p class="content">{{ event.output }}</p>
+    <p class="button_container"><a class="button button--alternative" href="/{{ event.readmore }}">Join us!</a></p>
 </div>
+{% assign event_count = false %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% if upcoming_event != true %}
+    <hr style="margin-top: 0;">
+    <h2 class="latestblogs__header">Nooku blog</h2>
+    <div class="latestblogs">
+        {% if page.featured_post1 %}
+            {% for post in site.posts %}
+                {% if post.path contains page.featured_post1 %}
+                    {% assign featuredpost = true %}
+                    {% include homeblogpost.html %}
+                {% endif %}
+            {% endfor %}
+            {% unless page.featured_post2 %}
+                {% for post in site.posts limit:1 %}
+                    {% include homeblogpost.html %}
+                {% endfor %}
+            {% else %}
+                {% for post in site.posts %}
+                    {% if post.path contains page.featured_post2 %}
+                        {% assign featuredpost = true %}
+                        {% include homeblogpost.html %}
+                    {% endif %}
+                {% endfor %}
+            {% endunless %}
+        {% else %}
+            {% for post in site.posts limit:2 %}
+                {% include homeblogpost.html %}
+            {% endfor %}
+        {% endif %}
+    </div>
+    <hr>
+{% endif %}
+
 
 <h2 class="h1 text--center">Built with love</h2>
 <p class="subtitle">Using awesome bleeding edge technologies</p>
