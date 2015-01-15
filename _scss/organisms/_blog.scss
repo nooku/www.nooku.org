@@ -53,3 +53,16 @@
   border-radius: 5px;
   margin-bottom: $spacing-s;
 }
+
+
+.latestblogs .blogpost {
+  margin-bottom: 2em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($beta) {
+    margin-bottom: 0;
+  }
+}

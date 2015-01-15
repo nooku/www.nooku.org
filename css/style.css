@@ -2003,6 +2003,14 @@ ul {
   border-radius: 5px;
   margin-bottom: 20px; }
 
+.latestblogs .blogpost {
+  margin-bottom: 2em; }
+  .latestblogs .blogpost:last-child {
+    margin-bottom: 0; }
+  @media screen and (min-width: 37.5em) {
+    .latestblogs .blogpost {
+      margin-bottom: 0; } }
+
 .contact_nooku {
   text-align: center; }
 
