@@ -42,9 +42,13 @@
                     <ul class="navbar" role="navigation">
                         {% for item in site.data.pages.header %}
                         {% assign current = nil %}
-                        {% if page.url contains item.url %}{% assign current = ' active' %}{% endif %}
+                        {% assign current-accessible = nil %}
+                        {% if page.url contains item.url %}
+                            {% assign current = ' active' %}
+                            {% assign current-accessible = '<span class="accessible-hide">: current page</span>' %}
+                        {% endif %}
                         <li class="navbar__item{{ current }}">
-                            <a href="{{ item.url }}">{{ item.text }}</a>
+                            <a href="{{ item.url }}">{{ item.text }}{{ current-accessible }}</a>
                         </li>
                         {% endfor %}
                     </ul>
