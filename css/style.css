@@ -2007,7 +2007,7 @@ ul {
   margin-bottom: 2em; }
   .latestblogs .blogpost:last-child {
     margin-bottom: 0; }
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 48em) {
     .latestblogs .blogpost {
       margin-bottom: 0; } }
 
