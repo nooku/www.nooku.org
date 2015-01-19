@@ -1,4 +1,5 @@
-.group {
+.group,
+.latestblogs {
   @include clearfix;
   margin-left: auto;
   margin-right: auto;
@@ -64,5 +65,9 @@
   .stack-item__container,
   .channel {
     @include gallery(4 of 12);
+  }
+
+  .latestblogs .blogpost {
+    @include gallery(6 of 12);
   }
 }

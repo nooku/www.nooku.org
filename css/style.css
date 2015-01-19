@@ -897,15 +897,15 @@ blockquote p {
     min-height: 100px; }
  }
 
-.group {
+.group, .latestblogs {
   *zoom: 1;
   margin-left: auto;
   margin-right: auto; }
-  .group:before, .group:after {
+  .group:before, .group:after, .latestblogs:before, .latestblogs:after {
     display: table;
     content: " ";
     line-height: 0; }
-  .group:after {
+  .group:after, .latestblogs:after {
     clear: both; }
 
 .sponsors li, .builtwith li, .trusted_by li {
@@ -1105,6 +1105,21 @@ blockquote p {
     .stack-item__container:nth-child(3n), .channel:nth-child(3n) {
       margin-right: 0; }
     .stack-item__container:nth-child(3n+1), .channel:nth-child(3n+1) {
+      clear: left; }
+
+  .latestblogs .blogpost {
+    float: left;
+    display: block;
+    margin-right: 3.287743293%;
+    width: 48.3561283535%; }
+    .latestblogs .blogpost:nth-child(n+1) {
+      clear: none;
+      margin-right: 3.287743293%; }
+    .latestblogs .blogpost:last-child {
+      margin-right: 0; }
+    .latestblogs .blogpost:nth-child(2n) {
+      margin-right: 0; }
+    .latestblogs .blogpost:nth-child(2n+1) {
       clear: left; }
  }
 
@@ -1950,39 +1965,51 @@ ul {
   .upcoming_event .content a, .upcoming_event .content a:visited {
     color: #fff; }
 
-.blog p, .blog ul {
-  font-size: 1.125em;
-  line-height: 1.5em; }
-.blog h1 {
-  margin-bottom: 16px;
-  font-size: 1.8em; }
-  .blog h1 a {
-    text-decoration: none;
-    color: #085DAD; }
-    .blog h1 a:hover {
-      text-decoration: underline;
-      color: #0a77de; }
-.blog h2 {
-  font-size: 1.4em;
-  margin-top: 20px;
-  font-weight: 400; }
-.blog .post_date {
-  font-weight: 400;
-  margin-bottom: 30px;
-  font-size: 1em;
-  margin-top: 0; }
-.blog .alignright {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 20px; }
-.blog .alignleft {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px; }
+.blogpost {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+  .blogpost p, .blogpost ul {
+    font-size: 1.125em;
+    line-height: 1.5em; }
+  .blogpost h1 {
+    margin-bottom: 16px;
+    font-size: 1.8em; }
+    .blogpost h1 a {
+      text-decoration: none;
+      color: #085DAD; }
+      .blogpost h1 a:hover {
+        text-decoration: underline;
+        color: #0a77de; }
+  .blogpost h2 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    font-weight: 400; }
+  .blogpost .post_date {
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 1em;
+    margin-top: 0; }
+  .blogpost .alignright {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .blogpost .alignleft {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; }
 
 .blog__image {
   border-radius: 5px;
   margin-bottom: 20px; }
+
+.latestblogs .blogpost {
+  margin-bottom: 2em; }
+  .latestblogs .blogpost:last-child {
+    margin-bottom: 0; }
+  @media screen and (min-width: 48em) {
+    .latestblogs .blogpost {
+      margin-bottom: 0; } }
 
 .contact_nooku {
   text-align: center; }
