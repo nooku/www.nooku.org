@@ -2484,3 +2484,7 @@ ul {
     opacity: 1; }
   .trusted_by .thumbnails li {
     padding: 10px 30px 25px; }
+
+.comment {
+  margin-top: 2em;
+  text-align: center; }
