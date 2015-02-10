@@ -824,7 +824,6 @@ button.closed {
  }
 
 .navigation_container {
-  *zoom: 1;
   font-size: 0;
   line-height: 0;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -840,7 +839,6 @@ button.closed {
       text-align: right; } }
 
 .navbar {
-  *zoom: 1;
   font-size: 18px;
   line-height: 24px;
   z-index: 2;
