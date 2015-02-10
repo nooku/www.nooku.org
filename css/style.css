@@ -1787,7 +1787,7 @@ ul {
     float: left;
     display: block;
     margin-right: 3.287743293%;
-    width: 22.5341925302%; }
+    width: 13.9268805892%; }
     .header__brand:last-child {
       margin-right: 0; }
 
@@ -1795,7 +1795,7 @@ ul {
     float: left;
     display: block;
     margin-right: 3.287743293%;
-    width: 74.1780641767%; }
+    width: 82.7853761178%; }
     .header__navigation:last-child {
       margin-right: 0; }
  }
@@ -1845,16 +1845,17 @@ ul {
       width: 50%; } }
   @media screen and (min-width: 37.5em) {
     .navbar__item {
-      margin: 0 8px;
-      font-size: 16px;
+      margin: 0 5px;
+      font-size: 15px;
       width: auto; } }
   @media screen and (min-width: 48em) {
     .navbar__item {
-      font-size: 18px;
-      margin: 0 15px; } }
+      font-size: 17px;
+      margin: 0 10px; } }
   @media screen and (min-width: 64em) {
     .navbar__item {
-      margin: 0 20px; } }
+      font-size: 18px;
+      margin: 0 18px; } }
   .navbar__item a {
     color: #333;
     display: inline-block;

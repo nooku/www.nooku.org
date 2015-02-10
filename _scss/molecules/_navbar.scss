@@ -1,10 +1,10 @@
 @include breakpoint($beta) {
   .header__brand {
-    @include span-columns( 3 of 12);
+    @include span-columns( 2 of 12);
   }
 
   .header__navigation {
-    @include span-columns(9 of 12);
+    @include span-columns(10 of 12);
   }
 }
 
@@ -48,18 +48,19 @@
   }
 
   @include breakpoint($beta) {
-    margin: 0 8px;
-    font-size: 16px;
+    margin: 0 5px;
+    font-size: 15px;
     width: auto;
   }
 
   @include breakpoint($charlie) {
-    font-size: 18px;
-    margin: 0 15px;
+    font-size: 17px;
+    margin: 0 10px;
   }
 
   @include breakpoint($delta) {
-    margin: 0 20px;
+    font-size: 18px;
+    margin: 0 18px;
   }
 
   a {

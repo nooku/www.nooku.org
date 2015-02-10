@@ -17,8 +17,16 @@
             "url": "http://guides.nooku.org"
         },
         {
+            "text": "Forums",
+            "url": "https://groups.google.com/forum/#!forum/nooku-framework"
+        },
+        {
             "text": "API",
             "url": "http://api.nooku.org"
+        },
+        {
+            "text": "Demo",
+            "url": "/demo"
         },
         {
             "text": "Blog",
@@ -45,10 +53,6 @@
         {
             "text": "Platform",
             "url": "/platform"
-        },
-        {
-            "text": "Demo",
-            "url": "/demo"
         },
         {
             "text": "Manifesto",
