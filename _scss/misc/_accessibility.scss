@@ -2,13 +2,13 @@
 /* Don't use display: none to hide elements to keep thing accessible */
 .accessible-hide {
   position: absolute !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  width: 1px !important;
-  margin: -1px !important;
-  padding: 0 !important;
-  border: 0 !important;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 /* Negative tabindex make sure you can jump to other areas without visually visible */

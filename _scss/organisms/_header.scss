@@ -3,9 +3,9 @@
   z-index: 1;
   padding-top: $spacing-s;
   padding-bottom: $spacing-s;
-  border-bottom: 1px solid lighten(#c8c8c8, 10%);
+  border-bottom: 1px solid $color-grey-dark;
   min-height: 81px;
-  background: #f6f6f6;
+  background: $color-grey-light;
   font-family: $base-font;
   font-weight: $base-font-weight;
 

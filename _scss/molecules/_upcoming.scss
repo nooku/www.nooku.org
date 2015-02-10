@@ -1,7 +1,7 @@
 .upcoming_event {
   margin: $spacing-l -20px $spacing-xxl;
   padding: $spacing-m;
-  color: #fff;
+  color: white;
   text-align: center;
 
   @include breakpoint($beta) {
@@ -12,11 +12,11 @@
 
 
   h2 {
-    color: #fff;
+    color: white;
   }
 
   h3 {
-    color: #fff;
+    color: white;
     font-size: 20px;
     margin-top: -20px;
   }
@@ -29,7 +29,7 @@
 
   .content {
     a, a:visited {
-      color: #fff;
+      color: white;
     }
   }
 }

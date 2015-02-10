@@ -10,7 +10,7 @@
 .channel {
   &__item {
     padding: $spacing-m;
-    border: 1px solid #ddd;
+    border: 1px solid $color-grey-dark;
     display: block;
     transition: all .2s ease-in-out;
     margin-bottom: $spacing-m;
@@ -20,37 +20,37 @@
   &__item--email {
     &, &:visited {
       background: lighten($color-orange,25%);
-      color: #000;
+      color: black;
       border-color: $color-orange;
     }
     &:hover {
       background: $color-orange;
       border-color: darken($color-orange,20%);
-      color: #fff;
+      color: white;
     }
   }
   &__item--twitter {
     &, &:visited {
       background: lighten(#55ACEE,25%);
-      color: #000;
+      color: black;
       border-color: #55ACEE;
     }
     &:hover {
       background: #55ACEE;
       border-color: darken(#55ACEE,20%);
-      color: #fff;
+      color: white;
     }
   }
   &__item--facebook {
     &, &:visited {
       background: lighten(#3b5998,35%);
-      color: #000;
+      color: black;
       border-color: lighten(#3b5998,10%);
     }
     &:hover {
       background: #3b5998;
       border-color: darken(#3b5998,20%);
-      color: #fff;
+      color: white;
     }
   }
 }

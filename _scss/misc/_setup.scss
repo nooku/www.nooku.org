@@ -10,7 +10,7 @@ body, html {
   position: relative;
   line-height: $line-height-base;
   color: $color-body;
-  background: #fff;
+  background: white;
 }
 
 body a:focus,
@@ -53,10 +53,6 @@ strong {
   font-weight: 400;
 }
 
-blockquote p {
-  font-size: $font-size-base;
-}
-
 .text-small {
   font-size: 85%;
 }
@@ -71,16 +67,4 @@ blockquote p {
 
 .margin-bottom {
   margin-bottom: 1em;
-}
-
-/* Don't use display: none to hide elements to keep thing accessible */
-.accessible-hide {
-  position: absolute !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  width: 1px !important;
-  margin: -1px !important;
-  padding: 0 !important;
-  border: 0 !important;
 }

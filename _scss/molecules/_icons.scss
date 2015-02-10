@@ -39,16 +39,19 @@
 }
 
 .service__icon {
+  @extend %icon--large;
+  line-height: 78px;
+  margin-bottom: $spacing-m;
   border-right: none;
-  border-bottom: 1px dashed #88D8FD;
+  border-bottom: 1px dashed $brand-primary--light;
 
   @include breakpoint($alpha) {
-    border-right: 1px dashed #88D8FD;
+    border-right: 1px dashed $brand-primary--light;
     border-bottom: none;
   }
 
   @include breakpoint($charlie) {
     border-right: none;
-    border-bottom: 1px dashed #88D8FD;
+    border-bottom: 1px dashed $brand-primary--light;
   }
 }

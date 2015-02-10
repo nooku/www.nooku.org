@@ -71,6 +71,7 @@
 
     @include breakpoint($beta) {
       border-bottom-width: 3px;
+      display: inline-block;
     }
 
     &:visited {
@@ -83,10 +84,6 @@
 
     &:focus {
       border-bottom-color: transparent;
-    }
-
-    @include breakpoint($beta) {
-      display: inline-block;
     }
   }
 

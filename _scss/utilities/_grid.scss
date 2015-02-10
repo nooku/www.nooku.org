@@ -51,6 +51,7 @@
     }
     .copyright {
       @include span-columns(6 of 24);
+      text-align: right;
     }
   }
 
@@ -69,5 +70,6 @@
 
   .latestblogs .blogpost {
     @include gallery(6 of 12);
+    margin-bottom: 0;
   }
 }
