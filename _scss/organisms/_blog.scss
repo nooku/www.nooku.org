@@ -60,8 +60,4 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  @include breakpoint($charlie) {
-    margin-bottom: 0;
-  }
 }

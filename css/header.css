@@ -888,16 +888,14 @@ button.closed {
     border-bottom: 1px solid transparent; }
     @media screen and (min-width: 37.5em) {
       .navbar__item a {
-        border-bottom-width: 3px; } }
+        border-bottom-width: 3px;
+        display: inline-block; } }
     .navbar__item a:visited {
       color: #333; }
     .navbar__item a:hover {
       border-bottom-color: #b8dbfc; }
     .navbar__item a:focus {
       border-bottom-color: transparent; }
-    @media screen and (min-width: 37.5em) {
-      .navbar__item a {
-        display: inline-block; } }
   .navbar__item.active a {
     border-bottom-color: #085DAD; }
 

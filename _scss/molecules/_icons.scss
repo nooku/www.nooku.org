@@ -39,6 +39,9 @@
 }
 
 .service__icon {
+  @extend %icon--large;
+  line-height: 78px;
+  margin-bottom: $spacing-m;
   border-right: none;
   border-bottom: 1px dashed $brand-primary--light;
 

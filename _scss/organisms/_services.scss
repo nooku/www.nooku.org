@@ -10,12 +10,6 @@
   margin-bottom: $spacing-m;
 }
 
-.service__icon {
-  @extend %icon--large;
-  line-height: 78px;
-  margin-bottom: $spacing-m;
-}
-
 @include breakpoint($alpha, range, $charlie) {
   .services {
     text-align: left;

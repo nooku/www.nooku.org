@@ -764,9 +764,6 @@ hr {
 strong {
   font-weight: 400; }
 
-blockquote p {
-  font-size: 16px; }
-
 .text-small {
   font-size: 85%; }
 
@@ -1048,7 +1045,8 @@ blockquote p {
     float: left;
     display: block;
     margin-right: 1.6172855479%;
-    width: 23.787035839%; }
+    width: 23.787035839%;
+    text-align: right; }
     .footer .copyright:last-child {
       margin-right: 0; }
 
@@ -1101,7 +1099,8 @@ blockquote p {
     float: left;
     display: block;
     margin-right: 3.287743293%;
-    width: 48.3561283535%; }
+    width: 48.3561283535%;
+    margin-bottom: 0; }
     .latestblogs .blogpost:nth-child(n+1) {
       clear: none;
       margin-right: 3.287743293%; }
@@ -1616,7 +1615,8 @@ blockquote:after {
 
 blockquote p {
   display: inline;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
@@ -1774,6 +1774,8 @@ ul {
     text-align: center; }
 
 .service__icon {
+  line-height: 78px;
+  margin-bottom: 30px;
   border-right: none;
   border-bottom: 1px dashed #b8dbfc; }
   @media screen and (min-width: 25em) {
@@ -1874,16 +1876,14 @@ ul {
     border-bottom: 1px solid transparent; }
     @media screen and (min-width: 37.5em) {
       .navbar__item a {
-        border-bottom-width: 3px; } }
+        border-bottom-width: 3px;
+        display: inline-block; } }
     .navbar__item a:visited {
       color: #333; }
     .navbar__item a:hover {
       border-bottom-color: #b8dbfc; }
     .navbar__item a:focus {
       border-bottom-color: transparent; }
-    @media screen and (min-width: 37.5em) {
-      .navbar__item a {
-        display: inline-block; } }
   .navbar__item.active a {
     border-bottom-color: #085DAD; }
 
@@ -2013,9 +2013,6 @@ ul {
   margin-bottom: 2em; }
   .latestblogs .blogpost:last-child {
     margin-bottom: 0; }
-  @media screen and (min-width: 48em) {
-    .latestblogs .blogpost {
-      margin-bottom: 0; } }
 
 .contact_nooku {
   text-align: center; }
@@ -2253,8 +2250,6 @@ ul {
 @media screen and (min-width: 48em) {
   .footer {
     text-align: left; }
-    .footer .copyright {
-      text-align: right; }
  }
 
 .links {
@@ -2381,10 +2376,6 @@ ul {
     margin-bottom: 30px; }
 
 .network__contact {
-  margin-bottom: 30px; }
-
-.service__icon {
-  line-height: 78px;
   margin-bottom: 30px; }
 
 @media screen and (min-width: 25em) and (max-width: 48em) {
