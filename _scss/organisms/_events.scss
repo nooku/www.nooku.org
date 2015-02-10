@@ -8,22 +8,16 @@
   .events {
     @include clearfix;
   }
-
-  .events--upcoming {
-    .event {
-
-    }
-  }
 }
 
 .event {
-  background: #fff;
+  background: white;
   position: relative;
   display: block;
   vertical-align: top;
   margin-bottom: $spacing-m;
   text-align: left;
-  border: 1px solid #dfdfdf;
+  border: 1px solid $color-grey-dark;
   border-radius: 0 0 10px 10px;
   transition: all .2s ease-in-out;
 
@@ -43,8 +37,8 @@
   }
 
   .event__title {
-    background: #f6f6f6;
-    border: 1px solid #fff;
+    background: $color-grey-light;
+    border: 1px solid white;
   }
 
   h1 {
@@ -67,8 +61,8 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    border-top: 1px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid $color-grey-dark;
+    border-bottom: 1px solid $color-grey-dark;
     position: relative;
 
     &:before {
@@ -79,13 +73,13 @@
       right: 0;
       bottom: 0;
       left: 0;
-      border: 1px solid #fff;
+      border: 1px solid white;
     }
   }
 
   .event__date {
-    background: #fff;
-    border-left: 1px solid #ddd;
+    background: white;
+    border-left: 1px solid $color-grey-dark;
     width: 70px;
     height: 70px;
     vertical-align: top;
@@ -94,11 +88,11 @@
     .event__date__year,
     .event__date__month {
       background: $brand-primary;
-      color: #fff;
+      color: white;
       font-size: 12px;
       padding: 0 5px;
       line-height: 22px;
-      border: 1px solid #fff;
+      border: 1px solid white;
     }
 
     .event__date__year {
@@ -109,7 +103,7 @@
 
     .event__date__day {
       font-size: 30px;
-      color: #333;
+      color: $color-body;
       font-weight: bold;
       text-align: center;
       line-height: 40px;

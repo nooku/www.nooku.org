@@ -1,13 +1,13 @@
 .cta_container {
-  background: #eee;
+  background: $color-grey;
   padding: $spacing-l $spacing-xs;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid $color-grey-dark;
 
   #fieldEmail {
     width: 300px;
     max-width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: white;
+    border: 1px solid $color-grey-dark;
     padding: 0 10px;
     font-size: 1.2em;
     border-radius: 5px;

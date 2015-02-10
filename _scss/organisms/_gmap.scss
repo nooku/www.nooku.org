@@ -35,7 +35,7 @@
 
     &:focus {
       outline: none;
-      border: 3px solid #EABF36;
+      border: 3px solid $focus-color;
     }
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  background: #fff;
+  background: white;
   text-align: center;
   padding-left: $spacing-s;
   padding-right: $spacing-s;
@@ -10,12 +10,12 @@
     .group {
       padding: 1em 0;
       margin: 0 $spacing-s;
-      color: darken($brand-primary, 10%);
-      border-top: 1px solid #eee;
+      color: $navy;
+      border-top: 1px solid $color-grey;
     }
 
     a {
-      color: darken($brand-primary, 10%);
+      color: $navy;
     }
   }
 }
