@@ -49,6 +49,7 @@ $gutter: golden-ratio(1em, 2) !global; // must be placed here
 // Organisms
 @import "organisms/blog";
 @import "organisms/contact";
+@import "organisms/docs";
 @import "organisms/event";
 @import "organisms/events";
 @import "organisms/features";
