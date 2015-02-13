@@ -10,7 +10,7 @@
         "stack": "timble/stack"
     },
     "devDependencies": {
-        "neat": "~1.7.0",
+        "neat": "~1.7.*",
         "illusion": "timble/illusion#master"
     }
 }
