@@ -2162,9 +2162,6 @@ ul {
   border-color: #1e2e4f;
   color: white; }
 
-.docs {
-  text-align: center; }
-
 .jam:before, .jam:after {
   display: table;
   content: " ";
@@ -2465,7 +2462,8 @@ ul {
 
 .services {
   text-align: center; }
-  .services .one-third {
+  .services .one-third,
+  .services .one-half {
     margin-bottom: 30px; }
 
 .network__contact {
@@ -2474,7 +2472,8 @@ ul {
 @media screen and (min-width: 25em) and (max-width: 48em) {
   .services {
     text-align: left; }
-    .services .one-third {
+    .services .one-third,
+    .services .one-half {
       margin-bottom: 40px; }
 
   .service__icon {
