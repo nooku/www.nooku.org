@@ -28,7 +28,7 @@ We believe in _Letting the code do the talking_, and so with the Todo package yo
 
 There is a great example of how to use the [Bootstrapper](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/resources/config/bootstrapper.php) in your component. You can define object instantiation by its identifier in this one file. _Beautiful._
 
-Need to see how a [Toolbar](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/controller/toolbar/item.php) might get built in the front end? Or, tell your [controller](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/controller/item.php) to allow JSON responses when requested? We show them both.
+Need to see how a [Toolbar](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/controller/toolbar/task.php) might get built in the front end? Or, tell your [controller](https://github.com/nooku/joomla-todo/blob/master/site/components/com_todo/controller/task.php) to allow JSON responses when requested? We show them both.
 
 We have a custom template helper to add delete functionality to the front end for Todo items. We show you how you might couple your item into Joomla! ACL with a [table behavior](https://github.com/nooku/joomla-todo/blob/master/administrator/components/com_todo/database/behavior/permissible.php) and use that in the layouts. The `canPerform()` method gets mixed right into the item's interface..._That is handy!_
 
