@@ -1609,25 +1609,46 @@ strong {
   .pagination .pages-indicator--offset-3 {
     display: none; }
  }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 768px) {
   .pagination .offset-3 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-4 {
     display: none; }
  }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 768px) {
   .pagination .offset-4 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-5 {
     display: none; }
  }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 768px) {
   .pagination .offset-5 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-6 {
+    display: none; }
+ }
+@media screen and (min-width: 768px) {
+  .pagination .offset-6 {
+    display: inline-block; }
+
+  .pagination .pages-indicator--offset-7 {
+    display: none; }
+ }
+@media screen and (min-width: 768px) {
+  .pagination .offset-7 {
+    display: inline-block; }
+
+  .pagination .pages-indicator--offset-8 {
+    display: none; }
+ }
+@media screen and (min-width: 768px) {
+  .pagination .offset-8 {
+    display: inline-block; }
+
+  .pagination .pages-indicator--offset-9 {
     display: none; }
  }
 

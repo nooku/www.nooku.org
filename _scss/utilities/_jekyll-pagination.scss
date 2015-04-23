@@ -5,9 +5,13 @@ $pages-breakpoint3:         600px !default;
 $pages-breakpoint4:         768px !default;
 $pages-breakpoint5:         768px !default;
 $pages-breakpoint6:         768px !default;
+$pages-breakpoint7:         768px !default;
+$pages-breakpoint8:         768px !default;
+$pages-breakpoint9:         768px !default;
 
 // Cosmetics variables
 $pages-cosmetics:           true !default;
+$pages-clearfix:            true !default;
 
 // Styling
 $pages-margin:              1em 0 !default;
@@ -22,6 +26,20 @@ $pages-item-active:         #1879CE !default;
 $pages-item-active-shadow:  inset 0 0 5px rgba(0, 0, 0, .3) !default;
 $pages-item-active-color:   white !default;
 
+// Mixins
+@if $pages-clearfix == true {
+  @mixin clearfix {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+}
 
 // Behavioural
 .pagination {
@@ -132,6 +150,42 @@ $pages-item-active-color:   white !default;
 
     // And hide indicator to make room
     .pages-indicator--offset-6 {
+      display: none;
+    }
+  }
+
+  @include breakpoint($pages-breakpoint7) {
+    // Show items 3 spots next to active item
+    .offset-6 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-7 {
+      display: none;
+    }
+  }
+
+  @include breakpoint($pages-breakpoint8) {
+    // Show items 3 spots next to active item
+    .offset-7 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-8 {
+      display: none;
+    }
+  }
+
+  @include breakpoint($pages-breakpoint9) {
+    // Show items 3 spots next to active item
+    .offset-8 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-9 {
       display: none;
     }
   }

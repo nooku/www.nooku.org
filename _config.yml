@@ -2,7 +2,7 @@
 permalink: "/blog/:year/:month/:title"
 paginate: 4
 paginate_path: "blog/page:num"
-limit: 8
+paginate_limit: 7
 
 # Blog
 monthly_archive:

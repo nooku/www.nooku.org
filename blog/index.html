@@ -5,7 +5,7 @@ description: We are blogging since 2008 around Nooku and Joomla extension develo
 ---
 
 {% for post in paginator.posts %}
-<article class="blogpost">
+<article class="blogpost" style="display:none;">
     <header>
         <h1>
             <a class="blog__header" href="{{ post.url }}">{{ post.title }}</a>
@@ -27,7 +27,7 @@ description: We are blogging since 2008 around Nooku and Joomla extension develo
         </p>
     </section>
 </article>
-<hr>
+<hr style="display:none;">
 {% endfor %}
 
 {% include pagination.html %}
