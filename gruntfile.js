@@ -174,6 +174,7 @@ module.exports = function(grunt) {
                     'services/*.*',
                     'stack/*.*',
                     'index.html',
+                    '404.html',
                     'config.yml'
                 ],
                 tasks: ['shell:jekyllBuild'],

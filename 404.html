@@ -1,0 +1,194 @@
+---
+layout: default
+title: 404 - Page not found
+description: Oops! This page can't be found!
+---
+
+<style type="text/css">
+    .error404 {
+        position: relative;
+        text-align: center;
+
+    }
+
+    @media (min-width:600px) {
+        .error404 {
+            font-size: 1.25em;
+        }
+    }
+
+    .error404__title {
+        font-size: 2.5em;
+        margin-bottom: .5em;
+    }
+
+    .error404__content {
+        display: block;
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+
+    /* Search */
+    .search_container {
+        background: #F9F9F9;
+        text-align: left;
+    }
+
+    .cse .gsc-control-cse,
+    .gsc-control-cse {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .gsc-search-box {
+        width: auto;
+        margin: 0;
+        padding: 10px;
+        background: #eee;
+        border-top: 1px solid #ddd;
+    }
+
+    .gsc-search-box-tools .gsc-search-box .gsc-input {
+        padding: 0;
+    }
+
+    .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        display: block;
+        margin: 0;
+        padding: 12px 30px 13px;
+    }
+
+    @media screen and (min-width:600px) {
+        .gsc-search-box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+    }
+
+    table,
+    tr,
+    td,
+    div.gsc-input-box,
+    div.gsc-input-box-hover,
+    .gsib_a,
+    table.gsc-search-box td.gsc-input {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        height: auto;
+    }
+
+    table.gsc-search-box {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .gsc-input-box {
+        background: #eee;
+    }
+
+    #gsc-i-id1 {
+        margin: 0 !important;
+        padding: 10px !important;
+        font-size: 20px !important;
+        color: #333 !important;
+        border: 1px solid #bbb !important;
+        height: 40px !important;
+        max-width: none !important;
+        background: #fff !important;
+    }
+
+    .gsc-search-button {
+        padding: 0 5px;
+        margin: 0;
+        height: 38px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    @media screen and (min-width:600px) {
+        .gsc-search-button {
+            padding: 0 10px;
+            font-size: 18px;
+        }
+    }
+
+    .gsc-modal-background-image {
+        background-color: black;
+    }
+
+    .gsc-selected-option-container {
+        width: auto !important;
+        max-width: none;
+    }
+
+    .gsc-table-result a,
+    .gsc-table-result b {
+        color: #0051AD !important;
+    }
+
+    .gsc-table-result .gs-title a:hover,
+    .gsc-table-result .gs-title a:hover b,
+    .gsc-table-result .gs-title b:hover {
+        text-decoration: none !important;
+    }
+
+    .gsc-webResult.gsc-result {
+        border: none !important;
+    }
+
+    .gsc-results .gsc-cursor-box .gsc-cursor-page {
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        line-height: 33px;
+        display: inline-block;
+    }
+
+    .gsc-results .gsc-cursor-box .gsc-cursor-page:hover {
+        background: #ddd;
+    }
+
+    .gsc-results-wrapper-overlay {
+        width: 90%;
+        height: 90%;
+        left: 5%;
+    }
+
+    .gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {
+        padding: 0;
+    }
+</style>
+
+<div class="main error404">
+    <h1 class="error404__title"><code><pre>404 - page not found</pre></code></h1>
+    <div class="error404__content">
+        <p>Seems this page doesn't exist</p>
+        <p>Visit our <a href="/">homepage</a> or <a href="/contact/">contact us</a></p>
+    </div>
+    <div class="error404__search">
+        <h2>Or search our site</h2>
+        <div class="search_container">
+            <script>
+                (function() {
+                    var cx = '004340395299318654527:9y43r9owouw';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search></gcse:search>
+        </div>
+    </div>
+</div>
