@@ -2,7 +2,8 @@
     {
         "title": "Apollo",
         "description": "Standalone cross-browser DOM class manipulation module.",
-        "url": "https://github.com/toddmotto/apollo"
+        "url": "https://github.com/toddmotto/apollo",
+        "logo": "none"
     },
     {
         "title": "AGIV",
@@ -37,7 +38,8 @@
     {
         "title": "datetimepicker",
         "description": "jQuery Plugin Date and Time Picker.",
-        "url": "https://github.com/xdan/datetimepicker"
+        "url": "https://github.com/xdan/datetimepicker",
+        "logo": "none"
     },
     {
         "title": "Elasticsearch",
@@ -62,7 +64,8 @@
     {
         "title": "html5shiv",
         "description": "Enable HTML5 sectioning elements in legacy Internet Explorer.",
-        "url": "https://github.com/aFarkas/html5shiv"
+        "url": "https://github.com/aFarkas/html5shiv",
+        "logo": "none"
     },
     {
         "title": "Imagine",
@@ -87,7 +90,8 @@
     {
         "title": "Magnific-Popup",
         "description": "Light and responsive lightbox script with focus on performance.",
-        "url": "https://github.com/dimsemenov/Magnific-Popup"
+        "url": "https://github.com/dimsemenov/Magnific-Popup",
+        "logo": "none"
     },
     {
         "title": "Mailcatcher",
@@ -132,17 +136,20 @@
     {
         "title": "PHP-JWT",
         "description": "PEAR package for JWT.",
-        "url": "https://github.com/firebase/php-jwt"
+        "url": "https://github.com/firebase/php-jwt",
+        "logo": "none"
     },
     {
         "title": "Phpmig",
         "description": "Simple database migrations system for PHP.",
-        "url": "https://github.com/davedevelopment/phpmig"
+        "url": "https://github.com/davedevelopment/phpmig",
+        "logo": "none"
     },
     {
         "title": "Placeholders.js",
         "description": "A JavaScript polyfill for the HTML5 placeholder attribute.",
-        "url": "https://github.com/jamesallardice/Placeholders.js/"
+        "url": "https://github.com/jamesallardice/Placeholders.js/",
+        "logo": "none"
     },
     {
         "title": "Prettify",

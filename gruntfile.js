@@ -28,6 +28,12 @@ module.exports = function(grunt) {
                         src: ['bower_components/stack/json/*.*'],
                         dest: '_data/vendor',
                         flatten: true
+                    },
+                    {
+                        expand: true,
+                        src: ['bower_components/jekyll-pagination/template/*.html'],
+                        dest: '_includes/vendor',
+                        flatten: true
                     }
                 ]
             }
@@ -187,5 +193,5 @@ module.exports = function(grunt) {
     });
 
     // The dev task will be used during development
-    grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('default', ['copy', 'browserSync', 'watch']);
 };

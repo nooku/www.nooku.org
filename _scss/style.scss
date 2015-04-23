@@ -1,5 +1,5 @@
 // Bourbon
-@import "../bower_components/bourbon/dist/bourbon";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
 // Neat
 $border-box-sizing: false !global;
@@ -17,15 +17,15 @@ $gutter: golden-ratio(1em, 2) !global; // must be placed here
 @import "misc/accessibility";
 @import "misc/container";
 
-// Stack (load after variables)
+// Stack and Pagination (load after variables)
 @import "../bower_components/stack/scss/stack";
+@import "../bower_components/jekyll-pagination/scss/jekyll-pagination";
 
 // Utilities
 @import "utilities/grid";
 @import "utilities/highlight";
 @import "utilities/nooku-font-icon";
 @import "utilities/button--hamburger";
-@import "utilities/jekyll-pagination";
 
 // Atoms
 @import "atoms/a";

@@ -1,16 +1,16 @@
 {
-    "name": "www.nooku.org",
-    "description": "",
-    "homepage": "",
-    "keywords": [
-    ],
-    "author": "",
-    "private": true,
-    "dependencies": {
-        "stack": "timble/stack"
-    },
-    "devDependencies": {
-        "neat": "~1.7.*",
-        "illusion": "timble/illusion#master"
-    }
+  "name": "www.nooku.org",
+  "description": "",
+  "homepage": "",
+  "keywords": [],
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "stack": "timble/stack"
+  },
+  "devDependencies": {
+    "neat": "~1.7.*",
+    "illusion": "timble/illusion#master",
+    "jekyll-pagination": "https://github.com/timble/jekyll-pagination.git"
+  }
 }
