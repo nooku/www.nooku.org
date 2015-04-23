@@ -2,11 +2,15 @@
 permalink: "/blog/:year/:month/:title"
 paginate: 4
 paginate_path: "blog/page:num"
+limit: 8
 
 # Blog
 monthly_archive:
   layout: archive
   path: blog
+
+# Blog separator
+excerpt_separator: <!--more-->
 
 # Site info
 name: Nooku

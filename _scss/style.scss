@@ -1,5 +1,5 @@
 // Bourbon
-@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/bourbon/dist/bourbon";
 
 // Neat
 $border-box-sizing: false !global;
@@ -25,6 +25,7 @@ $gutter: golden-ratio(1em, 2) !global; // must be placed here
 @import "utilities/highlight";
 @import "utilities/nooku-font-icon";
 @import "utilities/button--hamburger";
+@import "utilities/jekyll-pagination";
 
 // Atoms
 @import "atoms/a";
@@ -41,7 +42,6 @@ $gutter: golden-ratio(1em, 2) !global; // must be placed here
 @import "molecules/media";
 @import "molecules/navbar";
 @import "molecules/newsletter";
-@import "molecules/pagination";
 @import "molecules/subtitle";
 @import "molecules/thumbnails";
 @import "molecules/upcoming";

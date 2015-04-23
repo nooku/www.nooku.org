@@ -48,3 +48,16 @@ $spacing-xs:                          10px;
 
 // Color for the stack
 $stack-color--main:                   $brand-primary;
+
+// Pagination variables
+$pages-breakpoint1:                   $alpha;
+$pages-breakpoint2:                   500px;
+$pages-breakpoint3:                   $beta;
+$pages-breakpoint4:                   $charlie;
+$pages-breakpoint5:                   $charlie;
+$pages-breakpoint6:                   $charlie;
+
+// Styling
+$pages-margin:                        1em 0 2em;
+$pages-item-active:                   $brand-primary;
+$pages-item-link-color:               $brand-primary;
