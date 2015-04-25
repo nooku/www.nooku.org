@@ -18,6 +18,9 @@ url: http://www.nooku.org
 main_title: Nooku - Joomla Extension Framework
 description: A solid, modern framework and lean architecture for building Joomla extensions.
 
+# Nooku version
+nooku_version: 2.1
+
 # collections
 collections:
 - events
