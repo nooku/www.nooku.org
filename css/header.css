@@ -97,6 +97,20 @@ html {
  * @group Basics
  */
 /**
+ * Mixin for setting columns with vendor prefixes
+ *
+ * @param {number} $count - The gap between columns
+ *
+ * @group Basics
+ */
+/**
+ * Mixin for setting columns with vendor prefixes
+ *
+ * @param {string} $rule - The rule between columns
+ *
+ * @group Basics
+ */
+/**
  * Mixin for setting clearfix to an element
  *
  * @group Basics
@@ -273,6 +287,13 @@ html {
  *
  * @group molecules
  */
+.media:before, .media:after, .media_responsive:before, .media_responsive:after {
+  display: table;
+  content: " ";
+  line-height: 0; }
+.media:after, .media_responsive:after {
+  clear: both; }
+
 .media .media__visual {
   float: left;
   margin-right: 1em; }
@@ -641,47 +662,43 @@ table {
 td, th {
   padding: 0; }
 
-.js-enabled:not(.no-responsive-menu) .closed {
-  position: absolute !important;
+.js-enabled:not(.rm-no-responsive-menu) .rm-closed {
+  position: absolute;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(0 0 0 0);
   height: 1px;
   width: 1px;
   margin: -1px;
   padding: 0;
   border: 0; }
 
-.sticky {
+.rm-sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0; }
 
-.bodyoverflowhidden {
-  position: relative !important;
-  overflow: hidden !important; }
+.rm-bodyoverflowhidden {
+  position: relative;
+  overflow: hidden; }
 
-.menuoverflowauto {
+.rm-menuoverflowauto {
   max-height: 100%;
   width: 100%;
   overflow: auto; }
 
-.absolutemenu {
+.rm-absolutemenu {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   z-index: 9; }
 
-.focused {
-  overflow: visible; }
-
 /* Extend the accessible hide class to the closed class */
 /* Only when JS is enabled since we add the closed class in the markup */
 /* And we want the menu to be open when JS is disabled/broken */
 /* hide the buttons when closed so they wont show up in tabindex */
-button.closed {
+button.rm-closed {
   display: none; }
 
 /* The menu itself */
@@ -693,23 +710,25 @@ button.closed {
     display: none; }
   .navigation_container li.active > ul, .navigation_container li.current > ul {
     display: block; }
-.navigation_container.initiated li ul {
+.navigation_container.rm-initiated ul {
   display: block; }
-.navigation_container .closed, .navigation_container .fullmenu {
+  .navigation_container.rm-initiated ul .rm-focused {
+    overflow: visible; }
+.navigation_container .rm-closed, .navigation_container .rm-fullmenu {
   /* Hide li ul when JS is enabled and screen is big */
   /* And show on hover */ }
-  .navigation_container .closed li, .navigation_container .fullmenu li {
+  .navigation_container .rm-closed li, .navigation_container .rm-fullmenu li {
     overflow: hidden; }
-  .navigation_container .closed li ul, .navigation_container .fullmenu li ul {
+  .navigation_container .rm-closed li ul, .navigation_container .rm-fullmenu li ul {
     position: absolute;
     left: 0;
     top: 100%;
     z-index: 9;
     /* Position li>li>ul */ }
-    .navigation_container .closed li ul li ul, .navigation_container .fullmenu li ul li ul {
+    .navigation_container .rm-closed li ul ul, .navigation_container .rm-fullmenu li ul ul {
       left: 100%;
       top: 0; }
-  .navigation_container .closed li:hover, .navigation_container .closed li:focus, .navigation_container .fullmenu li:hover, .navigation_container .fullmenu li:focus {
+  .navigation_container .rm-closed li:hover, .navigation_container .rm-closed li:focus, .navigation_container .rm-fullmenu li:hover, .navigation_container .rm-fullmenu li:focus {
     overflow: visible; }
 
 .container {
