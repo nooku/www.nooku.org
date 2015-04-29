@@ -112,6 +112,9 @@ module.exports = function(grunt) {
         shell: {
             jekyllBuild: {
                 command: 'jekyll build'
+            },
+            bower: {
+                command: 'bower update && bower install' // Run update before install to avoid version collisions
             }
         },
 
@@ -136,7 +139,7 @@ module.exports = function(grunt) {
                 tasks: ['sass'], // Compile
                 options: {
                     interrupt: true,
-                    atBegin: false
+                    atBegin: true
                 }
             },
             uglify: {
@@ -147,7 +150,7 @@ module.exports = function(grunt) {
                 tasks: ['uglify'], // Compile
                 options: {
                     interrupt: true,
-                    atBegin: false
+                    atBegin: true
                 }
             },
             jekyll: {
@@ -193,5 +196,5 @@ module.exports = function(grunt) {
     });
 
     // The dev task will be used during development
-    grunt.registerTask('default', ['copy', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['shell:bower', 'copy', 'browserSync', 'watch']);
 };

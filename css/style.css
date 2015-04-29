@@ -904,9 +904,8 @@ strong {
   border: 0; }
 
 .pagination:before, .pagination:after {
-  display: table;
   content: " ";
-  line-height: 0; }
+  display: table; }
 .pagination:after {
   clear: both; }
 .pagination li {
@@ -914,15 +913,13 @@ strong {
   .pagination li .pagination-item {
     display: block;
     speak-number: continuous; }
-.pagination a, .pagination a:visited {
-  color: #085DAD; }
 .pagination .current-page, .pagination .previous, .pagination .next {
   display: inline-block; }
 .pagination .previous a:before {
   content: "« "; }
 .pagination .next a:after {
   content: " »"; }
-@media screen and (min-width: 25em) {
+@media (min-width: 25em) {
   .pagination .pages-indicator.pages-indicator--active {
     display: inline-block; }
 
@@ -932,56 +929,56 @@ strong {
   .pagination .pages-indicator--offset-2, .pagination .pages-indicator--offset-3, .pagination .pages-indicator--offset-4, .pagination .pages-indicator--offset-5, .pagination .pages-indicator--offset-6, .pagination .pages-indicator--offset-7 {
     display: inline-block; }
  }
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
   .pagination .offset-1 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-2 {
     display: none; }
  }
-@media screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   .pagination .offset-2 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-3 {
     display: none; }
  }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pagination .offset-3 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-4 {
     display: none; }
  }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pagination .offset-4 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-5 {
     display: none; }
  }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pagination .offset-5 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-6 {
     display: none; }
  }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pagination .offset-6 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-7 {
     display: none; }
  }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pagination .offset-7 {
     display: inline-block; }
 
   .pagination .pages-indicator--offset-8 {
     display: none; }
  }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pagination .offset-8 {
     display: inline-block; }
 
@@ -997,7 +994,7 @@ strong {
     margin: 0 0.2em;
     padding: 0;
     list-style: none; }
-    .pagination li .pagination-item {
+    .pagination li.page .pagination-item {
       text-decoration: none; }
     .pagination li.page .pagination-item {
       width: 36px;
@@ -1013,8 +1010,6 @@ strong {
       background: #085DAD;
       box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
       color: white; }
-    .pagination li.current-page a:hover, .pagination li.current-page a:focus, .pagination li.previous a:hover, .pagination li.previous a:focus, .pagination li.next a:hover, .pagination li.next a:focus {
-      text-decoration: underline; }
 
 .group, .latestblogs {
   margin-left: auto;
