@@ -30,11 +30,16 @@ See the [changelog on Github.](https://github.com/nooku/nooku-framework/releases
 
 In the next release we are going to focus on splitting the framework into two parts, framework core and a Joomla adapter. This will pave the way for making code written for Nooku a breeze to port into different applications, be it Wordpress, Joomla, or standalone.
 
-As always, upgrading is as simple as modifying your composer.json file and running ```composer update```
+As always, upgrading is as simple as modifying your composer.json file and running:
+ 
+{% highlight bash %}
+composer update
+{% endhighlight %}
 
 You can also install it from scratch by running:
 
-```composer require nooku/nooku-framework:2.*```
+{% highlight bash %}
+composer require nooku/nooku-framework:2.*
+{% endhighlight %}
 
 Feel free to fork it, break it, improve it, or build upon it!
-
