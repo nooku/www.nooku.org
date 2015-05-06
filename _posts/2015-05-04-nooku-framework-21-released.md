@@ -7,7 +7,7 @@ image-alt: Nooku Framework 2.1 released
 description: Nooku Framework 2.1 announcement 
 ---
 
-Nooku framework 2.1 has just been released! In this release, we focused on fixing reported issues and further stabilizing the codebase. Support for PHP 5.2 has been dropped making way for a more modern codebase with the introduction of namespaces for the 3.0 release.
+Nooku framework 2.1 has just been released! In this release, we focused on fixing reported issues and further stabilizing the codebase. Support for PHP 5.2 has been dropped making way for a more modern codebase.
 
 <!--more-->
 
@@ -28,7 +28,7 @@ See the [changelog on Github.](https://github.com/nooku/nooku-framework/releases
 
 ## What's next?
 
-In the next release we are going to focus on splitting the framework into two parts, framework core and a Joomla adapter. This will pave the way to run Nooku Framework standalone or even port it to different applications, like Wordpress for example which is high on our own wishlist!
+In the next release we are going to focus on splitting the framework into two parts, framework core and a Joomla adapter. This will pave the way to run Nooku Framework standalone or even port it to different applications.
 
 As always, upgrading is as simple as modifying your composer.json file and running:
  
