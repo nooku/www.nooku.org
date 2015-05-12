@@ -1,0 +1,75 @@
+Building components with the Nooku Framework for a Joomla 3 CMS
+
+By JS Webdesign
+
+Our experiences with building a component for a Joomla cms with the nooku framework.
+
+The first time we've build a component with Nooku was a few years ago when we've got the question if we could build a relational database for the businessclub of Wemeldinge in the south-west of the Netherlands, where our company is situated and where we are member of.
+
+This database is used to capture the information of all the members and companies of the businessclub.
+This data is used yearly to create a booklet where all the businesses in the village can be found along with touristinfo for the visitors of the vilage.
+One of the main advantages of the Component was that the error-rate of the varios listings in the booklet dropped to almost zero.
+
+One of the reasons we have made the decision to build this application on top of a nooku framework was that we needed an environment wich did not had the need for writing a large amount of code and we needed a versatile system where we could easily extend the application with new desired functions if we wanted to.
+
+The version we've build in 2012 is still in use today. The benefits of this relational database appllication are that the data such as adresses, phonenumber, e-mailadresses and other info needed for creating the booklet yearly can be kept op-to-date the year round and the correct data is available when we need it.
+
+Because 2 years ago version 2.5 of joomla was not 'invented' yet, we just created last week the 3.0 version of this app with very little work.
+
+In the following years we've created a pretty amount of other components for lots of special purposes.
+
+Some examples:
+JS Cars, JSW Soccerclub, JSW Realestate and JSW Yachtclub
+
+Building a component fast with Nooku
+One of our clients sels holiday and other real-estate in a village a few miles from where we are situated.
+
+Rich snippets
+The 'new fashion' of the search-engine world is Rich-snippets, and we've build for this company a application that has the ability to easiliy manage the properties they have for sale and sends them at the frontend of the website with rich-snippets to the search-engine, increasing the pageviews significantly.
+
+We have build this app in about “2 days”.
+
+I think this takes weeks in another framework to do the same!
+
+These sort of applications can easily be build with the Nooku framework if you have the need for one.
+
+The way we are making use of the framework is that we have a version of the Framework wich meets the demands of the guys at the Joomla extention directory, so with some extra index.html files and so on, so that publishing a newly created component there doesn't gets rejected because of this.
+
+We've borrowed some of the code of our components from the guys at Ohanah, but that's the beauty of open-source. Make something you want without “finding out the compleet wheel” yourself.
+
+
+JSW CRM
+
+Our latest creation, JSW CRM, we have created because we think that not every (small)company has the need for a full-blown CRM application, but only want to share the core information with the employees such as contactinfo, relations-info and appointments.
+
+We have choosen to build the component for the latest version, and from january 2015 the new long supported version, Joomla 3.
+
+Every employee that can log-in to the CRM, has the ability to consult the information in the CRM and can add his or her information to the CRM if they want to.
+That information is then available for everyone in the CRM enviroment.
+
+The emplye can only add or edit his or her own info in the CRM app. The administrator wich can log-in to the administrator-side of the CRM app, has acces to all the info in the CRM.
+
+If you want to you can easily make information wich is stored in the CRM available for public use.
+
+If for example you want a google-map on the website with relations and their locations, you can do that.
+
+One of the thoughts behind JSW CRM is to make a application wich can easily be used by for example a club or small company for managing memberdata and boardinfo in the club or company website.
+That way you can make use of the cloud-possbilities a easy way.
+
+If, for example, you have a new boardmember in the board, the only thing you need tot do is give him a useraccount with the rights you want him to have.
+
+Besides that it gives boardmembers a simple procedure for handing over some tasks from one boardmember to another because the information is stored in the cloud.
+
+The JSW CRM component is written in a basic way: Which functionality do i need and what's the most efficient way to do it.
+Our basic principle at JS Webdesign is the KIS principle:
+
+Which stands for: Keep It Simple.
+
+The results is easy usable applications for the enduser who has to 'work' with what you create every day.
+
+And with a Nooku Framework you can build them!
+
+
+Jos
+
+JS Webdesign
