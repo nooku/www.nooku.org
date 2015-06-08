@@ -111,7 +111,7 @@ module.exports = function(grunt) {
         // Shell commands
         shell: {
             jekyllBuild: {
-                command: 'jekyll build'
+                command: 'bundle exec jekyll build'
             },
             bower: {
                 command: 'bower update && bower install' // Run update before install to avoid version collisions
