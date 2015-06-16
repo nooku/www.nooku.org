@@ -8,7 +8,7 @@ description: Using Nooku to provide a data persistence layer to Backbonejs Appli
 ---
 [Backbone.js](http://backbonejs.org/), Joomla and Nooku possible? Absolutely! Nooku’s built-in JSON API makes it a great choice as a back-end for any kind of desktop and mobile app. Don’t believe us?
 
-Our tutorial ["Using Backbone.js with Nooku"](http://guides.nooku.org/tutorials/backbonejs-nooku-together.html) shows you how you can use [TodoMVC’s Backbone.js example app](http://todomvc.com/examples/backbone/) as a frontend for our own Joomla Todo extension.
+Our new tutorial ["Using Backbone.js with Nooku"](http://guides.nooku.org/tutorials/backbonejs-nooku-together.html) shows you how you can use TodoMVC’s Backbone.js example app as a frontend for our Joomla Todo extension.
 
 <!--more-->
 
