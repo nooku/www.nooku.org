@@ -4,7 +4,7 @@ blockquote {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before,
@@ -16,11 +16,11 @@ blockquote:after {
 }
 blockquote:before {
   content: open-quote;
-  margin-right: 0.25em;
+  margin-right: .25em;
 }
 blockquote:after {
   content: close-quote;
-  margin-left: 0.25em;
+  margin-left: .25em;
 }
 blockquote p {
   display: inline;
