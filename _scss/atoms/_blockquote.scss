@@ -7,6 +7,7 @@ blockquote {
   padding: .5em 1em;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before,
 blockquote:after {
   color: $brand-primary;
@@ -14,14 +15,17 @@ blockquote:after {
   line-height: 0;
   vertical-align: -.5em;
 }
+
 blockquote:before {
   content: open-quote;
   margin-right: .25em;
 }
+
 blockquote:after {
   content: close-quote;
   margin-left: .25em;
 }
+
 blockquote p {
   display: inline;
   font-style: italic;
