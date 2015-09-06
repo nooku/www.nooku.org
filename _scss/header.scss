@@ -1,16 +1,16 @@
 // Vendor
-@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "../bower_components/neat/app/assets/stylesheets/neat";
-@import "../bower_components/illusion/sass/illusion";
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+@import '../bower_components/illusion/sass/illusion';
 
-@import "misc/variables";
-@import "misc/mixins";
-@import "misc/placeholders";
-@import "misc/container";
+@import 'misc/variables';
+@import 'misc/mixins';
+@import 'misc/placeholders';
+@import 'misc/container';
 
-@import "utilities/button--hamburger";
+@import 'utilities/button--hamburger';
 
-@import "molecules/navbar";
+@import 'molecules/navbar';
 
-@import "organisms/skiplink";
-@import "organisms/header";
+@import 'organisms/skiplink';
+@import 'organisms/header';
