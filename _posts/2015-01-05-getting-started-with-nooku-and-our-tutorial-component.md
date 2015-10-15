@@ -2,6 +2,7 @@
 title: Getting started with Nooku and our Todo component.
 author: Cameron Barr
 layout: post
+redirect: http://developer.joomlatools.com/blog/2015/01/getting-started-our-tutorial-component.html
 image: /images/blog/2015/getting-started-with-nooku-todo.jpg
 image-alt: Four miniature racecars
 description: Getting started with Nooku and our Todo component.
@@ -50,4 +51,3 @@ Only last week we highlighted in our blog [Nooku's Composer supported distributi
 That’s all we have so far for you. Now it’s your turn. You can help us by [writing a tutorial](http://guides.nooku.org/contribute/write-a-tutorial.html), or by sending in a PR (pull request) to improve the Todo component.
 
 **Happy Coding!**
-

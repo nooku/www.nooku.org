@@ -3,6 +3,7 @@ title: 'Nginx for the world&#8230; and Joomla'
 author: Shayne
 layout: post
 permalink: /blog/2011/02/nginx-for-the-world-and-joomla/
+redirect: http://developer.joomlatools.com/blog/2011/02/nginx-for-the-world-and-joomla.html
 dsq_thread_id:
   - 241999766
 categories:
@@ -36,7 +37,7 @@ For our install, we will be using [Ubuntu][2] 10.04 and installing/configuring:
 
 
 <!--more-->
-  
+
 
 
 ### Install PHP
