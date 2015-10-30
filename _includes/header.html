@@ -37,23 +37,6 @@
             <div class="header__brand brand">
                 <a href="/"><img src="/images/layout/logo.png" alt="Nooku Logo" /></a>
             </div>
-            <div class="header__navigation">
-                <nav class="closed navigation_container">
-                    <ul class="navbar" role="navigation">
-                        {% for item in site.data.pages.header %}
-                        {% assign current = nil %}
-                        {% assign current-accessible = nil %}
-                        {% if page.url contains item.url %}
-                            {% assign current = ' active' %}
-                            {% assign current-accessible = '<span class="accessible-hide">: current page</span>' %}
-                        {% endif %}
-                        <li class="navbar__item{{ current }}">
-                            <a href="{{ item.url }}">{{ item.text }}{{ current-accessible }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-            </div>
         </div>
     </div>
 </div>

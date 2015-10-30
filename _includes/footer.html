@@ -1,14 +1,7 @@
 <div class="footer">
     <div class="container">
         <div class="group">
-            <div class="links_container">
-                <p class="links">
-                    {% for link in site.data.pages.footer %}
-                    <a href="{{ link.url }}" class="{{ link.text | downcase }}">{{ link.text }}</a>
-                    {% endfor %}
-                </p>
-            </div>
-            <div class="copyright">
+            <div class="copyright" style="float:right">
                 <p>Built with <span class="heart" aria-hidden="true">♥</span><span class="accessible-hide">love</span> by <a href="http://www.timble.net">Timble</a></p>
             </div>
         </div>

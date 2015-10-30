@@ -182,7 +182,7 @@ module.exports = function(grunt) {
                     'platform/*.*',
                     'services/*.*',
                     'stack/*.*',
-                    'index.html',
+                    'index.md',
                     '404.html',
                     'config.yml'
                 ],
