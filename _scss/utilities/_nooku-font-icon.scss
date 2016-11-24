@@ -79,6 +79,7 @@ $icons: (
     @content;
   }
 }
+
 @mixin icon-after($icon: false, $styles: false) {
   &:after {
     @if $icon {
@@ -90,6 +91,7 @@ $icons: (
     @content;
   }
 }
+
 @mixin icon-both($icon: false, $styles: false) {
   &:before,
   &:after {
